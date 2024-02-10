@@ -17,17 +17,22 @@ $header_info = array(
 );
 add_theme_support( 'custom-header', $header_info );
 
-// custom header image
-$header_images = array(
-	'sunset' => array(
-		'url'           => get_template_directory_uri() . '/images/sunset.jpg',
-		'thumbnail_url' => get_template_directory_uri() . '/images/sunset_thumbnail.jpg',
-		'description'   => 'Sunset',
-	),
-	'flower' => array(
-		'url'           => get_template_directory_uri() . '/images/flower.jpg',
-		'thumbnail_url' => get_template_directory_uri() . '/images/flower_thumbnail.jpg',
-		'description'   => 'Flower',
-	),
-);
-register_default_headers( $header_images );
+// // custom header image might not need
+// $header_images = array(
+// 	'sunset' => array(
+// 		'url'           => get_template_directory_uri() . '/images/sunset.jpg',
+// 		'thumbnail_url' => get_template_directory_uri() . '/images/sunset_thumbnail.jpg',
+// 		'description'   => 'Sunset',
+// 	),
+// 	'flower' => array(
+// 		'url'           => get_template_directory_uri() . '/images/flower.jpg',
+// 		'thumbnail_url' => get_template_directory_uri() . '/images/flower_thumbnail.jpg',
+// 		'description'   => 'Flower',
+// 	),
+// );
+// register_default_headers( $header_images );
+
+// custom logo
+if ( function_exists( 'the_custom_logo' ) ) {
+	the_custom_logo();
+}
