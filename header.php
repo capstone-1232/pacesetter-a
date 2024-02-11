@@ -1,5 +1,9 @@
-<img alt="" src="<?php header_image(); ?>" width="<?php echo absint( get_custom_header()->width ); ?>" height="<?php echo absint( get_custom_header()->height ); ?>">
-
+<!DOCTYPE html>
+<html>
+<head>
+    <?php wp_head(); ?>
+</head>
+<body <?php body_class(); ?>>
 <!-- retrieves the header image. get_custom_header() gets the custom header data. -->
 <?php if ( get_header_image() ) : ?>
 	<div id="site-header">
