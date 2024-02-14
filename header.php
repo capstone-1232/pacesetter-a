@@ -40,3 +40,10 @@ add_theme_support( 'custom-header', $header_info );
 if ( function_exists( 'the_custom_logo' ) ) {
 	the_custom_logo();
 }
+
+wp_nav_menu(
+	array(
+	  'theme_location' => 'extra-menu',
+	  'container_class' => 'my_extra_menu_class'
+	)
+  );
