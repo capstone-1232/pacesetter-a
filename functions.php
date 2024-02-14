@@ -75,3 +75,6 @@ function register_my_menus() {
    }
    add_action( 'init', 'register_my_menus' );
 
+//thumbnails
+add_theme_support( 'post-thumbnails' );
+

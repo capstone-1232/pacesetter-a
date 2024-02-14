@@ -35,7 +35,7 @@ add_theme_support( 'custom-header', $header_info );
 // 		'description'   => 'Flower',
 // 	),
 // );
-// register_default_headers( $header_images );
+register_default_headers( $header_images );
 
 // custom logo
 if ( function_exists( 'the_custom_logo' ) ) {
