@@ -1,5 +1,14 @@
-<!-- custom header function -->
 <?php
+/**
+ * pacesetter functions and definitions
+ *
+ *
+ * @package pacesetter
+ */
+
+/**
+ */
+
 add_theme_support( 'custom-header' );
 
 function pacesetter_custom_header_setup() {
@@ -43,18 +52,6 @@ function pacesetter_custom_logo_setup() {
 add_action( 'after_setup_theme', 'pacesetter_custom_logo_setup' );
 
 add_theme_support( 'custom-logo' );
-function themename_custom_logo_setup() {
-	$defaults = array(
-		'height'               => 100,
-		'width'                => 400,
-		'flex-height'          => true,
-		'flex-width'           => true,
-		'header-text'          => array( 'site-title', 'site-description' ),
-		'unlink-homepage-logo' => true, 
-	);
-	add_theme_support( 'custom-logo', $defaults );
-}
-add_action( 'after_setup_theme', 'pacesetter_custom_logo_setup' );
 
 // custom backgrounds
 add_theme_support( 'custom-background' );
@@ -78,3 +75,8 @@ function register_my_menus() {
 //thumbnails
 add_theme_support( 'post-thumbnails' );
 
+// pagination
+function your_themes_pagination() {
+	global $wp_query;
+	echo paginate_links();
+}
