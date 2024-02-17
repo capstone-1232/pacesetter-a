@@ -22,7 +22,7 @@ $header_info = array(
 );
 add_theme_support( 'custom-header', $header_info );
 
-// // custom header image might not need
+// custom header image might not need
 // $header_images = array(
 // 	'sunset' => array(
 // 		'url'           => get_template_directory_uri() . '/images/sunset.jpg',
@@ -35,7 +35,7 @@ add_theme_support( 'custom-header', $header_info );
 // 		'description'   => 'Flower',
 // 	),
 // );
-register_default_headers( $header_images );
+// register_default_headers( $header_images );
 
 // custom logo
 if ( function_exists( 'the_custom_logo' ) ) {
