@@ -31,6 +31,9 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2370.946691185651!2d-113.61256558766439!3d53.54086606003586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53a02103230e0325%3A0xdb9361d3d0c6e002!2sPacesetter%20Ski%20Shoppe!5e0!3m2!1sen!2sca!4v1708191362592!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
+            <a href="#">Privacy Policy/Terms of Use</a>
+            <p>2023 Pacesetter</p>
+
         </div> <!-- footer end -->
     </nav>
 </footer>
