@@ -51,6 +51,7 @@
 		<a href="#">Goggles</a>`
 		</div> <!-- subnav-content end -->
 			<a href="#">Services</a>
+			<a href="#">Rentals</a>
 		</div> <!-- sub-nav end -->
 	</div> <!-- nav-items end -->
 		
