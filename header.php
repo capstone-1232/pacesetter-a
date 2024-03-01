@@ -3,6 +3,16 @@
 <head>
 	<?php wp_head(); ?>
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
+	<script src="js/jquery-ui-1.10.0.custom.js"></script>
+	<script src="js/jquery-1.9.0.js"></script>
+
+	<script>
+		$(function() {
+		
+			$( "#accordion" ).accordion();
+		});
+	</script>
+
 </head>
 <body <?php body_class(); ?>>
 <!-- retrieves the header image. get_custom_header() gets the custom header data. -->

@@ -13,6 +13,8 @@
 
 ?>
 
+<h1>About Us</h1>
+
 <div class="first-block">
     <div class="history">
         <h2>Our History</h2>
