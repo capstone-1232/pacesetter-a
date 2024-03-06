@@ -46,7 +46,6 @@
 		<button class="subnavbtn"><a href="#">Accessories</a><i class="fa fa-caret-down"></i></button>
 		<div class="subnav-content">
 		<a href="#">Bags</a>
-		<a href="#">Sunglasses</a>
 		<a href="#">Helmets</a>
 		<a href="#">Goggles</a>`
 		</div> <!-- subnav-content end -->
@@ -88,7 +87,6 @@
 	<button class="subnavbtn"><a href="#">Accessories</a><i class="fa fa-caret-down-big"></i></button>
     <div class="subnav-content">
       <a href="#">Bags</a>
-      <a href="#">Sunglasses</a>
       <a href="#">Helmets</a>
 	  <a href="#">Goggles</a>`
     </div>

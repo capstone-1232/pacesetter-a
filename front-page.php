@@ -26,3 +26,6 @@
         <h2>Shop Top Brands</h2>
     </div>
  </main>
+
+
+ <?php get_footer(); ?>
