@@ -3,7 +3,6 @@
 <head>
 	<?php wp_head(); ?>
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
-
 </head>
 <body <?php body_class(); ?>>
 <!-- retrieves the header image. get_custom_header() gets the custom header data. -->
