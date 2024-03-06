@@ -3,15 +3,6 @@
 <head>
 	<?php wp_head(); ?>
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
-	<script src="js/jquery-ui-1.10.0.custom.js"></script>
-	<script src="js/jquery-1.9.0.js"></script>
-
-	<script>
-		$(function() {
-		
-			$( "#accordion" ).accordion();
-		});
-	</script>
 
 </head>
 <body <?php body_class(); ?>>
@@ -56,7 +47,6 @@
 		<button class="subnavbtn"><a href="#">Accessories</a><i class="fa fa-caret-down"></i></button>
 		<div class="subnav-content">
 		<a href="#">Bags</a>
-		<a href="#">Sunglasses</a>
 		<a href="#">Helmets</a>
 		<a href="#">Goggles</a>`
 		</div> <!-- subnav-content end -->
