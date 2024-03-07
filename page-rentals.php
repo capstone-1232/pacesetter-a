@@ -1,6 +1,6 @@
 <?php
 /**
- * pacesetter rentals page
+ * rentals page
  *
  *
  * @package pacesetter

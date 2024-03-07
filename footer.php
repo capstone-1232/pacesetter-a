@@ -32,8 +32,10 @@
             </div>
 
             <a href="#">Privacy Policy/Terms of Use</a>
-            <p>2023 Pacesetter</p>
+            <p>2024 Pacesetter</p>
 
         </div> <!-- footer end -->
     </nav>
 </footer>
+</body>
+</html>

@@ -28,7 +28,7 @@
 		<a href="#">Skis</a>
 		<a href="#">Ski Boots</a>
 		<a href="#">Ski Bindings</a>
-		<a href="#">Poles</a>`
+		<a href="#">Poles</a>
 		</div> <!-- subnav-content end -->
 		<button class="subnavbtn"><a href="#">Snowboards</a><i class="fa fa-caret-down"></i></button>
 		<div class="subnav-content">
@@ -91,11 +91,11 @@
 	  <a href="#">Goggles</a>`
     </div>
 	<a class="link" href="#">Events</a>
-	<a class="link" href="#">Contact Us</a>
-	<a class="link" href="#">About Us</a>
-	<a class="link" href="#">Rentals</a>
-	<a class="link" href="#">FAQ</a>
-	<a class="link" href="#">Services</a>
+	<a class="link" href="https://pacesetter-a.web.dmitcapstone.ca/wordpress/contact/">Contact Us</a>
+	<a class="link" href="https://pacesetter-a.web.dmitcapstone.ca/wordpress/about-us/">About Us</a>
+	<a class="link" href="https://pacesetter-a.web.dmitcapstone.ca/wordpress/rentals/">Rentals</a>
+	<a class="link" href="https://pacesetter-a.web.dmitcapstone.ca/wordpress/faq/">FAQ</a>
+	<a class="link" href="https://pacesetter-a.web.dmitcapstone.ca/wordpress/services/">Services</a>
     </nav>
 </section>
 
