@@ -172,3 +172,4 @@
         credit for the purchase of a new pair of skis within the period explained
         above.</p>
 </div>
+<?php get_footer(); ?>
