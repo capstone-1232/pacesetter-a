@@ -57,7 +57,8 @@
             <li>2.$44.99* plus GST if one (1) item is purchased from Pacesetter</li>
             <li>3.$29.99* plus GST if two (2) items are purchased from Pacesetter</li>
         </ul>
-        <div>*All items purchased from Pacesetter receives this service free of charge and includes initial hot wax at no charge. ($105.00 value)</td></div>
+            <div>*All items purchased from Pacesetter receives this service free of charge and includes initial hot wax at no charge. ($105.00 value)</div>
+        </td>
         <td>Price:
         <div>System Style Ski binding* </div>
         <ul>

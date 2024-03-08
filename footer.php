@@ -15,9 +15,9 @@
             </div> <!-- footer-nav end -->
 
             <div class="socials">
-                <a href="#"><img src="" alt="Facebook Logo"></a>
-                <a href="#"><img src="" alt="X Logo"></a>
-                <a href="#"><img src="" alt="Instagram Logo"></a>
+                <a href="#"><img src="#" alt="Facebook Logo"></a>
+                <a href="#"><img src="#" alt="X Logo"></a>
+                <a href="#"><img src="#" alt="Instagram Logo"></a>
             </div> <!-- socials end -->
 
             <div class="shop-info">
