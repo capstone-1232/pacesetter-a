@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<?php wp_head(); ?>
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
@@ -14,7 +14,7 @@
 	</div>
 <?php endif; ?>
 
-	<section class="p-menu">
+	<div class="p-menu">
 		<nav id="navbar" class="navigation">
 				
 		<!-- custom logo -->
@@ -24,8 +24,8 @@
 
 	<div class="nav-items">
 		<div class="subnav">
-			<a href="#">
-				<button class="subnavbtn">Skis<i class="fa fa-caret-down"></i></button>
+			<a class="subnavbtn" href="#">
+				Skis<i class="fa fa-caret-down"></i>
 			</a>
 		<div class="subnav-content">
 			<a href="#">Skis</a>
@@ -33,16 +33,16 @@
 			<a href="#">Ski Bindings</a>
 			<a href="#">Poles</a>
 		</div> <!-- subnav-content end -->
-			<a href="#">
-				<button class="subnavbtn">Snowboards<i class="fa fa-caret-down"></i></button>
+			<a class="subnavbtn" href="#">
+				Snowboards<i class="fa fa-caret-down"></i>
 			</a>
 		<div class="subnav-content">
 			<a href="#">Snowboards</a>
 			<a href="#">Snowboard Boots</a>
 			<a href="#">Snowboard Bindings</a>
 		</div> <!-- subnav-content end -->
-			<a href="#">
-				<button class="subnavbtn">Apparel<i class="fa fa-caret-down"></i></button>
+			<a class="subnavbtn" href="#">
+				Apparel<i class="fa fa-caret-down"></i>
 			</a>
 		<div class="subnav-content">
 			<a href="#">Mens</a>
@@ -50,8 +50,8 @@
 			<a href="#">Kids</a>
 			<a href="#">Accessories</a>`
 		</div> <!-- subnav-content end -->
-			<a href="#">
-				<button class="subnavbtn">Accessories<i class="fa fa-caret-down"></i></button>
+			<a class="subnavbtn" href="#">
+				Accessories<i class="fa fa-caret-down"></i>
 			</a>
 		<div class="subnav-content">
 			<a href="#">Bags</a>
@@ -73,8 +73,8 @@
 </nav> <!-- end main nav -->
 	
     <nav class="menu">
-		<a href="#">
-			<button class="subnavbtn">Skis<i class="fa fa-caret-down-big"></i></button>
+		<a class="subnavbtn" href="#">
+			Skis<i class="fa fa-caret-down"></i>
 		</a>
 	<div class="subnav-content">
 	  	<a href="#">Skis</a>
@@ -82,16 +82,16 @@
       	<a href="#">Ski Bindings</a>
 	  	<a href="#">Poles</a>`
     </div>
-		<a href="#">
-			<button class="subnavbtn">Snowboards<i class="fa fa-caret-down-big"></i></button>
+		<a class="subnavbtn" href="#">
+			Snowboards<i class="fa fa-caret-down"></i>
 		</a>
     <div class="subnav-content">
       	<a href="#">Snowboards</a>
       	<a href="#">Snowboard Boots</a>
       	<a href="#">Snowboard Bindings</a>
     </div>
-		<a href="#">
-			<button class="subnavbtn">Apparel<i class="fa fa-caret-down-big"></i></button>
+		<a class="subnavbtn" href="#">
+			Apparel<i class="fa fa-caret-down"></i>
 		</a>
     <div class="subnav-content">
       	<a href="#">Mens</a>
@@ -99,8 +99,8 @@
       	<a href="#">Kids</a>
 	  	<a href="#">Accessories</a>`
 	</div>
-		<a href="#">
-			<button class="subnavbtn">Accessories<i class="fa fa-caret-down-big"></i></button>
+		<a class="subnavbtn" href="#">
+			Accessories<i class="fa fa-caret-down"></i>
 		</a>
     <div class="subnav-content">
       	<a href="#">Bags</a>
@@ -114,7 +114,7 @@
 	<a class="link" href="https://pacesetter-a.web.dmitcapstone.ca/wordpress/faq/">FAQ</a>
 	<a class="link" href="https://pacesetter-a.web.dmitcapstone.ca/wordpress/services/">Services</a>
     </nav>
-</section>
+</div>
 
 <?php
 $header_info = array(
