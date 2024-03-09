@@ -119,6 +119,7 @@ $labor_snowboard = get_field( "snowboard_tune_price", 151 );
 
     <!-- binding adjustments -->
     <tr>
+      
         <td><?php if( $binding_adjustments_type ) {echo wp_kses_post( $binding_adjustments_type );} else {echo 'empty';} ?> <div><?php if( $binding_adjustments_description ) {echo wp_kses_post( $binding_adjustments_description );} else {echo 'empty';} ?> </div></td>
         <td><?php if( $binding_adjustments_ski ) {echo wp_kses_post( $binding_adjustments_ski );} else {echo 'empty';} ?> </td>
         <td><?php if( $binding_adjustments_snowboard ) {echo wp_kses_post( $binding_adjustments_snowboard );} else {echo 'empty';} ?> </td>  
