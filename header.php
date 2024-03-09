@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<?php wp_head(); ?>
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
+	<title>Pacesetter Ski & Snowboard</title>
 </head>
 <body <?php body_class(); ?>>
 <!-- retrieves the header image. get_custom_header() gets the custom header data. -->
@@ -13,7 +14,7 @@
 	</div>
 <?php endif; ?>
 
-	<section class="p-menu">
+	<div class="p-menu">
 		<nav id="navbar" class="navigation">
 				
 		<!-- custom logo -->
@@ -23,31 +24,39 @@
 
 	<div class="nav-items">
 		<div class="subnav">
-		<button class="subnavbtn"><a href="#">Skis</a><i class="fa fa-caret-down"></i></button>
+			<a class="subnavbtn" href="#">
+				Skis<i class="fa fa-caret-down"></i>
+			</a>
 		<div class="subnav-content">
-		<a href="#">Skis</a>
-		<a href="#">Ski Boots</a>
-		<a href="#">Ski Bindings</a>
-		<a href="#">Poles</a>
+			<a href="#">Skis</a>
+			<a href="#">Ski Boots</a>
+			<a href="#">Ski Bindings</a>
+			<a href="#">Poles</a>
 		</div> <!-- subnav-content end -->
-		<button class="subnavbtn"><a href="#">Snowboards</a><i class="fa fa-caret-down"></i></button>
+			<a class="subnavbtn" href="#">
+				Snowboards<i class="fa fa-caret-down"></i>
+			</a>
 		<div class="subnav-content">
-		<a href="#">Snowboards</a>
-		<a href="#">Snowboard Boots</a>
-		<a href="#">Snowboard Bindings</a>
+			<a href="#">Snowboards</a>
+			<a href="#">Snowboard Boots</a>
+			<a href="#">Snowboard Bindings</a>
 		</div> <!-- subnav-content end -->
-		<button class="subnavbtn"><a href="#">Apparel</a><i class="fa fa-caret-down"></i></button>
+			<a class="subnavbtn" href="#">
+				Apparel<i class="fa fa-caret-down"></i>
+			</a>
 		<div class="subnav-content">
-		<a href="#">Mens</a>
-		<a href="#">Womens</a>
-		<a href="#">Kids</a>
-		<a href="#">Accessories</a>`
+			<a href="#">Mens</a>
+			<a href="#">Womens</a>
+			<a href="#">Kids</a>
+			<a href="#">Accessories</a>`
 		</div> <!-- subnav-content end -->
-		<button class="subnavbtn"><a href="#">Accessories</a><i class="fa fa-caret-down"></i></button>
+			<a class="subnavbtn" href="#">
+				Accessories<i class="fa fa-caret-down"></i>
+			</a>
 		<div class="subnav-content">
-		<a href="#">Bags</a>
-		<a href="#">Helmets</a>
-		<a href="#">Goggles</a>`
+			<a href="#">Bags</a>
+			<a href="#">Helmets</a>
+			<a href="#">Goggles</a>`
 		</div> <!-- subnav-content end -->
 			<a href="#">Services</a>
 			<a href="#">Rentals</a>
@@ -55,40 +64,48 @@
 	</div> <!-- nav-items end -->
 		
 	<!-- hamburger toggle button -->
-	<input id="toggle" type="checkbox" />
+	<!-- <input id="toggle" type="checkbox" />
 	<label class="hamburger" for="toggle">
 		<div class="top"></div>
 		<div class="middle"></div>
 		<div class="bottom"></div>
-	</label>
+	</label> -->
 </nav> <!-- end main nav -->
 	
     <nav class="menu">
-		<button class="subnavbtn"><a href="#">Skis</a><i class="fa fa-caret-down-big"></i></button>
-		<div class="subnav-content">
-	  <a href="#">Skis</a>
-      <a href="#">Ski Boots</a>
-      <a href="#">Ski Bindings</a>
-	  <a href="#">Poles</a>`
+		<a class="subnavbtn" href="#">
+			Skis<i class="fa fa-caret-down"></i>
+		</a>
+	<div class="subnav-content">
+	  	<a href="#">Skis</a>
+      	<a href="#">Ski Boots</a>
+      	<a href="#">Ski Bindings</a>
+	  	<a href="#">Poles</a>`
     </div>
-	<button class="subnavbtn"><a href="#">Snowboards</a><i class="fa fa-caret-down-big"></i></button>
+		<a class="subnavbtn" href="#">
+			Snowboards<i class="fa fa-caret-down"></i>
+		</a>
     <div class="subnav-content">
-      <a href="#">Snowboards</a>
-      <a href="#">Snowboard Boots</a>
-      <a href="#">Snowboard Bindings</a>
+      	<a href="#">Snowboards</a>
+      	<a href="#">Snowboard Boots</a>
+      	<a href="#">Snowboard Bindings</a>
     </div>
-	<button class="subnavbtn"><a href="#">Apparel</a><i class="fa fa-caret-down-big"></i></button>
+		<a class="subnavbtn" href="#">
+			Apparel<i class="fa fa-caret-down"></i>
+		</a>
     <div class="subnav-content">
-      <a href="#">Mens</a>
-      <a href="#">Womens</a>
-      <a href="#">Kids</a>
-	  <a href="#">Accessories</a>`
+      	<a href="#">Mens</a>
+      	<a href="#">Womens</a>
+      	<a href="#">Kids</a>
+	  	<a href="#">Accessories</a>`
 	</div>
-	<button class="subnavbtn"><a href="#">Accessories</a><i class="fa fa-caret-down-big"></i></button>
+		<a class="subnavbtn" href="#">
+			Accessories<i class="fa fa-caret-down"></i>
+		</a>
     <div class="subnav-content">
-      <a href="#">Bags</a>
-      <a href="#">Helmets</a>
-	  <a href="#">Goggles</a>`
+      	<a href="#">Bags</a>
+      	<a href="#">Helmets</a>
+	  	<a href="#">Goggles</a>`
     </div>
 	<a class="link" href="#">Events</a>
 	<a class="link" href="https://pacesetter-a.web.dmitcapstone.ca/wordpress/contact/">Contact Us</a>
@@ -97,7 +114,7 @@
 	<a class="link" href="https://pacesetter-a.web.dmitcapstone.ca/wordpress/faq/">FAQ</a>
 	<a class="link" href="https://pacesetter-a.web.dmitcapstone.ca/wordpress/services/">Services</a>
     </nav>
-</section>
+</div>
 
 <?php
 $header_info = array(
