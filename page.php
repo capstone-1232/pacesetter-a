@@ -10,6 +10,7 @@
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
  */
+
 get_header();
 ?>
 <?php while (have_posts()): ?>
