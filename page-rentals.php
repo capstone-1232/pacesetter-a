@@ -9,6 +9,19 @@
 /**
  */
 
+//  skiing rental
+$ski_header = get_field( "rental_header", 161 );
+$ski_rental = get_field( "rental", 161 );
+$ski_type = get_field( "type", 161 );
+$ski_package = get_field( "package", 161 );
+$ski_demo = get_field( "demo", 161 );
+
+// snowboard rentals
+$snowboard_header = get_field( "rental_header", 162 );
+$snowboard_rental = get_field( "rental", 162 );
+$snowboard_type = get_field( "type", 162 );
+$snowboard_package = get_field( "package", 162 );
+
  get_header();
 
 ?>
@@ -29,48 +42,16 @@
         </tr>
 
         <tr>
-            <td>Skiing: <div>(Prices do not include GST and are subject to change without notice.)</div><div>Basic package includes skis, boots, and bindings. Demo is board only.</div></td>
-            <td>
-                <ul>
-                    <li>Adult:</li>
-                    <li>Children:</li>
-                    <li>Boots Only:</li>
-                </ul>
-            </td>
-            <td>
-                <ul>
-                    <li>$35 per day</li>
-                    <li>$35 per day</li>
-                    <li>$20 per day</li>
-                </ul>
-            </td>
-            <td>
-                <ul>
-                    <li>$50 per day</li>
-                    <li>N/A</li>
-                    <li>N/A</li>
-                </ul>
-            </td>
+            <td><?php if( $ski_header ) {echo wp_kses_post( $ski_header );} else {echo 'empty';} ?><div><?php if( $ski_rental ) {echo wp_kses_post( $ski_rental );} else {echo 'empty';} ?></div></td>
+            <td><?php if( $ski_type ) {echo wp_kses_post( $ski_type );} else {echo 'empty';} ?></td>
+            <td><?php if( $ski_package ) {echo wp_kses_post( $ski_package );} else {echo 'empty';}?></td>
+            <td><?php if( $ski_demo ) {echo wp_kses_post( $ski_demo );} else {echo 'empty';}?></td>
         </tr>
 
         <tr>
-            <td>Snowboarding: <div>(Prices do not include GST and are subject to change without notice.)</div><div>Basic package includes board, boots, and bindings. Demo is unavailable for snowboards.</div></td>
-            <td>
-                <ul>
-                    <li>Adult:</li>
-                    <li>Children:</li>
-                    <li>Boots Only:</li>
-                    <li>Bindings Only:</li>
-                </ul>
-            </td>
-            <td>
-                <ul>
-                    <li>$35 per day</li>
-                    <li>$35 per day</li>
-                    <li>$20 per day</li>
-                    <li>$20 per day</li>
-                </ul>
-            </td>
+            <td><?php if( $snowboard_header ) {echo wp_kses_post( $snowboard_header );} else {echo 'empty';}?><div><?php if( $snowboard_rental ) {echo wp_kses_post( $snowboard_rental );} else {echo 'empty';} ?></div></td>
+            <td><?php if( $snowboard_type ) {echo wp_kses_post( $snowboard_type );} else {echo 'empty';} ?></td>
+            <td><?php if( $snowboard_package ) {echo wp_kses_post( $snowboard_package );} else {echo 'empty';} ?></td>
         </tr>
     </table>
 </div> <!-- end rentals table -->

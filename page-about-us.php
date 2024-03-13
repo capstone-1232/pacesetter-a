@@ -9,6 +9,42 @@
 /**
  */
 
+//  our history ACF
+$history_header = get_field( "header", 173 );
+$history_info = get_field( "info", 173 );
+
+// unmatched expertise acf
+$expertise_header = get_field( "header", 174 );
+$expertise_info = get_field( "info", 174 );
+
+// winter wonderland acf
+$wonderland_header = get_field( "header", 175 );
+$wonderland_info = get_field( "info", 175 );
+
+// services beyond the shop acf
+$services_header = get_field( "header", 176 );
+$services_info = get_field( "info", 176 );
+
+// diverse range of products acf
+$products_header = get_field( "header", 177 );
+$products_info = get_field( "info", 177 );
+
+//  community events ACF
+ $community_header = get_field( "header", 178 );
+ $community_info = get_field( "info", 178);
+
+//  images
+$first_block = get_field( "about_us_image", 183);
+$first_block_size = $first_block['sizes']['large'];
+$first_block_alt = $first_block['alt'];
+$second_block = get_field( "about_us_image", 185);
+$second_block_size = $second_block['sizes']['large'];
+$second_block_alt = $second_block['alt'];
+$third_block = get_field( "about_us_image", 188);
+$third_block_size = $third_block['sizes']['large'];
+$third_block_alt = $third_block['alt'];
+
+
  get_header();
 
 ?>
@@ -16,38 +52,55 @@
 <h1>About Us</h1>
 
 <div class="first-block">
-    <div class="history">
-        <h2>Our History</h2>
-        <p>Welcome to Pacesetter Ski Shop. With a legacy spanning over five decades, Pacesetter Ski Shoppe has firmly established itself as the go-to destination for all your skiing and snowboarding needs, offering an unparalleled shopping experience for winter enthusiasts of all levels.</p>
+    <div>
+        <div class="history">
+            <h2><?php if( $history_header ) {echo wp_kses_post( $history_header );} else {echo 'empty';} ?></h2>
+            <p><?php if( $history_info ) {echo wp_kses_post( $history_info );} else {echo 'empty';} ?></p>
+        </div>
+        
+        <div class="expertise">
+            <h2><?php if( $expertise_header ) {echo wp_kses_post( $expertise_header );} else {echo 'empty';} ?></h2>
+            <p><?php if( $expertise_info ) {echo wp_kses_post( $expertise_info );} else {echo 'empty';} ?></p>
+        </div>
     </div>
-    
-    <div class="expertise">
-        <h2>Unmatched Expertise</h2>
-        <p>At Pacesetter Ski Shop, we take pride in our knowledgeable and passionate team of staff members who are not only avid winter sports enthusiasts but also experts in their field. Whether you’re a seasoned pro or a beginner hitting the slopes for the first time, our friendly and approachable staff is dedicated to providing personalized advice, ensuring you have the best possible experience on the snow.</p>
-    </div>
+
+    <!-- first block image -->
+    <img src="<?php echo $first_block_size ?>" alt=<?php echo $first_block_alt ?>>
+
 </div>
 
 <div class="second-block">
-    <div class="winter">
-        <h2>A Winter Wonderland Awaits</h2>
-        <p>At Pacesetter Ski Shop, we understand that winter sports are more than just a hobby; they’re a way of life. Our store is a haven for skiers and snowboarders, where passion for the slopes meets exceptional service and a wide array of premium gear and equipment. As you step inside our welcoming store, you’ll instantly immerse yourself in a world of snow-covered adventure.
-        </p>
-    </div>
-    <div class="service">
-        <h2>Services Beyond the Shop</h2>
-        <p>In addition to our extensive product offerings, Pacesetter Ski Shop offers a range of services to support your winter adventures. We provide expert equipment tuning and maintenance to keep your gear in peak condition, ensuring maximum performance. Our rental services cater to those looking to test out the latest equipment before making a purchase or simply enjoy a hassle-free day on the slopes.</p>
+    <!-- second block image -->
+    <img src="<?php echo $second_block_size ?>" alt=<?php echo $second_block_alt ?>> 
+
+    <div>
+        <div class="winter">
+            <h2><?php if( $wonderland_header ) {echo wp_kses_post( $wonderland_header );} else {echo 'empty';} ?></h2>
+            <p><?php if( $wonderland_info ) {echo wp_kses_post( $wonderland_info );} else {echo 'empty';} ?>
+            </p>
+        </div>
+        <div class="service">
+            <h2><?php if( $services_header ) {echo wp_kses_post( $services_header );} else {echo 'empty';} ?></h2>
+            <p><?php if( $services_info ) {echo wp_kses_post( $services_info );} else {echo 'empty';} ?></p>
+        </div>
     </div>
 </div>
 
 <div class="third-block">
-    <div class="diverse">
-        <h2>Our Diverse Range of Products</h2>
-        <p>Explore our meticulously curated selection of top-tier skiing and snowboarding equipment, apparel, and accessories from renowned brands. From cutting-edge skis and snowboards to stylish and functional outerwear, gloves, goggles, and helmets, we stock everything you need to conquer the mountains in style and safety. Our expert staff is always on hand to offer guidance and help you find the perfect gear tailored to your skill level and preferences.</p>
+    <div>
+        <div class="diverse">
+            <h2><?php if( $products_header ) {echo wp_kses_post( $products_header );} else {echo 'empty';} ?></h2>
+            <p><?php if( $products_info ) {echo wp_kses_post( $products_info );} else {echo 'empty';} ?></p>
+        </div>
+        <div class="community">
+            <h2><?php if( $community_header ) {echo wp_kses_post( $community_header );} else {echo 'empty';} ?></h2>
+            <p><?php if( $community_info ) {echo wp_kses_post( $community_info );} else {echo 'empty';} ?></p>
+        </div>
     </div>
-    <div class="community">
-        <h2>Community Events</h2>
-        <p>Pacesetter Ski Shop is not just a store; it’s a hub for the local skiing and snowboarding community. We regularly host events, workshops, and clinics, bringing together like-minded individuals to share their passion and expertise. </p>
-    </div>
+
+    <!-- third block image -->
+    <img src="<?php echo $third_block_size ?>" alt=<?php echo $third_block_alt ?>> 
+
 </div>
 
 <?php get_footer() ?>
