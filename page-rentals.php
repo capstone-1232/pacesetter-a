@@ -9,14 +9,14 @@
 /**
  */
 
-//  skiing rental
+//  skiing rental ACF
 $ski_header = get_field( "rental_header", 161 );
 $ski_rental = get_field( "rental", 161 );
 $ski_type = get_field( "type", 161 );
 $ski_package = get_field( "package", 161 );
 $ski_demo = get_field( "demo", 161 );
 
-// snowboard rentals
+// snowboard rentals ACF
 $snowboard_header = get_field( "rental_header", 162 );
 $snowboard_rental = get_field( "rental", 162 );
 $snowboard_type = get_field( "type", 162 );

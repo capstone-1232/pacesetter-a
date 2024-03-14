@@ -65,13 +65,13 @@ $third_block_alt = $third_block['alt'];
     </div>
 
     <!-- first block image -->
-    <img src="<?php echo $first_block_size ?>" alt=<?php echo $first_block_alt ?>>
+    <img src="<?php echo $first_block_size ?>" alt="<?php echo $first_block_alt ?>">
 
 </div>
 
 <div class="second-block">
     <!-- second block image -->
-    <img src="<?php echo $second_block_size ?>" alt=<?php echo $second_block_alt ?>> 
+    <img src="<?php echo $second_block_size ?>" alt="<?php echo "$second_block_alt" ?>"> 
 
     <div>
         <div class="winter">
@@ -99,7 +99,7 @@ $third_block_alt = $third_block['alt'];
     </div>
 
     <!-- third block image -->
-    <img src="<?php echo $third_block_size ?>" alt=<?php echo $third_block_alt ?>> 
+    <img src="<?php echo $third_block_size ?>" alt="<?php echo $third_block_alt ?>"> 
 
 </div>
 
