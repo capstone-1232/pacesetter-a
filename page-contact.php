@@ -41,6 +41,10 @@
     
     <div class="email-form">
 
+    <?php
+        echo do_shortcode('[contact-form-7 id="e3b630a" title="Pacesetter Cotact Form"]');
+    ?> 
+
     </div>
 
 </div> <!-- contact end -->

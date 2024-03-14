@@ -1,5 +1,8 @@
 <footer>
     <h3>Join Our Newsletter</h3>
+    <?php
+        echo do_shortcode('[email-subscribers-form id="1"]');
+    ?>
     <p>Join our newsletter to find out more about upcoming events and special in-store offers.</p>
 
     <nav>
