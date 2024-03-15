@@ -2,8 +2,12 @@
 <html lang="en">
 <head>
 	<?php wp_head(); ?>
-	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/reset.css">
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/main.css">
 	<title>Pacesetter Ski & Snowboard</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 </head>
 <body <?php body_class(); ?>>
 <!-- retrieves the header image. get_custom_header() gets the custom header data. -->
