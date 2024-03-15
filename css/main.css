@@ -1,3 +1,16 @@
+/*
+Theme Name: pacesetter
+Theme URI: https://wordpress.org/themes/pacesetter/
+Author: The H.A.C Team
+Description: Our theme for Pacesetter ski shop.
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: pacesetter
+*/
+html {
+  width: none;
+}
+
 body {
   background-color: #eee;
   margin: 0 auto;
