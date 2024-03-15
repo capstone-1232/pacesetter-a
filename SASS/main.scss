@@ -1,0 +1,37 @@
+$primary-color: #87D4C4;
+$secondary-color: #72A8D5;
+
+body {
+    background-color: #eee;
+    margin: 0 auto;
+
+    h1, h2, h3, h4, h5, h6, a {
+        font-family: "Josefin Sans", sans-serif;
+        font-weight: 400;
+        padding: 0;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 2.5rem;
+        background-color: $secondary-color;
+        text-transform: uppercase;
+        padding: 1.3rem 0 1rem 0;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    p, li {
+        font-family: "Playfair Display", serif;
+        font-size: 1rem;
+    }
+
+    .contact-us {
+        h3, .address, .hours, .email-form {
+            padding: 0 1.875rem;
+        }
+    }
+
+}
