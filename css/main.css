@@ -36,4 +36,57 @@ body p, body li {
 }
 body .contact-us h3, body .contact-us .address, body .contact-us .hours, body .contact-us .email-form {
   padding: 0 1.875rem;
-}/*# sourceMappingURL=main.css.map */
+}
+body .contact-us .email-form textarea, body .contact-us .email-form input {
+  width: 100%;
+}
+body footer {
+  background-color: #87D4C4;
+  text-align: center;
+  color: #2E2E2E;
+}
+body footer a {
+  color: #2E2E2E;
+  text-decoration: none;
+}
+body footer .es-form-field-container {
+  margin: 0;
+  padding: 0;
+}
+body footer li {
+  margin-top: 1rem;
+}
+body footer .shop-info, body footer .footer-nav, body footer .socials {
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+}
+body footer .socials {
+  display: flex;
+}
+body footer .socials svg {
+  width: 2.85rem;
+}
+body footer .shop-info li {
+  font-family: "Josefin Sans", sans-serif;
+}
+body footer p, body footer li, body footer .es-form-field-container, body footer h3 {
+  margin-left: 1.875rem;
+  margin-right: 1.875rem;
+}
+body footer ul {
+  list-style: none;
+}
+body footer li {
+  margin-left: 0;
+}
+body footer iframe {
+  height: 420px;
+  width: 100%;
+}
+body footer .footer-info {
+  padding: 1.5rem 0;
+}
+body footer .footer-info p {
+  font-family: "Josefin Sans", sans-serif;
+  margin-top: 0.5rem;
+}

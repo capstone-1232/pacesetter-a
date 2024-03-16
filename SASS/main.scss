@@ -10,6 +10,8 @@ Text Domain: pacesetter
 
 $primary-color: #87D4C4;
 $secondary-color: #72A8D5;
+$alt-font-color: #2E2E2E;
+$accent-color: #F7EE23;
 
 html {
     width: none;
@@ -45,6 +47,79 @@ body {
     .contact-us {
         h3, .address, .hours, .email-form {
             padding: 0 1.875rem;
+        }
+
+        .email-form {
+            textarea, input {
+                width: 100%;
+            }
+        }
+    }
+
+    // -----------------------------------------------------------------  FOOTER  -----------------------------------------------------------------
+
+    footer {
+        background-color: $primary-color;
+        text-align: center;
+        color: $alt-font-color;
+
+        a {
+            color: $alt-font-color;
+            text-decoration: none;
+        }
+
+        .es-form-field-container {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            margin-top: 1rem;
+        }
+
+        .shop-info, .footer-nav, .socials {
+            text-transform: uppercase;
+            margin-bottom: 3rem;
+        }
+
+        .socials {
+            display: flex;
+
+            svg {
+                width: 2.85rem;
+            }
+        }
+
+        .shop-info li {
+            font-family: "Josefin Sans", sans-serif;
+        }
+
+        p, li, .es-form-field-container, h3{
+            margin-left: 1.875rem;
+            margin-right: 1.875rem;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        li{
+            margin-left: 0;
+        }
+
+        iframe {
+            height: 420px;
+            width: 100%;
+        }
+
+        .footer-info {
+
+            padding: 1.5rem 0;
+        
+            p {
+                font-family: "Josefin Sans", sans-serif;
+                margin-top: .5rem;
+            }
         }
     }
 
