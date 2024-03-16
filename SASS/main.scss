@@ -49,6 +49,20 @@ body {
             padding: 0 1.875rem;
         }
 
+        .hours div:nth-child(2) {
+            text-align: right;
+            margin-left: auto;
+            margin-right: 0;
+        }
+
+        .hours div:nth-child(1) {
+            text-align: left;
+        }
+
+        .hours-flex {
+            display: flex;
+        }
+
         .email-form {
             textarea, input {
                 width: 100%;
@@ -62,15 +76,43 @@ body {
         background-color: $primary-color;
         text-align: center;
         color: $alt-font-color;
+        padding-top: 1rem;
 
         a {
             color: $alt-font-color;
             text-decoration: none;
         }
 
-        .es-form-field-container {
-            margin: 0;
-            padding: 0;
+        .es_subscription_form {
+            justify-content: center;
+            display: flex;
+
+            .es-form-field-container {
+                display: flex;
+    
+                input {
+                    margin: 0;
+                    padding: 0 .5rem;
+                    height: 2.5rem;
+                }
+
+                input {
+                    border-top-right-radius: 5px;
+                    border-top-left-radius: 0;
+                    border-bottom-right-radius: 5px;
+                    border-bottom-left-radius: 0;
+                    border: none;
+                    filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+                }
+
+                .es-email {
+                    border-top-right-radius: 0;
+                    border-top-left-radius: 5px;
+                    border-bottom-right-radius: 0;
+                    border-bottom-left-radius: 5px;
+                    border: none;
+                }
+            }
         }
 
         li {
@@ -83,6 +125,7 @@ body {
         }
 
         .socials {
+            justify-content: center;
             display: flex;
 
             svg {
@@ -101,10 +144,7 @@ body {
 
         ul {
             list-style: none;
-        }
-
-        li{
-            margin-left: 0;
+            padding: 0;
         }
 
         iframe {

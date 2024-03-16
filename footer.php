@@ -4,7 +4,7 @@
     <p>Join our newsletter to find out more about upcoming events and special in-store offers.</p>
 
     <?php
-        echo do_shortcode('[email-subscribers-form id="1"]');
+        echo do_shortcode('[email-subscribers-form id="2"]');
     ?>
 
     <nav>
@@ -26,7 +26,7 @@
                         </g>
                     </svg>
                 </a></li>
-                
+
                 <li><a href="#"><?xml version="1.0" encoding="utf-8"?>
                     <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
                     <ellipse style="stroke: rgb(0, 0, 0); fill: rgb(247, 238, 35);" cx="255.247" cy="253.664" rx="185.339" ry="182.171"/>

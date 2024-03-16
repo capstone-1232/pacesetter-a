@@ -25,15 +25,17 @@
 
     <div class="hours">
         <p>Hours</p>
-        <div>
-            <p>Monday-Friday</p>
-            <p>Saturday</p>
-            <p>Sunday</p>
-        </div>
-        <div>
-            <p>9:30AM-5:30PM</p>
-            <p>10AM-5PM</p>
-            <p>12PM-5PM</p>
+        <div class="hours-flex">
+            <div>
+                <p>Monday-Friday</p>
+                <p>Saturday</p>
+                <p>Sunday</p>
+            </div>
+            <div>
+                <p>9:30AM-5:30PM</p>
+                <p>10AM-5PM</p>
+                <p>12PM-5PM</p>
+            </div>
         </div>
     </div> <!-- hours end -->
 

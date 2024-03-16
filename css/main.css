@@ -37,6 +37,17 @@ body p, body li {
 body .contact-us h3, body .contact-us .address, body .contact-us .hours, body .contact-us .email-form {
   padding: 0 1.875rem;
 }
+body .contact-us .hours div:nth-child(2) {
+  text-align: right;
+  margin-left: auto;
+  margin-right: 0;
+}
+body .contact-us .hours div:nth-child(1) {
+  text-align: left;
+}
+body .contact-us .hours-flex {
+  display: flex;
+}
 body .contact-us .email-form textarea, body .contact-us .email-form input {
   width: 100%;
 }
@@ -44,14 +55,38 @@ body footer {
   background-color: #87D4C4;
   text-align: center;
   color: #2E2E2E;
+  padding-top: 1rem;
 }
 body footer a {
   color: #2E2E2E;
   text-decoration: none;
 }
-body footer .es-form-field-container {
+body footer .es_subscription_form {
+  justify-content: center;
+  display: flex;
+}
+body footer .es_subscription_form .es-form-field-container {
+  display: flex;
+}
+body footer .es_subscription_form .es-form-field-container input {
   margin: 0;
-  padding: 0;
+  padding: 0 0.5rem;
+  height: 2.5rem;
+}
+body footer .es_subscription_form .es-form-field-container input {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 0;
+  border: none;
+  filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+}
+body footer .es_subscription_form .es-form-field-container .es-email {
+  border-top-right-radius: 0;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 5px;
+  border: none;
 }
 body footer li {
   margin-top: 1rem;
@@ -61,6 +96,7 @@ body footer .shop-info, body footer .footer-nav, body footer .socials {
   margin-bottom: 3rem;
 }
 body footer .socials {
+  justify-content: center;
   display: flex;
 }
 body footer .socials svg {
@@ -75,9 +111,7 @@ body footer p, body footer li, body footer .es-form-field-container, body footer
 }
 body footer ul {
   list-style: none;
-}
-body footer li {
-  margin-left: 0;
+  padding: 0;
 }
 body footer iframe {
   height: 420px;
