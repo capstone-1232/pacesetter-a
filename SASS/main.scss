@@ -27,16 +27,21 @@ body {
         padding: 0;
     }
 
-    h2 {
+    h1 {
         text-align: center;
         font-size: 2.5rem;
         background-color: $secondary-color;
         text-transform: uppercase;
         padding: 1.3rem 0 1rem 0;
+        margin: 0;
+    }
+
+    h2 {
+        font-size: 2rem;
     }
 
     h3 {
-        font-size: 2rem;
+        font-size: 1.75rem;
     }
 
     p, li {
@@ -51,6 +56,68 @@ body {
     ul {
         list-style: none;
         padding: 0;
+    }
+
+    // -----------------------------------------------------------------  ABOUT PAGE -----------------------------------------------------------------
+
+    .about-image {
+        height: 20rem;
+    }
+
+    .about-image:nth-child(5), .about-image:nth-child(7) {
+        margin-top: 2.5rem;
+    }
+    
+    .first-block, .second-block, .third-block {
+        padding: 0 1.875rem;
+    }
+
+    .community p {
+        margin-bottom: 3rem;
+    }
+
+    // -----------------------------------------------------------------  FAQ PAGE -----------------------------------------------------------------
+
+    .faq-page {
+        padding: 0 1.875rem;
+
+        h2 {
+            margin-top: 3rem;
+        }
+
+        .faq-card:last-child {
+            margin-bottom: 3rem;
+        }
+
+        .faq-card {
+            margin-top: 3rem;
+
+            h3 {
+                font-size: 1.25rem;
+            }
+
+            svg {
+                width: 1rem;
+                margin-left: .5rem;
+            }
+
+            .download-button {
+                margin-left: auto;
+                margin-right: 0;
+                display:block;
+                width: 8.25rem;
+            }
+
+            a {
+                background-color: $accent-color;
+                display: flex;
+                padding: .5rem;
+                border-radius: 5px;
+                border: 2px solid #000;
+                color: #000;
+                text-decoration: none;
+            }
+        }
     }
 
     // -----------------------------------------------------------------  CONTACT PAGE -----------------------------------------------------------------

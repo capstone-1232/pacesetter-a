@@ -14,7 +14,7 @@
 ?>
 
 <div class="contact-us">
-    <h2>Contact Us</h2>
+    <h1>Contact Us</h1>
     
     <h3>Pacesetter Ski Shoppe</h3>
     <div class="address">
