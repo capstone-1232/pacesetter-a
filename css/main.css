@@ -20,15 +20,19 @@ body h1, body h2, body h3, body h4, body h5, body h6, body a {
   font-weight: 400;
   padding: 0;
 }
-body h2 {
+body h1 {
   text-align: center;
   font-size: 2.5rem;
   background-color: #72A8D5;
   text-transform: uppercase;
   padding: 1.3rem 0 1rem 0;
+  margin: 0;
+}
+body h2 {
+  font-size: 2rem;
 }
 body h3 {
-  font-size: 2rem;
+  font-size: 1.75rem;
 }
 body p, body li {
   font-family: "Playfair Display", serif;
@@ -40,6 +44,52 @@ body li {
 body ul {
   list-style: none;
   padding: 0;
+}
+body .about-image {
+  height: 20rem;
+}
+body .about-image:nth-child(5), body .about-image:nth-child(7) {
+  margin-top: 2.5rem;
+}
+body .first-block, body .second-block, body .third-block {
+  padding: 0 1.875rem;
+}
+body .community p {
+  margin-bottom: 3rem;
+}
+body .faq-page {
+  padding: 0 1.875rem;
+}
+body .faq-page h2 {
+  margin-top: 3rem;
+}
+body .faq-page .faq-card:last-child {
+  margin-bottom: 3rem;
+}
+body .faq-page .faq-card {
+  margin-top: 3rem;
+}
+body .faq-page .faq-card h3 {
+  font-size: 1.25rem;
+}
+body .faq-page .faq-card svg {
+  width: 1rem;
+  margin-left: 0.5rem;
+}
+body .faq-page .faq-card .download-button {
+  margin-left: auto;
+  margin-right: 0;
+  display: block;
+  width: 8.25rem;
+}
+body .faq-page .faq-card a {
+  background-color: #F7EE23;
+  display: flex;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 2px solid #000;
+  color: #000;
+  text-decoration: none;
 }
 body .contact-us h3, body .contact-us .address, body .contact-us .hours, body .contact-us .email-form {
   padding: 0 1.875rem;

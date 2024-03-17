@@ -49,58 +49,56 @@ $third_block_alt = $third_block['alt'];
 
 ?>
 
+<!-- first block image -->
+<img class="about-image" src="<?php echo $first_block_size ?>" alt="<?php echo $first_block_alt ?>">
+
 <h1>About Us</h1>
 
 <div class="first-block">
     <div>
         <div class="history">
-            <h2><?php if( $history_header ) {echo wp_kses_post( $history_header );} else {echo 'empty';} ?></h2>
+            <h3><?php if( $history_header ) {echo wp_kses_post( $history_header );} else {echo 'empty';} ?></h3>
             <p><?php if( $history_info ) {echo wp_kses_post( $history_info );} else {echo 'empty';} ?></p>
         </div>
         
         <div class="expertise">
-            <h2><?php if( $expertise_header ) {echo wp_kses_post( $expertise_header );} else {echo 'empty';} ?></h2>
+            <h3><?php if( $expertise_header ) {echo wp_kses_post( $expertise_header );} else {echo 'empty';} ?></h3>
             <p><?php if( $expertise_info ) {echo wp_kses_post( $expertise_info );} else {echo 'empty';} ?></p>
         </div>
     </div>
-
-    <!-- first block image -->
-    <img src="<?php echo $first_block_size ?>" alt="<?php echo $first_block_alt ?>">
-
 </div>
 
-<div class="second-block">
-    <!-- second block image -->
-    <img src="<?php echo $second_block_size ?>" alt="<?php echo "$second_block_alt" ?>"> 
+<!-- second block image -->
+<img class="about-image" src="<?php echo $second_block_size ?>" alt="<?php echo "$second_block_alt" ?>"> 
 
+<div class="second-block">
     <div>
         <div class="winter">
-            <h2><?php if( $wonderland_header ) {echo wp_kses_post( $wonderland_header );} else {echo 'empty';} ?></h2>
+            <h3><?php if( $wonderland_header ) {echo wp_kses_post( $wonderland_header );} else {echo 'empty';} ?></h3>
             <p><?php if( $wonderland_info ) {echo wp_kses_post( $wonderland_info );} else {echo 'empty';} ?>
             </p>
         </div>
         <div class="service">
-            <h2><?php if( $services_header ) {echo wp_kses_post( $services_header );} else {echo 'empty';} ?></h2>
+            <h3><?php if( $services_header ) {echo wp_kses_post( $services_header );} else {echo 'empty';} ?></h3>
             <p><?php if( $services_info ) {echo wp_kses_post( $services_info );} else {echo 'empty';} ?></p>
         </div>
     </div>
 </div>
 
+<!-- third block image -->
+<img class="about-image" src="<?php echo $third_block_size ?>" alt="<?php echo $third_block_alt ?>">
+
 <div class="third-block">
     <div>
         <div class="diverse">
-            <h2><?php if( $products_header ) {echo wp_kses_post( $products_header );} else {echo 'empty';} ?></h2>
+            <h3><?php if( $products_header ) {echo wp_kses_post( $products_header );} else {echo 'empty';} ?></h3>
             <p><?php if( $products_info ) {echo wp_kses_post( $products_info );} else {echo 'empty';} ?></p>
         </div>
         <div class="community">
-            <h2><?php if( $community_header ) {echo wp_kses_post( $community_header );} else {echo 'empty';} ?></h2>
+            <h3><?php if( $community_header ) {echo wp_kses_post( $community_header );} else {echo 'empty';} ?></h3>
             <p><?php if( $community_info ) {echo wp_kses_post( $community_info );} else {echo 'empty';} ?></p>
         </div>
-    </div>
-
-    <!-- third block image -->
-    <img src="<?php echo $third_block_size ?>" alt="<?php echo $third_block_alt ?>"> 
-
+    </div> 
 </div>
 
 <?php get_footer() ?>
