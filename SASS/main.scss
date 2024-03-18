@@ -285,5 +285,23 @@ body {
             }
         }
     }
+    
+    .es_subscription_message {
+        display: none;
+        position: fixed;
+        z-index: 9999; /* Ensure it's above other content */
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    @media (max-width: 700px){
+        .es_subscription_message {
+            width: 100%;
+        }
+    }
 
 }

@@ -18,39 +18,31 @@
     <div class="filter-items">
 		<div class="subnav">
         <p>Filter:</p>
-		<button class="subnavbtn"><a href="#">Length</a><i class="fa fa-caret-down"></i></button>
-		<div class="subfilter-content">
-		<a href="#">Ski Lengths</a>
+		<a href="#">Length</a><i class="fa fa-caret-down"></i>
         <div class="subfilter-content">
             <a href="">80 or Less</a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
+            <a href="">80-120</a>
+            <a href="">120-160</a>
+            <a href="">160-200</a>
         </div>
-		<a href="#">Snowboard Length</a>
 		</div> <!-- subnav-content end -->
-		<button class="subnavbtn"><a href="#">Snowboards</a><i class="fa fa-caret-down"></i></button>
+		<a href="#">Category</a><i class="fa fa-caret-down"></i>
 		<div class="subnav-content">
+		<a href="#">Skis</a>
+		<a href="#">Ski Boots</a>
+		<a href="#">Poles</a>
 		<a href="#">Snowboards</a>
 		<a href="#">Snowboard Boots</a>
 		<a href="#">Snowboard Bindings</a>
 		</div> <!-- subnav-content end -->
-		<button class="subnavbtn"><a href="#">Apparel</a><i class="fa fa-caret-down"></i></button>
+		<a href="#">Apparel</a><i class="fa fa-caret-down"></i>
 		<div class="subnav-content">
 		<a href="#">Mens</a>
 		<a href="#">Womens</a>
 		<a href="#">Kids</a>
 		<a href="#">Accessories</a>`
 		</div> <!-- subnav-content end -->
-		<button class="subnavbtn"><a href="#">Accessories</a><i class="fa fa-caret-down"></i></button>
+		<a href="#">Accessories</a><i class="fa fa-caret-down"></i>
 		<div class="subnav-content">
 		<a href="#">Bags</a>
 		<a href="#">Helmets</a>
