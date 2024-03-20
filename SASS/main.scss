@@ -195,6 +195,41 @@ body {
         }
     }
 
+    // -----------------------------------------------------------------  SERVICES PAGE -----------------------------------------------------------------
+
+    table, .services-desc {
+        padding: 0 1.875rem;
+    }
+
+    tr {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+    }
+    
+    th, td {
+        border: 2px solid black;
+    }
+
+    td {
+        padding: 1rem 1rem 5rem 1rem;
+    }
+    
+    .type, .desc {
+        grid-column: 1 / span 12;
+    }
+    
+    .ski, .ski-desc {
+        grid-column: 1 / span 6;
+    }
+    
+    .board, .board-desc {
+        grid-column: 7 / span 12;
+    }
+    
+    .desktop-only {
+        display: none;
+    }
+
     // -----------------------------------------------------------------  FOOTER  -----------------------------------------------------------------
 
     footer {
@@ -305,3 +340,4 @@ body {
     }
 
 }
+
