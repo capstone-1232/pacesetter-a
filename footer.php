@@ -10,11 +10,11 @@
     <nav>
         <div class="footer">
             <ul class="footer-nav">
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Rentals</a></li>
-                <li><a href="#">F.A.Q.</a></li>
-                <li><a href="#">Services</a></li>
+                <li><a href="about-us">About Us</a></li>
+                <li><a href="contact">Contact Us</a></li>
+                <li><a href="rentals">Rentals</a></li>
+                <li><a href="faq">F.A.Q.</a></li>
+                <li><a href="services">Services</a></li>
             </ul> <!-- footer-nav end -->
 
             <ul class="socials">
