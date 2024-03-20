@@ -205,13 +205,39 @@ body {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
     }
-    
-    th, td {
-        border: 2px solid black;
-    }
 
     td {
         padding: 1rem 1rem 5rem 1rem;
+    }
+
+    .type {
+        border: 2px solid black;
+    }
+
+    .board {
+        border-left: 2px solid black;
+        border-right: 2px solid black;
+        border-bottom: 2px solid black;
+    }
+
+    .ski {
+        border-left: 2px solid black;
+        border-bottom: 2px solid black;
+    }
+
+    .board-desc {
+        border-right: 2px solid black;
+    }
+
+    .ski-desc {
+        border-right: 2px solid black;
+        border-left: 2px solid black;
+    }
+
+    .desc {
+        border-right: 2px solid black;
+        border-left: 2px solid black;
+        border-bottom: 2px solid black;
     }
     
     .type, .desc {

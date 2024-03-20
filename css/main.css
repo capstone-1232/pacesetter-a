@@ -152,11 +152,32 @@ body tr {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
-body th, body td {
-  border: 2px solid black;
-}
 body td {
   padding: 1rem 1rem 5rem 1rem;
+}
+body .type {
+  border: 2px solid black;
+}
+body .board {
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+}
+body .ski {
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+}
+body .board-desc {
+  border-right: 2px solid black;
+}
+body .ski-desc {
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+}
+body .desc {
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
 }
 body .type, body .desc {
   grid-column: 1/span 12;
