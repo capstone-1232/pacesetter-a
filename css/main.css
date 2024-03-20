@@ -49,7 +49,9 @@ body .rentals-padding {
   padding: 0 1.875rem;
 }
 body .about-image {
+  object-fit: cover;
   height: 20rem;
+  width: 100%;
 }
 body .about-image:nth-child(5), body .about-image:nth-child(7) {
   margin-top: 2.5rem;
