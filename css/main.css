@@ -45,6 +45,9 @@ body ul {
   list-style: none;
   padding: 0;
 }
+body .rentals-padding {
+  padding: 0 1.875rem;
+}
 body .about-image {
   height: 20rem;
 }

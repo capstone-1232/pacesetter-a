@@ -28,6 +28,9 @@ $snowboard_package = get_field( "package", 162 );
 
 <!-- rentals -->
 <h1>Rentals</h1>
+
+<section class="rentals-padding">
+
 <p>Renters are responsible for the equipment rented while it is in your possession for the duration of your rental. Return your equipment before 2pm on your drop-off day, in clean condition, to avoid additional charges. For equipment not returned or damaged, the renter will be charged full replacement value for the missing or damaged piece(s) of equipment. If the equipment that you rent is returned to us late, additional daily rental charges will apply for each day that they are returned late.</p>
 
 <div>
@@ -149,5 +152,7 @@ $snowboard_package = get_field( "package", 162 );
             </div> <!-- demo div 2 end -->
         </div> <!-- demo purchase policy end -->
 </div><!-- end rental info -->
+
+</section>
 
 <?php get_footer(); ?>
