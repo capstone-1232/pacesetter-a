@@ -37,30 +37,39 @@ $snowboard_package = get_field( "package", 162 );
     <!-- rentals table -->
     <h2>Ski and Snowboard</h2>
     <table>
-        <tr>
+        <tr class="desktop-only">
             <th>Rental</th>
             <th>Type</th>
-            <th>Basic Package</th>
+            <th>Package</th>
             <th>Demo</th>
         </tr>
 
         <tr>
-            <td><?php if( $ski_header ) {echo wp_kses_post( $ski_header );} else {echo 'empty';} ?><div><?php if( $ski_rental ) {echo wp_kses_post( $ski_rental );} else {echo 'empty';} ?></div></td>
-            <td><?php if( $ski_type ) {echo wp_kses_post( $ski_type );} else {echo 'empty';} ?></td>
-            <td><?php if( $ski_package ) {echo wp_kses_post( $ski_package );} else {echo 'empty';}?></td>
-            <td><?php if( $ski_demo ) {echo wp_kses_post( $ski_demo );} else {echo 'empty';}?></td>
+            <th class="rental hidden">Skiing</th>
+            <td class="rental-desc"><?php if( $ski_header ) {echo wp_kses_post( $ski_header );} else {echo 'empty';} ?><div><?php if( $ski_rental ) {echo wp_kses_post( $ski_rental );} else {echo 'empty';} ?></div></td>
+            <th class="rental-type hidden">Type</th>
+            <td class="type-desc"><?php if( $ski_type ) {echo wp_kses_post( $ski_type );} else {echo 'empty';} ?></td>
+            <th class="package hidden">Package</th>
+            <td class="package-desc"><?php if( $ski_package ) {echo wp_kses_post( $ski_package );} else {echo 'empty';}?></td>
+            <th class="demo hidden">Demo</th>
+            <td class="demo-desc"><?php if( $ski_demo ) {echo wp_kses_post( $ski_demo );} else {echo 'empty';}?></td>
         </tr>
 
         <tr>
-            <td><?php if( $snowboard_header ) {echo wp_kses_post( $snowboard_header );} else {echo 'empty';}?><div><?php if( $snowboard_rental ) {echo wp_kses_post( $snowboard_rental );} else {echo 'empty';} ?></div></td>
-            <td><?php if( $snowboard_type ) {echo wp_kses_post( $snowboard_type );} else {echo 'empty';} ?></td>
-            <td><?php if( $snowboard_package ) {echo wp_kses_post( $snowboard_package );} else {echo 'empty';} ?></td>
+            <th class="rental hidden">Snowboard</th>
+            <td class="rental-desc"><?php if( $snowboard_header ) {echo wp_kses_post( $snowboard_header );} else {echo 'empty';}?><div><?php if( $snowboard_rental ) {echo wp_kses_post( $snowboard_rental );} else {echo 'empty';} ?></div></td>
+            <th class="rental-type hidden">Type</th>
+            <td class="type-desc"><?php if( $snowboard_type ) {echo wp_kses_post( $snowboard_type );} else {echo 'empty';} ?></td>
+            <th class="package hidden">Package</th>
+            <td class="package-desc"><?php if( $snowboard_package ) {echo wp_kses_post( $snowboard_package );} else {echo 'empty';} ?></td>
+            <th class="demo hidden">Demo</th>
+            <td class="demo-desc">N/A</td>
         </tr>
     </table>
 </div> <!-- end rentals table -->
 
 <!-- rentals info -->
-<div>
+<div class="rentals-info">
     <!-- damage waiver -->
     <h3>Damage Waiver:</h3>
     <p>An optional $5.00 damage waiver is available for basic ski rental packages only.</p>
@@ -115,15 +124,15 @@ $snowboard_package = get_field( "package", 162 );
             </div> <!-- includes end -->
             <div>
                 <p>Excludes</p>
-                <ul>
-                    <li>Bent skis,</li>
-                    <li>Broken cores,</li>
+                <ol>
+                    <li>Bent skis</li>
+                    <li>Broken cores</li>
                     <li>Damages caused by use of equipment in terrain parks and parking lots</li>
                     <li>Misuse</li>
                     <li>Neglect</li>
                     <li>Abuse</li>
                     <li>Damages caused by third party (ex: other service centers)</li>
-                </ul>
+                </ol>
                 <ul>
                     <li>Does not cover theft, misplaced or stolen equipment.</li>
                     <li>Staff is NOT obligated to offer the damage waiver & the damage waiver cannot be added after the rented equipment has left the store.</li>
