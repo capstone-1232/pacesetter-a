@@ -327,4 +327,11 @@ body .es_subscription_message {
   body .es_subscription_message {
     width: 100%;
   }
+}/*# sourceMappingURL=main.css.map */
+body .es_subscription_message {
+  display: none;
+  position: fixed;
+  z-index: 9999; /* Ensure it's above other content */
+  left: 0;
+  top: 0;
 }
