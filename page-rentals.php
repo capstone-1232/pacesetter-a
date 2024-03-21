@@ -57,30 +57,39 @@ $demo_info = get_field( "info", 258);
     <!-- rentals table -->
     <h2>Ski and Snowboard</h2>
     <table>
-        <tr>
+        <tr class="desktop-only">
             <th>Rental</th>
             <th>Type</th>
-            <th>Basic Package</th>
+            <th>Package</th>
             <th>Demo</th>
         </tr>
 
         <tr>
-            <td><?php if( $ski_header ) {echo wp_kses_post( $ski_header );} else {echo 'empty';} ?><div><?php if( $ski_rental ) {echo wp_kses_post( $ski_rental );} else {echo 'empty';} ?></div></td>
-            <td><?php if( $ski_type ) {echo wp_kses_post( $ski_type );} else {echo 'empty';} ?></td>
-            <td><?php if( $ski_package ) {echo wp_kses_post( $ski_package );} else {echo 'empty';}?></td>
-            <td><?php if( $ski_demo ) {echo wp_kses_post( $ski_demo );} else {echo 'empty';}?></td>
+            <th class="rental hidden">Skiing</th>
+            <td class="rental-desc"><?php if( $ski_header ) {echo wp_kses_post( $ski_header );} else {echo 'empty';} ?><div><?php if( $ski_rental ) {echo wp_kses_post( $ski_rental );} else {echo 'empty';} ?></div></td>
+            <th class="rental-type hidden">Type</th>
+            <td class="type-desc"><?php if( $ski_type ) {echo wp_kses_post( $ski_type );} else {echo 'empty';} ?></td>
+            <th class="package hidden">Package</th>
+            <td class="package-desc"><?php if( $ski_package ) {echo wp_kses_post( $ski_package );} else {echo 'empty';}?></td>
+            <th class="demo hidden">Demo</th>
+            <td class="demo-desc"><?php if( $ski_demo ) {echo wp_kses_post( $ski_demo );} else {echo 'empty';}?></td>
         </tr>
 
         <tr>
-            <td><?php if( $snowboard_header ) {echo wp_kses_post( $snowboard_header );} else {echo 'empty';}?><div><?php if( $snowboard_rental ) {echo wp_kses_post( $snowboard_rental );} else {echo 'empty';} ?></div></td>
-            <td><?php if( $snowboard_type ) {echo wp_kses_post( $snowboard_type );} else {echo 'empty';} ?></td>
-            <td><?php if( $snowboard_package ) {echo wp_kses_post( $snowboard_package );} else {echo 'empty';} ?></td>
+            <th class="rental hidden">Snowboard</th>
+            <td class="rental-desc"><?php if( $snowboard_header ) {echo wp_kses_post( $snowboard_header );} else {echo 'empty';}?><div><?php if( $snowboard_rental ) {echo wp_kses_post( $snowboard_rental );} else {echo 'empty';} ?></div></td>
+            <th class="rental-type hidden">Type</th>
+            <td class="type-desc"><?php if( $snowboard_type ) {echo wp_kses_post( $snowboard_type );} else {echo 'empty';} ?></td>
+            <th class="package hidden">Package</th>
+            <td class="package-desc"><?php if( $snowboard_package ) {echo wp_kses_post( $snowboard_package );} else {echo 'empty';} ?></td>
+            <th class="demo hidden">Demo</th>
+            <td class="demo-desc">N/A</td>
         </tr>
     </table>
 </div> <!-- end rentals table -->
 
 <!-- rentals info -->
-<div>
+<div class="rentals-info">
     <!-- damage waiver -->
     <h3><?php if( $damage_header ) {echo wp_kses_post( $damage_header );} else {echo 'empty';}?></h3>
     <p><?php if( $damage_info ) {echo wp_kses_post( $damage_info );} else {echo 'empty';}?></p>
@@ -97,17 +106,3 @@ $demo_info = get_field( "info", 258);
 
         <!-- damage waiver coverages -->
         <div>
-            <h3><?php if( $coverages_header ) {echo wp_kses_post( $coverages_header );} else {echo 'empty';}?></h3>
-            <p><?php if( $coverages_info ) {echo wp_kses_post( $coverages_info );} else {echo 'empty';}?></p>
-        </div>
-
-        <!-- demo policy -->
-        <div>
-            <h3><?php if( $demo_header ) {echo wp_kses_post( $demo_header );} else {echo 'empty';}?></h3>
-            <p><?php if( $demo_info ) {echo wp_kses_post( $demo_info );} else {echo 'empty';}?></p>
-        </div> <!-- demo purchase policy end -->
-</div><!-- end rental info -->
-
-</section>
-
-<?php get_footer(); ?>
