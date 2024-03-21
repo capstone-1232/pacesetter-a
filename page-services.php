@@ -79,10 +79,11 @@ $labor_snowboard = get_field( "snowboard_tune_price", 151 );
 
  ?>
 <h1>Services</h1>
-<p class="services-desc">Renters are responsible for the equipment rented while it is in your possession for the duration of your rental. Return your equipment before 2pm on your drop-off day, in clean condition, to avoid additional charges. For equipment not returned or damaged, the renter will be charged full replacement value for the missing or damaged piece(s) of equipment. If the equipment that you rent is returned to us late, additional daily rental charges will apply for each day that they are returned late.</p>
+<p class="services-desc">TYPICAL 48-hour turnaround on most services outside of peak periods,
+quicker turnaround may be available pending workload and technician approval.</p>
 
 <!-- ski and snowboard rentals table -->
-<table>
+<table class="services-table">
     <tr class="desktop-only">
         <th>Type of tune</th>
         <th>Skis</th>

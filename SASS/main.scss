@@ -58,12 +58,6 @@ body {
         padding: 0;
     }
 
-    // -----------------------------------------------------------------  RENTALS PAGE -----------------------------------------------------------------
-
-    .rentals-padding {
-        padding: 0 1.875rem;
-    }
-
     // -----------------------------------------------------------------  ABOUT PAGE -----------------------------------------------------------------
 
     .about-image {
@@ -205,8 +199,12 @@ body {
 
     // -----------------------------------------------------------------  SERVICES PAGE -----------------------------------------------------------------
 
-    table, .services-desc {
+    .services-table, .services-desc {
         padding: 0 1.875rem;
+    }
+
+    .services-desc {
+        margin-bottom: 3rem;
     }
 
     tr {
@@ -216,36 +214,45 @@ body {
 
     td {
         padding: 1rem 1rem 5rem 1rem;
+        font-family: "Playfair Display", serif;
+        font-size: 1rem;
+    }
+
+    th {
+        padding: 1rem 0 1rem 1rem;
+        text-align: left;
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 1.15rem;
     }
 
     .type {
-        border: 2px solid black;
+        border: 3px solid black;
     }
 
     .board {
-        border-left: 2px solid black;
-        border-right: 2px solid black;
-        border-bottom: 2px solid black;
+        border-left: 3px solid black;
+        border-right: 3px solid black;
+        border-bottom: 3px solid black;
     }
 
     .ski {
-        border-left: 2px solid black;
-        border-bottom: 2px solid black;
+        border-left: 3px solid black;
+        border-bottom: 3px solid black;
     }
 
     .board-desc {
-        border-right: 2px solid black;
+        border-right: 3px solid black;
+        border-left: 3px solid black;
     }
 
     .ski-desc {
-        border-right: 2px solid black;
-        border-left: 2px solid black;
+        border-left: 3px solid black;
     }
 
     .desc {
-        border-right: 2px solid black;
-        border-left: 2px solid black;
-        border-bottom: 2px solid black;
+        border-right: 3px solid black;
+        border-left: 3px solid black;
+        border-bottom: 3px solid black;
     }
     
     .type, .desc {
@@ -259,9 +266,62 @@ body {
     .board, .board-desc {
         grid-column: 7 / span 12;
     }
+
+    table tr:nth-child(12) .board-desc, table tr:nth-child(12) .ski-desc {
+        border-bottom: 3px solid black;
+        margin-bottom: 3rem;
+    }
+
+    table tr:nth-child(odd) {
+        background-color: $primary-color;
+    }
     
     .desktop-only {
         display: none;
+    }
+
+    // -----------------------------------------------------------------  RENTALS PAGE -----------------------------------------------------------------
+
+    .rentals-padding {
+     
+        
+        tr {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+        }
+
+        th, td {
+            border: 2px solid black;
+        }
+
+        .rental, .rental-desc {
+            grid-column: 1 / span 12;
+        }
+        
+        .rental-type, .type-desc {
+            grid-column: 1 / span 6;
+        }
+        
+        .package, .package-desc {
+            grid-column: 7 / span 12;
+        }
+
+        .demo, .demo-desc {
+            grid-column: 1 / span 12;
+        }
+
+        h3 {
+            margin-top: 3rem;
+        }
+
+        .rentals-info ul {
+            list-style: unset;
+            list-style-position: inside;
+        }
+
+        .rentals-info div:nth-child(3) {
+            margin-bottom: 3rem;
+        }
     }
 
     // -----------------------------------------------------------------  FOOTER  -----------------------------------------------------------------
