@@ -15,7 +15,7 @@
 
 <div class="event-section">
     <div class="event-header">
-        <h1>January - Events</h1>
+        <?php echo "<h1>" . date("M") . " - Events</h1>"; ?>
     </div>
     <div class="event-card">
         <?php echo do_shortcode("[em_events]"); ?>
