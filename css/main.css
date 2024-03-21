@@ -150,6 +150,52 @@ body .contact-us .email-form .wpcf7-submit {
 body .contact-us .email-form .wpcf7-submit:hover {
   background-color: #87D4C4;
 }
+body table, body .services-desc {
+  padding: 0 1.875rem;
+}
+body tr {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+body td {
+  padding: 1rem 1rem 5rem 1rem;
+}
+body .type {
+  border: 2px solid black;
+}
+body .board {
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+}
+body .ski {
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+}
+body .board-desc {
+  border-right: 2px solid black;
+}
+body .ski-desc {
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+}
+body .desc {
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+}
+body .type, body .desc {
+  grid-column: 1/span 12;
+}
+body .ski, body .ski-desc {
+  grid-column: 1/span 6;
+}
+body .board, body .board-desc {
+  grid-column: 7/span 12;
+}
+body .desktop-only {
+  display: none;
+}
 body footer {
   background-color: #87D4C4;
   text-align: center;
@@ -228,21 +274,4 @@ body footer .sucess {
   z-index: 1; /* Sit on top */
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 }
-body footer .close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-body footer .close:hover,
-body footer .close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}/*# sourceMappingURL=main.css.map */

@@ -203,6 +203,67 @@ body {
         }
     }
 
+    // -----------------------------------------------------------------  SERVICES PAGE -----------------------------------------------------------------
+
+    table, .services-desc {
+        padding: 0 1.875rem;
+    }
+
+    tr {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+    }
+
+    td {
+        padding: 1rem 1rem 5rem 1rem;
+    }
+
+    .type {
+        border: 2px solid black;
+    }
+
+    .board {
+        border-left: 2px solid black;
+        border-right: 2px solid black;
+        border-bottom: 2px solid black;
+    }
+
+    .ski {
+        border-left: 2px solid black;
+        border-bottom: 2px solid black;
+    }
+
+    .board-desc {
+        border-right: 2px solid black;
+    }
+
+    .ski-desc {
+        border-right: 2px solid black;
+        border-left: 2px solid black;
+    }
+
+    .desc {
+        border-right: 2px solid black;
+        border-left: 2px solid black;
+        border-bottom: 2px solid black;
+    }
+    
+    .type, .desc {
+        grid-column: 1 / span 12;
+    }
+    
+    .ski, .ski-desc {
+        grid-column: 1 / span 6;
+    }
+    
+    .board, .board-desc {
+        grid-column: 7 / span 12;
+    }
+    
+    .desktop-only {
+        display: none;
+    }
+
     // -----------------------------------------------------------------  FOOTER  -----------------------------------------------------------------
 
     footer {
@@ -306,20 +367,3 @@ body {
             background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 
         }
-
-        .close {
-            color: #aaa;
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
-          }
-          
-          .close:hover,
-          .close:focus {
-            color: black;
-            text-decoration: none;
-            cursor: pointer;
-          }
-    }
-    
-}
