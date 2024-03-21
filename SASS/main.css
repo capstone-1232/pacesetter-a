@@ -45,6 +45,9 @@ body ul {
   list-style: none;
   padding: 0;
 }
+body .rentals-padding {
+  padding: 0 1.875rem;
+}
 body .about-image {
   object-fit: cover;
   height: 20rem;
@@ -147,99 +150,6 @@ body .contact-us .email-form .wpcf7-submit {
 body .contact-us .email-form .wpcf7-submit:hover {
   background-color: #87D4C4;
 }
-body .services-table, body .services-desc {
-  padding: 0 1.875rem;
-}
-body .services-desc {
-  margin-bottom: 3rem;
-}
-body tr {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-}
-body td {
-  padding: 1rem 1rem 5rem 1rem;
-  font-family: "Playfair Display", serif;
-  font-size: 1rem;
-}
-body th {
-  padding: 1rem 0 1rem 1rem;
-  text-align: left;
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 1.15rem;
-}
-body .type {
-  border: 3px solid black;
-}
-body .board {
-  border-left: 3px solid black;
-  border-right: 3px solid black;
-  border-bottom: 3px solid black;
-}
-body .ski {
-  border-left: 3px solid black;
-  border-bottom: 3px solid black;
-}
-body .board-desc {
-  border-right: 3px solid black;
-  border-left: 3px solid black;
-}
-body .ski-desc {
-  border-left: 3px solid black;
-}
-body .desc {
-  border-right: 3px solid black;
-  border-left: 3px solid black;
-  border-bottom: 3px solid black;
-}
-body .type, body .desc {
-  grid-column: 1/span 12;
-}
-body .ski, body .ski-desc {
-  grid-column: 1/span 6;
-}
-body .board, body .board-desc {
-  grid-column: 7/span 12;
-}
-body table tr:nth-child(12) .board-desc, body table tr:nth-child(12) .ski-desc {
-  border-bottom: 3px solid black;
-  margin-bottom: 3rem;
-}
-body table tr:nth-child(odd) {
-  background-color: #87D4C4;
-}
-body .desktop-only {
-  display: none;
-}
-body .rentals-padding tr {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-}
-body .rentals-padding th, body .rentals-padding td {
-  border: 2px solid black;
-}
-body .rentals-padding .rental, body .rentals-padding .rental-desc {
-  grid-column: 1/span 12;
-}
-body .rentals-padding .rental-type, body .rentals-padding .type-desc {
-  grid-column: 1/span 6;
-}
-body .rentals-padding .package, body .rentals-padding .package-desc {
-  grid-column: 7/span 12;
-}
-body .rentals-padding .demo, body .rentals-padding .demo-desc {
-  grid-column: 1/span 12;
-}
-body .rentals-padding h3 {
-  margin-top: 3rem;
-}
-body .rentals-padding .rentals-info ul {
-  list-style: unset;
-  list-style-position: inside;
-}
-body .rentals-padding .rentals-info div:nth-child(3) {
-  margin-bottom: 3rem;
-}
 body footer {
   background-color: #87D4C4;
   text-align: center;
@@ -311,12 +221,10 @@ body footer .footer-info {
 body footer .footer-info p {
   font-family: "Josefin Sans", sans-serif;
   margin-top: 0.5rem;
-  
 }
-body footer .sucess {
-  display: none; /* Hidden by default */
+body footer .emaillist {
   position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  z-index: 100; /* Sit on top */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -324,4 +232,23 @@ body footer .sucess {
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0, 0, 0); /* Fallback color */
   background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+body footer .sucess {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+body footer .close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+body footer .close:hover,
+body footer .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */
