@@ -164,26 +164,26 @@ $demo_info_two = get_field( "info", 306);
                 </ul>
                 <p>Includes:</p>
                 <ul>
-                    <li><?php if( $coverages_orderd_one ) {echo wp_kses_post( $coverages_orderd_one );} else    {echo 'empty';}?></li>
-                    <li><?php if( $coverages_orderd_two ) {echo wp_kses_post( $coverages_orderd_two );} else    {echo 'empty';}?></li>
-                    <li><?php if( $coverages_orderd_three ) {echo wp_kses_post( $coverages_orderd_three );} else    {echo 'empty';}?></li>
+                    <li><?php if( $coverages_ordered_one ) {echo wp_kses_post( $coverages_ordered_one );} else    {echo 'empty';}?></li>
+                    <li><?php if( $coverages_ordered_two ) {echo wp_kses_post( $coverages_ordered_two );} else    {echo 'empty';}?></li>
+                    <li><?php if( $coverages_ordered_three ) {echo wp_kses_post( $$coverages_ordered_three );} else    {echo 'empty';}?></li>
                     <li><?php if( $coverages_list_seven ) {echo wp_kses_post( $coverages_list_seven );} else    {echo 'empty';}?></li>
                 </ul>
             </div> <!-- includes end -->
             <div>
                 <p>Excludes</p>
                 <ul>
-                    <li><?php if( $coverages_orderd_four ) {echo wp_kses_post( $coverages_orderd_four );} else    {echo 'empty';}?></li>
-                    <li><?php if( $coverages_orderd_five ) {echo wp_kses_post( $coverages_orderd_five );} else    {echo 'empty';}?></li>
-                    <li><?php if( $coverages_orderd_six ) {echo wp_kses_post( $coverages_orderd_six );} else    {echo 'empty';}?></li>
-                    <li><?php if( $coverages_orderd_seven ) {echo wp_kses_post( $coverages_orderd_seven );} else    {echo 'empty';}?></li>
-                    <li><?php if( $coverages_orderd_eight ) {echo wp_kses_post( $coverages_orderd_eight );} else    {echo 'empty';}?></li>
-                    <li><?php if( $coverages_orderd_nine ) {echo wp_kses_post( $coverages_orderd_nine );} else    {echo 'empty';}?></li>
-                    <li><?php if( $coverages_orderd_ten ) {echo wp_kses_post( $coverages_orderd_ten );} else    {echo 'empty';}?></li>
+                    <li><?php if( $coverages_ordered_four ) {echo wp_kses_post( $coverages_ordered_four );} else    {echo 'empty';}?></li>
+                    <li><?php if( $coverages_ordered_five ) {echo wp_kses_post( $coverages_ordered_five );} else    {echo 'empty';}?></li>
+                    <li><?php if( $coverages_ordered_six ) {echo wp_kses_post( $coverages_ordered_six );} else    {echo 'empty';}?></li>
+                    <li><?php if( $coverages_ordered_seven ) {echo wp_kses_post( $coverages_ordered_seven );} else    {echo 'empty';}?></li>
+                    <li><?php if( $coverages_ordered_eight ) {echo wp_kses_post( $coverages_ordered_eight );} else    {echo 'empty';}?></li>
+                    <li><?php if( $coverages_ordered_nine ) {echo wp_kses_post( $coverages_ordered_nine );} else    {echo 'empty';}?></li>
+                    <li><?php if( $coverages_ordered_ten ) {echo wp_kses_post( $coverages_ordered_ten );} else    {echo 'empty';}?></li>
                 </ul>
                 <ul>
                     <li><?php if( $coverages_list_eight ) {echo wp_kses_post( $coverages_list_eight );} else    {echo 'empty';}?></li>
-                    <li><?php if( $coverages_orderd_nine ) {echo wp_kses_post( $coverages_orderd_nine );} else    {echo 'empty';}?></li>
+                    <li><?php if( $coverages_list_nine ) {echo wp_kses_post( $coverages_ordered_nine );} else    {echo 'empty';}?></li>
                 </ul>
             </div> <!-- excludes end -->
         </div> <!-- damage waiver coverage end -->
@@ -192,10 +192,10 @@ $demo_info_two = get_field( "info", 306);
     <div>
             <h3>Demo Purchase Policy</h3>
             <div>
-            <p><?php if( $coverages_info_one ) {echo wp_kses_post( $coverages_info_one );} else    {echo 'empty';}?></p>
+            <p><?php if( $demo_info_one ) {echo wp_kses_post( $demo_info_one );} else    {echo 'empty';}?></p>
             </div> <!-- demo div 1 end -->
             <div>
-                <p><?php if( $coverages_info_two ) {echo wp_kses_post( $coverages_info_two );} else    {echo 'empty';}?></p>
+                <p><?php if( $demo_info_two ) {echo wp_kses_post( $demo_list_two );} else    {echo 'empty';}?></p>
             </div> <!-- demo div 2 end -->
     </div> <!-- demo purchase policy end -->
 </div><!-- end rental info -->
