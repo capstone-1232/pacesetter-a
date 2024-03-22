@@ -79,8 +79,13 @@ $labor_snowboard = get_field( "snowboard_tune_price", 151 );
 
  ?>
 <h1>Services</h1>
-<p class="services-desc">TYPICAL 48-hour turnaround on most services outside of peak periods,
-quicker turnaround may be available pending workload and technician approval.</p>
+
+<div class="services-desc">   
+    <p>TYPICAL 48-hour turnaround on most services outside of peak periods,
+    quicker turnaround may be available pending workload and technician approval.</p>
+
+    <h2>Tunes:</h2>
+</div>
 
 <!-- ski and snowboard rentals table -->
 <table class="services-table">

@@ -87,7 +87,7 @@ body .faq-page .faq-card .download-button {
 body .faq-page .faq-card a {
   background-color: #F7EE23;
   display: flex;
-  padding: 0.5rem;
+  padding: 0.35rem 0.5rem;
   border-radius: 5px;
   border: 2px solid #000;
   color: #000;
@@ -150,55 +150,58 @@ body .contact-us .email-form .wpcf7-submit:hover {
 body .services-table, body .services-desc {
   padding: 0 1.875rem;
 }
-body .services-desc {
-  margin-bottom: 3rem;
+body .services-desc h2 {
+  margin-top: 3rem;
+}
+body .services-desc p {
+  margin-top: 2rem;
 }
 body tr {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
-body td {
+body tr td {
   padding: 1rem 1rem 5rem 1rem;
   font-family: "Playfair Display", serif;
   font-size: 1rem;
 }
-body th {
+body tr th {
   padding: 1rem 0 1rem 1rem;
   text-align: left;
   font-family: "Josefin Sans", sans-serif;
   font-size: 1.15rem;
 }
-body .type {
+body tr .type {
   border: 3px solid black;
 }
-body .board {
+body tr .board {
   border-left: 3px solid black;
   border-right: 3px solid black;
   border-bottom: 3px solid black;
 }
-body .ski {
+body tr .ski {
   border-left: 3px solid black;
   border-bottom: 3px solid black;
 }
-body .board-desc {
+body tr .board-desc {
   border-right: 3px solid black;
   border-left: 3px solid black;
 }
-body .ski-desc {
+body tr .ski-desc {
   border-left: 3px solid black;
 }
-body .desc {
+body tr .desc {
   border-right: 3px solid black;
   border-left: 3px solid black;
   border-bottom: 3px solid black;
 }
-body .type, body .desc {
+body tr .type, body tr .desc {
   grid-column: 1/span 12;
 }
-body .ski, body .ski-desc {
+body tr .ski, body tr .ski-desc {
   grid-column: 1/span 6;
 }
-body .board, body .board-desc {
+body tr .board, body tr .board-desc {
   grid-column: 7/span 12;
 }
 body table tr:nth-child(12) .board-desc, body table tr:nth-child(12) .ski-desc {
@@ -214,50 +217,56 @@ body .desktop-only {
 body .rentals-table, body .rentals-info, body .rentals-desc {
   padding: 0 1.875rem;
 }
+body .rentals-desc h2 {
+  margin-top: 3rem;
+}
+body .rentals-desc p {
+  margin-top: 2rem;
+}
 body tr {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
-body .rental {
+body tr .rental {
   border: 3px solid black;
 }
-body .rental-desc, body .package {
+body tr .rental-desc, body tr .package {
   border-left: 3px solid black;
   border-right: 3px solid black;
   border-bottom: 3px solid black;
 }
-body .rental-type {
+body tr .rental-type {
   border-left: 3px solid black;
   border-bottom: 3px solid black;
 }
-body .type-desc {
+body tr .type-desc {
   border-left: 3px solid black;
 }
-body .package-desc {
+body tr .package-desc {
   border-left: 3px solid black;
   border-right: 3px solid black;
 }
-body .demo {
+body tr .demo {
   border: 3px solid black;
 }
-body .demo-desc {
+body tr .demo-desc {
   border-left: 3px solid black;
   border-right: 3px solid black;
+}
+body tr .rental, body tr .rental-desc {
+  grid-column: 1/span 12;
+}
+body tr .rental-type, body tr .type-desc {
+  grid-column: 1/span 6;
+}
+body tr .package, body tr .package-desc {
+  grid-column: 7/span 12;
+}
+body tr .demo, body tr .demo-desc {
+  grid-column: 1/span 12;
 }
 body .rentals-table tr:nth-child(3) {
   border-bottom: 3px solid black;
-}
-body .rental, body .rental-desc {
-  grid-column: 1/span 12;
-}
-body .rental-type, body .type-desc {
-  grid-column: 1/span 6;
-}
-body .package, body .package-desc {
-  grid-column: 7/span 12;
-}
-body .demo, body .demo-desc {
-  grid-column: 1/span 12;
 }
 body h3 {
   margin-top: 3rem;
