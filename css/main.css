@@ -369,6 +369,7 @@ body footer .footer-info p {
   .shop-info, .footer-nav, .socials, .footer-info, .newsletter {
     padding: 0 6rem;
   }
+
   .socials {
     grid-area: grid-item-1;
   }
@@ -380,4 +381,5 @@ body footer .footer-info p {
     grid-template-columns: repeat(12, 1fr);
     grid-template-areas: "grid-item-1 grid-item-2";
   }
+
 }/*# sourceMappingURL=main.css.map */

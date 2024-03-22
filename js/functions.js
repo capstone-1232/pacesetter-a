@@ -15,3 +15,8 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+// Nav slider
+document.querySelector('.nav-btn').addEventListener('click', () => {
+  document.querySelector('nav').classList.toggle('menu-expanded');
+});
