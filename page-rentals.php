@@ -44,11 +44,31 @@ $additional_list_six = get_field( "info", 273);
 
 // damage waiver coverages ACF
 $coverages_header = get_field( "info_header", 257);
-$coverages_info = get_field( "info", 257);
+$coverages_list_one = get_field("info", 274);
+$coverages_list_two = get_field("info", 275);
+$coverages_list_three = get_field("info", 277);
+$coverages_list_four = get_field("info", 279);
+$coverages_list_five = get_field("info", 280);
+$coverages_list_six = get_field("info", 281);
+$coverages_list_seven = get_field("info", 290);
+$coverages_list_eight = get_field("info", 303);
+$coverages_list_nine = get_field("info", 306);
+$coverages_ordered_one = get_field("info", 282);
+$coverages_ordered_two = get_field("info", 284);
+$coverages_ordered_three = get_field("info", 287);
+$coverages_ordered_four = get_field("info", 292);
+$coverages_ordered_five = get_field("info", 293);
+$coverages_ordered_six = get_field("info", 295);
+$coverages_ordered_seven = get_field("info", 296);
+$coverages_ordered_eight = get_field("info", 298);
+$coverages_ordered_nine = get_field("info", 304);
+$coverages_ordered_ten = get_field("info", 302);
+
 
 // demo purchase ACF
 $demo_header = get_field( "info_header", 258);
-$demo_info = get_field( "info", 258);
+$demo_info_one = get_field( "info", 305);
+$demo_info_two = get_field( "info", 306);
 
  get_header();
 
@@ -132,38 +152,38 @@ $demo_info = get_field( "info", 258);
             </ul>
         </div>
 
-        <h3>Damage Waiver Coverages</h3>
+        <h3><?php if( $coverages_header ) {echo wp_kses_post( $coverages_header );} else    {echo 'empty';}?></h3>
             <div>
                 <ul>
-                    <li>Applies to equipment damages while in the act of skiing on a ski hill. (See below for inclusions and exclusions)</li>
-                    <li>ONLY applicable to regular ski rentals (junior & adult)</li>
-                    <li>Damage waiver is not offered for snowboard rentals or demo ski rentals</li>
-                    <li>$5 for the duration of the rental</li>
-                    <li>Covers damages and breakage of equipment.</li>
-                    <li>Management has final say as to what damages are covered by the optional damage waiver.</li>
+                    <li><?php if( $coverages_list_one ) {echo wp_kses_post( $coverages_list_one );} else    {echo 'empty';}?></li>
+                    <li><?php if( $coverages_list_two ) {echo wp_kses_post( $coverages_list_two );} else    {echo 'empty';}?></li>
+                    <li><?php if( $coverages_list_three ) {echo wp_kses_post( $coverages_list_three );} else    {echo 'empty';}?></li>
+                    <li><?php if( $coverages_list_four ) {echo wp_kses_post( $coverages_list_four );} else    {echo 'empty';}?></li>
+                    <li><?php if( $coverages_list_five ) {echo wp_kses_post( $coverages_list_five );} else    {echo 'empty';}?></li>
+                    <li><?php if( $coverages_list_six ) {echo wp_kses_post( $coverages_list_six );} else    {echo 'empty';}?></li>
                 </ul>
                 <p>Includes:</p>
                 <ul>
-                    <li>Bent or broken poles</li>
-                    <li>Broken boot buckles</li>
-                    <li>Ski base damage from accidental impact with rocks (must be deemed repairable by Pacesetter service shop technicians)</li>
-                    <li>Damage must fall between the cost of a Major tune ($60) and a small base patch and edge repair up to $100.</li>
+                    <li><?php if( $coverages_ordered_one ) {echo wp_kses_post( $coverages_ordered_one );} else    {echo 'empty';}?></li>
+                    <li><?php if( $coverages_ordered_two ) {echo wp_kses_post( $coverages_ordered_two );} else    {echo 'empty';}?></li>
+                    <li><?php if( $coverages_ordered_three ) {echo wp_kses_post( $coverages_ordered_three );} else    {echo 'empty';}?></li>
+                    <li><?php if( $coverages_list_seven ) {echo wp_kses_post( $coverages_list_seven );} else    {echo 'empty';}?></li>
                 </ul>
             </div> <!-- includes end -->
             <div>
                 <p>Excludes</p>
                 <ul>
-                    <li>Bent skis,</li>
-                    <li>Broken cores,</li>
-                    <li>Damages caused by use of equipment in terrain parks and parking lots</li>
-                    <li>Misuse</li>
-                    <li>Neglect</li>
-                    <li>Abuse</li>
-                    <li>Damages caused by third party (ex: other service centers)</li>
+                    <li><?php if( $coverages_ordered_four ) {echo wp_kses_post( $coverages_ordered_four );} else    {echo 'empty';}?></li>
+                    <li><?php if( $coverages_ordered_five ) {echo wp_kses_post( $coverages_ordered_five );} else    {echo 'empty';}?></li>
+                    <li><?php if( $coverages_ordered_six ) {echo wp_kses_post( $coverages_ordered_six );} else    {echo 'empty';}?></li>
+                    <li><?php if( $coverages_ordered_seven ) {echo wp_kses_post( $coverages_ordered_seven );} else    {echo 'empty';}?></li>
+                    <li><?php if( $coverages_ordered_eight ) {echo wp_kses_post( $coverages_ordered_eight );} else    {echo 'empty';}?></li>
+                    <li><?php if( $coverages_ordered_nine ) {echo wp_kses_post( $coverages_ordered_nine );} else    {echo 'empty';}?></li>
+                    <li><?php if( $coverages_ordered_ten ) {echo wp_kses_post( $coverages_ordered_ten );} else    {echo 'empty';}?></li>
                 </ul>
                 <ul>
-                    <li>Does not cover theft, misplaced or stolen equipment.</li>
-                    <li>Staff is NOT obligated to offer the damage waiver & the damage waiver cannot be added after the rented equipment has left the store.</li>
+                    <li><?php if( $coverages_list_eight ) {echo wp_kses_post( $coverages_list_eight );} else    {echo 'empty';}?></li>
+                    <li><?php if( $coverages_list_nine ) {echo wp_kses_post( $coverages_ordered_nine );} else    {echo 'empty';}?></li>
                 </ul>
             </div> <!-- excludes end -->
         </div> <!-- damage waiver coverage end -->
@@ -172,20 +192,10 @@ $demo_info = get_field( "info", 258);
     <div>
             <h3>Demo Purchase Policy</h3>
             <div>
-            <p>Customers who decide that they would like to purchase a pair of skis
-                that they took for demo are eligible for a credit from the rental of the skis
-                that were rented.
-                Maximum credit that can be used towards the purchase of a “new pair”
-                of skis is two days of rental.
-                (example $50 for the 1st day and $30 for the 2nd day – total of $80)
-                The rental credit is to be used towards the purchase of a “new pair” of
-                the same skis that were rented for demo and cannot be used towards
-                any other product.
-                Rental credit is only applicable to the purchase of a “new pair” of skis at
-                regular price and cannot be used to purchase skis that are on sale.</p>
+            <p><?php if( $demo_info_one ) {echo wp_kses_post( $demo_info_one );} else    {echo 'empty';}?></p>
             </div> <!-- demo div 1 end -->
             <div>
-                <p>If we do not have stock available to sell the customer a “new pair” of skis OR we cannot order a pair of skis from the supplier for the customer, we will consider selling the demo skis. If we agree to sell the demo skis, a price will be determined and the customer’s rental cost to demo the skis will not be applicable to the purchase of the set of demo skis. If the customer does not purchase a “new pair” of skis upon the return of the demo skis, they will have up to 30 days from date of rental return for the rental credit to be valid towards the purchase of a “new pair” of skis. The customer needs to retain the customer copy of the rental form and show store staff the form at the time of purchase to activate the rental credit for the purchase of a new pair of skis within the period explained above.</p>
+                <p><?php if( $demo_info_two ) {echo wp_kses_post( $demo_info_two );} else    {echo 'empty';}?></p>
             </div> <!-- demo div 2 end -->
     </div> <!-- demo purchase policy end -->
 </div><!-- end rental info -->
