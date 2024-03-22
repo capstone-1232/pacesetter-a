@@ -7,10 +7,6 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: pacesetter
 */
-html {
-  width: none;
-}
-
 body {
   background-color: #eee;
   margin: 0 auto;
@@ -353,3 +349,24 @@ body footer .footer-info p {
   font-family: "Josefin Sans", sans-serif;
   margin-top: 0.5rem;
 }
+
+@media screen and (min-width: 720px) {
+  body .first-block, body .second-block, body .third-block {
+    padding: 0 6rem;
+  }
+  body .faq-page {
+    padding: 0 6rem;
+  }
+  body .contact-us h3, body .contact-us .address, body .contact-us .hours, body .contact-us .email-form {
+    padding: 0 6rem;
+  }
+  body .services-table, body .services-desc {
+    padding: 0 6rem;
+  }
+  body .rentals-table, body .rentals-info, body .rentals-desc {
+    padding: 0 6rem;
+  }
+  .shop-info, .footer-nav, .socials, .footer-info {
+    padding: 0 6rem;
+  }
+}/*# sourceMappingURL=main.css.map */
