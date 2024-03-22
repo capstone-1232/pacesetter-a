@@ -524,7 +524,21 @@ body {
 
     // -----------------------------------------------------------------  FOOTER  -----------------------------------------------------------------
         
-    .shop-info, .footer-nav, .socials, .footer-info {
+    .shop-info, .footer-nav, .socials, .footer-info, .newsletter {
         padding: 0 6rem;
+    }
+
+    .socials {
+        grid-area: grid-item-1;
+      }
+      
+    .shop-info {
+        grid-area: grid-item-2;
+    }
+
+    .footer-grid {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-areas: "grid-item-1 grid-item-2";
     }
 }
