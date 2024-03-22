@@ -19,10 +19,9 @@
 		</a>
 	</div>
 <?php endif; ?>
-
 	<div class="p-menu">
-		<nav id="navbar" class="navigation">
-				
+		<h1 class="nav-hidden">Top Nav</h1>
+		<nav id="navbar" class="navigation">		
 		<!-- custom logo -->
 		<?php if ( function_exists( 'the_custom_logo' ) ) {
 			the_custom_logo();
