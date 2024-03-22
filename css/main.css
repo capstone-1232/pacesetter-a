@@ -311,12 +311,10 @@ body footer .footer-info {
 body footer .footer-info p {
   font-family: "Josefin Sans", sans-serif;
   margin-top: 0.5rem;
-  
 }
-body footer .sucess {
-  display: none; /* Hidden by default */
+body footer .emaillist {
   position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  z-index: 100; /* Sit on top */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
