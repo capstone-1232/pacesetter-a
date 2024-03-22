@@ -166,7 +166,7 @@ $demo_info_two = get_field( "info", 306);
                 <ul>
                     <li><?php if( $coverages_ordered_one ) {echo wp_kses_post( $coverages_ordered_one );} else    {echo 'empty';}?></li>
                     <li><?php if( $coverages_ordered_two ) {echo wp_kses_post( $coverages_ordered_two );} else    {echo 'empty';}?></li>
-                    <li><?php if( $coverages_ordered_three ) {echo wp_kses_post( $$coverages_ordered_three );} else    {echo 'empty';}?></li>
+                    <li><?php if( $coverages_ordered_three ) {echo wp_kses_post( $coverages_ordered_three );} else    {echo 'empty';}?></li>
                     <li><?php if( $coverages_list_seven ) {echo wp_kses_post( $coverages_list_seven );} else    {echo 'empty';}?></li>
                 </ul>
             </div> <!-- includes end -->
@@ -195,7 +195,7 @@ $demo_info_two = get_field( "info", 306);
             <p><?php if( $demo_info_one ) {echo wp_kses_post( $demo_info_one );} else    {echo 'empty';}?></p>
             </div> <!-- demo div 1 end -->
             <div>
-                <p><?php if( $demo_info_two ) {echo wp_kses_post( $demo_list_two );} else    {echo 'empty';}?></p>
+                <p><?php if( $demo_info_two ) {echo wp_kses_post( $demo_info_two );} else    {echo 'empty';}?></p>
             </div> <!-- demo div 2 end -->
     </div> <!-- demo purchase policy end -->
 </div><!-- end rental info -->
