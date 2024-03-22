@@ -155,7 +155,7 @@ $labor_snowboard = get_field( "snowboard_tune_price", 151 );
         <td class="board-desc"><?php if( $binding_install_snowboard ) {echo wp_kses_post( $binding_install_snowboard );} else {echo 'empty';} ?> </td>  
     </tr> <!-- binding install end -->
     
-    <!-- heli coils -->
+    <!-- heli coils --> 
     <tr>
         <th class="type hidden">Type of tune</th>
         <td class="desc"><?php if( $heli_coils_type ) {echo wp_kses_post( $heli_coils_type );} else {echo 'empty';} ?> <div><?php if( $heli_coils_description ) {echo wp_kses_post( $heli_coils_description );} else {echo 'empty';} ?> </div></td>
