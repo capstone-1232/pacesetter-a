@@ -366,7 +366,40 @@ body footer .footer-info p {
   body .rentals-table, body .rentals-info, body .rentals-desc {
     padding: 0 6rem;
   }
-  .shop-info, .footer-nav, .socials, .footer-info {
+  body .newsletter {
     padding: 0 6rem;
   }
-}/*# sourceMappingURL=main.css.map */
+  body .newsletter p {
+    margin-bottom: 2rem;
+  }
+  body .footer .socials, body .footer .footer-info, body .footer .newsletter {
+    padding: 0 6rem;
+  }
+  body .footer .shop-info {
+    padding: 0 0 0 6rem;
+  }
+  body .footer .footer-nav {
+    padding: 0 6rem 0 0;
+  }
+  body .footer .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2, 100%);
+    grid-template-areas: "grid-item-1 grid-item-2";
+  }
+  body .footer .socials {
+    grid-area: grid-item-1;
+    grid-column: 1/span 12;
+    grid-row: 1;
+    margin-top: 2rem;
+  }
+  body .footer .shop-info {
+    grid-area: grid-item-2;
+    grid-column: 1/span 6;
+    grid-row: 2;
+  }
+  body .footer .footer-nav {
+    grid-column: 7/span 12;
+    grid-row: 2;
+  }
+}
