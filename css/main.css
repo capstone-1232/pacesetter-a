@@ -41,6 +41,44 @@ body ul {
   list-style: none;
   padding: 0;
 }
+body header .navigation {
+  background-color: #87D4C4;
+  overflow: hidden;
+}
+body header .navigation .subnav {
+  float: left;
+  overflow: hidden;
+}
+body header .navigation .subnav .subnavbtn {
+  border: none;
+  outline: none;
+  color: #2E2E2E;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+body header .navigation .subnav .subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: #ffffff;
+  width: 100%;
+  z-index: 1;
+}
+body header .navigation .subnav:hover .subnav-content {
+  display: block;
+}
+body header .navigation a {
+  float: left;
+  color: #2E2E2E;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+body .menu-expanded {
+  transform: scaleX(100%);
+}
 body .about-image {
   object-fit: cover;
   height: 20rem;
@@ -366,40 +404,7 @@ body footer .footer-info p {
   body .rentals-table, body .rentals-info, body .rentals-desc {
     padding: 0 6rem;
   }
-  body .newsletter {
+  .shop-info, .footer-nav, .socials, .footer-info {
     padding: 0 6rem;
   }
-  body .newsletter p {
-    margin-bottom: 2rem;
-  }
-  body .footer .socials, body .footer .footer-info, body .footer .newsletter {
-    padding: 0 6rem;
-  }
-  body .footer .shop-info {
-    padding: 0 0 0 6rem;
-  }
-  body .footer .footer-nav {
-    padding: 0 6rem 0 0;
-  }
-  body .footer .footer-grid {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(2, 100%);
-    grid-template-areas: "grid-item-1 grid-item-2";
-  }
-  body .footer .socials {
-    grid-area: grid-item-1;
-    grid-column: 1/span 12;
-    grid-row: 1;
-    margin-top: 2rem;
-  }
-  body .footer .shop-info {
-    grid-area: grid-item-2;
-    grid-column: 1/span 6;
-    grid-row: 2;
-  }
-  body .footer .footer-nav {
-    grid-column: 7/span 12;
-    grid-row: 2;
-  }
-}
+}/*# sourceMappingURL=main.css.map */
