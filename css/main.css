@@ -191,62 +191,62 @@ body .services-desc h2 {
 body .services-desc p {
   margin-top: 2rem;
 }
-body tr {
+body .services-table tr {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
-body tr td {
+body .services-table tr td {
   padding: 1rem 1rem 5rem 1rem;
   font-family: "Playfair Display", serif;
   font-size: 1rem;
 }
-body tr th {
+body .services-table tr th {
   padding: 1rem 0 1rem 1rem;
   text-align: left;
   font-family: "Josefin Sans", sans-serif;
   font-size: 1.15rem;
 }
-body tr .type {
+body .services-table tr .type {
   border: 3px solid black;
 }
-body tr .board {
+body .services-table tr .board {
   border-left: 3px solid black;
   border-right: 3px solid black;
   border-bottom: 3px solid black;
 }
-body tr .ski {
+body .services-table tr .ski {
   border-left: 3px solid black;
   border-bottom: 3px solid black;
 }
-body tr .board-desc {
+body .services-table tr .board-desc {
   border-right: 3px solid black;
   border-left: 3px solid black;
 }
-body tr .ski-desc {
+body .services-table tr .ski-desc {
   border-left: 3px solid black;
 }
-body tr .desc {
+body .services-table tr .desc {
   border-right: 3px solid black;
   border-left: 3px solid black;
   border-bottom: 3px solid black;
 }
-body tr .type, body tr .desc {
+body .services-table tr .type, body .services-table tr .desc {
   grid-column: 1/span 12;
 }
-body tr .ski, body tr .ski-desc {
+body .services-table tr .ski, body .services-table tr .ski-desc {
   grid-column: 1/span 6;
 }
-body tr .board, body tr .board-desc {
+body .services-table tr .board, body .services-table tr .board-desc {
   grid-column: 7/span 12;
 }
-body table tr:nth-child(12) .board-desc, body table tr:nth-child(12) .ski-desc {
+body .services-table tr:nth-child(12) .board-desc, body .services-table tr:nth-child(12) .ski-desc {
   border-bottom: 3px solid black;
   margin-bottom: 3rem;
 }
-body table tr:nth-child(odd) {
+body .services-table tr:nth-child(odd) {
   background-color: #87D4C4;
 }
-body .desktop-only {
+body .services-table .desktop-only {
   display: none;
 }
 body .rentals-table, body .rentals-info, body .rentals-desc {
@@ -261,6 +261,17 @@ body .rentals-desc p {
 body tr {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+}
+body tr td {
+  padding: 1rem 1rem 5rem 1rem;
+  font-family: "Playfair Display", serif;
+  font-size: 1rem;
+}
+body tr th {
+  padding: 1rem 0 1rem 1rem;
+  text-align: left;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.15rem;
 }
 body tr .rental {
   border: 3px solid black;
@@ -299,6 +310,12 @@ body tr .package, body tr .package-desc {
 }
 body tr .demo, body tr .demo-desc {
   grid-column: 1/span 12;
+}
+body .rentals-table tr:nth-child(even) {
+  background-color: #87D4C4;
+}
+body .rentals-table .desktop-only {
+  display: none;
 }
 body .rentals-table tr:nth-child(3) {
   border-bottom: 3px solid black;
@@ -450,11 +467,81 @@ body footer .footer-info p {
   body .faq-page {
     padding: 0 6rem;
   }
-  body .contact-us h3, body .contact-us .address, body .contact-us .hours, body .contact-us .email-form {
-    padding: 0 6rem;
+  body .contact-us .contact-flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  body .contact-us .hours-flex ul:first-child {
+    margin-right: 1rem;
+  }
+  body .contact-us .email-form .wpcf7-submit {
+    width: 10rem;
+    margin-left: auto;
+    margin-right: 0;
+    display: block;
   }
   body .services-table, body .services-desc {
     padding: 0 6rem;
+  }
+  body .services-table .hidden {
+    display: none;
+  }
+  body .services-table .desktop-only {
+    display: grid;
+  }
+  body .services-table .desktop-only th:first-child {
+    grid-column: 1/span 8;
+  }
+  body .services-table .desktop-only th:nth-child(2) {
+    grid-column: span 2;
+  }
+  body .services-table .desktop-only th:last-child {
+    grid-column: span 2;
+  }
+  body .services-table tr {
+    display: grid;
+  }
+  body .services-table tr td {
+    padding: 1rem 1rem 5rem 1rem;
+    font-family: "Playfair Display", serif;
+    font-size: 1rem;
+  }
+  body .services-table tr th {
+    padding: 1rem 0 1rem 1rem;
+    text-align: left;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.15rem;
+  }
+  body .services-table tr .type {
+    border: none;
+  }
+  body .services-table tr .board {
+    border: none;
+  }
+  body .services-table tr .ski {
+    border: none;
+  }
+  body .services-table tr .board-desc {
+    border: none;
+  }
+  body .services-table tr .ski-desc {
+    border: none;
+  }
+  body .services-table tr .desc {
+    border: none;
+  }
+  body .services-table tr .type, body .services-table tr .desc {
+    grid-column: 1/span 8;
+  }
+  body .services-table tr .ski, body .services-table tr .ski-desc {
+    grid-column: span 2;
+  }
+  body .services-table tr .board, body .services-table tr .board-desc {
+    grid-column: span 2;
+  }
+  body .services-table tr:nth-child(12) .board-desc, body .services-table tr:nth-child(12) .ski-desc {
+    border: none;
+    margin-bottom: 3rem;
   }
   body .rentals-table, body .rentals-info, body .rentals-desc {
     padding: 0 6rem;
