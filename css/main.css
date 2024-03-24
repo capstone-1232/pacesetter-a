@@ -41,35 +41,36 @@ body ul {
   list-style: none;
   padding: 0;
 }
-body header .navigation {
+body header .navbar {
   background-color: #87D4C4;
   overflow: hidden;
 }
-body header .navigation .subnav {
+body header .navbar .subnav {
   float: left;
   overflow: hidden;
 }
-body header .navigation .subnav .subnavbtn {
-  border: none;
-  outline: none;
-  color: #2E2E2E;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
+body header .navbar .subnav .subnavbtn {
+  width: 0.5rem;
 }
-body header .navigation .subnav .subnav-content {
+body header .navbar .subnav .subnav-content {
+  background-color: #ffffff;
   display: none;
   position: absolute;
   left: 0;
-  background-color: #ffffff;
   width: 100%;
   z-index: 1;
 }
-body header .navigation .subnav:hover .subnav-content {
+body header .navbar .subnav .subnav-content a {
+  float: left;
+  text-decoration: none;
+}
+body header .navbar .subnav svg {
+  width: 2rem;
+}
+body header .navbar .subnav:hover .subnav-content {
   display: block;
 }
-body header .navigation a {
+body header .navbar a {
   float: left;
   color: #2E2E2E;
   text-align: center;

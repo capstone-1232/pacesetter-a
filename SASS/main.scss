@@ -57,7 +57,7 @@ body {
     // -----------------------------------------------------------------HEADER-----------------------------------------------------------------
 
 header {
-    .navigation {
+    .navbar {
         background-color: #87D4C4;
         overflow: hidden;
 
@@ -65,24 +65,26 @@ header {
             float: left;
             overflow: hidden;
             
-            
             .subnavbtn {
-                border: none;
-                outline: none;
-                color: #2E2E2E;
-                padding: 14px 16px;
-                background-color: inherit;
-                font-family: inherit;
-                margin: 0;
+              width: .5rem;
             }
 
             .subnav-content {
+                background-color: #ffffff;
                 display: none;
                 position: absolute;
                 left: 0;
-                background-color: #ffffff;
                 width: 100%;
                 z-index: 1;
+
+                a {
+                    float: left;
+                    text-decoration: none;  
+                }
+            }
+
+            svg {
+                width: 2rem;
             }
             
         }
