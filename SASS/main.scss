@@ -437,7 +437,7 @@ header {
     }
 
     .rentals-table {
-        tr:nth-child(even) {
+        tr:nth-child(odd) {
             background-color: $primary-color;
         }
 
@@ -718,11 +718,7 @@ header {
                         grid-column: 1 / span 8;
                     }
 
-                    th:nth-child(2) {
-                        grid-column: span 2;
-                    }
-
-                    th:last-child {
+                    th {
                         grid-column: span 2;
                     }
                 }
@@ -788,8 +784,76 @@ header {
 
         // -----------------------------------------------------------------  RENTALS  -----------------------------------------------------------------
 
-            .rentals-table, .rentals-info, .rentals-desc {
-                padding: 0 6rem;
+            .rentals-table{
+
+                .hidden {
+                    display: none;
+                }
+
+                tr:nth-child(3) {
+                    border-bottom: none;
+                }
+
+                .desktop-only {
+                    display: grid;
+
+                    th:first-child {
+                        grid-column: 1 / span 6;
+                    }
+
+                    th {
+                        grid-column: span 2;
+                    }
+                }
+
+                tr {
+                    display: grid;
+                    grid-template-columns: repeat(12, 1fr);
+            
+                    .rental {
+                        border: none;
+                    }
+                    
+                    .rental-desc, .package {
+                        border: none;
+                    }
+                    
+                    .rental-type {
+                        border: none;
+                    }
+                    
+                    .type-desc {
+                        border: none;
+                    }
+                    
+                    .package-desc {
+                        border: none;
+                    }
+                    
+                    .demo {
+                        border: none;
+                    }
+                
+                    .demo-desc {
+                        border: none;
+                    }
+            
+                    .rental, .rental-desc {
+                        grid-column: 1 / span 6;
+                    }
+                        
+                    .rental-type, .type-desc {
+                        grid-column: span 2;
+                    }
+                        
+                    .package, .package-desc {
+                        grid-column: span 2;
+                    }
+                
+                    .demo, .demo-desc {
+                        grid-column: span 2;
+                    }    
+                }
             }
 
         // -----------------------------------------------------------------  FOOTER  -----------------------------------------------------------------

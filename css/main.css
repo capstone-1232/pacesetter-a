@@ -311,7 +311,7 @@ body tr .package, body tr .package-desc {
 body tr .demo, body tr .demo-desc {
   grid-column: 1/span 12;
 }
-body .rentals-table tr:nth-child(even) {
+body .rentals-table tr:nth-child(odd) {
   background-color: #87D4C4;
 }
 body .rentals-table .desktop-only {
@@ -422,7 +422,6 @@ body footer .footer-info p {
   body .rentals-table, body .rentals-info, body .rentals-desc {
     padding: 0 6rem;
   }
-
   .socials, .footer-info, .newsletter {
     padding: 0 6rem;
   }
@@ -492,10 +491,7 @@ body footer .footer-info p {
   body .services-table .desktop-only th:first-child {
     grid-column: 1/span 8;
   }
-  body .services-table .desktop-only th:nth-child(2) {
-    grid-column: span 2;
-  }
-  body .services-table .desktop-only th:last-child {
+  body .services-table .desktop-only th {
     grid-column: span 2;
   }
   body .services-table tr {
@@ -543,8 +539,57 @@ body footer .footer-info p {
     border: none;
     margin-bottom: 3rem;
   }
-  body .rentals-table, body .rentals-info, body .rentals-desc {
-    padding: 0 6rem;
+  body .rentals-table .hidden {
+    display: none;
+  }
+  body .rentals-table tr:nth-child(3) {
+    border-bottom: none;
+  }
+  body .rentals-table .desktop-only {
+    display: grid;
+  }
+  body .rentals-table .desktop-only th:first-child {
+    grid-column: 1/span 6;
+  }
+  body .rentals-table .desktop-only th {
+    grid-column: span 2;
+  }
+  body .rentals-table tr {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+  body .rentals-table tr .rental {
+    border: none;
+  }
+  body .rentals-table tr .rental-desc, body .rentals-table tr .package {
+    border: none;
+  }
+  body .rentals-table tr .rental-type {
+    border: none;
+  }
+  body .rentals-table tr .type-desc {
+    border: none;
+  }
+  body .rentals-table tr .package-desc {
+    border: none;
+  }
+  body .rentals-table tr .demo {
+    border: none;
+  }
+  body .rentals-table tr .demo-desc {
+    border: none;
+  }
+  body .rentals-table tr .rental, body .rentals-table tr .rental-desc {
+    grid-column: 1/span 6;
+  }
+  body .rentals-table tr .rental-type, body .rentals-table tr .type-desc {
+    grid-column: span 2;
+  }
+  body .rentals-table tr .package, body .rentals-table tr .package-desc {
+    grid-column: span 2;
+  }
+  body .rentals-table tr .demo, body .rentals-table tr .demo-desc {
+    grid-column: span 2;
   }
   body footer .footer-grid {
     display: grid;
