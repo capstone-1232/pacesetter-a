@@ -486,6 +486,16 @@ header {
         }    
     }
 
+    .rentals-table {
+        tr:nth-child(odd) {
+            background-color: $primary-color;
+        }
+
+        .desktop-only {
+            display: none;
+        }
+    }
+
         .rentals-table tr:nth-child(3){
             border-bottom: 3px solid black;
         }
@@ -660,6 +670,247 @@ header {
         padding: 0 6rem;
     }
 }
+
+// -----------------------------------------------------------------  DESKTOP-SMALL  -----------------------------------------------------------------
+
+@media screen and (min-width: 1080px){
+
+    body{
+
+        // -----------------------------------------------------------------  ABOUT PAGE -----------------------------------------------------------------
+
+            .first-block, .second-block, .third-block {
+                padding: 0 6rem;
+            }
+
+        // -----------------------------------------------------------------  FAQ-PAGE -----------------------------------------------------------------
+
+            .faq-page {
+                padding: 0 6rem;
+            }
+        
+        // -----------------------------------------------------------------  CONTACT PAGE -----------------------------------------------------------------
+
+            .contact-us {
+                .contact-flex {
+                    display: flex;
+                    justify-content: space-between;
+                }
+
+                .hours-flex ul:first-child {
+                    margin-right: 1rem;
+                }
+
+                .email-form .wpcf7-submit {
+                    width: 10rem;
+                    margin-left: auto;
+                    margin-right: 0;
+                    display: block;
+                }
+            }
+
+        // -----------------------------------------------------------------  SERVICES  -----------------------------------------------------------------
+            
+            .services-table, .services-desc {
+                padding: 0 6rem;
+            }
+
+            .services-table {
+
+                .hidden {
+                    display: none;
+                }
+
+                .desktop-only {
+                    display: grid;
+
+                    th:first-child {
+                        grid-column: 1 / span 8;
+                    }
+
+                    th {
+                        grid-column: span 2;
+                    }
+                }
+
+                tr {
+                    display: grid;
+        
+                    td {
+                        padding: 1rem 1rem 5rem 1rem;
+                        font-family: "Playfair Display", serif;
+                        font-size: 1rem;
+                    }
+        
+                    th {
+                        padding: 1rem 0 1rem 1rem;
+                        text-align: left;
+                        font-family: "Josefin Sans", sans-serif;
+                        font-size: 1.15rem;
+                    }
+        
+                    .type {
+                        border: none;
+                    }
+                
+                    .board {
+                        border: none;
+                    }
+                
+                    .ski {
+                        border: none;
+                    }
+                
+                    .board-desc {
+                        border: none;
+                    }
+                
+                    .ski-desc {
+                        border: none;
+                    }
+                
+                    .desc {
+                        border: none;
+                    }
+
+                    .type, .desc {
+                        grid-column: 1 / span 8;
+                    }
+                    
+                    .ski, .ski-desc {
+                        grid-column: span 2;
+                    }
+                    
+                    .board, .board-desc {
+                        grid-column: span 2;
+                    }
+                }
+                
+                tr:nth-child(12) .board-desc, tr:nth-child(12) .ski-desc {
+                    border: none;
+                    margin-bottom: 3rem;
+                }
+            }
+
+        // -----------------------------------------------------------------  RENTALS  -----------------------------------------------------------------
+
+            .rentals-table{
+
+                .hidden {
+                    display: none;
+                }
+
+                tr:nth-child(3) {
+                    border-bottom: none;
+                }
+
+                .desktop-only {
+                    display: grid;
+
+                    th:first-child {
+                        grid-column: 1 / span 6;
+                    }
+
+                    th {
+                        grid-column: span 2;
+                    }
+                }
+
+                tr {
+                    display: grid;
+                    grid-template-columns: repeat(12, 1fr);
+            
+                    .rental {
+                        border: none;
+                    }
+                    
+                    .rental-desc, .package {
+                        border: none;
+                    }
+                    
+                    .rental-type {
+                        border: none;
+                    }
+                    
+                    .type-desc {
+                        border: none;
+                    }
+                    
+                    .package-desc {
+                        border: none;
+                    }
+                    
+                    .demo {
+                        border: none;
+                    }
+                
+                    .demo-desc {
+                        border: none;
+                    }
+            
+                    .rental, .rental-desc {
+                        grid-column: 1 / span 6;
+                    }
+                        
+                    .rental-type, .type-desc {
+                        grid-column: span 2;
+                    }
+                        
+                    .package, .package-desc {
+                        grid-column: span 2;
+                    }
+                
+                    .demo, .demo-desc {
+                        grid-column: span 2;
+                    }    
+                }
+            }
+
+        // -----------------------------------------------------------------  FOOTER  -----------------------------------------------------------------
+            
+            footer{
+
+                .footer-grid {
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    grid-template-rows: (1, 100%);
+                }
+
+                .socials {
+                    display: unset;
+                    grid-column: 4;
+                    grid-row: 1;
+                    padding: 0;
+                }
+                    
+                .shop-info {
+                    grid-column: 1;
+                    grid-row: 1;
+                    margin-top: 0;
+                }
+
+                .footer-nav {
+                    grid-column: 2;
+                    grid-row: 1;
+                    padding: 0;
+                    margin-top: 0;
+                }
+
+                .newsletter {
+
+                    h3 {
+                        margin-top: 0rem;
+                    }
+
+                    grid-column: 3;
+                    grid-row: 1;
+                    padding: 0;
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+
     //     .emaillist {
     //         position: fixed; /* Stay in place */
     //         z-index: 100; /* Sit on top */
