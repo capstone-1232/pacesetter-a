@@ -1,25 +1,27 @@
 <footer>
-
-    <div class="newsletter">
-        <h3>Join Our Newsletter</h3>
-
-        <p>Join our newsletter to find out more about upcoming events and special in-store offers.</p>
-
-        <?php
-            echo do_shortcode('[email-subscribers-form id="2"]');
-        ?>
-    </div>
-
     <nav>
-            <div class="footer">
+        <div class="footer">
             <div class="footer-grid">
-                <ul class="footer-nav">
-                    <li><a href="about-us">About Us</a></li>
-                    <li><a href="contact">Contact Us</a></li>
-                    <li><a href="rentals">Rentals</a></li>
-                    <li><a href="faq">F.A.Q.</a></li>
-                    <li><a href="services">Services</a></li>
-                </ul> <!-- footer-nav end -->
+                <div class="newsletter">
+                    <h3>Join Our Newsletter</h3>
+
+                    <p>Join our newsletter to find out more about upcoming events and special in-store offers.</p>
+
+                    <?php
+                        echo do_shortcode('[email-subscribers-form id="2"]');
+                    ?>
+                </div>
+                <div class="footer-nav">
+                    <ul>
+                        <li><a href="about-us">About Us</a></li>
+                        <li><a href="contact">Contact Us</a></li>
+                        <li><a href="rentals">Rentals</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="faq">F.A.Q.</a></li>
+                        <li><a href="services">Services</a></li>
+                    </ul> <!-- footer-nav end -->
+                </div>
 
                 <ul class="socials">
                     <li><a href="#"><?xml version="1.0" encoding="utf-8"?>
