@@ -58,53 +58,64 @@ body {
 
 header {
     position: relative;
-    .navbar {
-        background-color: #87D4C4;
-        overflow: hidden;
 
-        .subnav {
-            float: left;
-            overflow: hidden;
-            
-            .subnavbtn {
-              width: .5rem;
-            }
-
-            .subnav-content {
-                background-color: #ffffff;
-                display: none;
-                position: absolute;
-                left: 0;
-                width: 100%;
-                z-index: 1;
-
-                a {
-                    float: left;
-                    text-decoration: none;  
-                }
-            }
-
-            svg {
-                width: 2rem;
-            }
-            
-        }
-        
-        .subnav:hover {
-            .subnav-content {
-                display: block;
-            }
-        }
-
-        a {
-            color: #2E2E2E;
-            float: left;
-            padding: 14px 16px;
-            text-align: center;
-            text-decoration: none;
-        }
-    
+.navbar {
+    background-color: $primary-color;
+    font-family: Arial;
+    overflow: hidden;
+  
+    a {
+      color: black;
+      float: left;
+      font-size: 16px;
+      padding: 14px 16px;
+      text-align: center;
+      text-decoration: none;
+      }
     }
+  
+    .subnav {
+      float: left;
+      overflow: hidden;
+  
+      .subnavbtn {
+        width: .5rem;
+        border: none;
+        outline: none;
+        color: white;
+        font-family: inherit; 
+        margin: 0;
+      }
+  
+      .subnav-content {
+        display: none;
+        position: absolute;
+        background-color: #ffffff;
+        min-width: 160px;
+        top: 8rem;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+  
+        a {
+          float: none;
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+          text-align: left;
+  
+          &:hover {
+            background-color: #ddd;
+          }
+        }
+      }
+    }
+  
+    .subnav:hover .subnav-content {
+      display: block;
+    }
+  }
+  
 
     .menu {
 
@@ -113,7 +124,7 @@ header {
 
 
         .subnav {
-            float: left;
+            
             overflow: hidden;
             
             .subnavbtn {
@@ -129,7 +140,7 @@ header {
                 z-index: 1;
 
                 a {
-                    float: left;
+                    
                     text-decoration: none;  
                 }
             }
@@ -148,7 +159,6 @@ header {
 
         a {
             color: #2E2E2E;
-            float: left;
             padding: 14px 16px;
             text-align: center;
             text-decoration: none;
@@ -623,7 +633,6 @@ header {
 
         // }
     }
-}
 
 // -----------------------------------------------------------------  TABLET  -----------------------------------------------------------------
 
