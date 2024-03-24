@@ -62,7 +62,7 @@ header {
         overflow: hidden;
 
         .subnav {
-            float: left;
+            float: right;
             overflow: hidden;
             
             .subnavbtn {
@@ -96,10 +96,10 @@ header {
         }
 
         a {
-            float: left;
             color: #2E2E2E;
-            text-align: center;
+            float: right;
             padding: 14px 16px;
+            text-align: center;
             text-decoration: none;
         }
     }
