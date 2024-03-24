@@ -199,3 +199,5 @@ $demo_info_two = get_field( "info", 306);
             </div> <!-- demo div 2 end -->
     </div> <!-- demo purchase policy end -->
 </div><!-- end rental info -->
+
+<?php get_footer(); ?>
