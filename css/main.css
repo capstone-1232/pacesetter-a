@@ -41,6 +41,45 @@ body ul {
   list-style: none;
   padding: 0;
 }
+body header .navbar {
+  background-color: #87D4C4;
+  overflow: hidden;
+}
+body header .navbar .subnav {
+  float: left;
+  overflow: hidden;
+}
+body header .navbar .subnav .subnavbtn {
+  width: 0.5rem;
+}
+body header .navbar .subnav .subnav-content {
+  background-color: #ffffff;
+  display: none;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+body header .navbar .subnav .subnav-content a {
+  float: left;
+  text-decoration: none;
+}
+body header .navbar .subnav svg {
+  width: 2rem;
+}
+body header .navbar .subnav:hover .subnav-content {
+  display: block;
+}
+body header .navbar a {
+  float: left;
+  color: #2E2E2E;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+body .menu-expanded {
+  transform: scaleX(100%);
+}
 body .about-image {
   object-fit: cover;
   height: 20rem;
@@ -383,6 +422,7 @@ body footer .footer-info p {
   body .rentals-table, body .rentals-info, body .rentals-desc {
     padding: 0 6rem;
   }
+
   .socials, .footer-info, .newsletter {
     padding: 0 6rem;
   }

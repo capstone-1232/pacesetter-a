@@ -54,6 +54,72 @@ body {
         padding: 0;
     }
 
+    // -----------------------------------------------------------------HEADER-----------------------------------------------------------------
+
+header {
+    .navbar {
+        background-color: #87D4C4;
+        overflow: hidden;
+
+        .subnav {
+            float: left;
+            overflow: hidden;
+            
+            .subnavbtn {
+              width: .5rem;
+            }
+
+            .subnav-content {
+                background-color: #ffffff;
+                display: none;
+                position: absolute;
+                left: 0;
+                width: 100%;
+                z-index: 1;
+
+                a {
+                    float: left;
+                    text-decoration: none;  
+                }
+            }
+
+            svg {
+                width: 2rem;
+            }
+            
+        }
+        
+        .subnav:hover {
+            .subnav-content {
+                display: block;
+            }
+        }
+
+        a {
+            float: left;
+            color: #2E2E2E;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+    }
+
+    .menu {
+        //left: 0;
+        // position: absolute;
+        // top: 0;
+        // transform: scaleX(0);
+        // transform-origin: left;
+        // transition: transform 300ms;
+        // height: 100vh;
+
+    }
+}
+
+.menu-expanded {
+    transform: scaleX(100%);
+}
+
     // -----------------------------------------------------------------  ABOUT PAGE -----------------------------------------------------------------
 
     .about-image {
@@ -770,7 +836,6 @@ body {
             }
         }
     }
-
 
     //     .emaillist {
     //         position: fixed; /* Stay in place */
