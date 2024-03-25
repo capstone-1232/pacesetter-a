@@ -40,6 +40,7 @@ body li {
 body ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 body header {
   position: relative;
@@ -510,7 +511,7 @@ footer .footer-info p {
   body .first-block {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 2, 100%;
+    grid-template-rows: 2, 1fr;
   }
   body .first-block h1 {
     grid-column: 1/span 12;
@@ -681,7 +682,7 @@ footer .footer-info p {
   body footer .footer-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1, 100%;
+    grid-template-rows: 1, 1fr;
   }
   body footer .socials {
     display: unset;
@@ -704,7 +705,7 @@ footer .footer-info p {
     grid-column: 3;
     grid-row: 1;
     padding: 0;
-    margin-top: 0;
+    margin-top: 1rem;
   }
   body footer .newsletter h3 {
     margin-top: 0rem;
@@ -726,40 +727,23 @@ footer .footer-info p {
   body .rentals-table, body .rentals-info, body .rentals-desc {
     padding: 0 12rem;
   }
-  body footer .footer-grid {
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1, 100%;
-  }
   body footer .socials {
-    display: unset;
-    grid-column: 4;
-    grid-row: 1;
-    padding: 0;
     padding-right: 12rem;
   }
   body footer .shop-info {
-    grid-column: 1;
-    grid-row: 1;
-    margin-top: 0;
     padding: 0 0 0 12rem;
   }
   body footer .footer-nav {
-    display: flex;
+    display: grid;
+    grid-template-columns: 2, 1fr;
+  }
+  body footer .footer-nav ul:first-child {
+    grid-column: 1;
+  }
+  body footer .footer-nav ul:last-child {
     grid-column: 2;
-    grid-row: 1;
-    padding: 0;
-    margin-top: 0;
   }
   body footer li {
     padding: 0;
-  }
-  body footer .newsletter {
-    grid-column: 3;
-    grid-row: 1;
-    padding: 0;
-    margin-top: 0;
-  }
-  body footer .newsletter h3 {
-    margin-top: 0rem;
   }
 }
