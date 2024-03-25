@@ -52,6 +52,7 @@ body {
     ul {
         list-style: none;
         padding: 0;
+        margin: 0;
     }
 
     // -----------------------------------------------------------------HEADER-----------------------------------------------------------------
@@ -213,7 +214,7 @@ header {
         margin-top: 2.5rem;
     }
     
-    .first-block, .second-block, .third-block {
+    .history, .expertise, .winter, .service, .diverse, .community {
         padding: 0 1.875rem;
     }
 
@@ -604,7 +605,7 @@ header {
             font-family: "Josefin Sans", sans-serif;
         }
 
-        p, li, .es-form-field-container, h3{
+        p, .es-form-field-container, h3{
             margin-left: 1.875rem;
             margin-right: 1.875rem;
         }
@@ -647,7 +648,7 @@ header {
 
     // -----------------------------------------------------------------  ABOUT PAGE -----------------------------------------------------------------
 
-        .first-block, .second-block, .third-block {
+        .history, .expertise, .winter, .service, .diverse, .community {
             padding: 0 6rem;
         }
 
@@ -693,14 +694,60 @@ header {
 
         // -----------------------------------------------------------------  ABOUT PAGE -----------------------------------------------------------------
 
-            .first-block, .second-block, .third-block {
-                padding: 0 6rem;
+            .first-block {
+                display: grid;
+                grid-template-columns: repeat(12, 1fr);
+                grid-template-rows: (2, 1fr);
+
+                h1 {
+                    grid-column: 1 / span 12;
+                    grid-row: 1;
+                }
+
+                img {
+                    grid-column: 7 / span 12;
+                    grid-row: 2;
+                    height: 100%;
+                }
+
+                .about-text {
+                    grid-column: 1 / span 6;
+                    grid-row: 2;
+                    margin-bottom: 3rem;
+                }
             }
 
-        // -----------------------------------------------------------------  FAQ-PAGE -----------------------------------------------------------------
+            .second-block {
+                display: grid;
+                grid-template-columns: repeat(12, 1fr);
 
-            .faq-page {
-                padding: 0 6rem;
+                img {
+                    grid-column: 1 / span 6;
+                    grid-row: 2;
+                    height: 100%;
+                }
+
+                .about-text {
+                    grid-column: 7 / span 12;
+                    grid-row: 2;
+                    margin-bottom: 3rem;
+                }
+            }
+
+            .third-block {
+                display: grid;
+                grid-template-columns: repeat(12, 1fr);
+
+                img {
+                    grid-column: 7 / span 12;
+                    grid-row: 2;
+                    height: 100%;
+                }
+
+                .about-text {
+                    grid-column: 1 / span 6;
+                    grid-row: 2;
+                }
             }
         
         // -----------------------------------------------------------------  CONTACT PAGE -----------------------------------------------------------------
@@ -887,7 +934,7 @@ header {
                 .footer-grid {
                     display: grid;
                     grid-template-columns: repeat(4, 1fr);
-                    grid-template-rows: (1, 100%);
+                    grid-template-rows: (1, 1fr);
                 }
 
                 .socials {
@@ -919,11 +966,80 @@ header {
                     grid-column: 3;
                     grid-row: 1;
                     padding: 0;
-                    margin-top: 0;
+                    margin-top: 1rem;
                 }
             }
         }
     }
+
+    @media screen and (min-width: 1440px){
+
+        body{
+    
+        // -----------------------------------------------------------------  ABOUT PAGE -----------------------------------------------------------------
+    
+            .history, .expertise, .winter, .service, .diverse, .community {
+                padding: 0 12rem;
+            }
+    
+        // -----------------------------------------------------------------  FAQ-PAGE -----------------------------------------------------------------
+    
+            .faq-page {
+                padding: 0 12rem;
+            }
+        
+        // -----------------------------------------------------------------  CONTACT PAGE -----------------------------------------------------------------
+    
+            .contact-us {
+                h3, .address, .hours, .email-form {
+                    padding: 0 12rem;
+                }
+            }
+    
+        // -----------------------------------------------------------------  SERVICES  -----------------------------------------------------------------
+            
+            .services-table, .services-desc {
+                padding: 0 12rem;
+            }
+    
+        // -----------------------------------------------------------------  RENTALS  -----------------------------------------------------------------
+    
+            .rentals-table, .rentals-info, .rentals-desc {
+                padding: 0 12rem;
+            }
+    
+        // -----------------------------------------------------------------  FOOTER  -----------------------------------------------------------------
+            
+            footer{
+
+                .socials {
+                    padding-right: 12rem;
+                }
+                    
+                .shop-info {
+                    padding: 0 0 0 12rem;
+                }
+
+                .footer-nav {
+                    display: grid;
+                    grid-template-columns: 2, 1fr;
+
+                    ul:first-child {
+                        grid-column: 1;
+                    }
+
+                    ul:last-child {
+                        grid-column: 2;
+                    }
+                }
+
+                li {
+                    padding: 0;
+                }
+            }
+        }
+    }
+    
 
     //     .emaillist {
     //         position: fixed; /* Stay in place */
