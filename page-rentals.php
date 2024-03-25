@@ -137,15 +137,13 @@ $demo_info_two = get_field( "info", 306);
     <!-- additional info -->
     <div>
         <h3><?php if( $additional_header ) {echo wp_kses_post( $additional_header );} else {echo 'empty';}?></h3>
-        <div>
+        <div class="additional-info-flex">
             <ul>
                 <li><?php if( $additional_list_one ) {echo wp_kses_post( $additional_list_one );} else {echo 'empty';}?></li>
                 <li><?php if( $additional_list_two ) {echo wp_kses_post( $additional_list_two );} else {echo 'empty';}?></li>
                 <li><?php if( $additional_list_three ) {echo wp_kses_post( $additional_list_three );} else {echo 'empty';}?></li>
                 <li><?php if( $additional_list_four ) {echo wp_kses_post( $additional_list_four );} else {echo 'empty';}?></li>
             </ul>
-        </div>
-        <div>
             <ul>
                 <li><?php if( $additional_list_five ) {echo wp_kses_post( $additional_list_five );} else {echo 'empty';}?></li>
                 <li><?php if( $additional_list_six ) {echo wp_kses_post( $additional_list_six );} else {echo 'empty';}?></li>
@@ -153,51 +151,55 @@ $demo_info_two = get_field( "info", 306);
         </div>
 
         <h3><?php if( $coverages_header ) {echo wp_kses_post( $coverages_header );} else    {echo 'empty';}?></h3>
-            <div>
-                <ul>
-                    <li><?php if( $coverages_list_one ) {echo wp_kses_post( $coverages_list_one );} else    {echo 'empty';}?></li>
-                    <li><?php if( $coverages_list_two ) {echo wp_kses_post( $coverages_list_two );} else    {echo 'empty';}?></li>
-                    <li><?php if( $coverages_list_three ) {echo wp_kses_post( $coverages_list_three );} else    {echo 'empty';}?></li>
-                    <li><?php if( $coverages_list_four ) {echo wp_kses_post( $coverages_list_four );} else    {echo 'empty';}?></li>
-                    <li><?php if( $coverages_list_five ) {echo wp_kses_post( $coverages_list_five );} else    {echo 'empty';}?></li>
-                    <li><?php if( $coverages_list_six ) {echo wp_kses_post( $coverages_list_six );} else    {echo 'empty';}?></li>
-                </ul>
-                <p>Includes:</p>
-                <ul>
-                    <li><?php if( $coverages_ordered_one ) {echo wp_kses_post( $coverages_ordered_one );} else    {echo 'empty';}?></li>
-                    <li><?php if( $coverages_ordered_two ) {echo wp_kses_post( $coverages_ordered_two );} else    {echo 'empty';}?></li>
-                    <li><?php if( $coverages_ordered_three ) {echo wp_kses_post( $coverages_ordered_three );} else    {echo 'empty';}?></li>
-                    <li><?php if( $coverages_list_seven ) {echo wp_kses_post( $coverages_list_seven );} else    {echo 'empty';}?></li>
-                </ul>
-            </div> <!-- includes end -->
-            <div>
-                <p>Excludes</p>
-                <ul>
-                    <li><?php if( $coverages_ordered_four ) {echo wp_kses_post( $coverages_ordered_four );} else    {echo 'empty';}?></li>
-                    <li><?php if( $coverages_ordered_five ) {echo wp_kses_post( $coverages_ordered_five );} else    {echo 'empty';}?></li>
-                    <li><?php if( $coverages_ordered_six ) {echo wp_kses_post( $coverages_ordered_six );} else    {echo 'empty';}?></li>
-                    <li><?php if( $coverages_ordered_seven ) {echo wp_kses_post( $coverages_ordered_seven );} else    {echo 'empty';}?></li>
-                    <li><?php if( $coverages_ordered_eight ) {echo wp_kses_post( $coverages_ordered_eight );} else    {echo 'empty';}?></li>
-                    <li><?php if( $coverages_ordered_nine ) {echo wp_kses_post( $coverages_ordered_nine );} else    {echo 'empty';}?></li>
-                    <li><?php if( $coverages_ordered_ten ) {echo wp_kses_post( $coverages_ordered_ten );} else    {echo 'empty';}?></li>
-                </ul>
-                <ul>
-                    <li><?php if( $coverages_list_eight ) {echo wp_kses_post( $coverages_list_eight );} else    {echo 'empty';}?></li>
-                    <li><?php if( $coverages_list_nine ) {echo wp_kses_post( $coverages_ordered_nine );} else    {echo 'empty';}?></li>
-                </ul>
-            </div> <!-- excludes end -->
+            <div class="coverages-flex">
+                <div>
+                    <ul>
+                        <li><?php if( $coverages_list_one ) {echo wp_kses_post( $coverages_list_one );} else    {echo 'empty';}?></li>
+                        <li><?php if( $coverages_list_two ) {echo wp_kses_post( $coverages_list_two );} else    {echo 'empty';}?></li>
+                        <li><?php if( $coverages_list_three ) {echo wp_kses_post( $coverages_list_three );} else    {echo 'empty';}?></li>
+                        <li><?php if( $coverages_list_four ) {echo wp_kses_post( $coverages_list_four );} else    {echo 'empty';}?></li>
+                        <li><?php if( $coverages_list_five ) {echo wp_kses_post( $coverages_list_five );} else    {echo 'empty';}?></li>
+                        <li><?php if( $coverages_list_six ) {echo wp_kses_post( $coverages_list_six );} else    {echo 'empty';}?></li>
+                    </ul>
+                    <p>Includes:</p>
+                    <ul>
+                        <li><?php if( $coverages_ordered_one ) {echo wp_kses_post( $coverages_ordered_one );} else    {echo 'empty';}?></li>
+                        <li><?php if( $coverages_ordered_two ) {echo wp_kses_post( $coverages_ordered_two );} else    {echo 'empty';}?></li>
+                        <li><?php if( $coverages_ordered_three ) {echo wp_kses_post( $coverages_ordered_three );} else    {echo 'empty';}?></li>
+                        <li><?php if( $coverages_list_seven ) {echo wp_kses_post( $coverages_list_seven );} else    {echo 'empty';}?></li>
+                    </ul>
+                </div> <!-- includes end -->
+                <div>
+                    <p>Excludes</p>
+                    <ul>
+                        <li><?php if( $coverages_ordered_four ) {echo wp_kses_post( $coverages_ordered_four );} else    {echo 'empty';}?></li>
+                        <li><?php if( $coverages_ordered_five ) {echo wp_kses_post( $coverages_ordered_five );} else    {echo 'empty';}?></li>
+                        <li><?php if( $coverages_ordered_six ) {echo wp_kses_post( $coverages_ordered_six );} else    {echo 'empty';}?></li>
+                        <li><?php if( $coverages_ordered_seven ) {echo wp_kses_post( $coverages_ordered_seven );} else    {echo 'empty';}?></li>
+                        <li><?php if( $coverages_ordered_eight ) {echo wp_kses_post( $coverages_ordered_eight );} else    {echo 'empty';}?></li>
+                        <li><?php if( $coverages_ordered_nine ) {echo wp_kses_post( $coverages_ordered_nine );} else    {echo 'empty';}?></li>
+                        <li><?php if( $coverages_ordered_ten ) {echo wp_kses_post( $coverages_ordered_ten );} else    {echo 'empty';}?></li>
+                    </ul>
+                    <ul>
+                        <li><?php if( $coverages_list_eight ) {echo wp_kses_post( $coverages_list_eight );} else    {echo 'empty';}?></li>
+                        <li><?php if( $coverages_list_nine ) {echo wp_kses_post( $coverages_ordered_nine );} else    {echo 'empty';}?></li>
+                    </ul>
+                </div> <!-- excludes end -->
+            </div>
         </div> <!-- damage waiver coverage end -->
     
     <!-- demo policy -->
     <div>
-            <h3>Demo Purchase Policy</h3>
-            <div>
-            <p><?php if( $demo_info_one ) {echo wp_kses_post( $demo_info_one );} else    {echo 'empty';}?></p>
-            </div> <!-- demo div 1 end -->
-            <div>
-                <p><?php if( $demo_info_two ) {echo wp_kses_post( $demo_info_two );} else    {echo 'empty';}?></p>
-            </div> <!-- demo div 2 end -->
-    </div> <!-- demo purchase policy end -->
-</div><!-- end rental info -->
+        <h3>Demo Purchase Policy</h3>
+            <div class="demo-policy-flex">
+                <div>
+                    <p><?php if( $demo_info_one ) {echo wp_kses_post( $demo_info_one );} else    {echo 'empty';}?></p>
+                </div> <!-- demo div 1 end -->
+                <div>
+                    <p><?php if( $demo_info_two ) {echo wp_kses_post( $demo_info_two );} else    {echo 'empty';}?></p>
+                </div> <!-- demo div 2 end -->
+            </div> <!-- demo purchase policy end -->
+        </div><!-- end rental info -->
+    </div>
 
 <?php get_footer(); ?>
