@@ -44,9 +44,13 @@ body ul {
 body header {
   position: relative;
 }
+body header .nav-hidden {
+  display: none;
+}
 body header .navbar {
   background-color: #87D4C4;
-  font-family: Arial;
+  display: flex;
+  justify-content: center;
   overflow: hidden;
 }
 body header .navbar a {
@@ -126,6 +130,7 @@ body .menu a {
   text-decoration: none;
 }
 body .nav-btn {
+  cursor: pointer;
   padding: 7px 0;
   width: 2rem;
 }

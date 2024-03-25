@@ -58,10 +58,14 @@ body {
 
 header {
     position: relative;
+    .nav-hidden {
+        display: none;
+    }
 
 .navbar {
     background-color: $primary-color;
-    font-family: Arial;
+    display: flex;
+    justify-content: center;
     overflow: hidden;
   
     a {
@@ -167,6 +171,7 @@ header {
     }
 
     .nav-btn {
+        cursor: pointer;
         padding: 7px 0;
         width: 2rem;
     }
