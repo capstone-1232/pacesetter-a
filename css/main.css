@@ -160,7 +160,7 @@ body .menu a {
   margin-top: 2.5rem;
 }
 
-.first-block, .second-block, .third-block {
+.history, .expertise, .winter, .service, .diverse, .community {
   padding: 0 1.875rem;
 }
 
@@ -470,7 +470,7 @@ footer .socials svg {
 footer .shop-info li {
   font-family: "Josefin Sans", sans-serif;
 }
-footer p, footer li, footer .es-form-field-container, footer h3 {
+footer p, footer .es-form-field-container, footer h3 {
   margin-left: 1.875rem;
   margin-right: 1.875rem;
 }
@@ -487,7 +487,7 @@ footer .footer-info p {
 }
 
 @media screen and (min-width: 720px) {
-  body .first-block, body .second-block, body .third-block {
+  body .history, body .expertise, body .winter, body .service, body .diverse, body .community {
     padding: 0 6rem;
   }
   body .faq-page {
@@ -507,11 +507,51 @@ footer .footer-info p {
   }
 }
 @media screen and (min-width: 1080px) {
-  body .first-block, body .second-block, body .third-block {
-    padding: 0 6rem;
+  body .first-block {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 2, 100%;
   }
-  body .faq-page {
-    padding: 0 6rem;
+  body .first-block h1 {
+    grid-column: 1/span 12;
+    grid-row: 1;
+  }
+  body .first-block img {
+    grid-column: 7/span 12;
+    grid-row: 2;
+    height: 100%;
+  }
+  body .first-block .about-text {
+    grid-column: 1/span 6;
+    grid-row: 2;
+    margin-bottom: 3rem;
+  }
+  body .second-block {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+  body .second-block img {
+    grid-column: 1/span 6;
+    grid-row: 2;
+    height: 100%;
+  }
+  body .second-block .about-text {
+    grid-column: 7/span 12;
+    grid-row: 2;
+    margin-bottom: 3rem;
+  }
+  body .third-block {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+  body .third-block img {
+    grid-column: 7/span 12;
+    grid-row: 2;
+    height: 100%;
+  }
+  body .third-block .about-text {
+    grid-column: 1/span 6;
+    grid-row: 2;
   }
   body .contact-us .contact-flex {
     display: flex;
@@ -669,4 +709,57 @@ footer .footer-info p {
   body footer .newsletter h3 {
     margin-top: 0rem;
   }
-}/*# sourceMappingURL=main.css.map */
+}
+@media screen and (min-width: 1440px) {
+  body .history, body .expertise, body .winter, body .service, body .diverse, body .community {
+    padding: 0 12rem;
+  }
+  body .faq-page {
+    padding: 0 12rem;
+  }
+  body .contact-us h3, body .contact-us .address, body .contact-us .hours, body .contact-us .email-form {
+    padding: 0 12rem;
+  }
+  body .services-table, body .services-desc {
+    padding: 0 12rem;
+  }
+  body .rentals-table, body .rentals-info, body .rentals-desc {
+    padding: 0 12rem;
+  }
+  body footer .footer-grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1, 100%;
+  }
+  body footer .socials {
+    display: unset;
+    grid-column: 4;
+    grid-row: 1;
+    padding: 0;
+    padding-right: 12rem;
+  }
+  body footer .shop-info {
+    grid-column: 1;
+    grid-row: 1;
+    margin-top: 0;
+    padding: 0 0 0 12rem;
+  }
+  body footer .footer-nav {
+    display: flex;
+    grid-column: 2;
+    grid-row: 1;
+    padding: 0;
+    margin-top: 0;
+  }
+  body footer li {
+    padding: 0;
+  }
+  body footer .newsletter {
+    grid-column: 3;
+    grid-row: 1;
+    padding: 0;
+    margin-top: 0;
+  }
+  body footer .newsletter h3 {
+    margin-top: 0rem;
+  }
+}
