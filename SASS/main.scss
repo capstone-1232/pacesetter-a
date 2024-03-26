@@ -692,6 +692,44 @@ header {
 
     body{
 
+        h1, h2, h3, h4, h5, h6, a {
+            font-family: "Josefin Sans", sans-serif;
+            font-weight: 400;
+            padding: 0;
+        }
+    
+        h1 {
+            text-align: center;
+            font-size: 3rem;
+            background-color: $secondary-color;
+            text-transform: uppercase;
+            padding: 1.3rem 0 1rem 0;
+            margin: 0;
+        }
+    
+        h2 {
+            font-size: 2.5rem;
+        }
+    
+        h3 {
+            font-size: 2rem;
+        }
+    
+        p, li {
+            font-family: "Playfair Display", serif;
+            font-size: 1.25rem;
+        }
+    
+        li {
+            margin-top: 1.25rem;
+        }
+    
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
         // -----------------------------------------------------------------  ABOUT PAGE -----------------------------------------------------------------
 
             .first-block {
@@ -749,6 +787,12 @@ header {
                     grid-row: 2;
                 }
             }
+
+        // -----------------------------------------------------------------  FAQ PAGE -----------------------------------------------------------------
+
+            .faq-page .faq-card h3 {
+                font-size: 1.75rem;
+            }
         
         // -----------------------------------------------------------------  CONTACT PAGE -----------------------------------------------------------------
 
@@ -800,14 +844,14 @@ header {
                     td {
                         padding: 1rem 1rem 5rem 1rem;
                         font-family: "Playfair Display", serif;
-                        font-size: 1rem;
+                        font-size: 1.25rem;
                     }
         
                     th {
                         padding: 1rem 0 1rem 1rem;
                         text-align: left;
                         font-family: "Josefin Sans", sans-serif;
-                        font-size: 1.15rem;
+                        font-size: 1.5rem;
                     }
         
                     .type {
@@ -880,6 +924,14 @@ header {
                 tr {
                     display: grid;
                     grid-template-columns: repeat(12, 1fr);
+
+                    td {
+                        font-size: 1.25rem;
+                    }
+        
+                    th {
+                        font-size: 1.5rem;
+                    }
             
                     .rental {
                         border: none;
@@ -924,6 +976,53 @@ header {
                     .demo, .demo-desc {
                         grid-column: span 2;
                     }    
+                }
+            }
+
+            .additional-info-flex {
+                display: grid;
+                grid-template-columns: 2, 1fr;
+
+                ul:first-child {
+                    grid-column: 1;
+                    padding-right: 1rem;
+                }
+
+                ul:last-child {
+                    grid-column: 2;
+                    padding-left: 1rem;
+                }
+            }
+
+            .coverages-flex {
+                display: grid;
+                grid-template-columns: 2, 1fr;
+
+                div:first-child {
+                    grid-column: 1;
+                    padding-right: 1rem;
+                }
+
+                div:last-child {
+                    grid-column: 2;
+                    padding-left: 1rem;
+                }
+            }
+
+            .demo-policy-flex {
+                display: grid;
+                grid-template-columns: 2, 1fr;
+
+                div:first-child {
+                    grid-column: 1;
+                    padding-right: 1rem;
+                    margin-bottom: 3rem;
+                }
+
+                div:last-child {
+                    grid-column: 2;
+                    padding-left: 1rem;
+                    margin-bottom: 3rem;
                 }
             }
 
@@ -1018,6 +1117,74 @@ header {
                     
                 .shop-info {
                     padding: 0 0 0 12rem;
+                }
+
+                .footer-nav {
+                    display: grid;
+                    grid-template-columns: 2, 1fr;
+
+                    ul:first-child {
+                        grid-column: 1;
+                    }
+
+                    ul:last-child {
+                        grid-column: 2;
+                    }
+                }
+
+                li {
+                    padding: 0;
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 1920px){
+
+        body{
+    
+        // -----------------------------------------------------------------  ABOUT PAGE -----------------------------------------------------------------
+    
+            .history, .expertise, .winter, .service, .diverse, .community {
+                padding: 0 20rem;
+            }
+    
+        // -----------------------------------------------------------------  FAQ-PAGE -----------------------------------------------------------------
+    
+            .faq-page {
+                padding: 0 20rem;
+            }
+        
+        // -----------------------------------------------------------------  CONTACT PAGE -----------------------------------------------------------------
+    
+            .contact-us {
+                h3, .address, .hours, .email-form {
+                    padding: 0 20rem;
+                }
+            }
+    
+        // -----------------------------------------------------------------  SERVICES  -----------------------------------------------------------------
+            
+            .services-table, .services-desc {
+                padding: 0 20rem;
+            }
+    
+        // -----------------------------------------------------------------  RENTALS  -----------------------------------------------------------------
+    
+            .rentals-table, .rentals-info, .rentals-desc {
+                padding: 0 20rem;
+            }
+    
+        // -----------------------------------------------------------------  FOOTER  -----------------------------------------------------------------
+            
+            footer{
+
+                .socials {
+                    padding-right: 20rem;
+                }
+                    
+                .shop-info {
+                    padding: 0 0 0 20rem;
                 }
 
                 .footer-nav {

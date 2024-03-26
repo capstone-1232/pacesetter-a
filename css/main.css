@@ -513,6 +513,37 @@ footer .footer-info p {
   }
 }
 @media screen and (min-width: 1080px) {
+  body h1, body h2, body h3, body h4, body h5, body h6, body a {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    padding: 0;
+  }
+  body h1 {
+    text-align: center;
+    font-size: 3rem;
+    background-color: #72A8D5;
+    text-transform: uppercase;
+    padding: 1.3rem 0 1rem 0;
+    margin: 0;
+  }
+  body h2 {
+    font-size: 2.5rem;
+  }
+  body h3 {
+    font-size: 2rem;
+  }
+  body p, body li {
+    font-family: "Playfair Display", serif;
+    font-size: 1.25rem;
+  }
+  body li {
+    margin-top: 1.25rem;
+  }
+  body ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
   body .first-block {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -559,6 +590,9 @@ footer .footer-info p {
     grid-column: 1/span 6;
     grid-row: 2;
   }
+  body .faq-page .faq-card h3 {
+    font-size: 1.75rem;
+  }
   body .contact-us .contact-flex {
     display: flex;
     justify-content: space-between;
@@ -593,13 +627,13 @@ footer .footer-info p {
   body .services-table tr td {
     padding: 1rem 1rem 5rem 1rem;
     font-family: "Playfair Display", serif;
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
   body .services-table tr th {
     padding: 1rem 0 1rem 1rem;
     text-align: left;
     font-family: "Josefin Sans", sans-serif;
-    font-size: 1.15rem;
+    font-size: 1.5rem;
   }
   body .services-table tr .type {
     border: none;
@@ -651,6 +685,12 @@ footer .footer-info p {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
   }
+  body .rentals-table tr td {
+    font-size: 1.25rem;
+  }
+  body .rentals-table tr th {
+    font-size: 1.5rem;
+  }
   body .rentals-table tr .rental {
     border: none;
   }
@@ -683,6 +723,44 @@ footer .footer-info p {
   }
   body .rentals-table tr .demo, body .rentals-table tr .demo-desc {
     grid-column: span 2;
+  }
+  body .additional-info-flex {
+    display: grid;
+    grid-template-columns: 2, 1fr;
+  }
+  body .additional-info-flex ul:first-child {
+    grid-column: 1;
+    padding-right: 1rem;
+  }
+  body .additional-info-flex ul:last-child {
+    grid-column: 2;
+    padding-left: 1rem;
+  }
+  body .coverages-flex {
+    display: grid;
+    grid-template-columns: 2, 1fr;
+  }
+  body .coverages-flex div:first-child {
+    grid-column: 1;
+    padding-right: 1rem;
+  }
+  body .coverages-flex div:last-child {
+    grid-column: 2;
+    padding-left: 1rem;
+  }
+  body .demo-policy-flex {
+    display: grid;
+    grid-template-columns: 2, 1fr;
+  }
+  body .demo-policy-flex div:first-child {
+    grid-column: 1;
+    padding-right: 1rem;
+    margin-bottom: 3rem;
+  }
+  body .demo-policy-flex div:last-child {
+    grid-column: 2;
+    padding-left: 1rem;
+    margin-bottom: 3rem;
   }
   body footer .footer-grid {
     display: grid;
@@ -751,4 +829,41 @@ footer .footer-info p {
   body footer li {
     padding: 0;
   }
-}/*# sourceMappingURL=main.css.map */
+
+}
+@media screen and (min-width: 1920px) {
+  body .history, body .expertise, body .winter, body .service, body .diverse, body .community {
+    padding: 0 20rem;
+  }
+  body .faq-page {
+    padding: 0 20rem;
+  }
+  body .contact-us h3, body .contact-us .address, body .contact-us .hours, body .contact-us .email-form {
+    padding: 0 20rem;
+  }
+  body .services-table, body .services-desc {
+    padding: 0 20rem;
+  }
+  body .rentals-table, body .rentals-info, body .rentals-desc {
+    padding: 0 20rem;
+  }
+  body footer .socials {
+    padding-right: 20rem;
+  }
+  body footer .shop-info {
+    padding: 0 0 0 20rem;
+  }
+  body footer .footer-nav {
+    display: grid;
+    grid-template-columns: 2, 1fr;
+  }
+  body footer .footer-nav ul:first-child {
+    grid-column: 1;
+  }
+  body footer .footer-nav ul:last-child {
+    grid-column: 2;
+  }
+  body footer li {
+    padding: 0;
+  }
+}
