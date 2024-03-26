@@ -95,11 +95,7 @@ $demo_info_two = get_field( "info", 306);
     <p>Renters are responsible for the equipment rented while it is in your possession for the duration of your rental. Return your equipment before 2pm on your drop-off day, in clean condition, to avoid additional charges. For equipment not returned or damaged, the renter will be charged full replacement value for the missing or damaged piece(s) of equipment. If the equipment that you rent is returned to us late, additional daily rental charges will apply for each day that they are returned late.</p>
 
     <h2>Ski and Snowboard</h2>
-</div> 
-
-<div>
     <!-- rentals table -->
-    <h2>Ski and Snowboard</h2>
     <table>
         <tr>
             <th>Rental</th>
@@ -107,53 +103,56 @@ $demo_info_two = get_field( "info", 306);
             <th>Basic Package</th>
             <th>Demo</th>
         </tr>
-
+    
         <tr>
-            <td>Skiing: <div>(Prices do not include GST and are subject to change without notice.)</div><div>Basic package includes skis, boots, and bindings. Demo is board only.</div></td>
+            <td>Skiing:<div><?php if( $ski_rental ) {echo wp_kses_post( $ski_rental );} else {echo 'empty';} ?></div></td>
             <td>
                 <ul>
-                    <li>Adult:</li>
-                    <li>Children:</li>
-                    <li>Boots Only:</li>
+                    <li><?php if( $ski_type_one ) {echo wp_kses_post( $ski_type_one );} else {echo 'empty';} ?></li>
+                    <li><?php if( $ski_type_two ) {echo wp_kses_post( $ski_type_two );} else {echo 'empty';} ?></li>
+                    <li><?php if( $ski_type_three ) {echo wp_kses_post( $ski_type_three );} else {echo 'empty';} ?></li>
                 </ul>
             </td>
             <td>
                 <ul>
-                    <li>$35 per day</li>
-                    <li>$35 per day</li>
-                    <li>$20 per day</li>
+                    <li><?php if( $ski_package_one ) {echo wp_kses_post( $ski_package_one );} else {echo 'empty';} ?></li>
+                    <li><?php if( $ski_package_two ) {echo wp_kses_post( $ski_package_two );} else {echo 'empty';} ?></li>
+                    <li><?php if( $ski_package_three ) {echo wp_kses_post( $ski_package_three );} else {echo 'empty';} ?></li>
                 </ul>
             </td>
             <td>
                 <ul>
-                    <li>$50 per day</li>
-                    <li>N/A</li>
-                    <li>N/A</li>
+                    <li><?php if( $ski_demo_one ) {echo wp_kses_post( $ski_demo_one );} else {echo 'empty';} ?></li>
+                    <li><?php if( $ski_demo_two ) {echo wp_kses_post( $ski_demo_two );} else {echo 'empty';} ?></li>
+                    <li><?php if( $ski_demo_three ) {echo wp_kses_post( $ski_demo_three );} else {echo 'empty';} ?></li>
                 </ul>
             </td>
         </tr>
-
+    
         <tr>
-            <td>Snowboarding: <div>(Prices do not include GST and are subject to change without notice.)</div><div>Basic package includes board, boots, and bindings. Demo is unavailable for snowboards.</div></td>
+            <td>Snowboarding: <div><?php if( $snowboard_rental ) {echo wp_kses_post( $snowboard_rental );} else {echo 'empty';} ?></div></td>
             <td>
                 <ul>
-                    <li>Adult:</li>
-                    <li>Children:</li>
-                    <li>Boots Only:</li>
-                    <li>Bindings Only:</li>
+                    <li><?php if( $snowboard_type_one ) {echo wp_kses_post( $snowboard_type_one );} else {echo 'empty';} ?></li>
+                    <li><?php if( $snowboard_type_two ) {echo wp_kses_post( $snowboard_type_two );} else {echo 'empty';} ?></li>
+                    <li><?php if( $snowboard_type_three ) {echo wp_kses_post( $snowboard_type_three );} else {echo 'empty';} ?></li>
+                    <li><?php if( $snowboard_type_four ) {echo wp_kses_post( $snowboard_type_four );} else {echo 'empty';} ?></li>
                 </ul>
             </td>
             <td>
                 <ul>
-                    <li>$35 per day</li>
-                    <li>$35 per day</li>
-                    <li>$20 per day</li>
-                    <li>$20 per day</li>
+                    <li><?php if( $snowboard_package_one ) {echo wp_kses_post( $snowboard_package_one );} else {echo 'empty';} ?></li>
+                    <li><?php if( $snowboard_package_two ) {echo wp_kses_post( $snowboard_package_two );} else {echo 'empty';} ?></li>
+                    <li><?php if( $snowboard_package_three ) {echo wp_kses_post( $snowboard_package_three );} else {echo 'empty';} ?></li>
+                    <li><?php if( $snowboard_package_four ) {echo wp_kses_post( $snowboard_package_four );} else {echo 'empty';} ?></li>
                 </ul>
             </td>
         </tr>
     </table>
-</div> <!-- end rentals table -->
+    </div> <!-- end rentals table -->
+</div> 
+
+<div>
 
 <!-- rentals info -->
 <div class="rentals-info">
