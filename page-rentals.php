@@ -170,7 +170,7 @@ $demo_info_two = get_field( "info", 306);
                     </ul>
                 </div> <!-- includes end -->
                 <div>
-                    <p>Excludes</p>
+                    <p>Excludes:</p>
                     <ul>
                         <li><?php if( $coverages_ordered_four ) {echo wp_kses_post( $coverages_ordered_four );} else    {echo 'empty';}?></li>
                         <li><?php if( $coverages_ordered_five ) {echo wp_kses_post( $coverages_ordered_five );} else    {echo 'empty';}?></li>

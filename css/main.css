@@ -720,31 +720,40 @@ footer .footer-info p {
     grid-column: span 2;
   }
   body .additional-info-flex {
-    display: flex;
+    display: grid;
+    grid-template-columns: 2, 1fr;
   }
   body .additional-info-flex ul:first-child {
+    grid-column: 1;
     padding-right: 1rem;
   }
   body .additional-info-flex ul:last-child {
+    grid-column: 2;
     padding-left: 1rem;
   }
   body .coverages-flex {
-    display: flex;
+    display: grid;
+    grid-template-columns: 2, 1fr;
   }
   body .coverages-flex div:first-child {
+    grid-column: 1;
     padding-right: 1rem;
   }
   body .coverages-flex div:last-child {
+    grid-column: 2;
     padding-left: 1rem;
   }
   body .demo-policy-flex {
-    display: flex;
+    display: grid;
+    grid-template-columns: 2, 1fr;
   }
   body .demo-policy-flex div:first-child {
+    grid-column: 1;
     padding-right: 1rem;
     margin-bottom: 3rem;
   }
   body .demo-policy-flex div:last-child {
+    grid-column: 2;
     padding-left: 1rem;
     margin-bottom: 3rem;
   }
@@ -801,6 +810,42 @@ footer .footer-info p {
   }
   body footer .shop-info {
     padding: 0 0 0 12rem;
+  }
+  body footer .footer-nav {
+    display: grid;
+    grid-template-columns: 2, 1fr;
+  }
+  body footer .footer-nav ul:first-child {
+    grid-column: 1;
+  }
+  body footer .footer-nav ul:last-child {
+    grid-column: 2;
+  }
+  body footer li {
+    padding: 0;
+  }
+}
+@media screen and (min-width: 1920px) {
+  body .history, body .expertise, body .winter, body .service, body .diverse, body .community {
+    padding: 0 20rem;
+  }
+  body .faq-page {
+    padding: 0 20rem;
+  }
+  body .contact-us h3, body .contact-us .address, body .contact-us .hours, body .contact-us .email-form {
+    padding: 0 20rem;
+  }
+  body .services-table, body .services-desc {
+    padding: 0 20rem;
+  }
+  body .rentals-table, body .rentals-info, body .rentals-desc {
+    padding: 0 20rem;
+  }
+  body footer .socials {
+    padding-right: 20rem;
+  }
+  body footer .shop-info {
+    padding: 0 0 0 20rem;
   }
   body footer .footer-nav {
     display: grid;
