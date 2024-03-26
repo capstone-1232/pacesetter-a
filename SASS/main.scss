@@ -975,38 +975,47 @@ header {
             }
 
             .additional-info-flex {
-                display: flex;
+                display: grid;
+                grid-template-columns: 2, 1fr;
 
                 ul:first-child {
+                    grid-column: 1;
                     padding-right: 1rem;
                 }
 
                 ul:last-child {
+                    grid-column: 2;
                     padding-left: 1rem;
                 }
             }
 
             .coverages-flex {
-                display: flex;
+                display: grid;
+                grid-template-columns: 2, 1fr;
 
                 div:first-child {
+                    grid-column: 1;
                     padding-right: 1rem;
                 }
 
                 div:last-child {
+                    grid-column: 2;
                     padding-left: 1rem;
                 }
             }
 
             .demo-policy-flex {
-                display: flex;
+                display: grid;
+                grid-template-columns: 2, 1fr;
 
                 div:first-child {
+                    grid-column: 1;
                     padding-right: 1rem;
                     margin-bottom: 3rem;
                 }
 
                 div:last-child {
+                    grid-column: 2;
                     padding-left: 1rem;
                     margin-bottom: 3rem;
                 }
@@ -1103,6 +1112,74 @@ header {
                     
                 .shop-info {
                     padding: 0 0 0 12rem;
+                }
+
+                .footer-nav {
+                    display: grid;
+                    grid-template-columns: 2, 1fr;
+
+                    ul:first-child {
+                        grid-column: 1;
+                    }
+
+                    ul:last-child {
+                        grid-column: 2;
+                    }
+                }
+
+                li {
+                    padding: 0;
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 1920px){
+
+        body{
+    
+        // -----------------------------------------------------------------  ABOUT PAGE -----------------------------------------------------------------
+    
+            .history, .expertise, .winter, .service, .diverse, .community {
+                padding: 0 20rem;
+            }
+    
+        // -----------------------------------------------------------------  FAQ-PAGE -----------------------------------------------------------------
+    
+            .faq-page {
+                padding: 0 20rem;
+            }
+        
+        // -----------------------------------------------------------------  CONTACT PAGE -----------------------------------------------------------------
+    
+            .contact-us {
+                h3, .address, .hours, .email-form {
+                    padding: 0 20rem;
+                }
+            }
+    
+        // -----------------------------------------------------------------  SERVICES  -----------------------------------------------------------------
+            
+            .services-table, .services-desc {
+                padding: 0 20rem;
+            }
+    
+        // -----------------------------------------------------------------  RENTALS  -----------------------------------------------------------------
+    
+            .rentals-table, .rentals-info, .rentals-desc {
+                padding: 0 20rem;
+            }
+    
+        // -----------------------------------------------------------------  FOOTER  -----------------------------------------------------------------
+            
+            footer{
+
+                .socials {
+                    padding-right: 20rem;
+                }
+                    
+                .shop-info {
+                    padding: 0 0 0 20rem;
                 }
 
                 .footer-nav {
