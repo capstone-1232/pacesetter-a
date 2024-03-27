@@ -9,7 +9,8 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-	<script>js/functions.js</script>
+		<script src="<?php echo get_template_directory_uri(); ?>/js/functions.js"></script>
+</head>
 </head>
 <body <?php body_class(); ?>>
 <header>
@@ -21,10 +22,8 @@
 		</div>
 	<?php endif; ?>
 
-			<h1 class="nav-hidden">Top Nav</h1>
-
 			<div class="navbar">
-				<nav>
+				<nav role="navigation">
 				<!-- custom logo -->
 				<?php if ( function_exists( 'the_custom_logo' ) ) {
 					the_custom_logo();
@@ -81,14 +80,13 @@
 				</div> <!-- sub-nav end -->
 					<a href="services">Services</a>
 					<a href="rentals">Rentals</a>
-					<?xml version="1.0" encoding="UTF-8"?>
-						<svg class="nav-btn" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g stroke="#000" stroke-linecap="round" stroke-width="2"><path d="m4 18h16"/><path d="m4 12h16"/><path d="m4 6h16"/></g></svg>
+					<svg class="nav-btn" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g stroke="#000" stroke-linecap="round" stroke-width="2"><path d="m4 18h16"/><path d="m4 12h16"/><path d="m4 6h16"/></g></svg>
 				</nav> <!-- end main nav -->
 			</div> <!-- navbar end -->
 
 			<!-- hamburger menu -->
 			<div class="menu">
-				<nav>
+				<nav role="navigation">
 						<!-- ski -->
 						<div class="subnav">
 						<a href="#">Skis
@@ -142,6 +140,6 @@
 					<a class="link" href="faq">FAQ</a>
 					<a class="link" href="services">Services</a>
 				</nav>
+            </div>
 			</div> <!-- menu end -->
-
 </header>

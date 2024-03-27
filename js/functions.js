@@ -18,5 +18,5 @@ window.onclick = function(event) {
 
 // Nav slider
 document.querySelector('.nav-btn').addEventListener('click', () => {
-  document.querySelector('nav').classList.toggle('menu-expanded');
+  document.querySelector('.menu nav').classList.toggle('menu-expanded');
 });
