@@ -17,16 +17,18 @@
     <div class="event-header">
         <?php echo "<h1>" . date("M") . " - Events</h1>"; ?>
         <form action="" method="GET">
-            <select id="calender-select" name="calendar-select">
-                <button type="submit"><option id="calendar" value="calendar">View Calendar</option></button>
-            </select>
-            <input type="submit" value="X">
+            <input id="calender-select" name="calendar-select" type="submit" value="View Calendar">
+            <?php
+                if (isset($_GET['calendar-select'])) {
+                    echo '<input id="cancel-btn" name="cancel-btn" type="submit" value="X">';
+                }
+            ?>
         </form>
     </div>
     <div class="event-card">
     <?php 
 
-    if (isset($_GET['calendar-select']) && $_GET['calendar-select']=="calendar") {
+    if (isset($_GET['calendar-select'])) {
         echo do_shortcode("[calendar id='353']");
     }
 
