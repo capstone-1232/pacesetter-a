@@ -322,7 +322,7 @@ tr {
   grid-template-columns: repeat(12, 1fr);
 }
 tr td {
-  padding: 1rem 1rem 3rem 1rem;
+  padding: 1rem 1rem 5rem 1rem;
   font-family: "Playfair Display", serif;
   font-size: 1rem;
 }
@@ -463,9 +463,7 @@ h3 {
   list-style: unset;
   list-style-position: inside;
 }
-.rentals-info .list-style {
-  list-style: none;
-}
+
 .rentals-info div:nth-child(3) {
   margin-bottom: 3rem;
 }
@@ -627,14 +625,6 @@ footer .footer-info p {
     padding: 0;
     margin: 0;
   }
-  body .history,
-  body .expertise,
-  body .winter,
-  body .service,
-  body .diverse,
-  body .community {
-    padding: 0rem;
-  }
   body .first-block {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -653,7 +643,6 @@ footer .footer-info p {
     grid-column: 1/span 6;
     grid-row: 2;
     margin-bottom: 3rem;
-    padding: 0 2rem 0 6rem;
   }
   body .second-block {
     display: grid;
@@ -668,7 +657,6 @@ footer .footer-info p {
     grid-column: 7/span 12;
     grid-row: 2;
     margin-bottom: 3rem;
-    padding: 0 6rem 0 2rem;
   }
   body .third-block {
     display: grid;
@@ -682,7 +670,6 @@ footer .footer-info p {
   body .third-block .about-text {
     grid-column: 1/span 6;
     grid-row: 2;
-    padding: 0 2rem 0 6rem;
   }
   body .faq-page .faq-card h3 {
     font-size: 1.75rem;
@@ -899,14 +886,13 @@ footer .footer-info p {
   }
 }
 @media screen and (min-width: 1440px) {
-  body .first-block .about-text {
-    padding: 0 2rem 0 12rem;
-  }
-  body .second-block .about-text {
-    padding: 0 12rem 0 2rem;
-  }
-  body .third-block .about-text {
-    padding: 0 2rem 0 12rem;
+  body .history,
+  body .expertise,
+  body .winter,
+  body .service,
+  body .diverse,
+  body .community {
+    padding: 0 12rem;
   }
   body .faq-page {
     padding: 0 12rem;
@@ -947,10 +933,6 @@ footer .footer-info p {
   }
 }
 @media screen and (min-width: 1920px) {
-
-  body header .navbar {
-    padding: 0 20rem;
-  }
   body .history,
   body .expertise,
   body .winter,
@@ -958,16 +940,6 @@ footer .footer-info p {
   body .diverse,
   body .community {
     padding: 0 20rem;
-
-  body .first-block .about-text {
-    padding: 0 4rem 0 20rem;
-  }
-  body .second-block .about-text {
-    padding: 0 20rem 0 4rem;
-  }
-  body .third-block .about-text {
-    padding: 0 4rem 0 20rem;
-
   }
   body .faq-page {
     padding: 0 20rem;
@@ -1006,4 +978,4 @@ footer .footer-info p {
   body footer li {
     padding: 0;
   }
-}
+}/*# sourceMappingURL=main.css.map */

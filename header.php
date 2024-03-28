@@ -18,7 +18,7 @@
 <body>
 	<header>
 		<div class="navbar">
-			<nav>
+			<nav class="main-nav">
 					<!-- custom logo -->
 					<div class="logo">
 						<?php if (function_exists('the_custom_logo')) {
@@ -78,7 +78,7 @@
 						<div class="subnav-content">
 							<a href="#">Bags</a>
 							<a href="#">Helmets</a>
-							<a href="#">Goggles</a>`
+							<a href="#">Goggles</a>
 						</div> <!-- subnav-content end -->
 					</div> <!-- sub-nav end -->
 					<a href="services">Services</a>
@@ -148,7 +148,7 @@
 					<div class="subnav-content">
 						<a href="#">Bags</a>
 						<a href="#">Helmets</a>
-						<a href="#">Goggles</a>`
+						<a href="#">Goggles</a>
 					</div> <!-- subnav-content end -->
 				</div> <!-- sub-nav end -->
 				<a class="link" href="events">Events</a>
