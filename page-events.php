@@ -61,6 +61,30 @@
             break;
         }
 
+    } else {
+        $args = array(
+                    'posts_per_page'    => -1,
+                    'post_type'     => 'event'
+                );
+
+                $the_query = new WP_Query( $args );
+
+                if( $the_query->have_posts() ):
+                    echo '<ul>';
+                    while( $the_query->have_posts() ) : $the_query->the_post();
+                    echo    '<li class="event-card-list">';
+                        the_post_thumbnail();
+                    echo        '<div class="card-body">';
+                        the_title();
+                        the_content();
+                    echo do_shortcode('[email-subscribers-form id="3"]');
+                    echo        '</div>';
+                    echo    '</li>';
+                    endwhile;
+                    echo '</ul>';
+                endif;
+
+                wp_reset_query();
     }
 
     ?>
