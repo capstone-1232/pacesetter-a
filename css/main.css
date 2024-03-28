@@ -263,6 +263,9 @@ body .flex-container {
 .contact-us .hours ul li:nth-child(1) {
   margin-top: 0;
 }
+.contact-us .es_spinner_image, .contact-us .simcal-align-right {
+  display: none;
+}
 .contact-us .hours {
   margin-bottom: 4rem;
 }
@@ -305,14 +308,8 @@ body .flex-container {
   background-color: #87D4C4;
 }
 
-body .es_spinner_image, body .simcal-align-right {
-  display: none;
-}
-body .services-table, body .services-desc {
-
 .services-table,
 .services-desc {
-
   padding: 0 1.875rem;
 }
 
@@ -537,36 +534,30 @@ footer .socials {
 footer .socials svg {
   width: 2.85rem;
 }
-footer .shop-info li {
+
+.shop-info li {
   font-family: "Josefin Sans", sans-serif;
 }
-footer p,
-footer .es-form-field-container,
-footer h3 {
+
+p,
+.es-form-field-container,
+h3 {
   margin-left: 1.875rem;
   margin-right: 1.875rem;
 }
-footer iframe {
+
+iframe {
   height: 320px;
   width: 100%;
 }
-footer .footer-info {
+
+.footer-info {
   padding: 1.5rem 0;
 }
-footer .footer-info p {
+.footer-info p {
   font-family: "Josefin Sans", sans-serif;
   margin-top: 0.5rem;
 }
-body footer .emaillist {
-  position: fixed; /* Stay in place */
-  z-index: 100; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 
 @media screen and (min-width: 720px) {
   body .history,
@@ -950,17 +941,13 @@ body footer .emaillist {
   }
 }
 @media screen and (min-width: 1920px) {
-  body header .navbar {
+  body .history,
+  body .expertise,
+  body .winter,
+  body .service,
+  body .diverse,
+  body .community {
     padding: 0 20rem;
-  }
-  body .first-block .about-text {
-    padding: 0 4rem 0 20rem;
-  }
-  body .second-block .about-text {
-    padding: 0 20rem 0 4rem;
-  }
-  body .third-block .about-text {
-    padding: 0 4rem 0 20rem;
   }
   body .faq-page {
     padding: 0 20rem;
