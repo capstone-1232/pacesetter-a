@@ -23,7 +23,7 @@
 
     <!-- top brands -->
     <div class="top-brands">
-        <h2>Shop Top Brands</h2>
+        <h2>Browse Top Brands</h2>
     </div>
  </main>
 

@@ -7,15 +7,17 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: pacesetter
 */
-html {
-  width: none;
-}
-
 body {
   background-color: #eee;
   margin: 0 auto;
 }
-body h1, body h2, body h3, body h4, body h5, body h6, body a {
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6,
+body a {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
   padding: 0;
@@ -34,7 +36,8 @@ body h2 {
 body h3 {
   font-size: 1.75rem;
 }
-body p, body li {
+body p,
+body li {
   font-family: "Playfair Display", serif;
   font-size: 1rem;
 }
@@ -44,228 +47,465 @@ body li {
 body ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
-body .about-image {
+body header {
+  position: relative;
+}
+body header .navbar {
+  background-color: #87D4C4;
+  padding: 0 1.875rem;
+  overflow: hidden;
+}
+body header .navbar nav {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+body header .navbar nav .logo {
+  grid-column: 1/span 3;
+  padding: 14px 16px;
+}
+body header .navbar .nav-items a {
+  color: black;
+  float: left;
+  font-size: 1.25rem;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+}
+body header .nav-items {
+  align-self: end;
+  grid-column: 4/span 8;
+  margin-left: auto;
+  margin-right: 0;
+  padding-bottom: 1rem;
+}
+body header .nav-btn {
+  align-self: end;
+  grid-column: 12;
+  grid-row: 1;
+  padding: 1rem 0 1.75rem 0;
+  margin-left: auto;
+  margin-right: 0;
+}
+body header .subnav {
+  float: left;
+  overflow: hidden;
+}
+body header .subnav .subnavbtn {
+  width: 0.5rem;
+  border: none;
+  outline: none;
+  color: white;
+  font-family: inherit;
+  margin: 0;
+}
+body header .subnav .subnav-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 160px;
+  top: 5.5rem;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+body header .subnav .subnav-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+body header .subnav .subnav-content a:hover {
+  background-color: #ddd;
+}
+body header .subnav:hover .subnav-content {
+  display: block;
+}
+body .menu {
+  background-color: #ffffff;
+  max-height: 0;
+  position: static;
+  overflow: hidden;
+}
+body .menu nav {
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 300ms;
+  height: 100vh;
+}
+body .menu .menu-expanded {
+  transform: scaleX(100%);
+}
+body .menu .subnav {
+  display: flex;
+  overflow: hidden;
+}
+body .menu .subnav .subnavbtn {
+  width: 0.5rem;
+}
+body .menu .subnav .subnav-content {
+  background-color: #ffffff;
+  display: none;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+body .menu .subnav .subnav-content a {
+  text-decoration: none;
+}
+body .menu .subnav svg {
+  width: 2rem;
+}
+body .menu .subnav:hover .subnav-content {
+  display: block;
+}
+body .menu a {
+  color: #2E2E2E;
+  padding: 14px 16px;
+  text-align: center;
+  text-decoration: none;
+}
+body .nav-btn {
+  cursor: pointer;
+  padding: 7px 0;
+  width: 2rem;
+}
+body .flex-container {
+  align-items: center;
+  display: flex;
+}
+
+.menu-expanded {
+  transform: scaleX(100%);
+}
+
+.about-image {
   object-fit: cover;
   height: 20rem;
   width: 100%;
 }
-body .about-image:nth-child(5), body .about-image:nth-child(7) {
+
+.about-image:nth-child(5),
+.about-image:nth-child(7) {
   margin-top: 2.5rem;
 }
-body .first-block, body .second-block, body .third-block {
+
+.history,
+.expertise,
+.winter,
+.service,
+.diverse,
+.community {
   padding: 0 1.875rem;
 }
-body .community p {
+
+.community p {
   margin-bottom: 3rem;
 }
-body .faq-page {
+
+.faq-page {
   padding: 0 1.875rem;
 }
-body .faq-page h2 {
+.faq-page h2 {
   margin-top: 3rem;
 }
-body .faq-page .faq-card:last-child {
+.faq-page .faq-card:last-child {
   margin-bottom: 3rem;
 }
-body .faq-page .faq-card {
+.faq-page .faq-card {
   margin-top: 3rem;
 }
-body .faq-page .faq-card h3 {
+.faq-page .faq-card h3 {
   font-size: 1.25rem;
 }
-body .faq-page .faq-card svg {
+.faq-page .faq-card svg {
   width: 1rem;
   margin-left: 0.5rem;
 }
-body .faq-page .faq-card .download-button {
+.faq-page .faq-card .download-button {
   margin-left: auto;
   margin-right: 0;
   display: block;
   width: 8.25rem;
 }
-body .faq-page .faq-card a {
+.faq-page .faq-card a {
   background-color: #F7EE23;
   display: flex;
-  padding: 0.5rem;
+  padding: 0.35rem 0.5rem;
   border-radius: 5px;
   border: 2px solid #000;
   color: #000;
   text-decoration: none;
 }
-body .contact-us h3, body .contact-us .address, body .contact-us .hours, body .contact-us .email-form {
+
+.contact-us h3,
+.contact-us .address,
+.contact-us .hours,
+.contact-us .email-form {
   padding: 0 1.875rem;
 }
-body .contact-us h4 {
+.contact-us h4 {
   text-transform: uppercase;
 }
-body .contact-us .address {
+.contact-us .address {
   margin-bottom: 4rem;
 }
-body .contact-us .address ul {
+.contact-us .address ul {
   padding: 0.5rem 0;
 }
-body .contact-us .address ul li:nth-child(1), body .contact-us .hours ul li:nth-child(1) {
+.contact-us .address ul li:nth-child(1),
+.contact-us .hours ul li:nth-child(1) {
   margin-top: 0;
 }
-body .contact-us .hours {
+.contact-us .hours {
   margin-bottom: 4rem;
 }
-body .contact-us .hours ul:nth-child(2) {
+.contact-us .hours ul:nth-child(2) {
   text-align: right;
   margin-left: auto;
   margin-right: 0;
 }
-body .contact-us .hours ul:nth-child(1) {
+.contact-us .hours ul:nth-child(1) {
   text-align: left;
 }
-body .contact-us .hours-flex {
+.contact-us .hours-flex {
   display: flex;
   height: 100%;
 }
-body .contact-us .email-form textarea, body .contact-us .email-form input {
+.contact-us .email-form textarea,
+.contact-us .email-form input {
   width: 100%;
   border-radius: 5px;
   border: none;
   padding: 0 0.5rem;
   filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
 }
-body .contact-us .email-form label, body .contact-us .email-form input {
+.contact-us .email-form label,
+.contact-us .email-form input {
   font-family: "Josefin Sans", sans-serif;
 }
-body .contact-us .email-form textarea {
+.contact-us .email-form textarea {
   height: 16rem;
 }
-body .contact-us .email-form input {
+.contact-us .email-form input {
   height: 2.5rem;
 }
-body .contact-us .email-form .wpcf7-submit {
+.contact-us .email-form .wpcf7-submit {
   background-color: #72A8D5;
   transition: 0.3s;
   margin-bottom: 2.5rem;
 }
-body .contact-us .email-form .wpcf7-submit:hover {
+.contact-us .email-form .wpcf7-submit:hover {
   background-color: #87D4C4;
 }
+
 body .es_spinner_image, body .simcal-align-right {
   display: none;
 }
 body .services-table, body .services-desc {
+
+.services-table,
+.services-desc {
+
   padding: 0 1.875rem;
 }
-body .services-desc {
-  margin-bottom: 3rem;
+
+.services-desc h2 {
+  margin-top: 3rem;
 }
-body tr {
+.services-desc p {
+  margin-top: 2rem;
+}
+
+tr {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
-body td {
-  padding: 1rem 1rem 5rem 1rem;
+tr td {
+  padding: 1rem 1rem 3rem 1rem;
   font-family: "Playfair Display", serif;
   font-size: 1rem;
 }
-body th {
+tr th {
   padding: 1rem 0 1rem 1rem;
   text-align: left;
   font-family: "Josefin Sans", sans-serif;
   font-size: 1.15rem;
 }
-body .type {
+tr .type {
   border: 3px solid black;
 }
-body .board {
+tr .board {
   border-left: 3px solid black;
   border-right: 3px solid black;
   border-bottom: 3px solid black;
 }
-body .ski {
+tr .ski {
   border-left: 3px solid black;
   border-bottom: 3px solid black;
 }
-body .board-desc {
+tr .board-desc {
   border-right: 3px solid black;
   border-left: 3px solid black;
 }
-body .ski-desc {
+tr .ski-desc {
   border-left: 3px solid black;
 }
-body .desc {
+tr .desc {
   border-right: 3px solid black;
   border-left: 3px solid black;
   border-bottom: 3px solid black;
 }
-body .type, body .desc {
+tr .type,
+tr .desc {
   grid-column: 1/span 12;
 }
-body .ski, body .ski-desc {
+tr .ski,
+tr .ski-desc {
   grid-column: 1/span 6;
 }
-body .board, body .board-desc {
+tr .board,
+tr .board-desc {
   grid-column: 7/span 12;
 }
-body table tr:nth-child(12) .board-desc, body table tr:nth-child(12) .ski-desc {
+
+table tr:nth-child(12) .board-desc,
+table tr:nth-child(12) .ski-desc {
   border-bottom: 3px solid black;
   margin-bottom: 3rem;
 }
-body table tr:nth-child(odd) {
+
+table tr:nth-child(odd) {
   background-color: #87D4C4;
 }
-body .desktop-only {
+
+.desktop-only {
   display: none;
 }
-body .rentals-padding tr {
+
+.rentals-table,
+.rentals-info,
+.rentals-desc {
+  padding: 0 1.875rem;
+}
+
+.rentals-desc h2 {
+  margin-top: 3rem;
+}
+.rentals-desc p {
+  margin-top: 2rem;
+}
+
+tr {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
-body .rentals-padding th, body .rentals-padding td {
-  border: 2px solid black;
+tr .rental {
+  border: 3px solid black;
 }
-body .rentals-padding .rental, body .rentals-padding .rental-desc {
+tr .rental-desc,
+tr .package {
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+  border-bottom: 3px solid black;
+}
+tr .rental-type {
+  border-left: 3px solid black;
+  border-bottom: 3px solid black;
+}
+tr .type-desc {
+  border-left: 3px solid black;
+}
+tr .package-desc {
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+}
+tr .demo {
+  border: 3px solid black;
+}
+tr .demo-desc {
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+}
+tr .rental,
+tr .rental-desc {
   grid-column: 1/span 12;
 }
-body .rentals-padding .rental-type, body .rentals-padding .type-desc {
+tr .rental-type,
+tr .type-desc {
   grid-column: 1/span 6;
 }
-body .rentals-padding .package, body .rentals-padding .package-desc {
+tr .package,
+tr .package-desc {
   grid-column: 7/span 12;
 }
-body .rentals-padding .demo, body .rentals-padding .demo-desc {
+tr .demo,
+tr .demo-desc {
   grid-column: 1/span 12;
 }
-body .rentals-padding h3 {
+
+.rentals-table tr:nth-child(odd) {
+  background-color: #87D4C4;
+}
+.rentals-table .desktop-only {
+  display: none;
+}
+
+.rentals-table tr:nth-child(3) {
+  border-bottom: 3px solid black;
+}
+
+h3 {
   margin-top: 3rem;
 }
-body .rentals-padding .rentals-info ul {
+
+.rentals-info ul {
   list-style: unset;
   list-style-position: inside;
 }
-body .rentals-padding .rentals-info div:nth-child(3) {
+.rentals-info .list-style {
+  list-style: none;
+}
+.rentals-info div:nth-child(3) {
   margin-bottom: 3rem;
 }
-body footer {
+
+.ep-event-loader {
+  display: none !important;
+}
+
+footer {
   background-color: #87D4C4;
   text-align: center;
   color: #2E2E2E;
   padding-top: 1rem;
 }
-body footer a {
+footer .es_spinner_image img {
+  display: none;
+}
+footer a {
   color: #2E2E2E;
   text-decoration: none;
 }
-body footer .es_subscription_form {
+footer .es_subscription_form {
   justify-content: center;
   display: flex;
 }
-body footer .es_subscription_form .es-form-field-container {
+footer .es_subscription_form .es-form-field-container {
   display: flex;
 }
-body footer .es_subscription_form .es-form-field-container input {
+footer .es_subscription_form .es-form-field-container input {
   margin: 0;
   padding: 0 0.5rem;
   height: 2.5rem;
 }
-body footer .es_subscription_form .es-form-field-container div:nth-child(3) input {
+footer .es_subscription_form .es-form-field-container div:nth-child(3) input {
   background-color: #ffffff;
   border-top-right-radius: 5px;
   border-top-left-radius: 0;
@@ -275,43 +515,47 @@ body footer .es_subscription_form .es-form-field-container div:nth-child(3) inpu
   filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
   transition: 0.3s;
 }
-body footer .es_subscription_form .es-form-field-container div:nth-child(3) input:hover {
+footer .es_subscription_form .es-form-field-container div:nth-child(3) input:hover {
   background-color: #72A8D5;
 }
-body footer .es_subscription_form .es-form-field-container .es-email {
+footer .es_subscription_form .es-form-field-container .es-email {
   border-top-right-radius: 0;
   border-top-left-radius: 5px;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 5px;
   border: none;
 }
-body footer .shop-info, body footer .footer-nav, body footer .socials {
+footer .shop-info,
+footer .footer-nav,
+footer .socials {
   text-transform: uppercase;
   margin-bottom: 3rem;
 }
-body footer .socials {
+footer .socials {
   justify-content: center;
   display: flex;
   margin-top: 0;
 }
-body footer .socials svg {
+footer .socials svg {
   width: 2.85rem;
 }
-body footer .shop-info li {
+footer .shop-info li {
   font-family: "Josefin Sans", sans-serif;
 }
-body footer p, body footer li, body footer .es-form-field-container, body footer h3 {
+footer p,
+footer .es-form-field-container,
+footer h3 {
   margin-left: 1.875rem;
   margin-right: 1.875rem;
 }
-body footer iframe {
+footer iframe {
   height: 320px;
   width: 100%;
 }
-body footer .footer-info {
+footer .footer-info {
   padding: 1.5rem 0;
 }
-body footer .footer-info p {
+footer .footer-info p {
   font-family: "Josefin Sans", sans-serif;
   margin-top: 0.5rem;
 }
@@ -325,4 +569,448 @@ body footer .emaillist {
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0, 0, 0); /* Fallback color */
   background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+
+@media screen and (min-width: 720px) {
+  body .history,
+  body .expertise,
+  body .winter,
+  body .service,
+  body .diverse,
+  body .community {
+    padding: 0 6rem;
+  }
+  body .faq-page {
+    padding: 0 6rem;
+  }
+  body .contact-us h3,
+  body .contact-us .address,
+  body .contact-us .hours,
+  body .contact-us .email-form {
+    padding: 0 6rem;
+  }
+  body .services-table,
+  body .services-desc {
+    padding: 0 6rem;
+  }
+  body .rentals-table,
+  body .rentals-info,
+  body .rentals-desc {
+    padding: 0 6rem;
+  }
+  .shop-info,
+  .footer-nav,
+  .socials,
+  .footer-info {
+    padding: 0 6rem;
+  }
+}
+@media screen and (min-width: 1080px) {
+  body h1,
+  body h2,
+  body h3,
+  body h4,
+  body h5,
+  body h6,
+  body a {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    padding: 0;
+  }
+  body h1 {
+    text-align: center;
+    font-size: 3rem;
+    background-color: #72A8D5;
+    text-transform: uppercase;
+    padding: 1.3rem 0 1rem 0;
+    margin: 0;
+  }
+  body h2 {
+    font-size: 2.5rem;
+  }
+  body h3 {
+    font-size: 2rem;
+  }
+  body p,
+  body li {
+    font-family: "Playfair Display", serif;
+    font-size: 1.25rem;
+  }
+  body li {
+    margin-top: 1.25rem;
+  }
+  body ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  body .history,
+  body .expertise,
+  body .winter,
+  body .service,
+  body .diverse,
+  body .community {
+    padding: 0rem;
+  }
+  body .first-block {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 2, 1fr;
+  }
+  body .first-block h1 {
+    grid-column: 1/span 12;
+    grid-row: 1;
+  }
+  body .first-block img {
+    grid-column: 7/span 12;
+    grid-row: 2;
+    height: 100%;
+  }
+  body .first-block .about-text {
+    grid-column: 1/span 6;
+    grid-row: 2;
+    margin-bottom: 3rem;
+    padding: 0 2rem 0 6rem;
+  }
+  body .second-block {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+  body .second-block img {
+    grid-column: 1/span 6;
+    grid-row: 2;
+    height: 100%;
+  }
+  body .second-block .about-text {
+    grid-column: 7/span 12;
+    grid-row: 2;
+    margin-bottom: 3rem;
+    padding: 0 6rem 0 2rem;
+  }
+  body .third-block {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+  body .third-block img {
+    grid-column: 7/span 12;
+    grid-row: 2;
+    height: 100%;
+  }
+  body .third-block .about-text {
+    grid-column: 1/span 6;
+    grid-row: 2;
+    padding: 0 2rem 0 6rem;
+  }
+  body .faq-page .faq-card h3 {
+    font-size: 1.75rem;
+  }
+  body .contact-us .contact-flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  body .contact-us .hours-flex ul:first-child {
+    margin-right: 1rem;
+  }
+  body .contact-us .email-form .wpcf7-submit {
+    width: 10rem;
+    margin-left: auto;
+    margin-right: 0;
+    display: block;
+  }
+  body .services-table,
+  body .services-desc {
+    padding: 0 6rem;
+  }
+  body .services-table .hidden {
+    display: none;
+  }
+  body .services-table .desktop-only {
+    display: grid;
+  }
+  body .services-table .desktop-only th:first-child {
+    grid-column: 1/span 8;
+  }
+  body .services-table .desktop-only th {
+    grid-column: span 2;
+  }
+  body .services-table tr {
+    display: grid;
+  }
+  body .services-table tr td {
+    padding: 1rem 1rem 5rem 1rem;
+    font-family: "Playfair Display", serif;
+    font-size: 1.25rem;
+  }
+  body .services-table tr th {
+    padding: 1rem 0 1rem 1rem;
+    text-align: left;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.5rem;
+  }
+  body .services-table tr .type {
+    border: none;
+  }
+  body .services-table tr .board {
+    border: none;
+  }
+  body .services-table tr .ski {
+    border: none;
+  }
+  body .services-table tr .board-desc {
+    border: none;
+  }
+  body .services-table tr .ski-desc {
+    border: none;
+  }
+  body .services-table tr .desc {
+    border: none;
+  }
+  body .services-table tr .type,
+  body .services-table tr .desc {
+    grid-column: 1/span 8;
+  }
+  body .services-table tr .ski,
+  body .services-table tr .ski-desc {
+    grid-column: span 2;
+  }
+  body .services-table tr .board,
+  body .services-table tr .board-desc {
+    grid-column: span 2;
+  }
+  body .services-table tr:nth-child(12) .board-desc,
+  body .services-table tr:nth-child(12) .ski-desc {
+    border: none;
+    margin-bottom: 3rem;
+  }
+  body .rentals-table .hidden {
+    display: none;
+  }
+  body .rentals-table tr:nth-child(3) {
+    border-bottom: none;
+  }
+  body .rentals-table .desktop-only {
+    display: grid;
+  }
+  body .rentals-table .desktop-only th:first-child {
+    grid-column: 1/span 6;
+  }
+  body .rentals-table .desktop-only th {
+    grid-column: span 2;
+  }
+  body .rentals-table tr {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+  body .rentals-table tr td {
+    font-size: 1.25rem;
+  }
+  body .rentals-table tr th {
+    font-size: 1.5rem;
+  }
+  body .rentals-table tr .rental {
+    border: none;
+  }
+  body .rentals-table tr .rental-desc,
+  body .rentals-table tr .package {
+    border: none;
+  }
+  body .rentals-table tr .rental-type {
+    border: none;
+  }
+  body .rentals-table tr .type-desc {
+    border: none;
+  }
+  body .rentals-table tr .package-desc {
+    border: none;
+  }
+  body .rentals-table tr .demo {
+    border: none;
+  }
+  body .rentals-table tr .demo-desc {
+    border: none;
+  }
+  body .rentals-table tr .rental,
+  body .rentals-table tr .rental-desc {
+    grid-column: 1/span 6;
+  }
+  body .rentals-table tr .rental-type,
+  body .rentals-table tr .type-desc {
+    grid-column: span 2;
+  }
+  body .rentals-table tr .package,
+  body .rentals-table tr .package-desc {
+    grid-column: span 2;
+  }
+  body .rentals-table tr .demo,
+  body .rentals-table tr .demo-desc {
+    grid-column: span 2;
+  }
+  body .additional-info-flex {
+    display: grid;
+    grid-template-columns: 2, 1fr;
+  }
+  body .additional-info-flex ul:first-child {
+    grid-column: 1;
+    padding-right: 1rem;
+  }
+  body .additional-info-flex ul:last-child {
+    grid-column: 2;
+    padding-left: 1rem;
+  }
+  body .coverages-flex {
+    display: grid;
+    grid-template-columns: 2, 1fr;
+  }
+  body .coverages-flex div:first-child {
+    grid-column: 1;
+    padding-right: 1rem;
+  }
+  body .coverages-flex div:last-child {
+    grid-column: 2;
+    padding-left: 1rem;
+  }
+  body .demo-policy-flex {
+    display: grid;
+    grid-template-columns: 2, 1fr;
+  }
+  body .demo-policy-flex div:first-child {
+    grid-column: 1;
+    padding-right: 1rem;
+    margin-bottom: 3rem;
+  }
+  body .demo-policy-flex div:last-child {
+    grid-column: 2;
+    padding-left: 1rem;
+    margin-bottom: 3rem;
+  }
+  body footer .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1, 1fr;
+  }
+  body footer .socials {
+    display: unset;
+    grid-column: 4;
+    grid-row: 1;
+    padding: 0;
+  }
+  body footer .shop-info {
+    grid-column: 1;
+    grid-row: 1;
+    margin-top: 0;
+    padding: 0;
+  }
+  body footer .footer-nav {
+    grid-column: 2;
+    grid-row: 1;
+    padding: 0;
+    margin-top: 0;
+  }
+  body footer .newsletter {
+    grid-column: 3;
+    grid-row: 1;
+    padding: 0;
+    margin-top: 1rem;
+  }
+  body footer .newsletter h3 {
+    margin-top: 0rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  body .first-block .about-text {
+    padding: 0 2rem 0 12rem;
+  }
+  body .second-block .about-text {
+    padding: 0 12rem 0 2rem;
+  }
+  body .third-block .about-text {
+    padding: 0 2rem 0 12rem;
+  }
+  body .faq-page {
+    padding: 0 12rem;
+  }
+  body .contact-us h3,
+  body .contact-us .address,
+  body .contact-us .hours,
+  body .contact-us .email-form {
+    padding: 0 12rem;
+  }
+  body .services-table,
+  body .services-desc {
+    padding: 0 12rem;
+  }
+  body .rentals-table,
+  body .rentals-info,
+  body .rentals-desc {
+    padding: 0 12rem;
+  }
+  body footer .socials {
+    padding-right: 12rem;
+  }
+  body footer .shop-info {
+    padding: 0 0 0 12rem;
+  }
+  body footer .footer-nav {
+    display: grid;
+    grid-template-columns: 2, 1fr;
+  }
+  body footer .footer-nav ul:first-child {
+    grid-column: 1;
+  }
+  body footer .footer-nav ul:last-child {
+    grid-column: 2;
+  }
+  body footer li {
+    padding: 0;
+  }
+}
+@media screen and (min-width: 1920px) {
+  body header .navbar {
+    padding: 0 20rem;
+  }
+  body .first-block .about-text {
+    padding: 0 4rem 0 20rem;
+  }
+  body .second-block .about-text {
+    padding: 0 20rem 0 4rem;
+  }
+  body .third-block .about-text {
+    padding: 0 4rem 0 20rem;
+  }
+  body .faq-page {
+    padding: 0 20rem;
+  }
+  body .contact-us h3,
+  body .contact-us .address,
+  body .contact-us .hours,
+  body .contact-us .email-form {
+    padding: 0 20rem;
+  }
+  body .services-table,
+  body .services-desc {
+    padding: 0 20rem;
+  }
+  body .rentals-table,
+  body .rentals-info,
+  body .rentals-desc {
+    padding: 0 20rem;
+  }
+  body footer .socials {
+    padding-right: 20rem;
+  }
+  body footer .shop-info {
+    padding: 0 0 0 20rem;
+  }
+  body footer .footer-nav {
+    display: grid;
+    grid-template-columns: 2, 1fr;
+  }
+  body footer .footer-nav ul:first-child {
+    grid-column: 1;
+  }
+  body footer .footer-nav ul:last-child {
+    grid-column: 2;
+  }
+  body footer li {
+    padding: 0;
+  }
 }/*# sourceMappingURL=main.css.map */

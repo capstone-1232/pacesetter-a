@@ -50,12 +50,11 @@ $third_block_alt = $third_block['alt'];
 ?>
 
 <!-- first block image -->
-<img class="about-image" src="<?php echo $first_block_size ?>" alt="<?php echo $first_block_alt ?>">
-
-<h1>About Us</h1>
 
 <div class="first-block">
-    <div>
+        <img class="about-image" src="<?php echo $first_block_size ?>" alt="<?php echo $first_block_alt ?>">
+        <h1>About Us</h1>
+    <div class="about-text">
         <div class="history">
             <h3><?php if( $history_header ) {echo wp_kses_post( $history_header );} else {echo 'empty';} ?></h3>
             <p><?php if( $history_info ) {echo wp_kses_post( $history_info );} else {echo 'empty';} ?></p>
@@ -69,10 +68,10 @@ $third_block_alt = $third_block['alt'];
 </div>
 
 <!-- second block image -->
-<img class="about-image" src="<?php echo $second_block_size ?>" alt="<?php echo "$second_block_alt" ?>"> 
 
 <div class="second-block">
-    <div>
+        <img class="about-image" src="<?php echo $second_block_size ?>" alt="<?php echo "$second_block_alt" ?>"> 
+    <div class="about-text">
         <div class="winter">
             <h3><?php if( $wonderland_header ) {echo wp_kses_post( $wonderland_header );} else {echo 'empty';} ?></h3>
             <p><?php if( $wonderland_info ) {echo wp_kses_post( $wonderland_info );} else {echo 'empty';} ?>
@@ -86,10 +85,10 @@ $third_block_alt = $third_block['alt'];
 </div>
 
 <!-- third block image -->
-<img class="about-image" src="<?php echo $third_block_size ?>" alt="<?php echo $third_block_alt ?>">
 
 <div class="third-block">
-    <div>
+        <img class="about-image" src="<?php echo $third_block_size ?>" alt="<?php echo $third_block_alt ?>">
+    <div class="about-text">
         <div class="diverse">
             <h3><?php if( $products_header ) {echo wp_kses_post( $products_header );} else {echo 'empty';} ?></h3>
             <p><?php if( $products_info ) {echo wp_kses_post( $products_info );} else {echo 'empty';} ?></p>
