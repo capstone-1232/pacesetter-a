@@ -147,6 +147,9 @@ body .contact-us .email-form .wpcf7-submit {
 body .contact-us .email-form .wpcf7-submit:hover {
   background-color: #87D4C4;
 }
+body .es_spinner_image {
+  display: none;
+}
 body .services-table, body .services-desc {
   padding: 0 1.875rem;
 }
@@ -311,12 +314,10 @@ body footer .footer-info {
 body footer .footer-info p {
   font-family: "Josefin Sans", sans-serif;
   margin-top: 0.5rem;
-  
 }
-body footer .sucess {
-  display: none; /* Hidden by default */
+body footer .emaillist {
   position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  z-index: 100; /* Sit on top */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
