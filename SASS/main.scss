@@ -74,12 +74,18 @@ body {
         //     }
         // }
 
+        
         .navbar {
             background-color: $primary-color;
             display: flex;
             justify-content: flex-end;
             padding: 0 1.875rem;
             overflow: hidden;
+            
+            span {
+                float: left;
+                padding: 14px 16px;
+            }
 
             a {
                 color: black;
@@ -579,6 +585,12 @@ footer {
     text-align: center;
     color: $alt-font-color;
     padding-top: 1rem;
+
+    .es_spinner_image {
+        img {
+            display: none;
+        }
+    }
 
     a {
         color: $alt-font-color;

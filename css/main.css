@@ -59,6 +59,10 @@ body header .navbar {
   padding: 0 1.875rem;
   overflow: hidden;
 }
+body header .navbar span {
+  float: left;
+  padding: 14px 16px;
+}
 body header .navbar a {
   color: black;
   float: left;
@@ -456,6 +460,9 @@ footer {
   text-align: center;
   color: #2E2E2E;
   padding-top: 1rem;
+}
+footer .es_spinner_image img {
+  display: none;
 }
 footer a {
   color: #2E2E2E;
