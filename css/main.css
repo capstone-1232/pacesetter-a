@@ -54,22 +54,39 @@ body header {
 }
 body header .navbar {
   background-color: #87D4C4;
-  display: flex;
-  justify-content: flex-end;
   padding: 0 1.875rem;
   overflow: hidden;
 }
-body header .navbar span {
-  float: left;
+body header .navbar nav {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+body header .navbar nav .logo {
+  grid-column: 1/span 3;
   padding: 14px 16px;
 }
-body header .navbar a {
+body header .navbar .nav-items a {
   color: black;
   float: left;
   font-size: 16px;
-  padding: 14px 16px;
+  padding: 1rem;
   text-align: center;
   text-decoration: none;
+}
+body header .nav-items {
+  align-self: end;
+  grid-column: 4/span 8;
+  margin-left: auto;
+  margin-right: 0;
+  padding-bottom: 1rem;
+}
+body header .nav-btn {
+  align-self: end;
+  grid-column: 12;
+  grid-row: 1;
+  padding: 1rem 0 1.75rem 0;
+  margin-left: auto;
+  margin-right: 0;
 }
 body header .subnav {
   float: left;
@@ -88,7 +105,7 @@ body header .subnav .subnav-content {
   position: absolute;
   background-color: #ffffff;
   min-width: 160px;
-  top: 2.5rem;
+  top: 5.5rem;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
@@ -930,6 +947,18 @@ footer .footer-info p {
   }
 }
 @media screen and (min-width: 1920px) {
+
+  body header .navbar {
+    padding: 0 20rem;
+  }
+  body .history,
+  body .expertise,
+  body .winter,
+  body .service,
+  body .diverse,
+  body .community {
+    padding: 0 20rem;
+
   body .first-block .about-text {
     padding: 0 4rem 0 20rem;
   }
@@ -938,6 +967,7 @@ footer .footer-info p {
   }
   body .third-block .about-text {
     padding: 0 4rem 0 20rem;
+
   }
   body .faq-page {
     padding: 0 20rem;

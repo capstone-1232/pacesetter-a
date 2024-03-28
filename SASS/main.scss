@@ -67,40 +67,58 @@ body {
     header {
         position: relative;
 
-        // .custom-logo-link {
-        //     img {
-        //         height: 6rem;
-        //         width: 100%;
-        //     }
-        // }
-
-        
         .navbar {
             background-color: $primary-color;
-            display: flex;
-            justify-content: flex-end;
+            // justify-content: flex;
             padding: 0 1.875rem;
             overflow: hidden;
-            
-            span {
-                float: left;
-                padding: 14px 16px;
-            }
 
-            a {
-                color: black;
-                float: left;
-                font-size: 16px;
-                padding: 14px 16px;
-                text-align: center;
-                text-decoration: none;
+            nav {
+                display: grid;
+                grid-template-columns: repeat(12, 1fr);
+
+                .logo {
+                    grid-column: 1/span 3;
+                    padding: 14px 16px;
+                }
+            }
+            
+            .nav-items {
+
+                a {
+                    color: black;
+                    float: left;
+                    font-size: 16px;
+                    padding: 1rem;
+                    text-align: center;
+                    text-decoration: none;
+                }
             }
         }
 
+        .nav-items {
+            align-self: end;
+            grid-column: 4/span 8;
+            margin-left: auto;
+            margin-right: 0;
+            padding-bottom: 1rem;
+            
+        }
+
+        .nav-btn {
+            align-self: end;
+            grid-column: 12;
+            grid-row: 1;
+            padding: 1rem 0 1.75rem 0;
+            margin-left: auto;
+            margin-right: 0;
+        }
+
+        
         .subnav {
             float: left;
             overflow: hidden;
-
+            
             .subnavbtn {
                 width: .5rem;
                 border: none;
@@ -109,13 +127,13 @@ body {
                 font-family: inherit;
                 margin: 0;
             }
-
+            
             .subnav-content {
                 display: none;
                 position: absolute;
                 background-color: #ffffff;
                 min-width: 160px;
-                top: 2.5rem;
+                top: 5.5rem;
                 box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
                 z-index: 1;
 
@@ -1270,6 +1288,15 @@ footer {
 @media screen and (min-width: 1920px) {
 
     body {
+
+        // -----------------------------------------------------------------  HEADER -----------------------------------------------------------------
+
+        header {
+            .navbar {
+                padding: 0 20rem;
+            }
+        }
+
 
         // -----------------------------------------------------------------  ABOUT PAGE -----------------------------------------------------------------
 
