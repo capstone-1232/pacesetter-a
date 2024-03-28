@@ -17,10 +17,10 @@
     <div class="event-header">
         <?php echo "<h1>" . date("M") . " - Events</h1>"; ?>
         <form action="" method="POST">
-            <input id="calender-select" name="calendar-select" type="submit" value="View Calendar">
+            <input id="calender-select" type="submit" value="View Calendar">
             <?php
                 if (isset($_POST['calendar-select'])) {
-                    echo '<input id="cancel-btn" name="cancel-btn" type="submit" value="X">';
+                    echo '<input id="cancel-btn" type="submit" value="X">';
                 }
             ?>
         </form>
