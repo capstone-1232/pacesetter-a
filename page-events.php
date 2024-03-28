@@ -18,8 +18,7 @@
         <?php echo "<h1>" . date("M") . " - Events</h1>"; ?>
         <form action="" method="GET">
             <select id="calender-select" name="calendar-select">
-                <option id="calendar" value="calendar">View Calendar</option>
-                <option id="event-card" value="event-card" selected>View Events</option>
+                <button type="submit"><option id="calendar" value="calendar">View Calendar</option></button>
             </select>
             <input type="submit" value="Set">
         </form>
