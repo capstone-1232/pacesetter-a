@@ -46,11 +46,12 @@
                     echo '<ul>';
                     while( $the_query->have_posts() ) : $the_query->the_post();
                     echo    '<li class="event-card-list">';
-                    echo        '<>';
                         the_post_thumbnail();
+                    echo        '<div class="card-body">';
                         the_title();
                         the_content();
                     echo do_shortcode('[email-subscribers-form id="3"]');
+                    echo        '</div>';
                     echo    '</li>';
                     endwhile;
                     echo '</ul>';
