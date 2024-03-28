@@ -1161,18 +1161,19 @@ footer {
                 grid-template-rows: (1, 1fr);
             }
 
-            .socials {
-                display: unset;
-                grid-column: 4;
-                grid-row: 1;
-                padding: 0;
-            }
-
-            .shop-info {
-                grid-column: 1;
-                grid-row: 1;
-                margin-top: 0;
-            }
+                .socials {
+                    display: unset;
+                    grid-column: 4;
+                    grid-row: 1;
+                    padding: 0;
+                }
+                    
+                .shop-info {
+                    grid-column: 1;
+                    grid-row: 1;
+                    margin-top: 0;
+                    padding: 0;
+                }
 
             .footer-nav {
                 grid-column: 2;
