@@ -30,7 +30,7 @@
     if (isset($_GET['calendar-select'])) {
         switch($_GET['calendar-select']) {
             case 'calendar':
-                echo "Calendar";
+                echo do_shortcode("[calendar id='353']");
             break;
 
             case 'event-card':

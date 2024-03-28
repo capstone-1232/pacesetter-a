@@ -237,6 +237,10 @@ body {
     transform: scaleX(100%);
 }
 
+// -----------------------------------------------------------------  HOME PAGE -----------------------------------------------------------------
+
+
+
 // -----------------------------------------------------------------  ABOUT PAGE -----------------------------------------------------------------
 
 .about-image {
@@ -413,7 +417,7 @@ tr {
     grid-template-columns: repeat(12, 1fr);
 
     td {
-        padding: 1rem 1rem 5rem 1rem;
+        padding: 1rem 1rem 3rem 1rem;
         font-family: "Playfair Display", serif;
         font-size: 1rem;
     }
@@ -581,13 +585,19 @@ h3 {
     margin-top: 3rem;
 }
 
-.rentals-info ul {
-    list-style: unset;
-    list-style-position: inside;
-}
+.rentals-info {
+    ul {
+        list-style: unset;
+        list-style-position: inside;
+    }
 
-.rentals-info div:nth-child(3) {
-    margin-bottom: 3rem;
+    .list-style {
+        list-style: none;
+    }
+
+    div:nth-child(3) {
+        margin-bottom: 3rem;
+    }
 }
 
 // -----------------------------------------------------------------  EVENTS PAGE -----------------------------------------------------------------
@@ -825,6 +835,15 @@ footer {
 
         // -----------------------------------------------------------------  ABOUT PAGE -----------------------------------------------------------------
 
+        .history,
+        .expertise,
+        .winter,
+        .service,
+        .diverse,
+        .community {
+            padding: 0rem;
+        }
+
         .first-block {
             display: grid;
             grid-template-columns: repeat(12, 1fr);
@@ -845,6 +864,7 @@ footer {
                 grid-column: 1 / span 6;
                 grid-row: 2;
                 margin-bottom: 3rem;
+                padding: 0 2rem 0 6rem;
             }
         }
 
@@ -862,6 +882,7 @@ footer {
                 grid-column: 7 / span 12;
                 grid-row: 2;
                 margin-bottom: 3rem;
+                padding: 0 6rem 0 2rem;
             }
         }
 
@@ -878,6 +899,7 @@ footer {
             .about-text {
                 grid-column: 1 / span 6;
                 grid-row: 2;
+                padding: 0 2rem 0 6rem;
             }
         }
 
@@ -1180,13 +1202,22 @@ footer {
 
         // -----------------------------------------------------------------  ABOUT PAGE -----------------------------------------------------------------
 
-        .history,
-        .expertise,
-        .winter,
-        .service,
-        .diverse,
-        .community {
-            padding: 0 12rem;
+        .first-block {
+            .about-text {
+                padding: 0 2rem 0 12rem;
+            }
+        }
+
+        .second-block {
+            .about-text {
+                padding: 0 12rem 0 2rem;
+            }
+        }
+
+        .third-block {
+            .about-text {
+                padding: 0 2rem 0 12rem;
+            }
         }
 
         // -----------------------------------------------------------------  FAQ-PAGE -----------------------------------------------------------------
@@ -1269,13 +1300,22 @@ footer {
 
         // -----------------------------------------------------------------  ABOUT PAGE -----------------------------------------------------------------
 
-        .history,
-        .expertise,
-        .winter,
-        .service,
-        .diverse,
-        .community {
-            padding: 0 20rem;
+        .first-block {
+            .about-text {
+                padding: 0 4rem 0 20rem;
+            }
+        }
+
+        .second-block {
+            .about-text {
+                padding: 0 20rem 0 4rem;
+            }
+        }
+
+        .third-block {
+            .about-text {
+                padding: 0 4rem 0 20rem;
+            }
         }
 
         // -----------------------------------------------------------------  FAQ-PAGE -----------------------------------------------------------------
