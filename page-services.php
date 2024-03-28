@@ -79,8 +79,13 @@ $labor_snowboard = get_field( "snowboard_tune_price", 151 );
 
  ?>
 <h1>Services</h1>
-<p class="services-desc">TYPICAL 48-hour turnaround on most services outside of peak periods,
-quicker turnaround may be available pending workload and technician approval.</p>
+
+<div class="services-desc">   
+    <p>TYPICAL 48-hour turnaround on most services outside of peak periods,
+    quicker turnaround may be available pending workload and technician approval.</p>
+
+    <h2>Tunes:</h2>
+</div>
 
 <!-- ski and snowboard rentals table -->
 <table class="services-table">
@@ -150,7 +155,7 @@ quicker turnaround may be available pending workload and technician approval.</p
         <td class="board-desc"><?php if( $binding_install_snowboard ) {echo wp_kses_post( $binding_install_snowboard );} else {echo 'empty';} ?> </td>  
     </tr> <!-- binding install end -->
     
-    <!-- heli coils -->
+    <!-- heli coils --> 
     <tr>
         <th class="type hidden">Type of tune</th>
         <td class="desc"><?php if( $heli_coils_type ) {echo wp_kses_post( $heli_coils_type );} else {echo 'empty';} ?> <div><?php if( $heli_coils_description ) {echo wp_kses_post( $heli_coils_description );} else {echo 'empty';} ?> </div></td>
