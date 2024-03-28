@@ -317,55 +317,55 @@ body .flex-container {
   margin-top: 2rem;
 }
 
-tr {
+.services-table tr {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
-tr td {
+.services-table tr td {
   padding: 1rem 1rem 3rem 1rem;
   font-family: "Playfair Display", serif;
   font-size: 1rem;
 }
-tr th {
+.services-table tr th {
   padding: 1rem 0 1rem 1rem;
   text-align: left;
   font-family: "Josefin Sans", sans-serif;
   font-size: 1.15rem;
 }
-tr .type {
+.services-table tr .type {
   border: 3px solid black;
 }
-tr .board {
+.services-table tr .board {
   border-left: 3px solid black;
   border-right: 3px solid black;
   border-bottom: 3px solid black;
 }
-tr .ski {
+.services-table tr .ski {
   border-left: 3px solid black;
   border-bottom: 3px solid black;
 }
-tr .board-desc {
+.services-table tr .board-desc {
   border-right: 3px solid black;
   border-left: 3px solid black;
 }
-tr .ski-desc {
+.services-table tr .ski-desc {
   border-left: 3px solid black;
 }
-tr .desc {
+.services-table tr .desc {
   border-right: 3px solid black;
   border-left: 3px solid black;
   border-bottom: 3px solid black;
 }
-tr .type,
-tr .desc {
+.services-table tr .type,
+.services-table tr .desc {
   grid-column: 1/span 12;
 }
-tr .ski,
-tr .ski-desc {
+.services-table tr .ski,
+.services-table tr .ski-desc {
   grid-column: 1/span 6;
 }
-tr .board,
-tr .board-desc {
+.services-table tr .board,
+.services-table tr .board-desc {
   grid-column: 7/span 12;
 }
 
@@ -535,6 +535,7 @@ footer .socials svg {
 }
 footer .shop-info li {
   font-family: "Josefin Sans", sans-serif;
+  margin-top: 1.5rem;
 }
 footer p,
 footer .es-form-field-container,
@@ -866,37 +867,46 @@ footer .footer-info p {
     padding-left: 1rem;
     margin-bottom: 3rem;
   }
+  body footer .es_subscription_form {
+    justify-content: left;
+  }
   body footer .footer-grid {
+    text-align: left;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1, 1fr;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr;
   }
   body footer .socials {
     display: unset;
-    grid-column: 4;
+    grid-column: 12;
     grid-row: 1;
-    padding: 0;
+    padding: 0 6rem 0 0;
   }
   body footer .shop-info {
-    grid-column: 1;
+    grid-column: 1/span 3;
     grid-row: 1;
     margin-top: 0;
     padding: 0;
+    padding: 0 0 0 6rem;
   }
   body footer .footer-nav {
-    grid-column: 2;
+    grid-column: 4/span 3;
     grid-row: 1;
     padding: 0;
     margin-top: 0;
+    justify-self: center;
   }
   body footer .newsletter {
-    grid-column: 3;
+    grid-column: 7/span 5;
     grid-row: 1;
     padding: 0;
     margin-top: 1rem;
   }
   body footer .newsletter h3 {
     margin-top: 0rem;
+  }
+  body footer .footer-info {
+    margin: 0 auto;
   }
 }
 @media screen and (min-width: 1440px) {
