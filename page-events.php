@@ -20,7 +20,7 @@
             <select id="calender-select" name="calendar-select">
                 <button type="submit"><option id="calendar" value="calendar">View Calendar</option></button>
             </select>
-            <input type="submit" value="Set">
+            <input type="submit" value="X">
         </form>
     </div>
     <div class="event-card">
