@@ -18,8 +18,8 @@
         <?php echo "<h1>" . date("M") . " - Events</h1>"; ?>
         <form action="" method="GET">
             <select id="calender-select" name="calendar-select">
-                <option id="calendar" value="calendar" <?php if ($_GET['calendar-select'] === 'event-card') echo "selected"; ?>>View Calendar</option>
-                <option id="event-card" value="event-card" <?php if ($_GET['calendar-select'] === 'calendar') echo "selected"; ?>>View Events</option>
+                <option id="calendar" value="calendar">View Calendar</option>
+                <option id="event-card" value="event-card">View Events</option>
             </select>
             <input type="submit" value="Set">
         </form>
@@ -46,6 +46,7 @@
                     echo '<ul>';
                     while( $the_query->have_posts() ) : $the_query->the_post();
                     echo    '<li class="event-card-list">';
+                    echo        '<>';
                         the_post_thumbnail();
                         the_title();
                         the_content();
