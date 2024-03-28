@@ -27,7 +27,7 @@
     <div class="event-card">
     <?php 
 
-    if (isset($_GET['calendar-select']) && option=="calendar") {
+    if (isset($_GET['calendar-select']) && $_GET['calendar-select']=="calendar") {
         echo do_shortcode("[calendar id='353']");
     }
 
