@@ -881,6 +881,7 @@ footer .footer-info p {
     grid-column: 1;
     grid-row: 1;
     margin-top: 0;
+    padding: 0;
   }
   body footer .footer-nav {
     grid-column: 2;
@@ -947,18 +948,9 @@ footer .footer-info p {
   }
 }
 @media screen and (min-width: 1920px) {
-
   body header .navbar {
     padding: 0 20rem;
   }
-  body .history,
-  body .expertise,
-  body .winter,
-  body .service,
-  body .diverse,
-  body .community {
-    padding: 0 20rem;
-
   body .first-block .about-text {
     padding: 0 4rem 0 20rem;
   }
@@ -967,7 +959,6 @@ footer .footer-info p {
   }
   body .third-block .about-text {
     padding: 0 4rem 0 20rem;
-
   }
   body .faq-page {
     padding: 0 20rem;
@@ -1006,4 +997,4 @@ footer .footer-info p {
   body footer li {
     padding: 0;
   }
-}
+}/*# sourceMappingURL=main.css.map */
