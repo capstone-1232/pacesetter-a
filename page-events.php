@@ -40,13 +40,12 @@
                     'post_type'     => 'event'
                 );
 
-                // query
                 $the_query = new WP_Query( $args );
 
                 if( $the_query->have_posts() ):
                     echo '<ul>';
                     while( $the_query->have_posts() ) : $the_query->the_post();
-                    echo    '<li>';
+                    echo    '<li class="event-card-list">';
                         the_post_thumbnail();
                         the_title();
                         the_content();
@@ -56,7 +55,7 @@
                     echo '</ul>';
                 endif;
 
-                wp_reset_query();   // Restore global post data stomped by the_post().
+                wp_reset_query();
             break;
         }
 
