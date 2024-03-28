@@ -19,7 +19,7 @@
         <form action="" method="GET">
             <select id="calender-select" name="calendar-select">
                 <option id="calendar" value="calendar">View Calendar</option>
-                <option id="event-card" value="event-card">View Events</option>
+                <option id="event-card" value="event-card" selected>View Events</option>
             </select>
             <input type="submit" value="Set">
         </form>
@@ -61,8 +61,6 @@
             break;
         }
 
-    } else {
-        echo "NULL";
     }
 
     ?>
