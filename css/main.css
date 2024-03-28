@@ -305,8 +305,14 @@ body .flex-container {
   background-color: #87D4C4;
 }
 
+body .es_spinner_image, body .simcal-align-right {
+  display: none;
+}
+body .services-table, body .services-desc {
+
 .services-table,
 .services-desc {
+
   padding: 0 1.875rem;
 }
 
@@ -551,6 +557,16 @@ footer .footer-info p {
   font-family: "Josefin Sans", sans-serif;
   margin-top: 0.5rem;
 }
+body footer .emaillist {
+  position: fixed; /* Stay in place */
+  z-index: 100; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 
 @media screen and (min-width: 720px) {
   body .history,
@@ -868,6 +884,7 @@ footer .footer-info p {
     grid-column: 1;
     grid-row: 1;
     margin-top: 0;
+    padding: 0;
   }
   body footer .footer-nav {
     grid-column: 2;
@@ -933,13 +950,17 @@ footer .footer-info p {
   }
 }
 @media screen and (min-width: 1920px) {
-  body .history,
-  body .expertise,
-  body .winter,
-  body .service,
-  body .diverse,
-  body .community {
+  body header .navbar {
     padding: 0 20rem;
+  }
+  body .first-block .about-text {
+    padding: 0 4rem 0 20rem;
+  }
+  body .second-block .about-text {
+    padding: 0 20rem 0 4rem;
+  }
+  body .third-block .about-text {
+    padding: 0 4rem 0 20rem;
   }
   body .faq-page {
     padding: 0 20rem;
