@@ -18,8 +18,8 @@
         <?php echo "<h1>" . date("M") . " - Events</h1>"; ?>
         <form action="" method="GET">
             <select id="calender-select" name="calendar-select">
-                <option id="calendar" value="calendar" <?php if ($_GET['calendar-select'] === 'calendar') echo "checked"; ?>>View Calendar</option>
-                <option id="event-card" value="event-card" <?php if ($_GET['calendar-select'] === 'event-card') echo "checked"; ?>>View Events</option>
+                <option id="calendar" value="calendar" <?php if ($_GET['calendar-select'] === 'calendar') echo "selected"; ?>>View Calendar</option>
+                <option id="event-card" value="event-card" <?php if ($_GET['calendar-select'] === 'event-card') echo "selected"; ?>>View Events</option>
             </select>
             <input type="submit" value="Set">
         </form>
