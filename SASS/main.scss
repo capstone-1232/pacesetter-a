@@ -339,6 +339,21 @@ body {
         margin-top: 0;
     }
 
+    // -----------------------------------------------------------------  EVENTS PAGE -------------------------------------------------------------------
+
+    .es_spinner_image, .simcal-align-right {
+        display: none;
+    }
+
+    .event-card-image {
+        img {
+            width: 300px;
+            height: 100px;
+        }
+    }
+
+    // -----------------------------------------------------------------  SERVICES PAGE -----------------------------------------------------------------
+
     .hours {
         margin-bottom: 4rem;
     }
@@ -605,8 +620,15 @@ h3 {
 
 // -----------------------------------------------------------------  EVENTS PAGE -----------------------------------------------------------------
 
-.ep-event-loader {
-    display: none !important;
+.ep-event-loader, .es_spinner_image {
+    display: none;
+}
+
+.event-card-list {
+    img {
+        width: 400px;
+        height: 200px;
+    }
 }
 
 // -----------------------------------------------------------------  FOOTER  -----------------------------------------------------------------
@@ -682,6 +704,42 @@ footer {
             width: 2.85rem;
         }
     }
+}
+    //     .emaillist {
+    //         position: fixed; /* Stay in place */
+    //         z-index: 100; /* Sit on top */
+    //         left: 0;
+    //         top: 0;
+    //         width: 100%; /* Full width */
+    //         height: 100%; /* Full height */
+    //         overflow: auto; /* Enable scroll if needed */
+    //         background-color: rgb(0,0,0); /* Fallback color */
+    //         background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
+    //     }
+
+    //     .sucess {
+    //         background-color: #fefefe;
+    //         margin: 15% auto; /* 15% from the top and centered */
+    //         padding: 20px;
+    //         border: 1px solid #888;
+    //         width: 80%; /* Could be more or less, depending on screen size */
+    //     }
+
+    //     .close {
+    //         color: #aaa;
+    //         float: right;
+    //         font-size: 28px;
+    //         font-weight: bold;
+    //       }
+          
+    //       .close:hover,
+    //       .close:focus {
+    //         color: black;
+    //         text-decoration: none;
+    //         cursor: pointer;
+    //       }
+    // }
 
     .shop-info li {
         font-family: "Josefin Sans", sans-serif;
@@ -723,7 +781,7 @@ footer {
     //     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 
     // }
-}
+
 
 // -----------------------------------------------------------------  TABLET  -----------------------------------------------------------------
 

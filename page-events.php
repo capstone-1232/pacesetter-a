@@ -18,8 +18,8 @@
         <?php echo "<h1>" . date("M") . " - Events</h1>"; ?>
         <form action="" method="GET">
             <select id="calender-select" name="calendar-select">
-                <option id="calendar" value="calendar" <?php if ($_GET['calendar-select'] === 'calendar') echo "checked"; ?>>View Calendar</option>
-                <option id="event-card" value="event-card" <?php if ($_GET['calendar-select'] === 'event-card') echo "checked"; ?>>View Events</option>
+                <option id="calendar" value="calendar">View Calendar</option>
+                <option id="event-card" value="event-card">View Events</option>
             </select>
             <input type="submit" value="Set">
         </form>
@@ -40,23 +40,24 @@
                     'post_type'     => 'event'
                 );
 
-                // query
                 $the_query = new WP_Query( $args );
 
                 if( $the_query->have_posts() ):
                     echo '<ul>';
                     while( $the_query->have_posts() ) : $the_query->the_post();
-                    echo    '<li>';
+                    echo    '<li class="event-card-list">';
                         the_post_thumbnail();
+                    echo        '<div class="card-body">';
                         the_title();
                         the_content();
                     echo do_shortcode('[email-subscribers-form id="3"]');
+                    echo        '</div>';
                     echo    '</li>';
                     endwhile;
                     echo '</ul>';
                 endif;
 
-                wp_reset_query();   // Restore global post data stomped by the_post().
+                wp_reset_query();
             break;
         }
 

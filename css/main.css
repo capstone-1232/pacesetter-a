@@ -263,6 +263,13 @@ body .flex-container {
 .contact-us .hours ul li:nth-child(1) {
   margin-top: 0;
 }
+.contact-us .es_spinner_image, .contact-us .simcal-align-right {
+  display: none;
+}
+.contact-us .event-card-image img {
+  width: 300px;
+  height: 100px;
+}
 .contact-us .hours {
   margin-bottom: 4rem;
 }
@@ -470,8 +477,13 @@ h3 {
   margin-bottom: 3rem;
 }
 
-.ep-event-loader {
-  display: none !important;
+.ep-event-loader, .es_spinner_image {
+  display: none;
+}
+
+.event-card-list img {
+  width: 400px;
+  height: 200px;
 }
 
 footer {
@@ -533,24 +545,28 @@ footer .socials {
 footer .socials svg {
   width: 2.85rem;
 }
-footer .shop-info li {
+
+.shop-info li {
   font-family: "Josefin Sans", sans-serif;
   margin-top: 1.5rem;
 }
-footer p,
-footer .es-form-field-container,
-footer h3 {
+
+p,
+.es-form-field-container,
+h3 {
   margin-left: 1.875rem;
   margin-right: 1.875rem;
 }
-footer iframe {
+
+iframe {
   height: 320px;
   width: 100%;
 }
-footer .footer-info {
+
+.footer-info {
   padding: 1.5rem 0;
 }
-footer .footer-info p {
+.footer-info p {
   font-family: "Josefin Sans", sans-serif;
   margin-top: 0.5rem;
 }
