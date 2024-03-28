@@ -203,6 +203,13 @@ body {
         display: none;
     }
 
+    .event-card-image {
+        img {
+            width: 300px;
+            height: 100px;
+        }
+    }
+
     // -----------------------------------------------------------------  SERVICES PAGE -----------------------------------------------------------------
 
     .services-table, .services-desc {
