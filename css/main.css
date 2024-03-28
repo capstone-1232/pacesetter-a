@@ -68,7 +68,7 @@ body header .navbar nav .logo {
 body header .navbar .nav-items a {
   color: black;
   float: left;
-  font-size: 16px;
+  font-size: 1.25rem;
   padding: 1rem;
   text-align: center;
   text-decoration: none;
