@@ -1155,50 +1155,63 @@ footer {
 
         footer {
 
+            .footer-grid {
+                padding: 0 6rem 0 6rem;
+
+                .socials {
+                    text-align: right;
+                }
+            }
+
             .es_subscription_form {
                 justify-content: left;
             }
 
             .footer-grid {
+                padding: 0 6rem 0 6rem;
                 text-align: left;
                 display: grid;
                 grid-template-columns: repeat(12, 1fr);
                 grid-template-rows: 1fr;
-            }
 
-            .socials {
-                display: unset;
-                grid-column: 12;
-                grid-row: 1;
-                padding: 0 6rem 0 0;
-            }
-                    
-            .shop-info {
-                grid-column: 1 / span 3;
-                grid-row: 1;
-                margin-top: 0;
-                padding: 0;
-                padding: 0 0 0 6rem;
-            }
-
-            .footer-nav {
-                grid-column: 4 / span 3;
-                grid-row: 1;
-                padding: 0;
-                margin-top: 0;
-                justify-self: center;
-            }
-
-            .newsletter {
-
-                h3 {
-                    margin-top: 0rem;
+                .socials {
+                    display: unset;
+                    grid-column: 12;
+                    grid-row: 1;
+                    padding: 0;
                 }
-
-                grid-column: 7 / span 5;
-                grid-row: 1;
-                padding: 0;
-                margin-top: 1rem;
+                        
+                .shop-info {
+                    grid-column: 1 / span 3;
+                    grid-row: 1;
+                    margin-top: 0;
+                    padding: 0;
+                    
+                    li {
+                        margin-top: 1.5rem;
+                    }
+                }
+    
+                .footer-nav {
+                    grid-column: 3 / span 4;
+                    grid-row: 1;
+                    padding: 0;
+                    margin-top: 0;
+                    justify-self: center;
+                    justify-content: space-between;
+                }
+    
+                .newsletter {
+    
+                    h3 {
+                        margin-top: 0rem;
+                    }
+    
+                    grid-column: 7 / span 5;
+                    grid-row: 1;
+                    padding: 0;
+                    margin-top: 1rem;
+                }
             }
 
             .footer-info {
@@ -1269,24 +1282,27 @@ footer {
 
         footer {
 
-            .socials {
-                padding-right: 12rem;
-            }
+            .footer-grid {
+                padding: 0 12rem 0 12rem;
 
-            .shop-info {
-                padding: 0 0 0 12rem;
-            }
-
-            .footer-nav {
-                display: grid;
-                grid-template-columns: 2, 1fr;
-
-                ul:first-child {
-                    grid-column: 1;
+                .shop-info {
+                    grid-column: 1 / span 2;
                 }
+    
+                .footer-nav {
+                    grid-column: 3 / span 4;
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    justify-self: unset;
+                    padding: 0 2rem;
 
-                ul:last-child {
-                    grid-column: 2;
+                    ul:first-child {
+                        grid-column: 1 / span 2;
+                    }
+    
+                    ul:last-child {
+                        grid-column: 3 / span 2;
+                    }
                 }
             }
 
@@ -1367,29 +1383,8 @@ footer {
 
         footer {
 
-            .socials {
-                padding-right: 20rem;
-            }
-
-            .shop-info {
-                padding: 0 0 0 20rem;
-            }
-
-            .footer-nav {
-                display: grid;
-                grid-template-columns: 2, 1fr;
-
-                ul:first-child {
-                    grid-column: 1;
-                }
-
-                ul:last-child {
-                    grid-column: 2;
-                }
-            }
-
-            li {
-                padding: 0;
+            .footer-grid {
+                padding: 0 20rem 0 20rem;
             }
         }
     }
