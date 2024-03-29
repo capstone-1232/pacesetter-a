@@ -687,6 +687,26 @@ footer {
             width: 2.85rem;
         }
     }
+    
+    .shop-info li {
+        font-family: "Josefin Sans", sans-serif;
+        margin-top: 1.5rem;
+    }
+
+    iframe {
+        height: 320px;
+        width: 100%;
+    }
+
+    .footer-info {
+
+        padding: 1.5rem 0;
+
+        p {
+            font-family: "Josefin Sans", sans-serif;
+            margin-top: .5rem;
+        }
+    }
 }
     //     .emaillist {
     //         position: fixed; /* Stay in place */
@@ -723,32 +743,6 @@ footer {
     //         cursor: pointer;
     //       }
     // }
-
-    .shop-info li {
-        font-family: "Josefin Sans", sans-serif;
-        margin-top: 1.5rem;
-    }
-
-    .es-form-field-container {
-        margin-left: 1.875rem;
-        margin-right: 1.875rem;
-    }
-
-    iframe {
-        height: 320px;
-        width: 100%;
-    }
-
-    .footer-info {
-
-        padding: 1.5rem 0;
-
-        p {
-            font-family: "Josefin Sans", sans-serif;
-            margin-top: .5rem;
-        }
-    }
-
 
     // .emaillist {
     //     position: fixed; /* Stay in place */
@@ -876,7 +870,7 @@ footer {
             margin: 0;
         }
 
-         // -----------------------------------------------------------------HEADER-----------------------------------------------------------------
+         // ----------------------------------------------------------------- HEADER -----------------------------------------------------------------
 
          header {
             position: relative;
@@ -1502,8 +1496,6 @@ footer {
 @media screen and (min-width: 1920px) {
 
     body {
-
-
 
         // -----------------------------------------------------------------  ABOUT PAGE -----------------------------------------------------------------
 
