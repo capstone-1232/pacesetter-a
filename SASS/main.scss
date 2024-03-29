@@ -386,9 +386,7 @@ body {
     }
 }
 
-tr {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
+.services-table {
 
     td {
         padding: 1rem 1rem 5rem 1rem;
@@ -396,67 +394,83 @@ tr {
         font-size: 1rem;
     }
 
-    th {
-        padding: 1rem 0 1rem 1rem;
-        text-align: left;
-        font-family: "Josefin Sans", sans-serif;
-        font-size: 1.15rem;
+    tr {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+      
+
+        td {
+            padding: 1rem 1rem 3rem 1rem;
+            font-family: "Playfair Display", serif;
+            font-size: 1rem;
+        }
+
+        th {
+            padding: 1rem 0 1rem 1rem;
+            text-align: left;
+            font-family: "Josefin Sans", sans-serif;
+            font-size: 1.15rem;
+        }
+
+        .type {
+            border: 3px solid black;
+        }
+
+        .board {
+            border-left: 3px solid black;
+            border-right: 3px solid black;
+            border-bottom: 3px solid black;
+        }
+
+        .ski {
+            border-left: 3px solid black;
+            border-bottom: 3px solid black;
+        }
+
+        .board-desc {
+            border-right: 3px solid black;
+            border-left: 3px solid black;
+        }
+
+        .ski-desc {
+            border-left: 3px solid black;
+        }
+
+        .desc {
+            border-right: 3px solid black;
+            border-left: 3px solid black;
+            border-bottom: 3px solid black;
+        }
+
+        .type,
+        .desc {
+            grid-column: 1 / span 12;
+        }
+
+        .ski,
+        .ski-desc {
+            grid-column: 1 / span 6;
+        }
+
+        .board,
+        .board-desc {
+            grid-column: 7 / span 12;
+        }
     }
 
-    .type {
-        border: 3px solid black;
-    }
-
-    .board {
-        border-left: 3px solid black;
-        border-right: 3px solid black;
+    tr:nth-child(12) .board-desc,
+    tr:nth-child(12) .ski-desc {
         border-bottom: 3px solid black;
+        margin-bottom: 3rem;
     }
 
-    .ski {
-        border-left: 3px solid black;
-        border-bottom: 3px solid black;
+    tr:nth-child(odd) {
+        background-color: $primary-color;
     }
 
-    .board-desc {
-        border-right: 3px solid black;
-        border-left: 3px solid black;
+    .desktop-only {
+        display: none;
     }
-
-    .ski-desc {
-        border-left: 3px solid black;
-    }
-
-    .desc {
-        border-right: 3px solid black;
-        border-left: 3px solid black;
-        border-bottom: 3px solid black;
-    }
-
-    .type,
-    .desc {
-        grid-column: 1 / span 12;
-    }
-
-    .ski,
-    .ski-desc {
-        grid-column: 1 / span 6;
-    }
-
-    .board,
-    .board-desc {
-        grid-column: 7 / span 12;
-    }
-}
-
-table tr:nth-child(12) .board-desc,
-table tr:nth-child(12) .ski-desc {
-    border-bottom: 3px solid black;
-    margin-bottom: 3rem;
-}
-
-table tr:nth-child(odd) {
-    background-color: $primary-color;
 }
 
 .desktop-only {
@@ -482,62 +496,65 @@ table tr:nth-child(odd) {
     }
 }
 
-tr {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
+.rentals-table {
 
-    .rental {
-        border: 3px solid black;
-    }
+    tr {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
 
-    .rental-desc,
-    .package {
-        border-left: 3px solid black;
-        border-right: 3px solid black;
-        border-bottom: 3px solid black;
-    }
+        .rental {
+            border: 3px solid black;
+        }
 
-    .rental-type {
-        border-left: 3px solid black;
-        border-bottom: 3px solid black;
-    }
+        .rental-desc,
+        .package {
+            border-left: 3px solid black;
+            border-right: 3px solid black;
+            border-bottom: 3px solid black;
+        }
 
-    .type-desc {
-        border-left: 3px solid black;
-    }
+        .rental-type {
+            border-left: 3px solid black;
+            border-bottom: 3px solid black;
+        }
 
-    .package-desc {
-        border-left: 3px solid black;
-        border-right: 3px solid black;
-    }
+        .type-desc {
+            border-left: 3px solid black;
+        }
 
-    .demo {
-        border: 3px solid black;
-    }
+        .package-desc {
+            border-left: 3px solid black;
+            border-right: 3px solid black;
+        }
 
-    .demo-desc {
-        border-left: 3px solid black;
-        border-right: 3px solid black;
-    }
+        .demo {
+            border: 3px solid black;
+        }
 
-    .rental,
-    .rental-desc {
-        grid-column: 1 / span 12;
-    }
+        .demo-desc {
+            border-left: 3px solid black;
+            border-right: 3px solid black;
+        }
 
-    .rental-type,
-    .type-desc {
-        grid-column: 1 / span 6;
-    }
+        .rental,
+        .rental-desc {
+            grid-column: 1 / span 12;
+        }
 
-    .package,
-    .package-desc {
-        grid-column: 7 / span 12;
-    }
+        .rental-type,
+        .type-desc {
+            grid-column: 1 / span 6;
+        }
 
-    .demo,
-    .demo-desc {
-        grid-column: 1 / span 12;
+        .package,
+        .package-desc {
+            grid-column: 7 / span 12;
+        }
+
+        .demo,
+        .demo-desc {
+            grid-column: 1 / span 12;
+        }
     }
 }
 
@@ -570,9 +587,19 @@ h3 {
 
 // -----------------------------------------------------------------  EVENTS PAGE -----------------------------------------------------------------
 
-.ep-event-loader {
-    display: none !important;
+.ep-event-loader, .es_spinner_image {
+    display: none;
 }
+
+.event-card-list {
+    
+
+    img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
 
 // -----------------------------------------------------------------  FOOTER  -----------------------------------------------------------------
 
@@ -686,6 +713,7 @@ footer {
 
     .shop-info li {
         font-family: "Josefin Sans", sans-serif;
+        margin-top: 1.5rem;
     }
 
     p,
@@ -1323,31 +1351,38 @@ footer {
 
         footer {
 
-            .footer-grid {
-                display: grid;
-                grid-template-columns: repeat(4, 1fr);
-                grid-template-rows: (1, 1fr);
+            .es_subscription_form {
+                justify-content: left;
             }
 
-                .socials {
-                    display: unset;
-                    grid-column: 4;
-                    grid-row: 1;
-                    padding: 0;
-                }
+            .footer-grid {
+                text-align: left;
+                display: grid;
+                grid-template-columns: repeat(12, 1fr);
+                grid-template-rows: 1fr;
+            }
+
+            .socials {
+                display: unset;
+                grid-column: 12;
+                grid-row: 1;
+                padding: 0 6rem 0 0;
+            }
                     
-                .shop-info {
-                    grid-column: 1;
-                    grid-row: 1;
-                    margin-top: 0;
-                    padding: 0;
-                }
+            .shop-info {
+                grid-column: 1 / span 3;
+                grid-row: 1;
+                margin-top: 0;
+                padding: 0;
+                padding: 0 0 0 6rem;
+            }
 
             .footer-nav {
-                grid-column: 2;
+                grid-column: 4 / span 3;
                 grid-row: 1;
                 padding: 0;
                 margin-top: 0;
+                justify-self: center;
             }
 
             .newsletter {
@@ -1356,10 +1391,14 @@ footer {
                     margin-top: 0rem;
                 }
 
-                grid-column: 3;
+                grid-column: 7 / span 5;
                 grid-row: 1;
                 padding: 0;
                 margin-top: 1rem;
+            }
+
+            .footer-info {
+                margin: 0 auto;
             }
         }
         

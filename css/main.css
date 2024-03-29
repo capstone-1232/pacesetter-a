@@ -295,66 +295,72 @@ body .menu-expanded {
   margin-top: 2rem;
 }
 
-tr {
+.services-table tr {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
+
 tr td {
   padding: 1rem 1rem 5rem 1rem;
+
+.services-table tr td {
+  padding: 1rem 1rem 3rem 1rem;
+
   font-family: "Playfair Display", serif;
   font-size: 1rem;
 }
-tr th {
+.services-table tr th {
   padding: 1rem 0 1rem 1rem;
   text-align: left;
   font-family: "Josefin Sans", sans-serif;
   font-size: 1.15rem;
 }
-tr .type {
+.services-table tr .type {
   border: 3px solid black;
 }
-tr .board {
+.services-table tr .board {
   border-left: 3px solid black;
   border-right: 3px solid black;
   border-bottom: 3px solid black;
 }
-tr .ski {
+.services-table tr .ski {
   border-left: 3px solid black;
   border-bottom: 3px solid black;
 }
-tr .board-desc {
+.services-table tr .board-desc {
   border-right: 3px solid black;
   border-left: 3px solid black;
 }
-tr .ski-desc {
+.services-table tr .ski-desc {
   border-left: 3px solid black;
 }
-tr .desc {
+.services-table tr .desc {
   border-right: 3px solid black;
   border-left: 3px solid black;
   border-bottom: 3px solid black;
 }
-tr .type,
-tr .desc {
+.services-table tr .type,
+.services-table tr .desc {
   grid-column: 1/span 12;
 }
-tr .ski,
-tr .ski-desc {
+.services-table tr .ski,
+.services-table tr .ski-desc {
   grid-column: 1/span 6;
 }
-tr .board,
-tr .board-desc {
+.services-table tr .board,
+.services-table tr .board-desc {
   grid-column: 7/span 12;
 }
-
-table tr:nth-child(12) .board-desc,
-table tr:nth-child(12) .ski-desc {
+.services-table tr:nth-child(12) .board-desc,
+.services-table tr:nth-child(12) .ski-desc {
   border-bottom: 3px solid black;
   margin-bottom: 3rem;
 }
-
-table tr:nth-child(odd) {
+.services-table tr:nth-child(odd) {
   background-color: #87D4C4;
+}
+.services-table .desktop-only {
+  display: none;
 }
 
 .desktop-only {
@@ -374,51 +380,51 @@ table tr:nth-child(odd) {
   margin-top: 2rem;
 }
 
-tr {
+.rentals-table tr {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
-tr .rental {
+.rentals-table tr .rental {
   border: 3px solid black;
 }
-tr .rental-desc,
-tr .package {
+.rentals-table tr .rental-desc,
+.rentals-table tr .package {
   border-left: 3px solid black;
   border-right: 3px solid black;
   border-bottom: 3px solid black;
 }
-tr .rental-type {
+.rentals-table tr .rental-type {
   border-left: 3px solid black;
   border-bottom: 3px solid black;
 }
-tr .type-desc {
+.rentals-table tr .type-desc {
   border-left: 3px solid black;
 }
-tr .package-desc {
+.rentals-table tr .package-desc {
   border-left: 3px solid black;
   border-right: 3px solid black;
 }
-tr .demo {
+.rentals-table tr .demo {
   border: 3px solid black;
 }
-tr .demo-desc {
+.rentals-table tr .demo-desc {
   border-left: 3px solid black;
   border-right: 3px solid black;
 }
-tr .rental,
-tr .rental-desc {
+.rentals-table tr .rental,
+.rentals-table tr .rental-desc {
   grid-column: 1/span 12;
 }
-tr .rental-type,
-tr .type-desc {
+.rentals-table tr .rental-type,
+.rentals-table tr .type-desc {
   grid-column: 1/span 6;
 }
-tr .package,
-tr .package-desc {
+.rentals-table tr .package,
+.rentals-table tr .package-desc {
   grid-column: 7/span 12;
 }
-tr .demo,
-tr .demo-desc {
+.rentals-table tr .demo,
+.rentals-table tr .demo-desc {
   grid-column: 1/span 12;
 }
 
@@ -446,8 +452,13 @@ h3 {
   margin-bottom: 3rem;
 }
 
-.ep-event-loader {
-  display: none !important;
+.ep-event-loader, .es_spinner_image {
+  display: none;
+}
+
+.event-card-list img {
+  width: 200px;
+  height: 200px;
 }
 
 footer {
@@ -512,6 +523,7 @@ footer .socials svg {
 
 .shop-info li {
   font-family: "Josefin Sans", sans-serif;
+  margin-top: 1.5rem;
 }
 
 p,
@@ -717,6 +729,7 @@ iframe {
   body .menu .subnav .subnav-content a {
     text-decoration: none;
   }
+
   body .menu .subnav svg {
     width: 2rem;
   }
@@ -737,9 +750,48 @@ iframe {
   body .flex-container {
     align-items: center;
     display: flex;
+
+  body footer .es_subscription_form {
+    justify-content: left;
+  }
+  body footer .footer-grid {
+    text-align: left;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr;
+  }
+  body footer .socials {
+    display: unset;
+    grid-column: 12;
+    grid-row: 1;
+    padding: 0 6rem 0 0;
+  }
+  body footer .shop-info {
+    grid-column: 1/span 3;
+    grid-row: 1;
+    margin-top: 0;
+    padding: 0;
+    padding: 0 0 0 6rem;
+  }
+  body footer .footer-nav {
+    grid-column: 4/span 3;
+    grid-row: 1;
+    padding: 0;
+    margin-top: 0;
+    justify-self: center;
+  }
+  body footer .newsletter {
+    grid-column: 7/span 5;
+    grid-row: 1;
+    padding: 0;
+    margin-top: 1rem;
+
   }
   .menu-expanded {
     transform: scaleX(100%);
+  }
+  body footer .footer-info {
+    margin: 0 auto;
   }
 }
 .first-block {

@@ -13,13 +13,14 @@
                 </div>
                 <div class="footer-nav">
                     <ul>
-                        <li><a href="about-us">About Us</a></li>
-                        <li><a href="contact">Contact Us</a></li>
+                        <li><a href="services">Services</a></li>
                         <li><a href="rentals">Rentals</a></li>
+                        <li><a href="events">Events</a></li>
                     </ul>
                     <ul>
                         <li><a href="faq">F.A.Q.</a></li>
-                        <li><a href="services">Services</a></li>
+                        <li><a href="contact">Contact Us</a></li>
+                        <li><a href="about-us">About Us</a></li>
                     </ul> <!-- footer-nav end -->
                 </div>
 
