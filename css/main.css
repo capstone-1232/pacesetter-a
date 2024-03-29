@@ -363,7 +363,7 @@ tr td {
   display: none;
 }
 
-.desktop-only {
+.services-table .desktop-only {
   display: none;
 }
 
@@ -380,6 +380,17 @@ tr td {
   margin-top: 2rem;
 }
 
+.rentals-table td {
+  padding: 1rem 1rem 3rem 1rem;
+  font-family: "Playfair Display", serif;
+  font-size: 1rem;
+}
+.rentals-table th {
+  padding: 1rem 0 1rem 1rem;
+  text-align: left;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.15rem;
+}
 .rentals-table tr {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -526,9 +537,7 @@ footer .socials svg {
   margin-top: 1.5rem;
 }
 
-p,
-.es-form-field-container,
-h3 {
+.es-form-field-container {
   margin-left: 1.875rem;
   margin-right: 1.875rem;
 }
@@ -687,6 +696,72 @@ iframe {
     display: block;
     text-align: left;
   }
+
+  body .rentals-table tr:nth-child(3) {
+    border-bottom: none;
+  }
+  body .rentals-table .desktop-only {
+    display: grid;
+  }
+  body .rentals-table .desktop-only th:first-child {
+    grid-column: 1/span 6;
+  }
+  body .rentals-table .desktop-only th {
+    grid-column: span 2;
+  }
+  body .rentals-table tr {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+  body .rentals-table tr td {
+    padding: 1rem 1rem 5rem 1rem;
+    font-family: "Playfair Display", serif;
+    font-size: 1.25rem;
+  }
+  body .rentals-table tr th {
+    padding: 1rem 0 1rem 1rem;
+    text-align: left;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.5rem;
+  }
+  body .rentals-table tr .rental {
+    border: none;
+  }
+  body .rentals-table tr .rental-desc,
+  body .rentals-table tr .package {
+    border: none;
+  }
+  body .rentals-table tr .rental-type {
+    border: none;
+  }
+  body .rentals-table tr .type-desc {
+    border: none;
+  }
+  body .rentals-table tr .package-desc {
+    border: none;
+  }
+  body .rentals-table tr .demo {
+    border: none;
+  }
+  body .rentals-table tr .demo-desc {
+    border: none;
+  }
+  body .rentals-table tr .rental,
+  body .rentals-table tr .rental-desc {
+    grid-column: 1/span 6;
+  }
+  body .rentals-table tr .rental-type,
+  body .rentals-table tr .type-desc {
+    grid-column: span 2;
+  }
+  body .rentals-table tr .package,
+  body .rentals-table tr .package-desc {
+    grid-column: span 2;
+  }
+  body .rentals-table tr .demo,
+  body .rentals-table tr .demo-desc {
+    grid-column: span 2;
+
   body header .subnav .subnav-content a:hover {
     background-color: #ddd;
   }
@@ -1159,4 +1234,4 @@ footer .newsletter h3 {
   body footer li {
     padding: 0;
   }
-}/*# sourceMappingURL=main.css.map */
+}
