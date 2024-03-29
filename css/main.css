@@ -375,15 +375,16 @@ body .flex-container {
 .services-table tr .board-desc {
   grid-column: 7/span 12;
 }
-
-table tr:nth-child(12) .board-desc,
-table tr:nth-child(12) .ski-desc {
+.services-table tr:nth-child(12) .board-desc,
+.services-table tr:nth-child(12) .ski-desc {
   border-bottom: 3px solid black;
   margin-bottom: 3rem;
 }
-
-table tr:nth-child(odd) {
+.services-table tr:nth-child(odd) {
   background-color: #87D4C4;
+}
+.services-table .desktop-only {
+  display: none;
 }
 
 .desktop-only {
@@ -403,51 +404,51 @@ table tr:nth-child(odd) {
   margin-top: 2rem;
 }
 
-tr {
+.rentals-table tr {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
-tr .rental {
+.rentals-table tr .rental {
   border: 3px solid black;
 }
-tr .rental-desc,
-tr .package {
+.rentals-table tr .rental-desc,
+.rentals-table tr .package {
   border-left: 3px solid black;
   border-right: 3px solid black;
   border-bottom: 3px solid black;
 }
-tr .rental-type {
+.rentals-table tr .rental-type {
   border-left: 3px solid black;
   border-bottom: 3px solid black;
 }
-tr .type-desc {
+.rentals-table tr .type-desc {
   border-left: 3px solid black;
 }
-tr .package-desc {
+.rentals-table tr .package-desc {
   border-left: 3px solid black;
   border-right: 3px solid black;
 }
-tr .demo {
+.rentals-table tr .demo {
   border: 3px solid black;
 }
-tr .demo-desc {
+.rentals-table tr .demo-desc {
   border-left: 3px solid black;
   border-right: 3px solid black;
 }
-tr .rental,
-tr .rental-desc {
+.rentals-table tr .rental,
+.rentals-table tr .rental-desc {
   grid-column: 1/span 12;
 }
-tr .rental-type,
-tr .type-desc {
+.rentals-table tr .rental-type,
+.rentals-table tr .type-desc {
   grid-column: 1/span 6;
 }
-tr .package,
-tr .package-desc {
+.rentals-table tr .package,
+.rentals-table tr .package-desc {
   grid-column: 7/span 12;
 }
-tr .demo,
-tr .demo-desc {
+.rentals-table tr .demo,
+.rentals-table tr .demo-desc {
   grid-column: 1/span 12;
 }
 
