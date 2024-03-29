@@ -61,6 +61,9 @@ body header .navbar nav {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
+body header .navbar nav .nav-items {
+  display: none;
+}
 body header .navbar nav .logo {
   grid-column: 1/span 3;
   padding: 14px 16px;
@@ -68,7 +71,7 @@ body header .navbar nav .logo {
 body header .navbar .nav-items a {
   color: black;
   float: left;
-  font-size: 16px;
+  font-size: 1.175rem;
   padding: 1rem;
   text-align: center;
   text-decoration: none;
@@ -627,284 +630,421 @@ footer .footer-info p {
     padding: 0;
     margin: 0;
   }
-  body .history,
-  body .expertise,
-  body .winter,
-  body .service,
-  body .diverse,
-  body .community {
+  body header {
+    position: relative;
+  }
+  body header .navbar {
+    background-color: #87D4C4;
+    padding: 0 1.875rem;
+    overflow: hidden;
+  }
+  body header .navbar nav {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+  body header .navbar nav .nav-items {
+    display: unset;
+  }
+  body header .navbar nav .logo {
+    grid-column: 1/span 3;
+    padding: 14px 16px;
+  }
+  body header .navbar .nav-items a {
+    color: black;
+    float: left;
+    font-size: 16px;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+  }
+  body header .nav-items {
+    align-self: end;
+    grid-column: 4/span 8;
+    margin-left: auto;
+    margin-right: 0;
+    padding-bottom: 1rem;
+  }
+  body header .nav-btn {
+    align-self: end;
+    grid-column: 12;
+    grid-row: 1;
+    padding: 1rem 0 1.75rem 0;
+    margin-left: auto;
+    margin-right: 0;
+  }
+  body header .subnav {
+    float: left;
+    overflow: hidden;
+  }
+  body header .subnav .subnavbtn {
+    width: 0.5rem;
+    border: none;
+    outline: none;
+    color: white;
+    font-family: inherit;
+    margin: 0;
+  }
+  body header .subnav .subnav-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 160px;
+    top: 5.5rem;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  body header .subnav .subnav-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  body header .subnav .subnav-content a:hover {
+    background-color: #ddd;
+  }
+  body header .subnav:hover .subnav-content {
+    display: block;
+  }
+  body .menu {
+    background-color: #ffffff;
+    max-height: 0;
+    position: static;
+    overflow: hidden;
+  }
+  body .menu nav {
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 300ms;
+    height: 100vh;
+  }
+  body .menu .menu-expanded {
+    transform: scaleX(100%);
+  }
+  body .menu .subnav {
+    display: flex;
+    overflow: hidden;
+  }
+  body .menu .subnav .subnavbtn {
+    width: 0.5rem;
+  }
+  body .menu .subnav .subnav-content {
+    background-color: #ffffff;
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  body .menu .subnav .subnav-content a {
+    text-decoration: none;
+  }
+  body .menu .subnav svg {
+    width: 2rem;
+  }
+  body .menu .subnav:hover .subnav-content {
+    display: block;
+  }
+  body .menu a {
+    color: #2E2E2E;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+  }
+  body .nav-btn {
+    cursor: pointer;
+    padding: 7px 0;
+    width: 2rem;
+  }
+  body .flex-container {
+    align-items: center;
+    display: flex;
+  }
+  .menu-expanded {
+    transform: scaleX(100%);
+  }
+  .history,
+  .expertise,
+  .winter,
+  .service,
+  .diverse,
+  .community {
     padding: 0rem;
   }
-  body .first-block {
+  .first-block {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 2, 1fr;
   }
-  body .first-block h1 {
+  .first-block h1 {
     grid-column: 1/span 12;
     grid-row: 1;
   }
-  body .first-block img {
+  .first-block img {
     grid-column: 7/span 12;
     grid-row: 2;
     height: 100%;
   }
-  body .first-block .about-text {
+  .first-block .about-text {
     grid-column: 1/span 6;
     grid-row: 2;
     margin-bottom: 3rem;
     padding: 0 2rem 0 6rem;
   }
-  body .second-block {
+  .second-block {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
   }
-  body .second-block img {
+  .second-block img {
     grid-column: 1/span 6;
     grid-row: 2;
     height: 100%;
   }
-  body .second-block .about-text {
+  .second-block .about-text {
     grid-column: 7/span 12;
     grid-row: 2;
     margin-bottom: 3rem;
     padding: 0 6rem 0 2rem;
   }
-  body .third-block {
+  .third-block {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
   }
-  body .third-block img {
+  .third-block img {
     grid-column: 7/span 12;
     grid-row: 2;
     height: 100%;
   }
-  body .third-block .about-text {
+  .third-block .about-text {
     grid-column: 1/span 6;
     grid-row: 2;
     padding: 0 2rem 0 6rem;
   }
-  body .faq-page .faq-card h3 {
+  .faq-page .faq-card h3 {
     font-size: 1.75rem;
   }
-  body .contact-us .contact-flex {
+  .contact-us .contact-flex {
     display: flex;
     justify-content: space-between;
   }
-  body .contact-us .hours-flex ul:first-child {
+  .contact-us .hours-flex ul:first-child {
     margin-right: 1rem;
   }
-  body .contact-us .email-form .wpcf7-submit {
+  .contact-us .email-form .wpcf7-submit {
     width: 10rem;
     margin-left: auto;
     margin-right: 0;
     display: block;
   }
-  body .services-table,
-  body .services-desc {
+  .services-table,
+  .services-desc {
     padding: 0 6rem;
   }
-  body .services-table .hidden {
+  .services-table .hidden {
     display: none;
   }
-  body .services-table .desktop-only {
+  .services-table .desktop-only {
     display: grid;
   }
-  body .services-table .desktop-only th:first-child {
+  .services-table .desktop-only th:first-child {
     grid-column: 1/span 8;
   }
-  body .services-table .desktop-only th {
+  .services-table .desktop-only th {
     grid-column: span 2;
   }
-  body .services-table tr {
+  .services-table tr {
     display: grid;
   }
-  body .services-table tr td {
+  .services-table tr td {
     padding: 1rem 1rem 5rem 1rem;
     font-family: "Playfair Display", serif;
     font-size: 1.25rem;
   }
-  body .services-table tr th {
+  .services-table tr th {
     padding: 1rem 0 1rem 1rem;
     text-align: left;
     font-family: "Josefin Sans", sans-serif;
     font-size: 1.5rem;
   }
-  body .services-table tr .type {
+  .services-table tr .type {
     border: none;
   }
-  body .services-table tr .board {
+  .services-table tr .board {
     border: none;
   }
-  body .services-table tr .ski {
+  .services-table tr .ski {
     border: none;
   }
-  body .services-table tr .board-desc {
+  .services-table tr .board-desc {
     border: none;
   }
-  body .services-table tr .ski-desc {
+  .services-table tr .ski-desc {
     border: none;
   }
-  body .services-table tr .desc {
+  .services-table tr .desc {
     border: none;
   }
-  body .services-table tr .type,
-  body .services-table tr .desc {
+  .services-table tr .type,
+  .services-table tr .desc {
     grid-column: 1/span 8;
   }
-  body .services-table tr .ski,
-  body .services-table tr .ski-desc {
+  .services-table tr .ski,
+  .services-table tr .ski-desc {
     grid-column: span 2;
   }
-  body .services-table tr .board,
-  body .services-table tr .board-desc {
+  .services-table tr .board,
+  .services-table tr .board-desc {
     grid-column: span 2;
   }
-  body .services-table tr:nth-child(12) .board-desc,
-  body .services-table tr:nth-child(12) .ski-desc {
+  .services-table tr:nth-child(12) .board-desc,
+  .services-table tr:nth-child(12) .ski-desc {
     border: none;
     margin-bottom: 3rem;
   }
-  body .rentals-table .hidden {
+  .rentals-table .hidden {
     display: none;
   }
-  body .rentals-table tr:nth-child(3) {
+  .rentals-table tr:nth-child(3) {
     border-bottom: none;
   }
-  body .rentals-table .desktop-only {
+  .rentals-table .desktop-only {
     display: grid;
   }
-  body .rentals-table .desktop-only th:first-child {
+  .rentals-table .desktop-only th:first-child {
     grid-column: 1/span 6;
   }
-  body .rentals-table .desktop-only th {
+  .rentals-table .desktop-only th {
     grid-column: span 2;
   }
-  body .rentals-table tr {
+  .rentals-table tr {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
   }
-  body .rentals-table tr td {
+  .rentals-table tr td {
     font-size: 1.25rem;
   }
-  body .rentals-table tr th {
+  .rentals-table tr th {
     font-size: 1.5rem;
   }
-  body .rentals-table tr .rental {
+  .rentals-table tr .rental {
     border: none;
   }
-  body .rentals-table tr .rental-desc,
-  body .rentals-table tr .package {
+  .rentals-table tr .rental-desc,
+  .rentals-table tr .package {
     border: none;
   }
-  body .rentals-table tr .rental-type {
+  .rentals-table tr .rental-type {
     border: none;
   }
-  body .rentals-table tr .type-desc {
+  .rentals-table tr .type-desc {
     border: none;
   }
-  body .rentals-table tr .package-desc {
+  .rentals-table tr .package-desc {
     border: none;
   }
-  body .rentals-table tr .demo {
+  .rentals-table tr .demo {
     border: none;
   }
-  body .rentals-table tr .demo-desc {
+  .rentals-table tr .demo-desc {
     border: none;
   }
-  body .rentals-table tr .rental,
-  body .rentals-table tr .rental-desc {
+  .rentals-table tr .rental,
+  .rentals-table tr .rental-desc {
     grid-column: 1/span 6;
   }
-  body .rentals-table tr .rental-type,
-  body .rentals-table tr .type-desc {
+  .rentals-table tr .rental-type,
+  .rentals-table tr .type-desc {
     grid-column: span 2;
   }
-  body .rentals-table tr .package,
-  body .rentals-table tr .package-desc {
+  .rentals-table tr .package,
+  .rentals-table tr .package-desc {
     grid-column: span 2;
   }
-  body .rentals-table tr .demo,
-  body .rentals-table tr .demo-desc {
+  .rentals-table tr .demo,
+  .rentals-table tr .demo-desc {
     grid-column: span 2;
   }
-  body .additional-info-flex {
+  .additional-info-flex {
     display: grid;
     grid-template-columns: 2, 1fr;
   }
-  body .additional-info-flex ul:first-child {
+  .additional-info-flex ul:first-child {
     grid-column: 1;
     padding-right: 1rem;
   }
-  body .additional-info-flex ul:last-child {
+  .additional-info-flex ul:last-child {
     grid-column: 2;
     padding-left: 1rem;
   }
-  body .coverages-flex {
+  .coverages-flex {
     display: grid;
     grid-template-columns: 2, 1fr;
   }
-  body .coverages-flex div:first-child {
+  .coverages-flex div:first-child {
     grid-column: 1;
     padding-right: 1rem;
   }
-  body .coverages-flex div:last-child {
+  .coverages-flex div:last-child {
     grid-column: 2;
     padding-left: 1rem;
   }
-  body .demo-policy-flex {
+  .demo-policy-flex {
     display: grid;
     grid-template-columns: 2, 1fr;
   }
-  body .demo-policy-flex div:first-child {
+  .demo-policy-flex div:first-child {
     grid-column: 1;
     padding-right: 1rem;
     margin-bottom: 3rem;
   }
-  body .demo-policy-flex div:last-child {
+  .demo-policy-flex div:last-child {
     grid-column: 2;
     padding-left: 1rem;
     margin-bottom: 3rem;
   }
-  body footer .es_subscription_form {
+  footer .es_subscription_form {
     justify-content: left;
   }
-  body footer .footer-grid {
+  footer .footer-grid {
     text-align: left;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 1fr;
   }
-  body footer .socials {
+  footer .socials {
     display: unset;
     grid-column: 12;
     grid-row: 1;
     padding: 0 6rem 0 0;
   }
-  body footer .shop-info {
+  footer .shop-info {
     grid-column: 1/span 3;
     grid-row: 1;
     margin-top: 0;
     padding: 0;
     padding: 0 0 0 6rem;
   }
-  body footer .footer-nav {
+  footer .footer-nav {
     grid-column: 4/span 3;
     grid-row: 1;
     padding: 0;
     margin-top: 0;
     justify-self: center;
   }
-  body footer .newsletter {
+  footer .newsletter {
     grid-column: 7/span 5;
     grid-row: 1;
     padding: 0;
     margin-top: 1rem;
   }
-  body footer .newsletter h3 {
+  footer .newsletter h3 {
     margin-top: 0rem;
   }
-  body footer .footer-info {
+  footer .footer-info {
     margin: 0 auto;
   }
 }
@@ -1006,4 +1146,4 @@ footer .footer-info p {
   body footer li {
     padding: 0;
   }
-}
+}/*# sourceMappingURL=main.css.map */

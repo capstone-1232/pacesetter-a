@@ -155,7 +155,7 @@
 				<a class="link" href="contact">Contact Us</a>
 				<a class="link" href="about-us">About Us</a>
 				<a class="link" href="rentals">Rentals</a>
-				<a class="link" href="faq">FAQ</a>
+				<a class="link" href="info">FAQ</a>
 				<a class="link" href="services">Services</a>
 			</nav>
 		</div> <!-- menu end -->

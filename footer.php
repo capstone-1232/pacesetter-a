@@ -18,7 +18,7 @@
                         <li><a href="events">Events</a></li>
                     </ul>
                     <ul>
-                        <li><a href="faq">F.A.Q.</a></li>
+                        <li><a href="info">F.A.Q.</a></li>
                         <li><a href="contact">Contact Us</a></li>
                         <li><a href="about-us">About Us</a></li>
                     </ul> <!-- footer-nav end -->
