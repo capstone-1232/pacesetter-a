@@ -866,42 +866,52 @@ footer .footer-info p {
     padding-left: 1rem;
     margin-bottom: 3rem;
   }
+  body footer .footer-grid {
+    padding: 0 6rem 0 6rem;
+  }
+  body footer .footer-grid .socials {
+    text-align: right;
+  }
   body footer .es_subscription_form {
     justify-content: left;
   }
   body footer .footer-grid {
+    padding: 0 6rem 0 6rem;
     text-align: left;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 1fr;
   }
-  body footer .socials {
+  body footer .footer-grid .socials {
     display: unset;
     grid-column: 12;
     grid-row: 1;
-    padding: 0 6rem 0 0;
+    padding: 0;
   }
-  body footer .shop-info {
+  body footer .footer-grid .shop-info {
     grid-column: 1/span 3;
     grid-row: 1;
     margin-top: 0;
     padding: 0;
-    padding: 0 0 0 6rem;
   }
-  body footer .footer-nav {
-    grid-column: 4/span 3;
+  body footer .footer-grid .shop-info li {
+    margin-top: 1.5rem;
+  }
+  body footer .footer-grid .footer-nav {
+    grid-column: 3/span 4;
     grid-row: 1;
     padding: 0;
     margin-top: 0;
     justify-self: center;
+    justify-content: space-between;
   }
-  body footer .newsletter {
+  body footer .footer-grid .newsletter {
     grid-column: 7/span 5;
     grid-row: 1;
     padding: 0;
     margin-top: 1rem;
   }
-  body footer .newsletter h3 {
+  body footer .footer-grid .newsletter h3 {
     margin-top: 0rem;
   }
   body footer .footer-info {
@@ -936,21 +946,24 @@ footer .footer-info p {
   body .rentals-desc {
     padding: 0 12rem;
   }
-  body footer .socials {
-    padding-right: 12rem;
+  body footer .footer-grid {
+    padding: 0 12rem 0 12rem;
   }
-  body footer .shop-info {
-    padding: 0 0 0 12rem;
+  body footer .footer-grid .shop-info {
+    grid-column: 1/span 2;
   }
-  body footer .footer-nav {
+  body footer .footer-grid .footer-nav {
+    grid-column: 3/span 4;
     display: grid;
-    grid-template-columns: 2, 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    justify-self: unset;
+    padding: 0 2rem;
   }
-  body footer .footer-nav ul:first-child {
-    grid-column: 1;
+  body footer .footer-grid .footer-nav ul:first-child {
+    grid-column: 1/span 2;
   }
-  body footer .footer-nav ul:last-child {
-    grid-column: 2;
+  body footer .footer-grid .footer-nav ul:last-child {
+    grid-column: 3/span 2;
   }
   body footer li {
     padding: 0;
@@ -987,23 +1000,7 @@ footer .footer-info p {
   body .rentals-desc {
     padding: 0 20rem;
   }
-  body footer .socials {
-    padding-right: 20rem;
-  }
-  body footer .shop-info {
-    padding: 0 0 0 20rem;
-  }
-  body footer .footer-nav {
-    display: grid;
-    grid-template-columns: 2, 1fr;
-  }
-  body footer .footer-nav ul:first-child {
-    grid-column: 1;
-  }
-  body footer .footer-nav ul:last-child {
-    grid-column: 2;
-  }
-  body footer li {
-    padding: 0;
+  body footer .footer-grid {
+    padding: 0 20rem 0 20rem;
   }
 }
