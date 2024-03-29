@@ -491,16 +491,20 @@ body {
             grid-column: 7 / span 12;
         }
     }
-}
 
-table tr:nth-child(12) .board-desc,
-table tr:nth-child(12) .ski-desc {
-    border-bottom: 3px solid black;
-    margin-bottom: 3rem;
-}
+    tr:nth-child(12) .board-desc,
+    tr:nth-child(12) .ski-desc {
+        border-bottom: 3px solid black;
+        margin-bottom: 3rem;
+    }
 
-table tr:nth-child(odd) {
-    background-color: $primary-color;
+    tr:nth-child(odd) {
+        background-color: $primary-color;
+    }
+
+    .desktop-only {
+        display: none;
+    }
 }
 
 .desktop-only {
@@ -526,62 +530,65 @@ table tr:nth-child(odd) {
     }
 }
 
-tr {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
+.rentals-table {
 
-    .rental {
-        border: 3px solid black;
-    }
+    tr {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
 
-    .rental-desc,
-    .package {
-        border-left: 3px solid black;
-        border-right: 3px solid black;
-        border-bottom: 3px solid black;
-    }
+        .rental {
+            border: 3px solid black;
+        }
 
-    .rental-type {
-        border-left: 3px solid black;
-        border-bottom: 3px solid black;
-    }
+        .rental-desc,
+        .package {
+            border-left: 3px solid black;
+            border-right: 3px solid black;
+            border-bottom: 3px solid black;
+        }
 
-    .type-desc {
-        border-left: 3px solid black;
-    }
+        .rental-type {
+            border-left: 3px solid black;
+            border-bottom: 3px solid black;
+        }
 
-    .package-desc {
-        border-left: 3px solid black;
-        border-right: 3px solid black;
-    }
+        .type-desc {
+            border-left: 3px solid black;
+        }
 
-    .demo {
-        border: 3px solid black;
-    }
+        .package-desc {
+            border-left: 3px solid black;
+            border-right: 3px solid black;
+        }
 
-    .demo-desc {
-        border-left: 3px solid black;
-        border-right: 3px solid black;
-    }
+        .demo {
+            border: 3px solid black;
+        }
 
-    .rental,
-    .rental-desc {
-        grid-column: 1 / span 12;
-    }
+        .demo-desc {
+            border-left: 3px solid black;
+            border-right: 3px solid black;
+        }
 
-    .rental-type,
-    .type-desc {
-        grid-column: 1 / span 6;
-    }
+        .rental,
+        .rental-desc {
+            grid-column: 1 / span 12;
+        }
 
-    .package,
-    .package-desc {
-        grid-column: 7 / span 12;
-    }
+        .rental-type,
+        .type-desc {
+            grid-column: 1 / span 6;
+        }
 
-    .demo,
-    .demo-desc {
-        grid-column: 1 / span 12;
+        .package,
+        .package-desc {
+            grid-column: 7 / span 12;
+        }
+
+        .demo,
+        .demo-desc {
+            grid-column: 1 / span 12;
+        }
     }
 }
 
