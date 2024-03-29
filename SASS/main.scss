@@ -507,7 +507,7 @@ body {
     }
 }
 
-.desktop-only {
+.services-table .desktop-only {
     display: none;
 }
 
@@ -756,9 +756,7 @@ footer {
         margin-top: 1.5rem;
     }
 
-    p,
-    .es-form-field-container,
-    h3 {
+    .es-form-field-container {
         margin-left: 1.875rem;
         margin-right: 1.875rem;
     }
