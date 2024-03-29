@@ -404,6 +404,17 @@ body .flex-container {
   margin-top: 2rem;
 }
 
+.rentals-table td {
+  padding: 1rem 1rem 3rem 1rem;
+  font-family: "Playfair Display", serif;
+  font-size: 1rem;
+}
+.rentals-table th {
+  padding: 1rem 0 1rem 1rem;
+  text-align: left;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.15rem;
+}
 .rentals-table tr {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -801,9 +812,14 @@ iframe {
     grid-template-columns: repeat(12, 1fr);
   }
   body .rentals-table tr td {
+    padding: 1rem 1rem 5rem 1rem;
+    font-family: "Playfair Display", serif;
     font-size: 1.25rem;
   }
   body .rentals-table tr th {
+    padding: 1rem 0 1rem 1rem;
+    text-align: left;
+    font-family: "Josefin Sans", sans-serif;
     font-size: 1.5rem;
   }
   body .rentals-table tr .rental {

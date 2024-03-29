@@ -352,7 +352,7 @@ body {
         }
     }
 
-    // -----------------------------------------------------------------  SERVICES PAGE -----------------------------------------------------------------
+    // -----------------------------------------------------------------    CONTACT PAGE -----------------------------------------------------------------
 
     .hours {
         margin-bottom: 4rem;
@@ -531,6 +531,19 @@ body {
 }
 
 .rentals-table {
+
+    td {
+        padding: 1rem 1rem 3rem 1rem;
+        font-family: "Playfair Display", serif;
+        font-size: 1rem;
+    }
+
+    th {
+        padding: 1rem 0 1rem 1rem;
+        text-align: left;
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 1.15rem;
+    }
 
     tr {
         display: grid;
@@ -1116,12 +1129,18 @@ footer {
                 grid-template-columns: repeat(12, 1fr);
 
                 td {
+                    padding: 1rem 1rem 5rem 1rem;
+                    font-family: "Playfair Display", serif;
                     font-size: 1.25rem;
                 }
 
                 th {
+                    padding: 1rem 0 1rem 1rem;
+                    text-align: left;
+                    font-family: "Josefin Sans", sans-serif;
                     font-size: 1.5rem;
                 }
+
 
                 .rental {
                     border: none;
