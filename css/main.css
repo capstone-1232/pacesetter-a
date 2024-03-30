@@ -185,6 +185,18 @@ body .flex-container {
   transform: scaleX(100%);
 }
 
+body .home h1 {
+  padding: 1.3rem 1.875rem 1rem 1.875rem;
+}
+body .home h2 {
+  padding: 1.3rem 1.875rem 1rem 1.875rem;
+  text-align: center;
+  font-size: 2.5rem;
+  background-color: #72A8D5;
+  text-transform: uppercase;
+  margin: 0;
+}
+
 .about-image {
   object-fit: cover;
   height: 20rem;
@@ -532,6 +544,9 @@ h3 {
 .event-section .simcal-align-right {
   display: none;
 }
+.event-section .event-card-list:last-child {
+  margin-bottom: 3rem;
+}
 .event-section .event-card-list {
   margin: 1.875rem;
   filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
@@ -555,6 +570,7 @@ h3 {
 }
 .event-section .event-card-list .card-body p {
   max-width: 100%;
+  margin: 0;
 }
 .event-section .es_spinner_image {
   display: none;
@@ -722,8 +738,23 @@ footer .footer-info p {
     padding: 0 1.875rem;
   }
   body .event-section .event-card-list .card-body {
+    display: grid;
+  }
+  body .event-section .event-card-list .emaillist {
+    height: 2.5rem;
+    align-self: flex-end;
+  }
+  body .event-section .event-card-list .es-form-field-container {
+    align-self: flex-end;
+    height: 2.5rem;
+  }
+  body .event-section .event-card-list .card-body {
+    padding: 1.875rem;
     grid-column: 2/span 2;
     width: 100%;
+  }
+  body .event-section .event-card-list .card-body h3 {
+    margin: 0;
   }
   body .shop-info,
   body .footer-nav,
@@ -733,24 +764,8 @@ footer .footer-info p {
   }
 }
 @media screen and (min-width: 1080px) {
-  body h1,
-  body h2,
-  body h3,
-  body h4,
-  body h5,
-  body h6,
-  body a {
-    font-family: "Josefin Sans", sans-serif;
-    font-weight: 400;
-    padding: 0;
-  }
   body h1 {
-    text-align: center;
     font-size: 3rem;
-    background-color: #72A8D5;
-    text-transform: uppercase;
-    padding: 1.3rem 0 1rem 0;
-    margin: 0;
   }
   body h2 {
     font-size: 2.5rem;
@@ -760,16 +775,13 @@ footer .footer-info p {
   }
   body p,
   body li {
-    font-family: "Playfair Display", serif;
     font-size: 1.25rem;
   }
   body li {
     margin-top: 1.25rem;
   }
-  body ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  body .home h2 {
+    font-size: 3rem;
   }
   body .history,
   body .expertise,
