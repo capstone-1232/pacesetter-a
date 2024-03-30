@@ -45,9 +45,11 @@
                         echo    '<li class="event-card-list">';
                             the_post_thumbnail();
                         echo        '<div class="card-body">';
+                        echo        '<h3>';
                             the_title();
+                        echo        '</h3>';
                             the_content();
-                        echo do_shortcode('[email-subscribers-form id="3"]');
+                        echo do_shortcode('[email-subscribers-form id="3"]'); 
                         echo        '</div>';
                         echo    '</li>';
                         endwhile;
