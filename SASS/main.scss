@@ -71,13 +71,16 @@ body {
 
         .navbar {
             background-color: $primary-color;
-            // justify-content: flex;
             padding: 0 1.875rem;
             overflow: hidden;
 
             nav {
                 display: grid;
                 grid-template-columns: repeat(12, 1fr);
+
+                .nav-items {
+                    display: none;
+                }
 
                 .logo {
                     grid-column: 1/span 3;
@@ -90,7 +93,7 @@ body {
                 a {
                     color: black;
                     float: left;
-                    font-size: 16px;
+                    font-size: 1.175rem;
                     padding: 1rem;
                     text-align: center;
                     text-decoration: none;
@@ -114,6 +117,7 @@ body {
             padding: 1rem 0 1.75rem 0;
             margin-left: auto;
             margin-right: 0;
+            width: 2rem;
         }
 
         
@@ -157,87 +161,158 @@ body {
         .subnav:hover .subnav-content {
             display: block;
         }
-    }
-
 
     .menu {
         background-color: #ffffff;
-        max-height: 0;
-        position: static;
-        overflow: hidden;
-
-        nav {
-            left: 0;
-            position: absolute;
-            top: 0;
-            transform: scaleX(0);
-            transform-origin: right;
-            transition: transform 300ms;
-            height: 100vh;
-        }
-
-        .menu-expanded {
-            transform: scaleX(100%);
-        }
-
-        .subnav {
-            display: flex;
-            overflow: hidden;
-
-            .subnavbtn {
-                width: .5rem;
-            }
-
-            .subnav-content {
-                background-color: #ffffff;
-                display: none;
-                position: absolute;
-                left: 0;
-                width: 100%;
-                z-index: 1;
-
-                a {
-
-                    text-decoration: none;
-                }
-            }
-
-            svg {
-                width: 2rem;
-            }
-
-        }
-
-        .subnav:hover {
-            .subnav-content {
-                display: block;
-            }
-        }
-
-        a {
-            color: #2E2E2E;
-            padding: 14px 16px;
-            text-align: center;
-            text-decoration: none;
-        }
-
-    }
-
-    .nav-btn {
-        cursor: pointer;
-        padding: 7px 0;
-        width: 2rem;
-    }
-
-    .flex-container {
-        align-items: center;
         display: flex;
+        top: 0;
+        position: absolute;
+        right: 0;
+        transform: scaleY(0);
+        transform-origin: top;
+        transition: transform 300ms;
+        height: 100vh;
+        margin-top: 117.2px;
+        z-index: 2;
+
+        .menu-subnav {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .subnavbtn {
+            width: .5rem;
+        }
+
+        .menu-subnav-content {
+            display: flex;
+            position: absolute;
+            height: 10rem;
+            transform: scaleY(0);
+            transform-origin: top;
+            transition: transform 300ms;  
+            top: 0;
+        }
+
+        .menu-subnav-content2 {
+            display: flex;
+            position: absolute;
+            height: 10rem;
+            transform: scaleY(0);
+            transform-origin: top;
+            transition: transform 300ms;  
+            top: 0;
+        }
+
+        .menu-subnav-content3 {
+            display: flex;
+            position: absolute;
+            height: 10rem;
+            transform: scaleY(0);
+            transform-origin: top;
+            transition: transform 300ms;  
+            top: 0;
+        }
+
+        .menu-subnav-content4 {
+            display: flex;
+            position: absolute;
+            height: 10rem;
+            transform: scaleY(0);
+            transform-origin: top;
+            transition: transform 300ms;  
+            top: 0;
+        }
+    }
+    
+    .menu {
+    .menu-expanded-small {
+        transform: scaleY(100%);
+    }
+}
+    
+    .menu-expanded {
+        transform: scaleY(100%);
     }
 }
 
-.menu-expanded {
-    transform: scaleX(100%);
-}
+//     .menu {
+//         background-color: #ffffff;
+//         max-height: 0;
+//         position: static;
+//         overflow: hidden;
+
+//         nav {
+//             height: 100vh;
+//             left: 0;
+//             position: absolute;
+//             top: 0;
+//             transform: scaleX(0);
+//             transform-origin: right;
+//             transition: transform 300ms;
+//         }
+
+//         .menu-expanded {
+//             transform: scaleX(100%);
+//         }
+
+//         .subnav {
+//             display: flex;
+//             overflow: hidden;
+
+//             .subnavbtn {
+//                 width: .5rem;
+//             }
+
+//             .subnav-content {
+//                 background-color: #ffffff;
+//                 display: none;
+//                 position: absolute;
+//                 left: 0;
+//                 width: 100%;
+//                 z-index: 1;
+
+//                 a {
+
+//                     text-decoration: none;
+//                 }
+//             }
+
+//             svg {
+//                 width: 2rem;
+//             }
+
+//         }
+
+//         .subnav:hover {
+//             .subnav-content {
+//                 display: block;
+//             }
+//         }
+
+//         a {
+//             color: #2E2E2E;
+//             padding: 14px 16px;
+//             text-align: center;
+//             text-decoration: none;
+//         }
+
+//     }
+
+//     .nav-btn {
+//         cursor: pointer;
+//         padding: 7px 0;
+//         width: 2rem;
+//     }
+
+//     .flex-container {
+//         align-items: center;
+//         display: flex;
+//     }
+// }
+
+// .menu-expanded {
+//     transform: scaleX(100%);
 
 // -----------------------------------------------------------------  HOME PAGE -----------------------------------------------------------------
 body {
@@ -258,6 +333,9 @@ body {
 
         .featured-card {
             color: black;
+          
+        img {
+            width: 100%;
         }
     }
 }
@@ -908,12 +986,19 @@ footer {
 
     // }
 }
+}
 
 // -----------------------------------------------------------------  TABLET  -----------------------------------------------------------------
 
 @media screen and (min-width: 720px) {
 
     body {
+        // -----------------------------------------------------------------  HOME PAGE -----------------------------------------------------------------
+        .featured-products {
+            display: flex;
+            justify-content: space-between;
+        }
+
 
         // -----------------------------------------------------------------  ABOUT PAGE -----------------------------------------------------------------
 
@@ -1053,6 +1138,122 @@ footer {
                 font-size: 3rem;
             }
         }
+
+        // -----------------------------------------------------------------HEADER-----------------------------------------------------------------
+
+    header {
+        position: relative;
+
+        .navbar {
+            background-color: $primary-color;
+            // justify-content: flex;
+            padding: 0 1.875rem;
+            overflow: hidden;
+
+            nav {
+                display: grid;
+                grid-template-columns: repeat(12, 1fr);
+
+                .nav-items {
+                    display: unset;
+                }
+
+                .logo {
+                    grid-column: 1/span 3;
+                    padding: 14px 16px;
+                }
+            }
+            
+            .nav-items {
+
+                a {
+                    color: black;
+                    float: left;
+                    font-size: 16px;
+                    padding: 1rem;
+                    text-align: center;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .nav-items {
+            align-self: end;
+            grid-column: 4/span 8;
+            margin-left: auto;
+            margin-right: 0;
+            padding-bottom: 1rem;
+            
+        }
+
+        .nav-btn {
+            align-self: end;
+            grid-column: 12;
+            grid-row: 1;
+            padding: 1rem 0 1.75rem 0;
+            margin-left: auto;
+            margin-right: 0;
+        }
+
+        
+        .subnav {
+            float: left;
+            overflow: hidden;
+            
+            .subnavbtn {
+                width: .5rem;
+                border: none;
+                outline: none;
+                color: white;
+                font-family: inherit;
+                margin: 0;
+            }
+            
+            .subnav-content {
+                display: none;
+                position: absolute;
+                background-color: #ffffff;
+                min-width: 160px;
+                top: 5.5rem;
+                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                z-index: 1;
+
+                a {
+                    float: none;
+                    color: black;
+                    padding: 12px 16px;
+                    text-decoration: none;
+                    display: block;
+                    text-align: left;
+
+                    &:hover {
+                        background-color: #ddd;
+                    }
+                }
+            }
+        }
+
+        .subnav:hover .subnav-content {
+            display: block;
+        }
+    }
+
+
+    .menu {
+        background-color: #ffffff;
+        left: 0;
+        position: absolute;
+        top: 0;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 300ms;
+        height: 100vh;
+    }
+
+    .menu-expanded {
+        transform: scaleX(100%);
+    }
+}
 
         // -----------------------------------------------------------------  ABOUT PAGE -----------------------------------------------------------------
 
@@ -1474,7 +1675,6 @@ footer {
             }
         }
     }
-}
 
 @media screen and (min-width: 1440px) {
 
