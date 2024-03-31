@@ -196,10 +196,6 @@ body .home h2 {
   text-transform: uppercase;
   margin: 0;
 }
-body .home .featured-products {
-  display: flex;
-  justify-content: space-between;
-}
 body .home img {
   width: 100%;
 }
@@ -702,6 +698,10 @@ footer .footer-info p {
 }
 
 @media screen and (min-width: 720px) {
+  body .featured-products {
+    display: flex;
+    justify-content: space-between;
+  }
   body .history,
   body .expertise,
   body .winter,

@@ -76,11 +76,24 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script>
+    $(function(){
     $('.slider').slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
+        autoplay: true,
+        autoplaySpeed: 0,
+        speed: 4000,
+        cssEase: "linear",
+        slidesToShow: 3,
+        swipe: false,
+        arrows: false,
+        responsive: [
+        {
+            breakpoint: 750,
+            settings: {
+            slidesToShow: 3,
+            }
+        }
+        ]
+    });
     });
     </script>
 </footer>
