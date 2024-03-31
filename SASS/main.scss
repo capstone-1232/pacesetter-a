@@ -256,11 +256,6 @@ body {
             margin: 0;
         }
 
-        .featured-products {
-            display: flex;
-            justify-content: space-between;
-        }
-
         img {
             width: 100%;
         }
@@ -919,6 +914,12 @@ footer {
 @media screen and (min-width: 720px) {
 
     body {
+        // -----------------------------------------------------------------  HOME PAGE -----------------------------------------------------------------
+        .featured-products {
+            display: flex;
+            justify-content: space-between;
+        }
+
 
         // -----------------------------------------------------------------  ABOUT PAGE -----------------------------------------------------------------
 
