@@ -31,7 +31,7 @@
 
                 while ( $loop->have_posts() ) : $loop->the_post();
                     global $product;
-                    echo '<br />' . woocommerce_get_product_thumbnail().' '.get_the_title().' '.get_price();
+                    echo '<div class="featued-card">' . woocommerce_get_product_thumbnail() . '<p class="featured-title">' . get_the_title() . '</p> <p class="featured-price">' . wc_get_price_to_display( $product, array( 'price' => $product->get_price() ) ) . '</p> </div>';
                 endwhile;
 
                 wp_reset_query();
