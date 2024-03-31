@@ -8,7 +8,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: pacesetter
 */
 body {
-  background-color: #eee;
+  background-color: #E6E6E6;
   margin: 0 auto;
 }
 body h1,
@@ -186,6 +186,24 @@ body header .menu .menu-subnav-content4 {
 body header .menu .menu-expanded-small {
   transform: scaleY(100%);
 }
+
+body .home h1 {
+  padding: 1.3rem 1.875rem 1rem 1.875rem;
+}
+body .home h2 {
+  padding: 1.3rem 1.875rem 1rem 1.875rem;
+  text-align: center;
+  font-size: 2.5rem;
+  background-color: #72A8D5;
+  text-transform: uppercase;
+  margin: 0;
+}
+body .home img {
+  width: 100%;
+}
+
+.about-image {
+
 body header .menu-expanded {
   transform: scaleY(100%);
 }
@@ -455,6 +473,138 @@ body .rentals-info .list-style {
 body .rentals-info div:nth-child(3) {
   margin-bottom: 3rem;
 }
+
+.event-section .simcal-calendar .simcal-calendar-grid {
+  width: 320px;
+  margin: 0 auto;
+}
+.event-section .simcal-calendar .simcal-calendar-head tr:first-child th:nth-child(2) {
+  grid-column: 1/span 12;
+  justify-self: center;
+}
+.event-section .simcal-calendar .simcal-calendar-head tr:first-child th:nth-child(2) h3 {
+  margin-top: 2rem;
+}
+.event-section .simcal-calendar .simcal-calendar-head tr:first-child th:nth-child(1) {
+  display: none;
+}
+.event-section .simcal-calendar .simcal-calendar-head tr:first-child th:nth-child(3) {
+  display: none;
+}
+.event-section .simcal-calendar .simcal-calendar-head tr:nth-child(2) {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+.event-section .simcal-calendar .simcal-calendar-head tr:nth-child(2) th {
+  justify-self: center;
+  font-size: 1rem;
+}
+.event-section .simcal-calendar .simcal-week {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  padding: 0.5rem 0;
+}
+.event-section .simcal-calendar .simcal-week td {
+  justify-self: center;
+}
+.event-section .simcal-calendar table {
+  padding: 0 1.875rem;
+}
+.event-section .simcal-calendar table tr, .event-section .simcal-calendar table th, .event-section .simcal-calendar table td {
+  text-align: unset;
+  padding: 0;
+}
+.event-section .simcal-calendar table tr:nth-child(odd) {
+  background-color: unset;
+}
+.event-section .event-header {
+  background-color: #72A8D5;
+  padding-bottom: 1rem;
+}
+.event-section .event-header form {
+  text-align: center;
+}
+.event-section .event-header form input {
+  padding: 0 1rem;
+  height: 2.5rem;
+  font-family: "Josefin Sans", sans-serif;
+  background-color: #ffffff;
+  filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+  border: none;
+  border-radius: 5px;
+}
+.event-section .simcal-align-right {
+  display: none;
+}
+.event-section .event-card-list:last-child {
+  margin-bottom: 3rem;
+}
+.event-section .event-card-list {
+  margin: 1.875rem;
+  filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+  height: 100%;
+}
+.event-section .event-card-list .attachment-post-thumbnail {
+  object-fit: cover;
+  width: 100%;
+  height: 20rem;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.event-section .event-card-list .card-body {
+  padding: 1rem;
+  background-color: #ffffff;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.event-section .event-card-list .card-body h3 {
+  margin-top: 1rem;
+}
+.event-section .event-card-list .card-body p {
+  max-width: 100%;
+  margin: 0;
+}
+.event-section .es_spinner_image {
+  display: none;
+}
+.event-section .es-form-field-container {
+  padding: 0 !important;
+  width: 100%;
+  display: flex;
+}
+.event-section .es-form-field-container input {
+  background-color: #d4d4d4;
+  margin: 0;
+  padding: 0 0.5rem;
+  height: 2.5rem;
+}
+.event-section .es-form-field-container div:nth-child(3) input {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 0;
+  border: none;
+  transition: 0.3s;
+}
+.event-section .es-form-field-container div:nth-child(3) input:hover {
+  background-color: #72A8D5;
+}
+.event-section .es-form-field-container .gjs-row:nth-child(2) {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.event-section .es-form-field-container .gjs-row:nth-child(2) .gjs-cell {
+  grid-column: 1/span 5;
+}
+.event-section .es-form-field-container .gjs-row:nth-child(2) .gjs-cell .es-email {
+  border-top-right-radius: 0;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 5px;
+  border: none;
+  width: 100%;
+  
 body .ep-event-loader {
   display: none !important;
 }
@@ -539,6 +689,10 @@ body footer .footer-info p {
 }
 
 @media screen and (min-width: 720px) {
+  body .featured-products {
+    display: flex;
+    justify-content: space-between;
+  }
   body .history,
   body .expertise,
   body .winter,
@@ -565,32 +719,51 @@ body footer .footer-info p {
   body .rentals-desc {
     padding: 0 6rem;
   }
-  .shop-info,
-  .footer-nav,
-  .socials,
-  .footer-info {
+  body .event-section .event-card-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 1.875rem 6rem;
+  }
+  body .event-section .event-card-list .attachment-post-thumbnail {
+    grid-column: 1;
+    width: 100%;
+    height: 15rem;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 0;
+  }
+  body .event-section .event-card-list table {
+    padding: 0 1.875rem;
+  }
+  body .event-section .event-card-list .card-body {
+    display: grid;
+  }
+  body .event-section .event-card-list .emaillist {
+    height: 2.5rem;
+    align-self: flex-end;
+  }
+  body .event-section .event-card-list .es-form-field-container {
+    align-self: flex-end;
+    height: 2.5rem;
+  }
+  body .event-section .event-card-list .card-body {
+    padding: 1.875rem;
+    grid-column: 2/span 2;
+    width: 100%;
+  }
+  body .event-section .event-card-list .card-body h3 {
+    margin: 0;
+  }
+  body .shop-info,
+  body .footer-nav,
+  body .socials,
+  body .footer-info {
     padding: 0 6rem;
   }
 }
 @media screen and (min-width: 1080px) {
-  body h1,
-  body h2,
-  body h3,
-  body h4,
-  body h5,
-  body h6,
-  body a {
-    font-family: "Josefin Sans", sans-serif;
-    font-weight: 400;
-    padding: 0;
-  }
   body h1 {
-    text-align: center;
     font-size: 3rem;
-    background-color: #72A8D5;
-    text-transform: uppercase;
-    padding: 1.3rem 0 1rem 0;
-    margin: 0;
   }
   body h2 {
     font-size: 2.5rem;
@@ -600,16 +773,13 @@ body footer .footer-info p {
   }
   body p,
   body li {
-    font-family: "Playfair Display", serif;
     font-size: 1.25rem;
   }
   body li {
     margin-top: 1.25rem;
   }
-  body ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  body .home h2 {
+    font-size: 3rem;
   }
   body header {
     position: relative;
@@ -940,6 +1110,42 @@ body footer .footer-info p {
     padding-left: 1rem;
     margin-bottom: 3rem;
   }
+
+  body .event-section .event-header {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0;
+  }
+  body .event-section .event-header h1 {
+    margin-right: 1rem;
+  }
+  body .event-section .event-header form {
+    text-align: unset;
+    margin-left: 1rem;
+    padding: 1.5rem 0 1rem 0;
+  }
+  body .event-section .event-card-list {
+    grid-template-columns: repeat(5, 1fr);
+    margin: 1.875rem 6rem;
+  }
+  body .event-section .event-card-list .card-body {
+    grid-column: 2/span 4;
+  }
+  body .event-section .event-card-list table {
+    padding: 0 1.875rem;
+  }
+  body footer .footer-grid {
+    padding: 0 6rem 0 6rem;
+  }
+  body footer .footer-grid .socials {
+    text-align: right;
+  }
+  body footer .es_subscription_form {
+    justify-content: left;
+  }
+  body footer .footer-grid {
+    padding: 0 6rem 0 6rem;
+=======
   footer .es_subscription_form {
     justify-content: left;
   }
@@ -949,33 +1155,43 @@ body footer .footer-info p {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 1fr;
   }
-  footer .socials {
+  body footer .footer-grid .socials {
+ 
     display: unset;
     grid-column: 12;
     grid-row: 1;
-    padding: 0 6rem 0 0;
+    padding: 0;
   }
-  footer .shop-info {
+
+  body footer .footer-grid .shop-info {
     grid-column: 1/span 3;
     grid-row: 1;
     margin-top: 0;
     padding: 0;
-    padding: 0 0 0 6rem;
   }
-  footer .footer-nav {
+
+  body footer .footer-grid .shop-info li {
+    margin-top: 1.5rem;
+  }
+  body footer .footer-grid .footer-nav {
+    grid-column: 3/span 4;
     grid-column: 4/span 3;
+
     grid-row: 1;
     padding: 0;
     margin-top: 0;
     justify-self: center;
+    justify-content: space-between;
   }
-  footer .newsletter {
+
+  body footer .footer-grid .newsletter {
     grid-column: 7/span 5;
     grid-row: 1;
     padding: 0;
     margin-top: 1rem;
   }
-  footer .newsletter h3 {
+
+  body footer .footer-grid .newsletter h3 {
     margin-top: 0rem;
   }
   footer .footer-info {
@@ -1010,21 +1226,30 @@ body footer .footer-info p {
   body .rentals-desc {
     padding: 0 12rem;
   }
-  body footer .socials {
-    padding-right: 12rem;
+  body .event-section .event-card-list {
+    margin: 1.875rem 12rem;
   }
-  body footer .shop-info {
-    padding: 0 0 0 12rem;
+  body .event-section .event-card-list table {
+    padding: 0 12rem;
   }
-  body footer .footer-nav {
+  body footer .footer-grid {
+    padding: 0 12rem 0 12rem;
+  }
+  body footer .footer-grid .shop-info {
+    grid-column: 1/span 2;
+  }
+  body footer .footer-grid .footer-nav {
+    grid-column: 3/span 4;
     display: grid;
-    grid-template-columns: 2, 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    justify-self: unset;
+    padding: 0 2rem;
   }
-  body footer .footer-nav ul:first-child {
-    grid-column: 1;
+  body footer .footer-grid .footer-nav ul:first-child {
+    grid-column: 1/span 2;
   }
-  body footer .footer-nav ul:last-child {
-    grid-column: 2;
+  body footer .footer-grid .footer-nav ul:last-child {
+    grid-column: 3/span 2;
   }
   body footer li {
     padding: 0;
@@ -1061,23 +1286,17 @@ body footer .footer-info p {
   body .rentals-desc {
     padding: 0 20rem;
   }
-  body footer .socials {
-    padding-right: 20rem;
+  body .event-section .event-card-list {
+    grid-template-columns: repeat(6, 1fr);
+    margin: 1.875rem 20rem;
   }
-  body footer .shop-info {
-    padding: 0 0 0 20rem;
+  body .event-section .event-card-list .card-body {
+    grid-column: 2/span 5;
   }
-  body footer .footer-nav {
-    display: grid;
-    grid-template-columns: 2, 1fr;
+  body .event-section .event-card-list table {
+    padding: 0 20rem;
   }
-  body footer .footer-nav ul:first-child {
-    grid-column: 1;
-  }
-  body footer .footer-nav ul:last-child {
-    grid-column: 2;
-  }
-  body footer li {
-    padding: 0;
+  body footer .footer-grid {
+    padding: 0 20rem 0 20rem;
   }
 }/*# sourceMappingURL=main.css.map */

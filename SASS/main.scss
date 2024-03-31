@@ -12,9 +12,11 @@ $primary-color: #87D4C4;
 $secondary-color: #72A8D5;
 $alt-font-color: #2E2E2E;
 $accent-color: #F7EE23;
+$background-color: #E6E6E6;
+$input-bg: #d4d4d4;
 
 body {
-    background-color: #eee;
+    background-color: $background-color;
     margin: 0 auto;
 
     h1,
@@ -313,8 +315,27 @@ body {
 //     transform: scaleX(100%);
 
 // -----------------------------------------------------------------  HOME PAGE -----------------------------------------------------------------
+body {
+    .home {
 
+        h1 {
+            padding: 1.3rem 1.875rem 1rem 1.875rem;
+        }
 
+        h2 {
+            padding: 1.3rem 1.875rem 1rem 1.875rem;
+            text-align: center;
+            font-size: 2.5rem;
+            background-color: #72A8D5;
+            text-transform: uppercase;
+            margin: 0;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+}
 
 // -----------------------------------------------------------------  ABOUT PAGE -----------------------------------------------------------------
 
@@ -675,10 +696,177 @@ h3 {
     }
 }
 
-// -----------------------------------------------------------------  EVENTS PAGE -----------------------------------------------------------------
+// -----------------------------------------------------------------  EVENTS PAGE  -----------------------------------------------------------------
 
-.ep-event-loader {
-    display: none !important;
+.event-section {
+
+    .simcal-calendar {
+
+        .simcal-calendar-grid {
+            width: 320px;
+            margin: 0 auto;
+        }
+
+        .simcal-calendar-head {
+            tr:first-child th:nth-child(2) {
+                grid-column: 1 / span 12;
+                justify-self: center;
+
+                h3 {
+                    margin-top: 2rem;
+                }
+            }
+
+            tr:first-child th:nth-child(1) {
+                display: none;
+            }
+
+            tr:first-child th:nth-child(3) {
+                display: none;
+            }
+
+            tr:nth-child(2) {
+                display: grid;
+                grid-template-columns: repeat(7, 1fr);
+
+                th {
+                    justify-self: center;
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        .simcal-week {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            padding: .5rem 0;
+
+            td {
+                justify-self: center;
+            }
+        }
+
+        table {
+            padding: 0 1.875rem;
+
+            tr, th, td{
+                text-align: unset;
+                padding: 0;
+            }
+
+            tr:nth-child(odd) {
+                background-color: unset;
+            }
+        }
+    }
+
+    .event-header {
+        background-color: $secondary-color;
+        padding-bottom: 1rem;
+
+        form {
+            text-align: center;
+
+            input {
+                padding: 0 1rem;
+                height: 2.5rem;
+                font-family: "Josefin Sans", sans-serif;
+                background-color: #ffffff;
+                filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+                border: none;
+                border-radius: 5px;
+            }
+        }
+    }
+
+    .simcal-align-right {
+        display: none;
+    }
+
+    .event-card-list:last-child {
+        margin-bottom: 3rem;
+    }
+
+    .event-card-list {
+        margin: 1.875rem;
+        filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+        height: 100%;
+
+        .attachment-post-thumbnail {
+            object-fit: cover;
+            width: 100%;
+            height: 20rem;
+            border-top-right-radius: 5px;
+            border-top-left-radius: 5px;
+        }
+
+        .card-body {
+            padding: 1rem;
+            background-color: #ffffff;
+            border-bottom-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+
+            h3 {
+                margin-top: 1rem;
+            }
+
+            p {
+                max-width: 100%;
+                margin: 0;
+            }
+        }
+    }
+
+    .es_spinner_image {
+        display: none;
+    }
+
+    .es-form-field-container {
+        padding: 0 !important;
+        width: 100%;
+        display: flex;
+
+        input {
+            background-color: $input-bg;
+            margin: 0;
+            padding: 0 .5rem;
+            height: 2.5rem;
+        }
+
+        div:nth-child(3) {
+            input {
+                border-top-right-radius: 5px;
+                border-top-left-radius: 0;
+                border-bottom-right-radius: 5px;
+                border-bottom-left-radius: 0;
+                border: none;
+                transition: 0.3s;
+            }
+        }
+
+        div:nth-child(3) input:hover {
+            background-color: $secondary-color;
+        }
+
+        .gjs-row:nth-child(2) {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+
+            .gjs-cell {
+                grid-column: 1 / span 5;
+
+                .es-email {
+                    border-top-right-radius: 0;
+                    border-top-left-radius: 5px;
+                    border-bottom-right-radius: 0;
+                    border-bottom-left-radius: 5px;
+                    border: none;
+                    width: 100%;
+                }
+            }
+        }
+    }
 }
 
 // -----------------------------------------------------------------  FOOTER  -----------------------------------------------------------------
@@ -802,6 +990,12 @@ footer {
 @media screen and (min-width: 720px) {
 
     body {
+        // -----------------------------------------------------------------  HOME PAGE -----------------------------------------------------------------
+        .featured-products {
+            display: flex;
+            justify-content: space-between;
+        }
+
 
         // -----------------------------------------------------------------  ABOUT PAGE -----------------------------------------------------------------
 
@@ -832,29 +1026,77 @@ footer {
             }
         }
 
-        // -----------------------------------------------------------------  SERVICES  -----------------------------------------------------------------
+        // -----------------------------------------------------------------  SERVICES PAGE  -----------------------------------------------------------------
 
         .services-table,
         .services-desc {
             padding: 0 6rem;
         }
 
-        // -----------------------------------------------------------------  RENTALS  -----------------------------------------------------------------
+        // -----------------------------------------------------------------  RENTALS PAGE  -----------------------------------------------------------------
 
         .rentals-table,
         .rentals-info,
         .rentals-desc {
             padding: 0 6rem;
         }
-    }
 
-    // -----------------------------------------------------------------  FOOTER  -----------------------------------------------------------------
+        // -----------------------------------------------------------------  EVENTS PAGE  -----------------------------------------------------------------
 
-    .shop-info,
-    .footer-nav,
-    .socials,
-    .footer-info {
-        padding: 0 6rem;
+        .event-section {
+
+            .event-card-list {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                margin: 1.875rem 6rem;
+
+                .attachment-post-thumbnail {
+                    grid-column: 1;
+                    width: 100%;
+                    height: 15rem;
+                    border-bottom-left-radius: 5px;
+                    border-top-left-radius: 5px;
+                    border-top-right-radius: 0;
+                }
+
+                table {
+                    padding: 0 1.875rem;
+                }
+
+                .card-body {
+                    display: grid;
+                }
+
+                .emaillist {
+                    height: 2.5rem;
+                    align-self: flex-end;
+                }
+
+                .es-form-field-container {
+                    align-self: flex-end;
+                    height: 2.5rem;
+                }
+
+                .card-body {
+                    padding: 1.875rem;
+                    grid-column: 2 / span 2;
+                    width: 100%;
+
+                    h3 {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+
+        // -----------------------------------------------------------------  FOOTER  -----------------------------------------------------------------
+
+        .shop-info,
+        .footer-nav,
+        .socials,
+        .footer-info {
+            padding: 0 6rem;
+        }
     }
 }
 
@@ -864,25 +1106,8 @@ footer {
 
     body {
 
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6,
-        a {
-            font-family: "Josefin Sans", sans-serif;
-            font-weight: 400;
-            padding: 0;
-        }
-
         h1 {
-            text-align: center;
             font-size: 3rem;
-            background-color: $secondary-color;
-            text-transform: uppercase;
-            padding: 1.3rem 0 1rem 0;
-            margin: 0;
         }
 
         h2 {
@@ -895,7 +1120,6 @@ footer {
 
         p,
         li {
-            font-family: "Playfair Display", serif;
             font-size: 1.25rem;
         }
 
@@ -903,10 +1127,13 @@ footer {
             margin-top: 1.25rem;
         }
 
-        ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
+        // -----------------------------------------------------------------  HOME PAGE -----------------------------------------------------------------
+
+        .home {
+    
+            h2 {
+                font-size: 3rem;
+            }
         }
 
         // -----------------------------------------------------------------HEADER-----------------------------------------------------------------
@@ -1343,54 +1570,101 @@ footer {
             }
         }
 
+        // -----------------------------------------------------------------  EVENTS PAGE  -----------------------------------------------------------------
+
+        .event-section {
+
+            .event-header {
+                display: flex;
+                justify-content: center;
+                padding-bottom: 0;
+
+                h1 {
+                    margin-right: 1rem;
+                }
+
+                form {
+                    text-align: unset;
+                    margin-left: 1rem;
+                    padding: 1.5rem 0 1rem 0;
+                }
+            }
+
+            .event-card-list {
+                grid-template-columns: repeat(5, 1fr);
+                margin: 1.875rem 6rem;
+
+                .card-body {
+                    grid-column: 2 / span 4;
+                }
+
+                table {
+                    padding: 0 1.875rem;
+                }
+            }
+        }
+
         // -----------------------------------------------------------------  FOOTER  -----------------------------------------------------------------
 
         footer {
+
+            .footer-grid {
+                padding: 0 6rem 0 6rem;
+
+                .socials {
+                    text-align: right;
+                }
+            }
 
             .es_subscription_form {
                 justify-content: left;
             }
 
             .footer-grid {
+                padding: 0 6rem 0 6rem;
                 text-align: left;
                 display: grid;
                 grid-template-columns: repeat(12, 1fr);
                 grid-template-rows: 1fr;
-            }
 
-            .socials {
-                display: unset;
-                grid-column: 12;
-                grid-row: 1;
-                padding: 0 6rem 0 0;
-            }
-                    
-            .shop-info {
-                grid-column: 1 / span 3;
-                grid-row: 1;
-                margin-top: 0;
-                padding: 0;
-                padding: 0 0 0 6rem;
-            }
-
-            .footer-nav {
-                grid-column: 4 / span 3;
-                grid-row: 1;
-                padding: 0;
-                margin-top: 0;
-                justify-self: center;
-            }
-
-            .newsletter {
-
-                h3 {
-                    margin-top: 0rem;
+                .socials {
+                    display: unset;
+                    grid-column: 12;
+                    grid-row: 1;
+                    padding: 0;
                 }
-
-                grid-column: 7 / span 5;
-                grid-row: 1;
-                padding: 0;
-                margin-top: 1rem;
+                        
+                .shop-info {
+                    grid-column: 1 / span 3;
+                    grid-row: 1;
+                    margin-top: 0;
+                    padding: 0;
+                    
+                    li {
+                        margin-top: 1.5rem;
+                    }
+                }
+    
+                .footer-nav {
+                    grid-column: 3 / span 4;
+                    grid-row: 1;
+                    padding: 0;
+                    margin-top: 0;
+                    justify-self: center;
+                    justify-content: space-between;
+                }
+    
+                .newsletter {
+    
+                    h3 {
+                        margin-top: 0rem;
+                    }
+    
+                    grid-column: 7 / span 5;
+                    grid-row: 1;
+                    padding: 0;
+                    margin-top: 1rem;
+                }
             }
 
             .footer-info {
@@ -1456,28 +1730,44 @@ footer {
             padding: 0 12rem;
         }
 
+        // -----------------------------------------------------------------  EVENTS PAGE  -----------------------------------------------------------------
+
+        .event-section {
+
+            .event-card-list {
+                margin: 1.875rem 12rem;
+
+                table {
+                    padding: 0 12rem;
+                }
+            }
+        }
+
         // -----------------------------------------------------------------  FOOTER  -----------------------------------------------------------------
 
         footer {
 
-            .socials {
-                padding-right: 12rem;
-            }
+            .footer-grid {
+                padding: 0 12rem 0 12rem;
 
-            .shop-info {
-                padding: 0 0 0 12rem;
-            }
-
-            .footer-nav {
-                display: grid;
-                grid-template-columns: 2, 1fr;
-
-                ul:first-child {
-                    grid-column: 1;
+                .shop-info {
+                    grid-column: 1 / span 2; 
                 }
+    
+                .footer-nav {
+                    grid-column: 3 / span 4;
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    justify-self: unset;
+                    padding: 0 2rem;
 
-                ul:last-child {
-                    grid-column: 2;
+                    ul:first-child {
+                        grid-column: 1 / span 2;
+                    }
+    
+                    ul:last-child {
+                        grid-column: 3 / span 2;
+                    }
                 }
             }
 
@@ -1554,33 +1844,30 @@ footer {
             padding: 0 20rem;
         }
 
+        // -----------------------------------------------------------------  EVENT PAGE  -----------------------------------------------------------------
+
+        .event-section {
+
+            .event-card-list {
+                grid-template-columns: repeat(6, 1fr);
+                margin: 1.875rem 20rem;
+
+                .card-body {
+                    grid-column: 2 / span 5;
+                }
+
+                table {
+                    padding: 0 20rem;
+                }
+            }
+        }
+
         // -----------------------------------------------------------------  FOOTER  -----------------------------------------------------------------
 
         footer {
 
-            .socials {
-                padding-right: 20rem;
-            }
-
-            .shop-info {
-                padding: 0 0 0 20rem;
-            }
-
-            .footer-nav {
-                display: grid;
-                grid-template-columns: 2, 1fr;
-
-                ul:first-child {
-                    grid-column: 1;
-                }
-
-                ul:last-child {
-                    grid-column: 2;
-                }
-            }
-
-            li {
-                padding: 0;
+            .footer-grid {
+                padding: 0 20rem 0 20rem;
             }
         }
     }
