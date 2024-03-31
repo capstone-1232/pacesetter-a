@@ -76,16 +76,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script>
-        $('.slider').slick({
-        autoplaySpeed:2000,
-        speed:3000,
-        autoplay:true,
-        Infinity:true,
-        slidesToShow:1,
-        slideToscroll:1,
-        arrows:true,
-            dots:true,
-        });
+    $('.slider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    });
     </script>
 </footer>
 </body>
