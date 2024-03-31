@@ -198,6 +198,10 @@ body .home h2 {
   text-transform: uppercase;
   margin: 0;
 }
+
+body .home .featured-card {
+  color: black;
+
 body .home img {
   width: 100%;
 }
