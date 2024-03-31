@@ -196,6 +196,13 @@ body .home h2 {
   text-transform: uppercase;
   margin: 0;
 }
+body .home .featured-products {
+  display: flex;
+  justify-content: space-between;
+}
+body .home img {
+  width: 100%;
+}
 
 .about-image {
   object-fit: cover;
@@ -1198,4 +1205,4 @@ footer .footer-info p {
   body footer .footer-grid {
     padding: 0 20rem 0 20rem;
   }
-}
+}/*# sourceMappingURL=main.css.map */
