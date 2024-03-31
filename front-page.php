@@ -41,7 +41,12 @@
         <!-- top brands -->
         <div class="top-brands">
             <h2>Shop Top Brands</h2>
-            <?php echo do_shortcode('[metaslider id="396"]'); ?>
+            <ul class="slider">
+                <li class="slider-item"><img src="https://drive.google.com/uc?export=view&id=1G7zeotJ6w6h5NsdfA9MpZEinbA45fCBG"></li>
+                <li class="slider-item"><img src="https://drive.google.com/uc?export=view&id=1uNRvtgX89B3KmQHGJQpLDoNPgFH1oCOu"></li>
+                <li class="slider-item"><img src="https://drive.google.com/uc?export=view&id=1Cp3Jobqybs2KGKm7DTutvmZkWi7c-50Y"></li>
+                <li class="slider-item"><img src="https://drive.google.com/uc?export=view&id=135lHXV8_QtuyrKtCH_vo7kK8D-6yw45L"></li>
+            </ul>
         </div>
     </div>
 </main>

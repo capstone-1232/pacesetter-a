@@ -196,6 +196,9 @@ body .home h2 {
   text-transform: uppercase;
   margin: 0;
 }
+body .home img {
+  width: 100%;
+}
 
 .about-image {
   -o-object-fit: cover;
