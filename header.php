@@ -104,8 +104,8 @@
 				<div class="menu-subnav">
 					<div class="flex-arrow">
 						<a class="link1" href="#">Skis
-						<svg class="subnavbtn" transform="rotate(180)" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-						<path d="m18.293 15.289c0.3905-0.3905 0.3905-1.0237 0-1.4142l-4.8922-4.8874c-0.7812-0.7804-2.047-0.78009-2.8278 6.9e-4l-4.8903 4.8904c-0.39052 0.3905-0.39052 1.0237 0 1.4142 0.39053 0.3906 1.0237 0.3906 1.4142 0l4.1856-4.1856c0.3906-0.3905 1.0237-0.3905 1.4142 0l4.1821 4.182c0.3905 0.3905 1.0237 0.3905 1.4142 0z" fill="#0F0F0F"/>
+						<svg class="subnavbtn" fill="#000000" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+						<path d="m104.7 338.75a64 64 0 0 1 90.496 0l316.8 316.8 316.8-316.8a64 64 0 0 1 90.496 90.496l-362.05 362.05a64 64 0 0 1-90.496 0l-362.05-362.05a64 64 0 0 1 0-90.496z" fill="#000"/>
 						</svg></a>
 					</div>
 					<div class="menu-subnav-content">
@@ -119,8 +119,8 @@
 				<div class="menu-subnav">
 				<div class="flex-arrow">
 					<a class="link2" href="#">Snowboards
-					<svg class="subnavbtn" transform="rotate(180)" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-					<path d="m18.293 15.289c0.3905-0.3905 0.3905-1.0237 0-1.4142l-4.8922-4.8874c-0.7812-0.7804-2.047-0.78009-2.8278 6.9e-4l-4.8903 4.8904c-0.39052 0.3905-0.39052 1.0237 0 1.4142 0.39053 0.3906 1.0237 0.3906 1.4142 0l4.1856-4.1856c0.3906-0.3905 1.0237-0.3905 1.4142 0l4.1821 4.182c0.3905 0.3905 1.0237 0.3905 1.4142 0z" fill="#0F0F0F"/>
+					<svg class="subnavbtn" fill="#000000" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+					<path d="m104.7 338.75a64 64 0 0 1 90.496 0l316.8 316.8 316.8-316.8a64 64 0 0 1 90.496 90.496l-362.05 362.05a64 64 0 0 1-90.496 0l-362.05-362.05a64 64 0 0 1 0-90.496z" fill="#000"/>
 					</svg></a>
 				</div>
 					<div class="menu-subnav-content2">
@@ -133,8 +133,9 @@
 				<div class="menu-subnav">
 					<div class="flex-arrow">
 						<a class="link3" href="#">Apparel
-						<svg class="subnavbtn" transform="rotate(180)" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-						<path d="m18.293 15.289c0.3905-0.3905 0.3905-1.0237 0-1.4142l-4.8922-4.8874c-0.7812-0.7804-2.047-0.78009-2.8278 6.9e-4l-4.8903 4.8904c-0.39052 0.3905-0.39052 1.0237 0 1.4142 0.39053 0.3906 1.0237 0.3906 1.4142 0l4.1856-4.1856c0.3906-0.3905 1.0237-0.3905 1.4142 0l4.1821 4.182c0.3905 0.3905 1.0237 0.3905 1.4142 0z" fill="#0F0F0F"/></svg></a>
+						<svg class="subnavbtn" fill="#000000" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+						<path d="m104.7 338.75a64 64 0 0 1 90.496 0l316.8 316.8 316.8-316.8a64 64 0 0 1 90.496 90.496l-362.05 362.05a64 64 0 0 1-90.496 0l-362.05-362.05a64 64 0 0 1 0-90.496z" fill="#000"/>
+						</svg></a>
 					</div>
 					<div class="menu-subnav-content3">
 						<a href="#">Mens</a>
@@ -147,8 +148,8 @@
 				<div class="menu-subnav">
 					<div class="flex-arrow">
 						<a class="link4" href="#">Accessories
-						<svg class="subnavbtn" transform="rotate(180)" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-						<path d="m18.293 15.289c0.3905-0.3905 0.3905-1.0237 0-1.4142l-4.8922-4.8874c-0.7812-0.7804-2.047-0.78009-2.8278 6.9e-4l-4.8903 4.8904c-0.39052 0.3905-0.39052 1.0237 0 1.4142 0.39053 0.3906 1.0237 0.3906 1.4142 0l4.1856-4.1856c0.3906-0.3905 1.0237-0.3905 1.4142 0l4.1821 4.182c0.3905 0.3905 1.0237 0.3905 1.4142 0z" fill="#0F0F0F"/>
+						<svg class="subnavbtn" fill="#000000" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+						<path d="m104.7 338.75a64 64 0 0 1 90.496 0l316.8 316.8 316.8-316.8a64 64 0 0 1 90.496 90.496l-362.05 362.05a64 64 0 0 1-90.496 0l-362.05-362.05a64 64 0 0 1 0-90.496z" fill="#000"/>
 						</svg></a>
 					</div>
 					<div class="menu-subnav-content4">

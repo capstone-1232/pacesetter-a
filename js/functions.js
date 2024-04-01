@@ -1,7 +1,6 @@
-// Get the modal
+
 var modal = document.getElementsByClassName("emaillist");
 
-// Get the <span> element that closes the modal
 var span = document.getElementsByClassName("sucess")[0];
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -15,7 +14,18 @@ document.addEventListener('DOMContentLoaded', function() {
   const menuContent2 = document.querySelector('.menu-subnav-content2');
   const menuContent3 = document.querySelector('.menu-subnav-content3');
   const menuContent4 = document.querySelector('.menu-subnav-content4');
-  const svg = document.querySelector('.subnavbtn');
+  const links = document.querySelectorAll('.flex-arrow a');
+  const svgs = document.querySelectorAll('.menu-subnav svg');
+
+links.forEach((link, index) => {
+    link.addEventListener('click', function(event) {
+        event.preventDefault();
+
+        // Toggle the class on the corresponding SVG
+        svgs[index].classList.toggle('rotate180');
+    });
+});
+
 
   navBtn.addEventListener('click', function() {
       menu.classList.toggle('menu-expanded');
