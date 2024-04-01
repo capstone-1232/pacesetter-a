@@ -3,22 +3,24 @@
  * 404 pages (Not Found)
  */
 get_header();
+
+$error_img = get_field( "404", 419);
+$error_img_size = $error_img['sizes']['large'];
+$error_img_alt = $error_img['alt'];
 ?>
 
 <div id="primary" class="content-area">
 		<div id="content" class="site-content" role="main">
-
-			<header class="page-header">
-				<h1 class="page-title"><?php _e( 'Not Found', 'pacesetter' ); ?></h1>
-			</header>
+				<h1 class="page-title"><?php _e( '404 - Not Found', 'pacesetter' ); ?></h1>
 
 			<div class="page-wrapper">
-				<div class="page-content">
-					<h2><?php _e( 'This is somewhat embarrassing, isn’t it?', 'pacesetter' ); ?></h2>
-					<p><?php _e( 'It looks like nothing was found at this location. Maybe try a search?', 'pacesetter' ); ?></p>
-
-					<?php get_search_form(); ?>
-				</div><!-- .page-content -->
+			<img class="error-img" src="<?php echo $error_img_size ?>" alt="<?php echo $error_img_alt ?>">
+				<div class="bg-scrim">
+					<div class="page-content">
+						<h2><?php _e( 'You wen&#39;t down the wrong slope.' ); ?></h2>
+						<p><?php _e( 'Please click our logo to go home.', 'pacesetter' ); ?></p>
+					</div><!-- .page-content -->
+				</div>
 			</div><!-- .page-wrapper -->
 
 		</div><!-- #content -->
