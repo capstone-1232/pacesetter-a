@@ -101,11 +101,12 @@
 			<nav>
 				<!-- ski -->
 				<div class="menu-subnav">
-					<a class="link1" href="#">Skis</a>
-					<svg class="subnavbtn" fill="#000000" viewBox="0 0 24 24">
-							<path
-								d="M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569l9 13z" />
-						</svg>
+					<div class="flex-arrow">
+						<a class="link1" href="#">Skis
+						<svg class="subnavbtn" transform="rotate(180)" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+						<path d="m18.293 15.289c0.3905-0.3905 0.3905-1.0237 0-1.4142l-4.8922-4.8874c-0.7812-0.7804-2.047-0.78009-2.8278 6.9e-4l-4.8903 4.8904c-0.39052 0.3905-0.39052 1.0237 0 1.4142 0.39053 0.3906 1.0237 0.3906 1.4142 0l4.1856-4.1856c0.3906-0.3905 1.0237-0.3905 1.4142 0l4.1821 4.182c0.3905 0.3905 1.0237 0.3905 1.4142 0z" fill="#0F0F0F"/>
+						</svg></a>
+					</div>
 					<div class="menu-subnav-content">
 						<a href="#">Skis</a>
 						<a href="#">Ski Boots</a>
@@ -115,11 +116,12 @@
 				</div><!-- subnav end -->
 				<!-- snowboard -->
 				<div class="menu-subnav">
-					<a class="link2" href="#">Snowboards</a>
-						<svg class="subnavbtn" fill="#000000" viewBox="0 0 24 24">
-							<path
-								d="M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569l9 13z" />
-						</svg>
+				<div class="flex-arrow">
+					<a class="link2" href="#">Snowboards
+					<svg class="subnavbtn" transform="rotate(180)" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+					<path d="m18.293 15.289c0.3905-0.3905 0.3905-1.0237 0-1.4142l-4.8922-4.8874c-0.7812-0.7804-2.047-0.78009-2.8278 6.9e-4l-4.8903 4.8904c-0.39052 0.3905-0.39052 1.0237 0 1.4142 0.39053 0.3906 1.0237 0.3906 1.4142 0l4.1856-4.1856c0.3906-0.3905 1.0237-0.3905 1.4142 0l4.1821 4.182c0.3905 0.3905 1.0237 0.3905 1.4142 0z" fill="#0F0F0F"/>
+					</svg></a>
+				</div>
 					<div class="menu-subnav-content2">
 						<a href="#">Snowboards</a>
 						<a href="#">Snowboard Boots</a>
@@ -128,11 +130,11 @@
 				</div> <!-- subnav end -->
 				<!-- apparel -->
 				<div class="menu-subnav">
-					<a class="link3" href="#">Apparel</a>
-						<svg class="subnavbtn" fill="#000000" viewBox="0 0 24 24">
-							<path
-								d="M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569l9 13z" />
-						</svg>
+					<div class="flex-arrow">
+						<a class="link3" href="#">Apparel
+						<svg class="subnavbtn" transform="rotate(180)" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+						<path d="m18.293 15.289c0.3905-0.3905 0.3905-1.0237 0-1.4142l-4.8922-4.8874c-0.7812-0.7804-2.047-0.78009-2.8278 6.9e-4l-4.8903 4.8904c-0.39052 0.3905-0.39052 1.0237 0 1.4142 0.39053 0.3906 1.0237 0.3906 1.4142 0l4.1856-4.1856c0.3906-0.3905 1.0237-0.3905 1.4142 0l4.1821 4.182c0.3905 0.3905 1.0237 0.3905 1.4142 0z" fill="#0F0F0F"/></svg></a>
+					</div>
 					<div class="menu-subnav-content3">
 						<a href="#">Mens</a>
 						<a href="#">Womens</a>
@@ -142,23 +144,26 @@
 				</div> <!-- subnav end -->
 				<!-- accessories -->
 				<div class="menu-subnav">
-					<a class="link4" href="#">Accessories</a>
-						<svg class="subnavbtn" fill="#000000" viewBox="0 0 24 24">
-							<path
-								d="M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569l9 13z" />
-						</svg>
+					<div class="flex-arrow">
+						<a class="link4" href="#">Accessories
+						<svg class="subnavbtn" transform="rotate(180)" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+						<path d="m18.293 15.289c0.3905-0.3905 0.3905-1.0237 0-1.4142l-4.8922-4.8874c-0.7812-0.7804-2.047-0.78009-2.8278 6.9e-4l-4.8903 4.8904c-0.39052 0.3905-0.39052 1.0237 0 1.4142 0.39053 0.3906 1.0237 0.3906 1.4142 0l4.1856-4.1856c0.3906-0.3905 1.0237-0.3905 1.4142 0l4.1821 4.182c0.3905 0.3905 1.0237 0.3905 1.4142 0z" fill="#0F0F0F"/>
+						</svg></a>
+					</div>
 					<div class="menu-subnav-content4">
 						<a href="#">Bags</a>
 						<a href="#">Helmets</a>
 						<a href="#">Goggles</a>
 					</div> <!-- menu-subnav-content end -->
 				</div> <!-- sub-nav end -->
-				<a class="link" href="events">Events</a>
-				<a class="link" href="contact">Contact Us</a>
-				<a class="link" href="about-us">About Us</a>
-				<a class="link" href="rentals">Rentals</a>
-				<a class="link" href="info">FAQ</a>
-				<a class="link" href="services">Services</a>
+				<div class="menu-nosub">
+					<a class="link" href="events">Events</a>
+					<a class="link" href="contact">Contact Us</a>
+					<a class="link" href="about-us">About Us</a>
+					<a class="link" href="rentals">Rentals</a>
+					<a class="link" href="info">FAQ</a>
+					<a class="link" href="services">Services</a>
+				</div>
 			</nav>
 		</div> <!-- menu end -->
 	</header>
