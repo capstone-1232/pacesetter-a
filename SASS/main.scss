@@ -18,6 +18,7 @@ $input-bg: #d4d4d4;
 body {
     background-color: $background-color;
     margin: 0 auto;
+}
 
     h1,
     h2,
@@ -315,9 +316,8 @@ body {
 //     transform: scaleX(100%);
 
 // -----------------------------------------------------------------  HOME PAGE -----------------------------------------------------------------
-body {
-    .home {
-
+ 
+.home {
         h1 {
             padding: 1.3rem 1.875rem 1rem 1.875rem;
         }
@@ -331,14 +331,45 @@ body {
             margin: 0;
         }
 
-        .featured-card {
-            color: black;
-          
-        img {
-            width: 100%;
+        .featured-products {
+            text-align: center;
+            padding: 3rem 1.875rem;
+
+            .featured-card {
+                text-align: center;
+                background-color: #ffffff;
+                border-radius: 5px;
+                padding-bottom: 1rem;
+                margin-bottom: 2rem;
+                width: 240px;
+                filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+                margin: 2rem auto;
+
+                img {
+                    object-fit: cover;
+                    border-top-left-radius: 5px;
+                    border-top-right-radius: 5px;
+                    width: 240px !important;
+                    height: 240px !important;
+                }
+            }
+
+            p {
+                font-family: "Josefin Sans", sans-serif;
+                font-weight: 400;
+            }
+
+            .featured-title {
+                margin: 0;
+                padding: 1rem;
+            }
+
+            .featured-price {
+                margin: 0;
+                padding: 0 1rem 1rem 1rem;
+            }
         }
     }
-}
 
 // -----------------------------------------------------------------  ABOUT PAGE -----------------------------------------------------------------
 
@@ -608,8 +639,6 @@ table tr:nth-child(odd) {
 }
 
 tr {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
 
     .rental {
         border: 3px solid black;
@@ -872,6 +901,31 @@ h3 {
     }
 }
 
+// -----------------------------------------------------------------  404 PAGE  -----------------------------------------------------------------
+
+.error-img {
+    position: relative;
+    width: 100%;
+    height: 45rem;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+.page-content {
+    color: #ffffff;
+    text-align: center;
+    padding: 3rem 1.875rem;
+    position: absolute;
+    top: 25rem;
+    left: 0;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.page-wrapper {
+    background-color: #383838;
+}
+
 // -----------------------------------------------------------------  FOOTER  -----------------------------------------------------------------
 
 footer {
@@ -983,22 +1037,19 @@ footer {
     //     overflow: auto; /* Enable scroll if needed */
     //     background-color: rgb(0,0,0); /* Fallback color */
     //     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-
-    // }
-}
-}
-
+            //}
+    }
+  
 // -----------------------------------------------------------------  TABLET  -----------------------------------------------------------------
 
 @media screen and (min-width: 720px) {
 
-    body {
         // -----------------------------------------------------------------  HOME PAGE -----------------------------------------------------------------
-        .featured-products {
-            display: flex;
-            justify-content: space-between;
-        }
 
+        .featured-products {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
 
         // -----------------------------------------------------------------  ABOUT PAGE -----------------------------------------------------------------
 
@@ -1101,13 +1152,10 @@ footer {
             padding: 0 6rem;
         }
     }
-}
 
 // -----------------------------------------------------------------  DESKTOP-SMALL  -----------------------------------------------------------------
 
 @media screen and (min-width: 1080px) {
-
-    body {
 
         h1 {
             font-size: 3rem;
@@ -1133,9 +1181,28 @@ footer {
         // -----------------------------------------------------------------  HOME PAGE -----------------------------------------------------------------
 
         .home {
-    
             h2 {
                 font-size: 3rem;
+            }
+
+            .featured-products {
+                grid-template-columns: repeat(4, 1fr);
+
+                .featured-card:first-child {
+                    grid-column: 2;
+                }
+
+                .featured-card:nth-child(2) {
+                    grid-column: 3;
+                }
+
+                .featured-card:nth-child(3) {
+                    grid-column: 2;
+                }
+
+                .featured-card:last-child {
+                    grid-column: 3;
+                }
             }
         }
 
@@ -1253,7 +1320,6 @@ footer {
     .menu-expanded {
         transform: scaleX(100%);
     }
-}
 
         // -----------------------------------------------------------------  ABOUT PAGE -----------------------------------------------------------------
 
@@ -1377,7 +1443,6 @@ footer {
             }
 
             tr {
-                display: grid;
 
                 td {
                     padding: 1rem 1rem 5rem 1rem;
@@ -1464,8 +1529,6 @@ footer {
             }
 
             tr {
-                display: grid;
-                grid-template-columns: repeat(12, 1fr);
 
                 td {
                     font-size: 1.25rem;
@@ -1678,7 +1741,30 @@ footer {
 
 @media screen and (min-width: 1440px) {
 
-    body {
+        // -----------------------------------------------------------------  HOME PAGE -----------------------------------------------------------------
+
+        .home {
+            .featured-products {
+                grid-template-columns: repeat(4, 1fr);
+                padding: 3rem 12rem;
+
+                .featured-card:first-child {
+                    grid-column: unset;
+                }
+    
+                .featured-card:nth-child(2) {
+                    grid-column: unset;
+                }
+    
+                .featured-card:nth-child(3) {
+                    grid-column: unset;
+                }
+    
+                .featured-card:last-child {
+                    grid-column: unset;
+                }
+            }
+        }
 
         // -----------------------------------------------------------------  ABOUT PAGE -----------------------------------------------------------------
 
@@ -1779,11 +1865,9 @@ footer {
             }
         }
     }
-}
+
 
 @media screen and (min-width: 1920px) {
-
-    body {
 
         // -----------------------------------------------------------------  HEADER -----------------------------------------------------------------
 
@@ -1793,6 +1877,13 @@ footer {
             }
         }
 
+        // -----------------------------------------------------------------  HOME PAGE -----------------------------------------------------------------
+
+        .home {
+            .featured-products {
+                padding: 3rem 20rem;
+            }
+        }
 
         // -----------------------------------------------------------------  ABOUT PAGE -----------------------------------------------------------------
 
@@ -1874,7 +1965,6 @@ footer {
             }
         }
     }
-}
 
 
 //     .emaillist {
