@@ -279,84 +279,6 @@ body {
     
 }
 
-//     .menu {
-//         background-color: #ffffff;
-//         max-height: 0;
-//         position: static;
-//         overflow: hidden;
-
-//         nav {
-//             height: 100vh;
-//             left: 0;
-//             position: absolute;
-//             top: 0;
-//             transform: scaleX(0);
-//             transform-origin: right;
-//             transition: transform 300ms;
-//         }
-
-//         .menu-expanded {
-//             transform: scaleX(100%);
-//         }
-
-//         .subnav {
-//             display: flex;
-//             overflow: hidden;
-
-//             .subnavbtn {
-//                 width: .5rem;
-//             }
-
-//             .subnav-content {
-//                 background-color: #ffffff;
-//                 display: none;
-//                 position: absolute;
-//                 left: 0;
-//                 width: 100%;
-//                 z-index: 1;
-
-//                 a {
-
-//                     text-decoration: none;
-//                 }
-//             }
-
-//             svg {
-//                 width: 2rem;
-//             }
-
-//         }
-
-//         .subnav:hover {
-//             .subnav-content {
-//                 display: block;
-//             }
-//         }
-
-//         a {
-//             color: #2E2E2E;
-//             padding: 14px 16px;
-//             text-align: center;
-//             text-decoration: none;
-//         }
-
-//     }
-
-//     .nav-btn {
-//         cursor: pointer;
-//         padding: 7px 0;
-//         width: 2rem;
-//     }
-
-//     .flex-container {
-//         align-items: center;
-//         display: flex;
-//     }
-// }
-
-// .menu-expanded {
-//     transform: scaleX(100%);
-
 // -----------------------------------------------------------------  HOME PAGE -----------------------------------------------------------------
  
 .home {
@@ -779,6 +701,10 @@ h3 {
         .simcal-calendar-grid {
             width: 320px;
             margin: 0 auto;
+            background-color: #ffffff;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
         }
 
         .simcal-calendar-head {
@@ -815,13 +741,29 @@ h3 {
             grid-template-columns: repeat(7, 1fr);
             padding: .5rem 0;
 
+            td div {
+                border: none !important;
+            }
+
+            .simcal-day-label {
+                border-radius: 10rem;
+                padding: .10rem .6rem .25rem .6rem;
+                border: none;
+            }
+
+            .simcal-today {
+                .simcal-day-label {
+                    background-color: $secondary-color;
+                }
+            }
+
             td {
                 justify-self: center;
             }
         }
 
         table {
-            padding: 0 1.875rem;
+            margin: 0 1.875rem;
 
             tr, th, td{
                 text-align: unset;
@@ -1039,6 +981,7 @@ footer {
 
         svg {
             width: 2.85rem;
+            margin: 0 .5rem;
         }
     }
 
@@ -1140,6 +1083,31 @@ footer {
         // -----------------------------------------------------------------  EVENTS PAGE  -----------------------------------------------------------------
 
         .event-section {
+            .simcal-calendar {
+
+                .simcal-calendar-grid {
+                    width: 528px;
+                    margin: 0 auto;
+                }
+        
+                .simcal-calendar-head {
+                    tr:nth-child(2) {
+
+                        th {
+                            font-size: 1.25rem;
+                        }
+                    }
+                }
+        
+                .simcal-week {
+                    padding: 1rem 0;
+        
+                    .simcal-day-label {
+                        padding: .10rem .75rem .25rem .75rem;
+                        font-size: 1.25rem;
+                    }
+                }
+            }
 
             .event-card-list {
                 display: grid;
@@ -1153,10 +1121,6 @@ footer {
                     border-bottom-left-radius: 5px;
                     border-top-left-radius: 5px;
                     border-top-right-radius: 0;
-                }
-
-                table {
-                    padding: 0 1.875rem;
                 }
 
                 .card-body {
@@ -1742,6 +1706,7 @@ footer {
                     grid-column: 12;
                     grid-row: 1;
                     padding: 0;
+                    margin: 0;
                 }
                         
                 .shop-info {
@@ -2018,6 +1983,8 @@ footer {
                 padding: 0 20rem 0 20rem;
             }
         }
+    }
+
     }
 
 

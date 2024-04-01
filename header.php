@@ -15,6 +15,7 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
 	<link rel="icon" type="image/png" href="/favicon.png" />
 	<script src="<?php echo get_template_directory_uri(); ?>/js/functions.js"></script>
+	<meta name="description" content="Pacesetter Ski & Snowboard in Edmonton offers top-notch gear and expert advice to elevate your winter adventures. From slopes to trails, gear up with confidence." />
 </head>
 
 <body>

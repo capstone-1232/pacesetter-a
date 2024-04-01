@@ -227,6 +227,7 @@ header .menu .menu-expanded-small {
 header .menu-expanded {
   transform: scaleY(100%);
 }
+
 header .rotate180 {
   transform: rotate(180deg);
   transition: 300ms;
@@ -561,6 +562,10 @@ h3 {
 .event-section .simcal-calendar .simcal-calendar-grid {
   width: 320px;
   margin: 0 auto;
+  background-color: #ffffff;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
 }
 .event-section .simcal-calendar .simcal-calendar-head tr:first-child th:nth-child(2) {
   grid-column: 1/span 12;
@@ -588,11 +593,28 @@ h3 {
   grid-template-columns: repeat(7, 1fr);
   padding: 0.5rem 0;
 }
+
+.event-section .simcal-calendar .simcal-week td div {
+  border: none !important;
+}
+.event-section .simcal-calendar .simcal-week .simcal-day-label {
+  border-radius: 10rem;
+  padding: 0.1rem 0.6rem 0.25rem 0.6rem;
+  border: none;
+}
+.event-section .simcal-calendar .simcal-week .simcal-today .simcal-day-label {
+  background-color: #72A8D5;
+}
+
 .event-section .simcal-calendar .simcal-week td {
   justify-self: center;
 }
 .event-section .simcal-calendar table {
+
+  margin: 0 1.875rem;
+
   padding: 0 1.875rem;
+
 }
 .event-section .simcal-calendar table tr, .event-section .simcal-calendar table th, .event-section .simcal-calendar table td {
   text-align: unset;
@@ -771,6 +793,7 @@ footer .socials {
 }
 footer .socials svg {
   width: 2.85rem;
+  margin: 0 0.5rem;
 }
 footer .shop-info li {
   font-family: "Josefin Sans", sans-serif;
@@ -824,6 +847,20 @@ footer .footer-info p {
   .rentals-desc {
     padding: 0 6rem;
   }
+  .event-section .simcal-calendar .simcal-calendar-grid {
+    width: 528px;
+    margin: 0 auto;
+  }
+  .event-section .simcal-calendar .simcal-calendar-head tr:nth-child(2) th {
+    font-size: 1.25rem;
+  }
+  .event-section .simcal-calendar .simcal-week {
+    padding: 1rem 0;
+  }
+  .event-section .simcal-calendar .simcal-week .simcal-day-label {
+    padding: 0.1rem 0.75rem 0.25rem 0.75rem;
+    font-size: 1.25rem;
+  }
   .event-section .event-card-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -836,9 +873,6 @@ footer .footer-info p {
     border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
     border-top-right-radius: 0;
-  }
-  .event-section .event-card-list table {
-    padding: 0 1.875rem;
   }
   .event-section .event-card-list .card-body {
     display: grid;
@@ -1268,6 +1302,7 @@ footer .footer-info p {
     grid-column: 12;
     grid-row: 1;
     padding: 0;
+    margin: 0;
   }
   footer .footer-grid .shop-info {
     grid-column: 1/span 3;
