@@ -94,6 +94,7 @@ header .nav-items {
 }
 header .nav-btn {
   align-self: end;
+  cursor: pointer;
   grid-column: 12;
   grid-row: 1;
   padding: 1rem 0 1.75rem 0;
