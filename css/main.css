@@ -11,18 +11,20 @@ body {
   background-color: #E6E6E6;
   margin: 0 auto;
 }
-body h1,
-body h2,
-body h3,
-body h4,
-body h5,
-body h6,
-body a {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
   padding: 0;
 }
-body h1 {
+
+h1 {
   text-align: center;
   font-size: 2.5rem;
   background-color: #72A8D5;
@@ -30,61 +32,72 @@ body h1 {
   padding: 1.3rem 0 1rem 0;
   margin: 0;
 }
-body h2 {
+
+h2 {
   font-size: 2rem;
 }
-body h3 {
+
+h3 {
   font-size: 1.75rem;
 }
-body p,
-body li {
+
+p,
+li {
   font-family: "Playfair Display", serif;
   font-size: 1rem;
 }
-body li {
+
+li {
   margin-top: 1rem;
 }
-body ul {
+
+ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-body header {
+
+header {
   position: relative;
   text-transform: uppercase;
 }
-body header .navbar {
+header .navbar {
   background-color: #87D4C4;
   padding: 0 1.875rem;
   overflow: hidden;
 }
-body header .navbar nav {
+header .navbar nav {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
-body header .navbar nav .nav-items {
+header .navbar nav .nav-items {
   display: none;
 }
-body header .navbar nav .logo {
+header .navbar nav .logo {
   grid-column: 1/span 3;
   padding: 14px 16px;
 }
+
+header .navbar .nav-items a {
+  color: black;
+}
 body header .navbar .nav-items a {
   color: #2E2E2E;
+
   float: left;
   font-size: 1.175rem;
   padding: 1rem;
   text-align: center;
   text-decoration: none;
 }
-body header .nav-items {
+header .nav-items {
   align-self: end;
   grid-column: 4/span 8;
   margin-left: auto;
   margin-right: 0;
   padding-bottom: 1rem;
 }
-body header .nav-btn {
+header .nav-btn {
   align-self: end;
   grid-column: 12;
   grid-row: 1;
@@ -93,11 +106,11 @@ body header .nav-btn {
   margin-right: 0;
   width: 2rem;
 }
-body header .subnav {
+header .subnav {
   float: left;
   overflow: hidden;
 }
-body header .subnav .subnavbtn {
+header .subnav .subnavbtn {
   width: 0.5rem;
   border: none;
   outline: none;
@@ -105,7 +118,7 @@ body header .subnav .subnavbtn {
   font-family: inherit;
   margin: 0;
 }
-body header .subnav .subnav-content {
+header .subnav .subnav-content {
   display: none;
   position: absolute;
   background-color: #ffffff;
@@ -114,7 +127,7 @@ body header .subnav .subnav-content {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
-body header .subnav .subnav-content a {
+header .subnav .subnav-content a {
   float: none;
   color: black;
   padding: 12px 16px;
@@ -122,13 +135,13 @@ body header .subnav .subnav-content a {
   display: block;
   text-align: left;
 }
-body header .subnav .subnav-content a:hover {
+header .subnav .subnav-content a:hover {
   background-color: #ddd;
 }
-body header .subnav:hover .subnav-content {
+header .subnav:hover .subnav-content {
   display: block;
 }
-body header .menu {
+header .menu {
   background-color: #ffffff;
   display: flex;
   top: 0;
@@ -142,6 +155,7 @@ body header .menu {
   width: 100vw;
   z-index: 2;
 }
+
 body header .menu a {
   color: #2E2E2E;
   text-decoration: none;
@@ -159,6 +173,15 @@ body header .menu .flex-arrow a {
 body header .menu .flex-arrow svg {
   grid-column: 12;
 }
+
+header .menu .subnavbtn {
+  width: 0.5rem;
+}
+header .menu .menu-subnav-content {
+  display: flex;
+  position: absolute;
+  height: 10rem;
+}
 body header .menu .subnavbtn {
   width: 2rem;
 }
@@ -170,6 +193,11 @@ body header .menu .menu-subnav-content a {
   font-size: 1rem;
   padding-bottom: 1rem;
 }
+header .menu .menu-subnav-content2 {
+  display: flex;
+  position: absolute;
+  height: 10rem;
+}
 body header .menu .menu-subnav-content2 {
   display: none;
   transform: scaleY(0);
@@ -178,6 +206,12 @@ body header .menu .menu-subnav-content2 a {
   font-size: 1rem;
   padding-bottom: 1rem;
 }
+
+header .menu .menu-subnav-content3 {
+  display: flex;
+  position: absolute;
+  height: 10rem;
+}
 body header .menu .menu-subnav-content3 {
   display: none;
   transform: scaleY(0);
@@ -185,6 +219,12 @@ body header .menu .menu-subnav-content3 {
 body header .menu .menu-subnav-content3 a {
   font-size: 1rem;
   padding-bottom: 1rem;
+}
+
+header .menu .menu-subnav-content4 {
+  display: flex;
+  position: absolute;
+  height: 10rem;
 }
 body header .menu .menu-subnav-content4 {
   display: none;
@@ -212,6 +252,18 @@ body header .menu .menu-expanded-small {
   transition: transform 300ms;
   top: 0;
 }
+
+header .menu .menu-expanded-small {
+  transform: scaleY(100%);
+}
+header .menu-expanded {
+  transform: scaleY(100%);
+}
+
+.home h1 {
+  padding: 1.3rem 1.875rem 1rem 1.875rem;
+}
+
 body header .menu-expanded {
   transform: scaleY(100%);
 }
@@ -229,6 +281,41 @@ body body .home h2 {
   text-transform: uppercase;
   margin: 0;
 }
+
+.home .featured-products {
+  text-align: center;
+  padding: 3rem 1.875rem;
+}
+.home .featured-products .featured-card {
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+  width: 240px;
+  filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+  margin: 2rem auto;
+}
+.home .featured-products .featured-card img {
+  object-fit: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  width: 240px !important;
+  height: 240px !important;
+}
+.home .featured-products p {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+}
+.home .featured-products .featured-title {
+  margin: 0;
+  padding: 1rem;
+}
+.home .featured-products .featured-price {
+  margin: 0;
+  padding: 0 1rem 1rem 1rem;
+}
+
 body body .home img {
   width: 100%;
 }
@@ -237,47 +324,51 @@ body .about-image {
   height: 20rem;
   width: 100%;
 }
-body .about-image:nth-child(5),
-body .about-image:nth-child(7) {
+
+.about-image:nth-child(5),
+.about-image:nth-child(7) {
   margin-top: 2.5rem;
 }
-body .history,
-body .expertise,
-body .winter,
-body .service,
-body .diverse,
-body .community {
+
+.history,
+.expertise,
+.winter,
+.service,
+.diverse,
+.community {
   padding: 0 1.875rem;
 }
-body .community p {
+
+.community p {
   margin-bottom: 3rem;
 }
-body .faq-page {
+
+.faq-page {
   padding: 0 1.875rem;
 }
-body .faq-page h2 {
+.faq-page h2 {
   margin-top: 3rem;
 }
-body .faq-page .faq-card:last-child {
+.faq-page .faq-card:last-child {
   margin-bottom: 3rem;
 }
-body .faq-page .faq-card {
+.faq-page .faq-card {
   margin-top: 3rem;
 }
-body .faq-page .faq-card h3 {
+.faq-page .faq-card h3 {
   font-size: 1.25rem;
 }
-body .faq-page .faq-card svg {
+.faq-page .faq-card svg {
   width: 1rem;
   margin-left: 0.5rem;
 }
-body .faq-page .faq-card .download-button {
+.faq-page .faq-card .download-button {
   margin-left: auto;
   margin-right: 0;
   display: block;
   width: 8.25rem;
 }
-body .faq-page .faq-card a {
+.faq-page .faq-card a {
   background-color: #F7EE23;
   display: flex;
   padding: 0.35rem 0.5rem;
@@ -286,216 +377,226 @@ body .faq-page .faq-card a {
   color: #000;
   text-decoration: none;
 }
-body .contact-us h3,
-body .contact-us .address,
-body .contact-us .hours,
-body .contact-us .email-form {
+
+.contact-us h3,
+.contact-us .address,
+.contact-us .hours,
+.contact-us .email-form {
   padding: 0 1.875rem;
 }
-body .contact-us h4 {
+.contact-us h4 {
   text-transform: uppercase;
 }
-body .contact-us .address {
+.contact-us .address {
   margin-bottom: 4rem;
 }
-body .contact-us .address ul {
+.contact-us .address ul {
   padding: 0.5rem 0;
 }
-body .contact-us .address ul li:nth-child(1),
-body .contact-us .hours ul li:nth-child(1) {
+.contact-us .address ul li:nth-child(1),
+.contact-us .hours ul li:nth-child(1) {
   margin-top: 0;
 }
-body .contact-us .hours {
+.contact-us .hours {
   margin-bottom: 4rem;
 }
-body .contact-us .hours ul:nth-child(2) {
+.contact-us .hours ul:nth-child(2) {
   text-align: right;
   margin-left: auto;
   margin-right: 0;
 }
-body .contact-us .hours ul:nth-child(1) {
+.contact-us .hours ul:nth-child(1) {
   text-align: left;
 }
-body .contact-us .hours-flex {
+.contact-us .hours-flex {
   display: flex;
   height: 100%;
 }
-body .contact-us .email-form textarea,
-body .contact-us .email-form input {
+.contact-us .email-form textarea,
+.contact-us .email-form input {
   width: 100%;
   border-radius: 5px;
   border: none;
   padding: 0 0.5rem;
   filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
 }
-body .contact-us .email-form label,
-body .contact-us .email-form input {
+.contact-us .email-form label,
+.contact-us .email-form input {
   font-family: "Josefin Sans", sans-serif;
 }
-body .contact-us .email-form textarea {
+.contact-us .email-form textarea {
   height: 16rem;
 }
-body .contact-us .email-form input {
+.contact-us .email-form input {
   height: 2.5rem;
 }
-body .contact-us .email-form .wpcf7-submit {
+.contact-us .email-form .wpcf7-submit {
   background-color: #72A8D5;
   transition: 0.3s;
   margin-bottom: 2.5rem;
 }
-body .contact-us .email-form .wpcf7-submit:hover {
+.contact-us .email-form .wpcf7-submit:hover {
   background-color: #87D4C4;
 }
-body .services-table,
-body .services-desc {
+
+.services-table,
+.services-desc {
   padding: 0 1.875rem;
 }
-body .services-desc h2 {
+
+.services-desc h2 {
   margin-top: 3rem;
 }
-body .services-desc p {
+.services-desc p {
   margin-top: 2rem;
 }
-body tr {
+
+tr {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
-body tr td {
+tr td {
   padding: 1rem 1rem 3rem 1rem;
   font-family: "Playfair Display", serif;
   font-size: 1rem;
 }
-body tr th {
+tr th {
   padding: 1rem 0 1rem 1rem;
   text-align: left;
   font-family: "Josefin Sans", sans-serif;
   font-size: 1.15rem;
 }
-body tr .type {
+tr .type {
   border: 3px solid black;
 }
-body tr .board {
+tr .board {
   border-left: 3px solid black;
   border-right: 3px solid black;
   border-bottom: 3px solid black;
 }
-body tr .ski {
+tr .ski {
   border-left: 3px solid black;
   border-bottom: 3px solid black;
 }
-body tr .board-desc {
+tr .board-desc {
   border-right: 3px solid black;
   border-left: 3px solid black;
 }
-body tr .ski-desc {
+tr .ski-desc {
   border-left: 3px solid black;
 }
-body tr .desc {
+tr .desc {
   border-right: 3px solid black;
   border-left: 3px solid black;
   border-bottom: 3px solid black;
 }
-body tr .type,
-body tr .desc {
+tr .type,
+tr .desc {
   grid-column: 1/span 12;
 }
-body tr .ski,
-body tr .ski-desc {
+tr .ski,
+tr .ski-desc {
   grid-column: 1/span 6;
 }
-body tr .board,
-body tr .board-desc {
+tr .board,
+tr .board-desc {
   grid-column: 7/span 12;
 }
-body table tr:nth-child(12) .board-desc,
-body table tr:nth-child(12) .ski-desc {
+
+table tr:nth-child(12) .board-desc,
+table tr:nth-child(12) .ski-desc {
   border-bottom: 3px solid black;
   margin-bottom: 3rem;
 }
-body table tr:nth-child(odd) {
+
+table tr:nth-child(odd) {
   background-color: #87D4C4;
 }
-body .desktop-only {
+
+.desktop-only {
   display: none;
 }
-body .rentals-table,
-body .rentals-info,
-body .rentals-desc {
+
+.rentals-table,
+.rentals-info,
+.rentals-desc {
   padding: 0 1.875rem;
 }
-body .rentals-desc h2 {
+
+.rentals-desc h2 {
   margin-top: 3rem;
 }
-body .rentals-desc p {
+.rentals-desc p {
   margin-top: 2rem;
 }
-body tr {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-}
-body tr .rental {
+
+tr .rental {
   border: 3px solid black;
 }
-body tr .rental-desc,
-body tr .package {
+tr .rental-desc,
+tr .package {
   border-left: 3px solid black;
   border-right: 3px solid black;
   border-bottom: 3px solid black;
 }
-body tr .rental-type {
+tr .rental-type {
   border-left: 3px solid black;
   border-bottom: 3px solid black;
 }
-body tr .type-desc {
+tr .type-desc {
   border-left: 3px solid black;
 }
-body tr .package-desc {
+tr .package-desc {
   border-left: 3px solid black;
   border-right: 3px solid black;
 }
-body tr .demo {
+tr .demo {
   border: 3px solid black;
 }
-body tr .demo-desc {
+tr .demo-desc {
   border-left: 3px solid black;
   border-right: 3px solid black;
 }
-body tr .rental,
-body tr .rental-desc {
+tr .rental,
+tr .rental-desc {
   grid-column: 1/span 12;
 }
-body tr .rental-type,
-body tr .type-desc {
+tr .rental-type,
+tr .type-desc {
   grid-column: 1/span 6;
 }
-body tr .package,
-body tr .package-desc {
+tr .package,
+tr .package-desc {
   grid-column: 7/span 12;
 }
-body tr .demo,
-body tr .demo-desc {
+tr .demo,
+tr .demo-desc {
   grid-column: 1/span 12;
 }
-body .rentals-table tr:nth-child(odd) {
+
+.rentals-table tr:nth-child(odd) {
   background-color: #87D4C4;
 }
-body .rentals-table .desktop-only {
+.rentals-table .desktop-only {
   display: none;
 }
-body .rentals-table tr:nth-child(3) {
+
+.rentals-table tr:nth-child(3) {
   border-bottom: 3px solid black;
 }
-body h3 {
+
+h3 {
   margin-top: 3rem;
 }
-body .rentals-info ul {
+
+.rentals-info ul {
   list-style: unset;
   list-style-position: inside;
 }
-body .rentals-info .list-style {
+.rentals-info .list-style {
   list-style: none;
 }
-body .rentals-info div:nth-child(3) {
+.rentals-info div:nth-child(3) {
   margin-bottom: 3rem;
 }
 body .event-section .simcal-calendar .simcal-calendar-grid {
@@ -629,32 +730,56 @@ body .event-section .es-form-field-container .gjs-row:nth-child(2) .gjs-cell .es
   border: none;
   width: 100%;
 }
-body footer {
+
+.error-img {
+  position: relative;
+  width: 100%;
+  height: 45rem;
+  object-fit: cover;
+  filter: brightness(50%);
+}
+
+.page-content {
+  color: #ffffff;
+  text-align: center;
+  padding: 3rem 1.875rem;
+  position: absolute;
+  top: 25rem;
+  left: 0;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.page-wrapper {
+  background-color: #383838;
+}
+
+footer {
   background-color: #87D4C4;
   text-align: center;
   color: #2E2E2E;
   padding-top: 1rem;
 }
-body footer .es_spinner_image img {
+footer .es_spinner_image img {
   display: none;
 }
-body footer a {
+footer a {
   color: #2E2E2E;
   text-decoration: none;
 }
-body footer .es_subscription_form {
+footer .es_subscription_form {
   justify-content: center;
   display: flex;
 }
-body footer .es_subscription_form .es-form-field-container {
+footer .es_subscription_form .es-form-field-container {
   display: flex;
 }
-body footer .es_subscription_form .es-form-field-container input {
+footer .es_subscription_form .es-form-field-container input {
   margin: 0;
   padding: 0 0.5rem;
   height: 2.5rem;
 }
-body footer .es_subscription_form .es-form-field-container div:nth-child(3) input {
+footer .es_subscription_form .es-form-field-container div:nth-child(3) input {
   background-color: #ffffff;
   border-top-right-radius: 5px;
   border-top-left-radius: 0;
@@ -664,88 +789,88 @@ body footer .es_subscription_form .es-form-field-container div:nth-child(3) inpu
   filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
   transition: 0.3s;
 }
-body footer .es_subscription_form .es-form-field-container div:nth-child(3) input:hover {
+footer .es_subscription_form .es-form-field-container div:nth-child(3) input:hover {
   background-color: #72A8D5;
 }
-body footer .es_subscription_form .es-form-field-container .es-email {
+footer .es_subscription_form .es-form-field-container .es-email {
   border-top-right-radius: 0;
   border-top-left-radius: 5px;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 5px;
   border: none;
 }
-body footer .shop-info,
-body footer .footer-nav,
-body footer .socials {
+footer .shop-info,
+footer .footer-nav,
+footer .socials {
   text-transform: uppercase;
   margin-bottom: 3rem;
 }
-body footer .socials {
+footer .socials {
   justify-content: center;
   display: flex;
   margin-top: 0;
 }
-body footer .socials svg {
+footer .socials svg {
   width: 2.85rem;
 }
-body footer .shop-info li {
+footer .shop-info li {
   font-family: "Josefin Sans", sans-serif;
 }
-body footer p,
-body footer .es-form-field-container,
-body footer h3 {
+footer p,
+footer .es-form-field-container,
+footer h3 {
   margin-left: 1.875rem;
   margin-right: 1.875rem;
 }
-body footer iframe {
+footer iframe {
   height: 320px;
   width: 100%;
 }
-body footer .footer-info {
+footer .footer-info {
   padding: 1.5rem 0;
 }
-body footer .footer-info p {
+footer .footer-info p {
   font-family: "Josefin Sans", sans-serif;
   margin-top: 0.5rem;
 }
 
 @media screen and (min-width: 720px) {
-  body .featured-products {
-    display: flex;
-    justify-content: space-between;
+  .featured-products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
-  body .history,
-  body .expertise,
-  body .winter,
-  body .service,
-  body .diverse,
-  body .community {
+  .history,
+  .expertise,
+  .winter,
+  .service,
+  .diverse,
+  .community {
     padding: 0 6rem;
   }
-  body .faq-page {
+  .faq-page {
     padding: 0 6rem;
   }
-  body .contact-us h3,
-  body .contact-us .address,
-  body .contact-us .hours,
-  body .contact-us .email-form {
+  .contact-us h3,
+  .contact-us .address,
+  .contact-us .hours,
+  .contact-us .email-form {
     padding: 0 6rem;
   }
-  body .services-table,
-  body .services-desc {
+  .services-table,
+  .services-desc {
     padding: 0 6rem;
   }
-  body .rentals-table,
-  body .rentals-info,
-  body .rentals-desc {
+  .rentals-table,
+  .rentals-info,
+  .rentals-desc {
     padding: 0 6rem;
   }
-  body .event-section .event-card-list {
+  .event-section .event-card-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin: 1.875rem 6rem;
   }
-  body .event-section .event-card-list .attachment-post-thumbnail {
+  .event-section .event-card-list .attachment-post-thumbnail {
     grid-column: 1;
     width: 100%;
     height: 15rem;
@@ -753,75 +878,90 @@ body footer .footer-info p {
     border-top-left-radius: 5px;
     border-top-right-radius: 0;
   }
-  body .event-section .event-card-list table {
+  .event-section .event-card-list table {
     padding: 0 1.875rem;
   }
-  body .event-section .event-card-list .card-body {
+  .event-section .event-card-list .card-body {
     display: grid;
   }
-  body .event-section .event-card-list .emaillist {
+  .event-section .event-card-list .emaillist {
     height: 2.5rem;
     align-self: flex-end;
   }
-  body .event-section .event-card-list .es-form-field-container {
+  .event-section .event-card-list .es-form-field-container {
     align-self: flex-end;
     height: 2.5rem;
   }
-  body .event-section .event-card-list .card-body {
+  .event-section .event-card-list .card-body {
     padding: 1.875rem;
     grid-column: 2/span 2;
     width: 100%;
   }
-  body .event-section .event-card-list .card-body h3 {
+  .event-section .event-card-list .card-body h3 {
     margin: 0;
   }
-  body .shop-info,
-  body .footer-nav,
-  body .socials,
-  body .footer-info {
+  .shop-info,
+  .footer-nav,
+  .socials,
+  .footer-info {
     padding: 0 6rem;
   }
 }
 @media screen and (min-width: 1080px) {
-  body h1 {
+  h1 {
     font-size: 3rem;
   }
-  body h2 {
+  h2 {
     font-size: 2.5rem;
   }
-  body h3 {
+  h3 {
     font-size: 2rem;
   }
-  body p,
-  body li {
+  p,
+  li {
     font-size: 1.25rem;
   }
-  body li {
+  li {
     margin-top: 1.25rem;
   }
-  body .home h2 {
+  .home h2 {
     font-size: 3rem;
   }
-  body header {
+  .home .featured-products {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .home .featured-products .featured-card:first-child {
+    grid-column: 2;
+  }
+  .home .featured-products .featured-card:nth-child(2) {
+    grid-column: 3;
+  }
+  .home .featured-products .featured-card:nth-child(3) {
+    grid-column: 2;
+  }
+  .home .featured-products .featured-card:last-child {
+    grid-column: 3;
+  }
+  header {
     position: relative;
   }
-  body header .navbar {
+  header .navbar {
     background-color: #87D4C4;
     padding: 0 1.875rem;
     overflow: hidden;
   }
-  body header .navbar nav {
+  header .navbar nav {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
   }
-  body header .navbar nav .nav-items {
+  header .navbar nav .nav-items {
     display: unset;
   }
-  body header .navbar nav .logo {
+  header .navbar nav .logo {
     grid-column: 1/span 3;
     padding: 14px 16px;
   }
-  body header .navbar .nav-items a {
+  header .navbar .nav-items a {
     color: black;
     float: left;
     font-size: 16px;
@@ -829,14 +969,14 @@ body footer .footer-info p {
     text-align: center;
     text-decoration: none;
   }
-  body header .nav-items {
+  header .nav-items {
     align-self: end;
     grid-column: 4/span 8;
     margin-left: auto;
     margin-right: 0;
     padding-bottom: 1rem;
   }
-  body header .nav-btn {
+  header .nav-btn {
     align-self: end;
     grid-column: 12;
     grid-row: 1;
@@ -844,11 +984,11 @@ body footer .footer-info p {
     margin-left: auto;
     margin-right: 0;
   }
-  body header .subnav {
+  header .subnav {
     float: left;
     overflow: hidden;
   }
-  body header .subnav .subnavbtn {
+  header .subnav .subnavbtn {
     width: 0.5rem;
     border: none;
     outline: none;
@@ -856,7 +996,7 @@ body footer .footer-info p {
     font-family: inherit;
     margin: 0;
   }
-  body header .subnav .subnav-content {
+  header .subnav .subnav-content {
     display: none;
     position: absolute;
     background-color: #ffffff;
@@ -865,7 +1005,7 @@ body footer .footer-info p {
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
   }
-  body header .subnav .subnav-content a {
+  header .subnav .subnav-content a {
     float: none;
     color: black;
     padding: 12px 16px;
@@ -873,12 +1013,13 @@ body footer .footer-info p {
     display: block;
     text-align: left;
   }
-  body header .subnav .subnav-content a:hover {
+  header .subnav .subnav-content a:hover {
     background-color: #ddd;
   }
-  body header .subnav:hover .subnav-content {
+  header .subnav:hover .subnav-content {
     display: block;
   }
+
   body header .menu {
     background-color: #ffffff;
     right: 0;
@@ -889,6 +1030,7 @@ body footer .footer-info p {
     transition: transform 300ms;
     width: 30vw;
   }
+
   body header .menu-expanded {
     transform: scaleX(100%);
   }
@@ -981,9 +1123,6 @@ body footer .footer-info p {
   .services-table .desktop-only th {
     grid-column: span 2;
   }
-  .services-table tr {
-    display: grid;
-  }
   .services-table tr td {
     padding: 1rem 1rem 5rem 1rem;
     font-family: "Playfair Display", serif;
@@ -1044,10 +1183,6 @@ body footer .footer-info p {
   }
   .rentals-table .desktop-only th {
     grid-column: span 2;
-  }
-  .rentals-table tr {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
   }
   .rentals-table tr td {
     font-size: 1.25rem;
@@ -1207,104 +1342,123 @@ body footer .footer-info p {
   }
 }
 @media screen and (min-width: 1440px) {
-  body .first-block .about-text {
+  .home .featured-products {
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3rem 12rem;
+  }
+  .home .featured-products .featured-card:first-child {
+    grid-column: unset;
+  }
+  .home .featured-products .featured-card:nth-child(2) {
+    grid-column: unset;
+  }
+  .home .featured-products .featured-card:nth-child(3) {
+    grid-column: unset;
+  }
+  .home .featured-products .featured-card:last-child {
+    grid-column: unset;
+  }
+  .first-block .about-text {
     padding: 0 2rem 0 12rem;
   }
-  body .second-block .about-text {
+  .second-block .about-text {
     padding: 0 12rem 0 2rem;
   }
-  body .third-block .about-text {
+  .third-block .about-text {
     padding: 0 2rem 0 12rem;
   }
-  body .faq-page {
+  .faq-page {
     padding: 0 12rem;
   }
-  body .contact-us h3,
-  body .contact-us .address,
-  body .contact-us .hours,
-  body .contact-us .email-form {
+  .contact-us h3,
+  .contact-us .address,
+  .contact-us .hours,
+  .contact-us .email-form {
     padding: 0 12rem;
   }
-  body .services-table,
-  body .services-desc {
+  .services-table,
+  .services-desc {
     padding: 0 12rem;
   }
-  body .rentals-table,
-  body .rentals-info,
-  body .rentals-desc {
+  .rentals-table,
+  .rentals-info,
+  .rentals-desc {
     padding: 0 12rem;
   }
-  body .event-section .event-card-list {
+  .event-section .event-card-list {
     margin: 1.875rem 12rem;
   }
-  body .event-section .event-card-list table {
+  .event-section .event-card-list table {
     padding: 0 12rem;
   }
-  body footer .footer-grid {
+  footer .footer-grid {
     padding: 0 12rem 0 12rem;
   }
-  body footer .footer-grid .shop-info {
+  footer .footer-grid .shop-info {
     grid-column: 1/span 2;
   }
-  body footer .footer-grid .footer-nav {
+  footer .footer-grid .footer-nav {
     grid-column: 3/span 4;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-self: unset;
     padding: 0 2rem;
   }
-  body footer .footer-grid .footer-nav ul:first-child {
+  footer .footer-grid .footer-nav ul:first-child {
     grid-column: 1/span 2;
   }
-  body footer .footer-grid .footer-nav ul:last-child {
+  footer .footer-grid .footer-nav ul:last-child {
     grid-column: 3/span 2;
   }
-  body footer li {
+  footer li {
     padding: 0;
   }
 }
 @media screen and (min-width: 1920px) {
-  body header .navbar {
+  header .navbar {
     padding: 0 20rem;
   }
-  body .first-block .about-text {
+  .home .featured-products {
+    padding: 3rem 20rem;
+  }
+  .first-block .about-text {
     padding: 0 4rem 0 20rem;
   }
-  body .second-block .about-text {
+  .second-block .about-text {
     padding: 0 20rem 0 4rem;
   }
-  body .third-block .about-text {
+  .third-block .about-text {
     padding: 0 4rem 0 20rem;
   }
-  body .faq-page {
+  .faq-page {
     padding: 0 20rem;
   }
-  body .contact-us h3,
-  body .contact-us .address,
-  body .contact-us .hours,
-  body .contact-us .email-form {
+  .contact-us h3,
+  .contact-us .address,
+  .contact-us .hours,
+  .contact-us .email-form {
     padding: 0 20rem;
   }
-  body .services-table,
-  body .services-desc {
+  .services-table,
+  .services-desc {
     padding: 0 20rem;
   }
-  body .rentals-table,
-  body .rentals-info,
-  body .rentals-desc {
+  .rentals-table,
+  .rentals-info,
+  .rentals-desc {
     padding: 0 20rem;
   }
-  body .event-section .event-card-list {
+  .event-section .event-card-list {
     grid-template-columns: repeat(6, 1fr);
     margin: 1.875rem 20rem;
   }
-  body .event-section .event-card-list .card-body {
+  .event-section .event-card-list .card-body {
     grid-column: 2/span 5;
   }
-  body .event-section .event-card-list table {
+  .event-section .event-card-list table {
     padding: 0 20rem;
   }
-  body footer .footer-grid {
+  footer .footer-grid {
     padding: 0 20rem 0 20rem;
   }
-}/*# sourceMappingURL=main.css.map */
+}
