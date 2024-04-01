@@ -77,13 +77,8 @@ header .navbar nav .logo {
   grid-column: 1/span 3;
   padding: 14px 16px;
 }
-
 header .navbar .nav-items a {
-  color: black;
-}
-body header .navbar .nav-items a {
   color: #2E2E2E;
-
   float: left;
   font-size: 1.175rem;
   padding: 1rem;
@@ -155,94 +150,67 @@ header .menu {
   width: 100vw;
   z-index: 2;
 }
-
-body header .menu a {
+header .menu a {
   color: #2E2E2E;
   text-decoration: none;
 }
-body header .menu .menu-subnav {
+header .menu .menu-subnav {
   display: flex;
   flex-direction: column;
   font-size: 1.8rem;
   padding: 1rem;
 }
-body header .menu .flex-arrow a {
+header .menu .flex-arrow a {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
-body header .menu .flex-arrow svg {
+header .menu .flex-arrow svg {
   grid-column: 12;
 }
-
 header .menu .subnavbtn {
-  width: 0.5rem;
-}
-header .menu .menu-subnav-content {
-  display: flex;
-  position: absolute;
-  height: 10rem;
-}
-body header .menu .subnavbtn {
   width: 2rem;
 }
-body header .menu .menu-subnav-content {
+header .menu .menu-subnav-content {
   display: none;
   transform: scaleY(0);
 }
-body header .menu .menu-subnav-content a {
+header .menu .menu-subnav-content a {
   font-size: 1rem;
   padding-bottom: 1rem;
 }
 header .menu .menu-subnav-content2 {
-  display: flex;
-  position: absolute;
-  height: 10rem;
-}
-body header .menu .menu-subnav-content2 {
   display: none;
   transform: scaleY(0);
 }
-body header .menu .menu-subnav-content2 a {
+header .menu .menu-subnav-content2 a {
   font-size: 1rem;
   padding-bottom: 1rem;
 }
-
 header .menu .menu-subnav-content3 {
-  display: flex;
-  position: absolute;
-  height: 10rem;
-}
-body header .menu .menu-subnav-content3 {
   display: none;
   transform: scaleY(0);
 }
-body header .menu .menu-subnav-content3 a {
+header .menu .menu-subnav-content3 a {
   font-size: 1rem;
   padding-bottom: 1rem;
 }
-
 header .menu .menu-subnav-content4 {
-  display: flex;
-  position: absolute;
-  height: 10rem;
-}
-body header .menu .menu-subnav-content4 {
   display: none;
   transform: scaleY(0);
 }
-body header .menu .menu-subnav-content4 a {
+header .menu .menu-subnav-content4 a {
   font-size: 1rem;
   padding-bottom: 1rem;
 }
-body header .menu .menu-nosub {
+header .menu .menu-nosub {
   display: flex;
   flex-direction: column;
   padding: 1rem;
 }
-body header .menu .menu-nosub a {
+header .menu .menu-nosub a {
   padding-bottom: 1rem;
 }
-body header .menu .menu-expanded-small {
+header .menu .menu-expanded-small {
   display: flex;
   padding: 1.5rem;
   position: relative;
@@ -252,28 +220,17 @@ body header .menu .menu-expanded-small {
   transition: transform 300ms;
   top: 0;
 }
-
-header .menu .menu-expanded-small {
-  transform: scaleY(100%);
-}
 header .menu-expanded {
   transform: scaleY(100%);
+}
+header .rotate {
+  transform: rotate(180deg);
 }
 
 .home h1 {
   padding: 1.3rem 1.875rem 1rem 1.875rem;
 }
-
-body header .menu-expanded {
-  transform: scaleY(100%);
-}
-body header .rotate {
-  transform: rotate(180deg);
-}
-body body .home h1 {
-  padding: 1.3rem 1.875rem 1rem 1.875rem;
-}
-body body .home h2 {
+.home h2 {
   padding: 1.3rem 1.875rem 1rem 1.875rem;
   text-align: center;
   font-size: 2.5rem;
@@ -281,7 +238,6 @@ body body .home h2 {
   text-transform: uppercase;
   margin: 0;
 }
-
 .home .featured-products {
   text-align: center;
   padding: 3rem 1.875rem;
@@ -316,10 +272,7 @@ body body .home h2 {
   padding: 0 1rem 1rem 1rem;
 }
 
-body body .home img {
-  width: 100%;
-}
-body .about-image {
+.about-image {
   object-fit: cover;
   height: 20rem;
   width: 100%;
@@ -599,57 +552,73 @@ h3 {
 .rentals-info div:nth-child(3) {
   margin-bottom: 3rem;
 }
-body .event-section .simcal-calendar .simcal-calendar-grid {
+
+.event-section .simcal-calendar .simcal-calendar-grid {
   width: 320px;
   margin: 0 auto;
+  background-color: #ffffff;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
 }
-body .event-section .simcal-calendar .simcal-calendar-head tr:first-child th:nth-child(2) {
+.event-section .simcal-calendar .simcal-calendar-head tr:first-child th:nth-child(2) {
   grid-column: 1/span 12;
   justify-self: center;
 }
-body .event-section .simcal-calendar .simcal-calendar-head tr:first-child th:nth-child(2) h3 {
+.event-section .simcal-calendar .simcal-calendar-head tr:first-child th:nth-child(2) h3 {
   margin-top: 2rem;
 }
-body .event-section .simcal-calendar .simcal-calendar-head tr:first-child th:nth-child(1) {
+.event-section .simcal-calendar .simcal-calendar-head tr:first-child th:nth-child(1) {
   display: none;
 }
-body .event-section .simcal-calendar .simcal-calendar-head tr:first-child th:nth-child(3) {
+.event-section .simcal-calendar .simcal-calendar-head tr:first-child th:nth-child(3) {
   display: none;
 }
-body .event-section .simcal-calendar .simcal-calendar-head tr:nth-child(2) {
+.event-section .simcal-calendar .simcal-calendar-head tr:nth-child(2) {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
 }
-body .event-section .simcal-calendar .simcal-calendar-head tr:nth-child(2) th {
+.event-section .simcal-calendar .simcal-calendar-head tr:nth-child(2) th {
   justify-self: center;
   font-size: 1rem;
 }
-body .event-section .simcal-calendar .simcal-week {
+.event-section .simcal-calendar .simcal-week {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   padding: 0.5rem 0;
 }
-body .event-section .simcal-calendar .simcal-week td {
+.event-section .simcal-calendar .simcal-week td div {
+  border: none !important;
+}
+.event-section .simcal-calendar .simcal-week .simcal-day-label {
+  border-radius: 10rem;
+  padding: 0.1rem 0.6rem 0.25rem 0.6rem;
+  border: none;
+}
+.event-section .simcal-calendar .simcal-week .simcal-today .simcal-day-label {
+  background-color: #72A8D5;
+}
+.event-section .simcal-calendar .simcal-week td {
   justify-self: center;
 }
-body .event-section .simcal-calendar table {
-  padding: 0 1.875rem;
+.event-section .simcal-calendar table {
+  margin: 0 1.875rem;
 }
-body .event-section .simcal-calendar table tr, body .event-section .simcal-calendar table th, body .event-section .simcal-calendar table td {
+.event-section .simcal-calendar table tr, .event-section .simcal-calendar table th, .event-section .simcal-calendar table td {
   text-align: unset;
   padding: 0;
 }
-body .event-section .simcal-calendar table tr:nth-child(odd) {
+.event-section .simcal-calendar table tr:nth-child(odd) {
   background-color: unset;
 }
-body .event-section .event-header {
+.event-section .event-header {
   background-color: #72A8D5;
   padding-bottom: 1rem;
 }
-body .event-section .event-header form {
+.event-section .event-header form {
   text-align: center;
 }
-body .event-section .event-header form input {
+.event-section .event-header form input {
   padding: 0 1rem;
   height: 2.5rem;
   font-family: "Josefin Sans", sans-serif;
@@ -658,52 +627,52 @@ body .event-section .event-header form input {
   border: none;
   border-radius: 5px;
 }
-body .event-section .simcal-align-right {
+.event-section .simcal-align-right {
   display: none;
 }
-body .event-section .event-card-list:last-child {
+.event-section .event-card-list:last-child {
   margin-bottom: 3rem;
 }
-body .event-section .event-card-list {
+.event-section .event-card-list {
   margin: 1.875rem;
   filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
   height: 100%;
 }
-body .event-section .event-card-list .attachment-post-thumbnail {
+.event-section .event-card-list .attachment-post-thumbnail {
   object-fit: cover;
   width: 100%;
   height: 20rem;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
 }
-body .event-section .event-card-list .card-body {
+.event-section .event-card-list .card-body {
   padding: 1rem;
   background-color: #ffffff;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
 }
-body .event-section .event-card-list .card-body h3 {
+.event-section .event-card-list .card-body h3 {
   margin-top: 1rem;
 }
-body .event-section .event-card-list .card-body p {
+.event-section .event-card-list .card-body p {
   max-width: 100%;
   margin: 0;
 }
-body .event-section .es_spinner_image {
+.event-section .es_spinner_image {
   display: none;
 }
-body .event-section .es-form-field-container {
+.event-section .es-form-field-container {
   padding: 0 !important;
   width: 100%;
   display: flex;
 }
-body .event-section .es-form-field-container input {
+.event-section .es-form-field-container input {
   background-color: #d4d4d4;
   margin: 0;
   padding: 0 0.5rem;
   height: 2.5rem;
 }
-body .event-section .es-form-field-container div:nth-child(3) input {
+.event-section .es-form-field-container div:nth-child(3) input {
   border-top-right-radius: 5px;
   border-top-left-radius: 0;
   border-bottom-right-radius: 5px;
@@ -711,18 +680,18 @@ body .event-section .es-form-field-container div:nth-child(3) input {
   border: none;
   transition: 0.3s;
 }
-body .event-section .es-form-field-container div:nth-child(3) input:hover {
+.event-section .es-form-field-container div:nth-child(3) input:hover {
   background-color: #72A8D5;
 }
-body .event-section .es-form-field-container .gjs-row:nth-child(2) {
+.event-section .es-form-field-container .gjs-row:nth-child(2) {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
 }
-body .event-section .es-form-field-container .gjs-row:nth-child(2) .gjs-cell {
+.event-section .es-form-field-container .gjs-row:nth-child(2) .gjs-cell {
   grid-column: 1/span 5;
 }
-body .event-section .es-form-field-container .gjs-row:nth-child(2) .gjs-cell .es-email {
+.event-section .es-form-field-container .gjs-row:nth-child(2) .gjs-cell .es-email {
   border-top-right-radius: 0;
   border-top-left-radius: 5px;
   border-bottom-right-radius: 0;
@@ -812,6 +781,7 @@ footer .socials {
 }
 footer .socials svg {
   width: 2.85rem;
+  margin: 0 0.5rem;
 }
 footer .shop-info li {
   font-family: "Josefin Sans", sans-serif;
@@ -865,6 +835,20 @@ footer .footer-info p {
   .rentals-desc {
     padding: 0 6rem;
   }
+  .event-section .simcal-calendar .simcal-calendar-grid {
+    width: 528px;
+    margin: 0 auto;
+  }
+  .event-section .simcal-calendar .simcal-calendar-head tr:nth-child(2) th {
+    font-size: 1.25rem;
+  }
+  .event-section .simcal-calendar .simcal-week {
+    padding: 1rem 0;
+  }
+  .event-section .simcal-calendar .simcal-week .simcal-day-label {
+    padding: 0.1rem 0.75rem 0.25rem 0.75rem;
+    font-size: 1.25rem;
+  }
   .event-section .event-card-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -877,9 +861,6 @@ footer .footer-info p {
     border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
     border-top-right-radius: 0;
-  }
-  .event-section .event-card-list table {
-    padding: 0 1.875rem;
   }
   .event-section .event-card-list .card-body {
     display: grid;
@@ -1019,8 +1000,7 @@ footer .footer-info p {
   header .subnav:hover .subnav-content {
     display: block;
   }
-
-  body header .menu {
+  header .menu {
     background-color: #ffffff;
     right: 0;
     position: absolute;
@@ -1030,8 +1010,7 @@ footer .footer-info p {
     transition: transform 300ms;
     width: 30vw;
   }
-
-  body header .menu-expanded {
+  header .menu-expanded {
     transform: scaleX(100%);
   }
   .history,
@@ -1310,6 +1289,7 @@ footer .footer-info p {
     grid-column: 12;
     grid-row: 1;
     padding: 0;
+    margin: 0;
   }
   footer .footer-grid .shop-info {
     grid-column: 1/span 3;
