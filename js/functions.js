@@ -15,13 +15,14 @@ document.addEventListener('DOMContentLoaded', function() {
   const menuContent2 = document.querySelector('.menu-subnav-content2');
   const menuContent3 = document.querySelector('.menu-subnav-content3');
   const menuContent4 = document.querySelector('.menu-subnav-content4');
+  const svg = document.querySelector('.subnavbtn');
 
   navBtn.addEventListener('click', function() {
       menu.classList.toggle('menu-expanded');
     });
     
     subnav.addEventListener('click', function() {
-      menuContent.classList.toggle('menu-expanded-small');
+      menuContent.classList.toggle('menu-expanded-small'); 
 });
 
 subnav2.addEventListener('click', function() {
