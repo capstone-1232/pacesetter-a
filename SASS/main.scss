@@ -195,16 +195,17 @@ body {
             a {
                 display: grid;
                 grid-template-columns: repeat(12, 1fr);
-                justify-items: end;
             }
 
             svg {
+                justify-self: end;
                 grid-column: 12;
             }
         }
 
         .subnavbtn {
             width: 2rem;
+            transition: 300ms;
         }
 
         .menu-subnav-content {
@@ -1276,7 +1277,7 @@ footer {
                 a {
                     color: black;
                     float: left;
-                    font-size: 16px;
+                    font-size: .75rem;
                     padding: 1rem;
                     text-align: center;
                     text-decoration: none;
@@ -1354,13 +1355,13 @@ footer {
         transform-origin: right;
         transition: transform 300ms;
         width: 30vw;
+        height: 100vh;
     }
 
     .menu-expanded {
         transform: scaleX(100%);
     }
 
-}
 }
 
         // -----------------------------------------------------------------  ABOUT PAGE -----------------------------------------------------------------
@@ -1779,6 +1780,7 @@ footer {
                 margin: 0 auto;
             }
         }
+}
 
 @media screen and (min-width: 1440px) {
 
@@ -1915,6 +1917,16 @@ footer {
         header {
             .navbar {
                 padding: 0 20rem;
+            }
+
+            .menu {
+               width: 25vw; 
+
+               .nav-items {
+                 a {
+                    font-size: 1.8rem;
+                 }
+               }
             }
         }
 

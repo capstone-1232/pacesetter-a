@@ -17,16 +17,15 @@ document.addEventListener('DOMContentLoaded', function() {
   const links = document.querySelectorAll('.flex-arrow a');
   const svgs = document.querySelectorAll('.menu-subnav svg');
 
+  // svg arrow turn
 links.forEach((link, index) => {
     link.addEventListener('click', function(event) {
         event.preventDefault();
-
-        // Toggle the class on the corresponding SVG
         svgs[index].classList.toggle('rotate180');
     });
 });
 
-
+// hamburger nenu
   navBtn.addEventListener('click', function() {
       menu.classList.toggle('menu-expanded');
     });
