@@ -9,6 +9,9 @@
 /**
  */
 
+ add_theme_support( 'wp-block-styles' );
+
+
 add_theme_support( 'custom-header' );
 
 function pacesetter_custom_header_setup() {
@@ -62,15 +65,7 @@ $args = array(
 add_theme_support( 'custom-background', $args );
 
 // regisrter menus
-function register_my_menus() {
-	register_nav_menus(
-	  array(
-		'header-menu' => __( 'Header Menu' ),
-		'extra-menu' => __( 'Extra Menu' )
-	   )
-	 );
-   }
-   add_action( 'init', 'register_my_menus' );
+
 
 //thumbnails
 add_theme_support( 'post-thumbnails' );
@@ -80,3 +75,25 @@ function your_themes_pagination() {
 	global $wp_query;
 	echo paginate_links();
 }
+
+add_action( 'after_setup_theme', 'woocommerce_support' );
+function woocommerce_support() {
+   add_theme_support( 'woocommerce' );
+}  
+
+if (class_exists('Woocommerce')){
+    add_filter( 'woocommerce_enqueue_styles', '__return_empty_array' );
+}
+
+add_filter( 'woocommerce_product_tabs', 'remove_reviews_tab', 98 );
+function remove_reviews_tab( $tabs ) {
+    unset( $tabs['reviews'] );
+    return $tabs;
+}
+
+// remove related products
+remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
+
+// remove product rating
+remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_rating', 10 );
+
