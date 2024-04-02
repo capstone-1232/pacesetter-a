@@ -227,7 +227,6 @@ header .menu .menu-expanded-small {
 header .menu-expanded {
   transform: scaleY(100%);
 }
-
 header .rotate180 {
   transform: rotate(180deg);
   transition: 300ms;
@@ -593,7 +592,6 @@ h3 {
   grid-template-columns: repeat(7, 1fr);
   padding: 0.5rem 0;
 }
-
 .event-section .simcal-calendar .simcal-week td div {
   border: none !important;
 }
@@ -605,16 +603,11 @@ h3 {
 .event-section .simcal-calendar .simcal-week .simcal-today .simcal-day-label {
   background-color: #72A8D5;
 }
-
 .event-section .simcal-calendar .simcal-week td {
   justify-self: center;
 }
 .event-section .simcal-calendar table {
-
   margin: 0 1.875rem;
-
-  padding: 0 1.875rem;
-
 }
 .event-section .simcal-calendar table tr, .event-section .simcal-calendar table th, .event-section .simcal-calendar table td {
   text-align: unset;
@@ -1459,5 +1452,10 @@ footer .footer-info p {
   }
   footer .footer-grid {
     padding: 0 20rem 0 20rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  header .custom-logo-link img {
+    width: 12rem;
   }
 }/*# sourceMappingURL=main.css.map */
