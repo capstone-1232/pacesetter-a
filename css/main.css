@@ -276,6 +276,9 @@ header .rotate180 {
   margin: 0;
   padding: 0 1rem 1rem 1rem;
 }
+.home img {
+  width: 100%;
+}
 
 .about-image {
   object-fit: cover;
@@ -807,6 +810,32 @@ footer .footer-info {
 footer .footer-info p {
   font-family: "Josefin Sans", sans-serif;
   margin-top: 0.5rem;
+}
+
+/* arrow */
+.slick-arrow {
+  z-index: 2;
+  top: 50%;
+  margin-top: -10px;
+  width: 20px;
+  height: 20px;
+  border-top: 3px solid #3498db;
+  border-right: 3px solid #3498db;
+  opacity: 0.8;
+}
+
+.slick-arrow::before {
+  content: "";
+}
+
+.slick-prev {
+  left: 30px;
+  transform: rotate(-135deg);
+}
+
+.slick-next {
+  right: 30px;
+  transform: rotate(45deg);
 }
 
 @media screen and (min-width: 720px) {

@@ -15,7 +15,9 @@
  <main>
     <!-- banner plugin location -->
     <div class="home">
-        <div class="events-banner"></div>
+        <div class="hero-banner">
+
+        </div>
 
         <!-- featured -->
         <div class="featured">
@@ -49,6 +51,24 @@
                 <li class="slider-item"><img src="https://picsum.photos/200"></li>
                 <li class="slider-item"><img src="https://picsum.photos/200"></li>
             </ul>
+        </div>
+
+        <!-- image slider -->
+        <div class="top-images">
+        <?php
+            $args = array(
+                'post_type' => 'top-images', 
+                'post_per_page' => 1
+            );
+
+            $loop = new WP_Query($args); 
+
+            echo '<ul class="top-images-slider">';
+            while ($loop->have_posts()): $loop->the_post();
+                the_post_thumbnail();
+            endwhile; 
+            echo '</ul>';
+        ?>
         </div>
     </div>
 </main>
