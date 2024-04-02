@@ -38,10 +38,10 @@
 									d="M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569l9 13z" />
 							</svg></a>
 						<div class="subnav-content">
-							<a href="<?php echo home_url( '/product-category/skis/' ); ?>">Skis</a>
-							<a href="#">Ski Boots</a>
-							<a href="#">Ski Bindings</a>
-							<a href="#">Poles</a>
+							<a href="<?php echo home_url( '/catalog/?category=skis/' ); ?>">Skis</a>
+							<a href="<?php echo home_url( '/catalog/?category=ski equipment/' ); ?>">Ski Equipment</a>
+							<a href="<?php echo home_url( '/catalog/?category=x country binding/' ); ?>">Ski Bindings</a>
+							<a href="<?php echo home_url( '/catalog/?category=poles/' ); ?>">Poles</a>
 						</div> <!-- subnav-content end -->
 					</div><!-- subnav end -->
 					<!-- snowboard -->
@@ -52,9 +52,10 @@
 									d="M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569l9 13z" />
 							</svg></a>
 						<div class="subnav-content">
-							<a href="#">Snowboards</a>
-							<a href="#">Snowboard Boots</a>
-							<a href="#">Snowboard Bindings</a>
+							<a href="<?php echo home_url( '/catalog/?category=snowboard/' ); ?>">Snowboards</a>
+							<a href="<?php echo home_url( '/catalog/?category=snowboard equipment	/' ); ?>">Snowboard Equipment</a>
+							<a href="<?php echo home_url( '/catalog/?category=snowboard boots/' ); ?>">Snowboard Boots</a>
+							<a href="<?php echo home_url( '/catalog/?category=snowboard binding/' ); ?>">Snowboard Bindings</a>
 						</div> <!-- subnav-content end -->
 					</div> <!-- subnav end -->
 					<!-- apparel -->
@@ -65,10 +66,10 @@
 									d="M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569l9 13z" />
 							</svg></a>
 						<div class="subnav-content">
-							<a href="#">Mens</a>
-							<a href="#">Womens</a>
-							<a href="#">Kids</a>
-							<a href="#">Accessories</a>
+							<a href="<?php echo home_url( '/catalog/?category=mens/' ); ?>">Mens</a>
+							<a href="<?php echo home_url( '/catalog/?category=womens/' ); ?>">Womens</a>
+							<a href="<?php echo home_url( '/catalog/?category=youth/' ); ?>">Youth</a>
+							<a href="<?php echo home_url( '/catalog/?category=accessories/' ); ?>">Accessories</a>
 						</div> <!-- subnav-content end -->
 					</div> <!-- subnav end -->
 					<!-- accessories -->
@@ -79,9 +80,9 @@
 									d="M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569l9 13z" />
 							</svg></a>
 						<div class="subnav-content">
-							<a href="#">Bags</a>
-							<a href="#">Helmets</a>
-							<a href="#">Goggles</a>
+							<a href="<?php echo home_url( '/catalog/?category=bag/' ); ?>">Bags</a>
+							<a href="<?php echo home_url( '/catalog/?category=helmets/' ); ?>">Helmets</a>
+							<a href="<?php echo home_url( '/catalog/?category=goggles/' ); ?>">Goggles</a>
 						</div> <!-- subnav-content end -->
 					</div> <!-- sub-nav end -->
 					<a href="services">Services</a>
@@ -109,10 +110,10 @@
 						</svg></a>
 					</div>
 					<div class="menu-subnav-content">
-						<a href="#">Skis</a>
-						<a href="#">Ski Boots</a>
-						<a href="#">Ski Bindings</a>
-						<a href="#">Poles</a>
+						<a href="<?php echo home_url( '/catalog/?category=skis/' ); ?>">Skis</a>
+						<a href="<?php echo home_url( '/catalog/?category=ski equipment/' ); ?>">Ski Equipment</a>
+						<a href="<?php echo home_url( '/catalog/?category=x country binding/' ); ?>">Ski Bindings</a>
+						<a href="<?php echo home_url( '/catalog/?category=poles/' ); ?>">Poles</a>
 					</div> <!-- menu-subnav-content end -->
 				</div><!-- subnav end -->
 				<!-- snowboard -->
@@ -124,9 +125,10 @@
 					</svg></a>
 				</div>
 					<div class="menu-subnav-content2">
-						<a href="#">Snowboards</a>
-						<a href="#">Snowboard Boots</a>
-						<a href="#">Snowboard Bindings</a>
+						<a href="<?php echo home_url( '/catalog/?category=snowboard/' ); ?>">Snowboards</a>
+						<a href="<?php echo home_url( '/catalog/?category=snowboard equipment	/' ); ?>">Snowboard Equipment</a>
+						<a href="<?php echo home_url( '/catalog/?category=snowboard boots/' ); ?>">Snowboard Boots</a>
+						<a href="<?php echo home_url( '/catalog/?category=snowboard binding/' ); ?>">Snowboard Bindings</a>
 					</div> <!-- menu-subnav-content end -->
 				</div> <!-- subnav end -->
 				<!-- apparel -->
