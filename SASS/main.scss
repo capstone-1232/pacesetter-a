@@ -1016,31 +1016,6 @@ footer {
     }
     }
 
-// -----------------------------------------------------------------  SLICK -----------------------------------------------------------------
-
-/* arrow */
-.slick-arrow{
-    z-index: 2;
-    top: 50%;
-    margin-top: -10px;
-    width: 20px;
-    height: 20px;
-    border-top: 3px solid #3498db;
-    border-right: 3px solid #3498db;
-    opacity: .8;
-  }
-  .slick-arrow::before{
-    content: '';
-  }
-  .slick-prev{
-    left: 30px;
-    transform: rotate(-135deg);
-  }
-  .slick-next{
-    right: 30px;
-    transform: rotate(45deg);
-  }
-  
 // -----------------------------------------------------------------  TABLET  -----------------------------------------------------------------
 
 @media screen and (min-width: 720px) {
