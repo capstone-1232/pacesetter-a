@@ -3,7 +3,6 @@
 
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<?php //wp_head();  ?>
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/reset.css">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/main.css">
 	<title>Pacesetter Ski & Snowboard</title>
@@ -39,10 +38,10 @@
 									d="M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569l9 13z" />
 							</svg></a>
 						<div class="subnav-content">
-							<a href="#">Skis</a>
-							<a href="#">Ski Boots</a>
-							<a href="#">Ski Bindings</a>
-							<a href="#">Poles</a>
+							<a href="<?php echo home_url( '/catalog/?category=skis/' ); ?>">Skis</a>
+							<a href="<?php echo home_url( '/catalog/?category=ski equipment/' ); ?>">Ski Equipment</a>
+							<a href="<?php echo home_url( '/catalog/?category=x country binding/' ); ?>">Ski Bindings</a>
+							<a href="<?php echo home_url( '/catalog/?category=poles/' ); ?>">Poles</a>
 						</div> <!-- subnav-content end -->
 					</div><!-- subnav end -->
 					<!-- snowboard -->
@@ -53,9 +52,10 @@
 									d="M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569l9 13z" />
 							</svg></a>
 						<div class="subnav-content">
-							<a href="#">Snowboards</a>
-							<a href="#">Snowboard Boots</a>
-							<a href="#">Snowboard Bindings</a>
+							<a href="<?php echo home_url( '/catalog/?category=snowboard/' ); ?>">Snowboards</a>
+							<a href="<?php echo home_url( '/catalog/?category=snowboard equipment	/' ); ?>">Snowboard Equipment</a>
+							<a href="<?php echo home_url( '/catalog/?category=snowboard boots/' ); ?>">Snowboard Boots</a>
+							<a href="<?php echo home_url( '/catalog/?category=snowboard binding/' ); ?>">Snowboard Bindings</a>
 						</div> <!-- subnav-content end -->
 					</div> <!-- subnav end -->
 					<!-- apparel -->
@@ -66,10 +66,10 @@
 									d="M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569l9 13z" />
 							</svg></a>
 						<div class="subnav-content">
-							<a href="#">Mens</a>
-							<a href="#">Womens</a>
-							<a href="#">Kids</a>
-							<a href="#">Accessories</a>
+							<a href="<?php echo home_url( '/catalog/?category=mens/' ); ?>">Mens</a>
+							<a href="<?php echo home_url( '/catalog/?category=womens/' ); ?>">Womens</a>
+							<a href="<?php echo home_url( '/catalog/?category=youth/' ); ?>">Youth</a>
+							<a href="<?php echo home_url( '/catalog/?category=accessories/' ); ?>">Accessories</a>
 						</div> <!-- subnav-content end -->
 					</div> <!-- subnav end -->
 					<!-- accessories -->
@@ -80,9 +80,9 @@
 									d="M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569l9 13z" />
 							</svg></a>
 						<div class="subnav-content">
-							<a href="#">Bags</a>
-							<a href="#">Helmets</a>
-							<a href="#">Goggles</a>
+							<a href="<?php echo home_url( '/catalog/?category=bag/' ); ?>">Bags</a>
+							<a href="<?php echo home_url( '/catalog/?category=helmets/' ); ?>">Helmets</a>
+							<a href="<?php echo home_url( '/catalog/?category=goggles/' ); ?>">Goggles</a>
 						</div> <!-- subnav-content end -->
 					</div> <!-- sub-nav end -->
 					<a href="services">Services</a>
@@ -105,37 +105,39 @@
 				<div class="menu-subnav">
 					<div class="flex-arrow">
 						<a class="link1" href="#">Skis
-						<svg class="subnavbtn" transform="rotate(180)" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-						<path d="m18.293 15.289c0.3905-0.3905 0.3905-1.0237 0-1.4142l-4.8922-4.8874c-0.7812-0.7804-2.047-0.78009-2.8278 6.9e-4l-4.8903 4.8904c-0.39052 0.3905-0.39052 1.0237 0 1.4142 0.39053 0.3906 1.0237 0.3906 1.4142 0l4.1856-4.1856c0.3906-0.3905 1.0237-0.3905 1.4142 0l4.1821 4.182c0.3905 0.3905 1.0237 0.3905 1.4142 0z" fill="#0F0F0F"/>
+						<svg class="subnavbtn" fill="#000000" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+						<path d="m104.7 338.75a64 64 0 0 1 90.496 0l316.8 316.8 316.8-316.8a64 64 0 0 1 90.496 90.496l-362.05 362.05a64 64 0 0 1-90.496 0l-362.05-362.05a64 64 0 0 1 0-90.496z" fill="#000"/>
 						</svg></a>
 					</div>
 					<div class="menu-subnav-content">
-						<a href="#">Skis</a>
-						<a href="#">Ski Boots</a>
-						<a href="#">Ski Bindings</a>
-						<a href="#">Poles</a>
+						<a href="<?php echo home_url( '/catalog/?category=skis/' ); ?>">Skis</a>
+						<a href="<?php echo home_url( '/catalog/?category=ski equipment/' ); ?>">Ski Equipment</a>
+						<a href="<?php echo home_url( '/catalog/?category=x country binding/' ); ?>">Ski Bindings</a>
+						<a href="<?php echo home_url( '/catalog/?category=poles/' ); ?>">Poles</a>
 					</div> <!-- menu-subnav-content end -->
 				</div><!-- subnav end -->
 				<!-- snowboard -->
 				<div class="menu-subnav">
 				<div class="flex-arrow">
 					<a class="link2" href="#">Snowboards
-					<svg class="subnavbtn" transform="rotate(180)" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-					<path d="m18.293 15.289c0.3905-0.3905 0.3905-1.0237 0-1.4142l-4.8922-4.8874c-0.7812-0.7804-2.047-0.78009-2.8278 6.9e-4l-4.8903 4.8904c-0.39052 0.3905-0.39052 1.0237 0 1.4142 0.39053 0.3906 1.0237 0.3906 1.4142 0l4.1856-4.1856c0.3906-0.3905 1.0237-0.3905 1.4142 0l4.1821 4.182c0.3905 0.3905 1.0237 0.3905 1.4142 0z" fill="#0F0F0F"/>
+					<svg class="subnavbtn" fill="#000000" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+					<path d="m104.7 338.75a64 64 0 0 1 90.496 0l316.8 316.8 316.8-316.8a64 64 0 0 1 90.496 90.496l-362.05 362.05a64 64 0 0 1-90.496 0l-362.05-362.05a64 64 0 0 1 0-90.496z" fill="#000"/>
 					</svg></a>
 				</div>
 					<div class="menu-subnav-content2">
-						<a href="#">Snowboards</a>
-						<a href="#">Snowboard Boots</a>
-						<a href="#">Snowboard Bindings</a>
+						<a href="<?php echo home_url( '/catalog/?category=snowboard/' ); ?>">Snowboards</a>
+						<a href="<?php echo home_url( '/catalog/?category=snowboard equipment	/' ); ?>">Snowboard Equipment</a>
+						<a href="<?php echo home_url( '/catalog/?category=snowboard boots/' ); ?>">Snowboard Boots</a>
+						<a href="<?php echo home_url( '/catalog/?category=snowboard binding/' ); ?>">Snowboard Bindings</a>
 					</div> <!-- menu-subnav-content end -->
 				</div> <!-- subnav end -->
 				<!-- apparel -->
 				<div class="menu-subnav">
 					<div class="flex-arrow">
 						<a class="link3" href="#">Apparel
-						<svg class="subnavbtn" transform="rotate(180)" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-						<path d="m18.293 15.289c0.3905-0.3905 0.3905-1.0237 0-1.4142l-4.8922-4.8874c-0.7812-0.7804-2.047-0.78009-2.8278 6.9e-4l-4.8903 4.8904c-0.39052 0.3905-0.39052 1.0237 0 1.4142 0.39053 0.3906 1.0237 0.3906 1.4142 0l4.1856-4.1856c0.3906-0.3905 1.0237-0.3905 1.4142 0l4.1821 4.182c0.3905 0.3905 1.0237 0.3905 1.4142 0z" fill="#0F0F0F"/></svg></a>
+						<svg class="subnavbtn" fill="#000000" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+						<path d="m104.7 338.75a64 64 0 0 1 90.496 0l316.8 316.8 316.8-316.8a64 64 0 0 1 90.496 90.496l-362.05 362.05a64 64 0 0 1-90.496 0l-362.05-362.05a64 64 0 0 1 0-90.496z" fill="#000"/>
+						</svg></a>
 					</div>
 					<div class="menu-subnav-content3">
 						<a href="#">Mens</a>
@@ -148,8 +150,8 @@
 				<div class="menu-subnav">
 					<div class="flex-arrow">
 						<a class="link4" href="#">Accessories
-						<svg class="subnavbtn" transform="rotate(180)" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-						<path d="m18.293 15.289c0.3905-0.3905 0.3905-1.0237 0-1.4142l-4.8922-4.8874c-0.7812-0.7804-2.047-0.78009-2.8278 6.9e-4l-4.8903 4.8904c-0.39052 0.3905-0.39052 1.0237 0 1.4142 0.39053 0.3906 1.0237 0.3906 1.4142 0l4.1856-4.1856c0.3906-0.3905 1.0237-0.3905 1.4142 0l4.1821 4.182c0.3905 0.3905 1.0237 0.3905 1.4142 0z" fill="#0F0F0F"/>
+						<svg class="subnavbtn" fill="#000000" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+						<path d="m104.7 338.75a64 64 0 0 1 90.496 0l316.8 316.8 316.8-316.8a64 64 0 0 1 90.496 90.496l-362.05 362.05a64 64 0 0 1-90.496 0l-362.05-362.05a64 64 0 0 1 0-90.496z" fill="#000"/>
 						</svg></a>
 					</div>
 					<div class="menu-subnav-content4">

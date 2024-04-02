@@ -114,6 +114,7 @@ body {
 
         .nav-btn {
             align-self: end;
+            cursor: pointer;
             grid-column: 12;
             grid-row: 1;
             padding: 1rem 0 1.75rem 0;
@@ -165,6 +166,7 @@ body {
 
     .menu {
         background-color: #ffffff;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         display: flex;
         top: 0;
         position: absolute;
@@ -197,12 +199,14 @@ body {
             }
 
             svg {
+                justify-self: end;
                 grid-column: 12;
             }
         }
 
         .subnavbtn {
             width: 2rem;
+            transition: 300ms;
         }
 
         .menu-subnav-content {
@@ -268,9 +272,11 @@ body {
         transform: scaleY(100%);
     }
 
-    .rotate {
+    .rotate180 {
         transform: rotate(180deg);
+        transition: 300ms;
     }
+    
 }
 
 // -----------------------------------------------------------------  HOME PAGE -----------------------------------------------------------------
@@ -1004,19 +1010,6 @@ footer {
             margin-top: .5rem;
         }
     }
-
-
-    // .emaillist {
-    //     position: fixed; /* Stay in place */
-    //     z-index: 100; /* Sit on top */
-    //     left: 0;
-    //     top: 0;
-    //     width: 100%; /* Full width */
-    //     height: 100%; /* Full height */
-    //     overflow: auto; /* Enable scroll if needed */
-    //     background-color: rgb(0,0,0); /* Fallback color */
-    //     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-            //}
     }
   
 // -----------------------------------------------------------------  TABLET  -----------------------------------------------------------------
@@ -1236,7 +1229,7 @@ footer {
                 a {
                     color: black;
                     float: left;
-                    font-size: 16px;
+                    font-size: .75rem;
                     padding: 1rem;
                     text-align: center;
                     text-decoration: none;
@@ -1283,7 +1276,7 @@ footer {
                 min-width: 160px;
                 top: 5.5rem;
                 box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-                z-index: 1;
+                z-index: 3;
 
                 a {
                     float: none;
@@ -1314,6 +1307,7 @@ footer {
         transform-origin: right;
         transition: transform 300ms;
         width: 30vw;
+        height: 100vh;
     }
 
     .menu-expanded {
@@ -1877,6 +1871,16 @@ footer {
             .navbar {
                 padding: 0 20rem;
             }
+
+            .menu {
+               width: 25vw; 
+
+               .nav-items {
+                 a {
+                    font-size: 1.8rem;
+                 }
+               }
+            }
         }
 
         // -----------------------------------------------------------------  HOME PAGE -----------------------------------------------------------------
@@ -1964,6 +1968,19 @@ footer {
 
             .footer-grid {
                 padding: 0 20rem 0 20rem;
+            }
+        }
+    }
+
+    @media screen and (max-width: 320px) {
+
+        // -----------------------------------------------------------------  HEADER -----------------------------------------------------------------
+
+        header {
+            .custom-logo-link {
+                img {
+                    width: 12rem;
+                }
             }
         }
     }
