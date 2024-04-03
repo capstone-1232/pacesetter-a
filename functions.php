@@ -64,9 +64,6 @@ $args = array(
 );
 add_theme_support( 'custom-background', $args );
 
-// regisrter menus
-
-
 //thumbnails
 add_theme_support( 'post-thumbnails' );
 
@@ -93,7 +90,20 @@ function remove_reviews_tab( $tabs ) {
 
 // remove related products
 remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
-
 // remove product rating
 remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_rating', 10 );
+// remove  rating  stars
+remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_rating', 10 );
+// remove product meta 
+remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40 );
+// remove related products
+remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
+// remove add to cart
+// remove_action('woocommerce_single_product','woocommerce_template_single_add_to_cart', 30);
+// remove side bar
+remove_action( 'woocommerce_sidebar', 'woocommerce_get_sidebar', 10 ); 
 
+remove_action( 'woocommerce_before_single_product_summary', 'woocommerce_show_product_images', 20 );
+add_action( 'woocommerce_single_product_summary', 'woocommerce_show_product_images', 7 );
+
+add_action( 'woocommerce_after_single_product_summary', 'woocommerce_show_product_thumbnails', 20 ); 
