@@ -6,10 +6,13 @@
  */
 
 get_header();
+
+$filter_category = isset( $_GET['category'] ) ? sanitize_text_field( $_GET['category'] ) : '';
+$filter_category_clean = str_replace( array( '/', '-' ), array( '', ' ' ), $filter_category );
 ?>
 
 <div>
-    <h1>Catalog</h1> <!-- Placeholder for header -->
+    <h1><?php echo $filter_category_clean ?></h1>
     <div class="filter-items">
         <div class="subnav">
             <p>Filter:</p>
@@ -51,15 +54,10 @@ get_header();
 <div id="main" class="row">
     <div class="product-list">
         <?php  
-        // Get the category from the URL parameter
-        $filter_category = isset( $_GET['category'] ) ? sanitize_text_field( $_GET['category'] ) : '';
-
-        // Query arguments for WP_Query
         $args = array(
             'post_type' => 'product',
         );
 
-        // If a category is provided in the URL, add it to the query arguments
         if ( ! empty( $filter_category ) ) {
             $args['tax_query'] = array(
                 array(
@@ -78,10 +76,10 @@ get_header();
             global $product;
             ?>
             <div class="product-item">
-                <?php the_post_thumbnail(); ?>
+            <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?>
                 <h2><?php the_title(); ?></h2>
                 <span class="price"><?php echo $product->get_price_html(); ?></span>
-                <a href="<?php the_permalink(); ?>" class="button">View Product</a>
+                </a>
             </div>
             <?php
         endwhile;

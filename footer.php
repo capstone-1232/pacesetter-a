@@ -13,14 +13,14 @@
                 </div>
                 <div class="footer-nav">
                     <ul>
-                        <li><a href="services">Services</a></li>
-                        <li><a href="rentals">Rentals</a></li>
-                        <li><a href="events">Events</a></li>
+                        <li><a href="https://pacesetter-a.web.dmitcapstone.ca/wordpress/services/">Services</a></li>
+                        <li><a href="https://pacesetter-a.web.dmitcapstone.ca/wordpress/rentals/">Rentals</a></li>
+                        <li><a href="https://pacesetter-a.web.dmitcapstone.ca/wordpress/events/">Events</a></li>
                     </ul>
                     <ul>
-                        <li><a href="info">F.A.Q.</a></li>
-                        <li><a href="contact">Contact Us</a></li>
-                        <li><a href="about-us">About Us</a></li>
+                        <li><a href="https://pacesetter-a.web.dmitcapstone.ca/wordpress/info/">F.A.Q.</a></li>
+                        <li><a href="https://pacesetter-a.web.dmitcapstone.ca/wordpress/contact/">Contact Us</a></li>
+                        <li><a href="https://pacesetter-a.web.dmitcapstone.ca/wordpress/about-us/">About Us</a></li>
                     </ul> <!-- footer-nav end -->
                 </div>
 
