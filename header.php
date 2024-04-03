@@ -38,10 +38,10 @@
 									d="M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569l9 13z" />
 							</svg></a>
 						<div class="subnav-content">
-							<a href="<?php echo home_url( '/catalog/?category=skis/' ); ?>">Skis</a>
-							<a href="<?php echo home_url( '/catalog/?category=ski equipment/' ); ?>">Ski Equipment</a>
-							<a href="<?php echo home_url( '/catalog/?category=x country binding/' ); ?>">Ski Bindings</a>
-							<a href="<?php echo home_url( '/catalog/?category=poles/' ); ?>">Poles</a>
+							<a href="<?php echo home_url( '/product-category/skis' ); ?>">Skis</a>
+							<a href="<?php echo home_url( '/product-category/ski-equipment' ); ?>">Ski Equipment</a>
+							<a href="<?php echo home_url( '/product-category/x-country-binding' ); ?>">Ski Bindings</a>
+							<a href="<?php echo home_url( '/product-category/poles' ); ?>">Poles</a>
 						</div> <!-- subnav-content end -->
 					</div><!-- subnav end -->
 					<!-- snowboard -->
@@ -52,10 +52,10 @@
 									d="M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569l9 13z" />
 							</svg></a>
 						<div class="subnav-content">
-							<a href="<?php echo home_url( '/catalog/?category=snowboard/' ); ?>">Snowboards</a>
-							<a href="<?php echo home_url( '/catalog/?category=snowboard equipment	/' ); ?>">Snowboard Equipment</a>
-							<a href="<?php echo home_url( '/catalog/?category=snowboard boots/' ); ?>">Snowboard Boots</a>
-							<a href="<?php echo home_url( '/catalog/?category=snowboard binding/' ); ?>">Snowboard Bindings</a>
+							<a href="<?php echo home_url( '/product-category/snowboard' ); ?>">Snowboards</a>
+							<a href="<?php echo home_url( '/product-category/snowboard-equipment' ); ?>">Snowboard Equipment</a>
+							<a href="<?php echo home_url( '/product-category/snowboard-boot' ); ?>">Snowboard Boots</a>
+							<a href="<?php echo home_url( '/product-category/snowboard-binding' ); ?>">Snowboard Bindings</a>
 						</div> <!-- subnav-content end -->
 					</div> <!-- subnav end -->
 					<!-- apparel -->
@@ -66,10 +66,10 @@
 									d="M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569l9 13z" />
 							</svg></a>
 						<div class="subnav-content">
-							<a href="<?php echo home_url( '/catalog/?category=mens/' ); ?>">Mens</a>
-							<a href="<?php echo home_url( '/catalog/?category=womens/' ); ?>">Womens</a>
-							<a href="<?php echo home_url( '/catalog/?category=youth/' ); ?>">Youth</a>
-							<a href="<?php echo home_url( '/catalog/?category=accessories/' ); ?>">Accessories</a>
+							<a href="<?php echo home_url( '/product-category/mens' ); ?>">Mens</a>
+							<a href="<?php echo home_url( '/product-category/womens' ); ?>">Womens</a>
+							<a href="<?php echo home_url( '/product-category/youth' ); ?>">Youth</a>
+							<a href="<?php echo home_url( '/product-category/accessories' ); ?>">Accessories</a>
 						</div> <!-- subnav-content end -->
 					</div> <!-- subnav end -->
 					<!-- accessories -->
@@ -80,13 +80,13 @@
 									d="M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569l9 13z" />
 							</svg></a>
 						<div class="subnav-content">
-							<a href="<?php echo home_url( '/catalog/?category=bag/' ); ?>">Bags</a>
-							<a href="<?php echo home_url( '/catalog/?category=helmets/' ); ?>">Helmets</a>
-							<a href="<?php echo home_url( '/catalog/?category=goggles/' ); ?>">Goggles</a>
+							<a href="<?php echo home_url( '/product-category/bag' ); ?>">Bags</a>
+							<a href="<?php echo home_url( '/product-category/helmets' ); ?>">Helmets</a>
+							<a href="<?php echo home_url( '/product-category/goggles' ); ?>">Goggles</a>
 						</div> <!-- subnav-content end -->
 					</div> <!-- sub-nav end -->
-					<a href="services">Services</a>
-					<a href="rentals">Rentals</a>
+					<a href="https://pacesetter-a.web.dmitcapstone.ca/wordpress/services/">Services</a>
+					<a href="https://pacesetter-a.web.dmitcapstone.ca/wordpress/rentals/">Rentals</a>
 				</div>
 				<svg class="nav-btn" fill="none" viewBox="0 0 24 24">
 					<g stroke="#000" stroke-linecap="round" stroke-width="2">
@@ -110,10 +110,10 @@
 						</svg></a>
 					</div>
 					<div class="menu-subnav-content">
-						<a href="<?php echo home_url( '/catalog/?category=skis/' ); ?>">Skis</a>
-						<a href="<?php echo home_url( '/catalog/?category=ski equipment/' ); ?>">Ski Equipment</a>
-						<a href="<?php echo home_url( '/catalog/?category=x country binding/' ); ?>">Ski Bindings</a>
-						<a href="<?php echo home_url( '/catalog/?category=poles/' ); ?>">Poles</a>
+						<a href="<?php echo home_url( '/product-category/skis' ); ?>">Skis</a>
+						<a href="<?php echo home_url( '/product-category/ski-equipment' ); ?>">Ski Equipment</a>
+						<a href="<?php echo home_url( '/product-category/x-country-binding' ); ?>">Ski Bindings</a>
+						<a href="<?php echo home_url( '/product-category/poles' ); ?>">Poles</a>
 					</div> <!-- menu-subnav-content end -->
 				</div><!-- subnav end -->
 				<!-- snowboard -->
@@ -125,10 +125,10 @@
 					</svg></a>
 				</div>
 					<div class="menu-subnav-content2">
-						<a href="<?php echo home_url( '/catalog/?category=snowboard/' ); ?>">Snowboards</a>
-						<a href="<?php echo home_url( '/catalog/?category=snowboard equipment	/' ); ?>">Snowboard Equipment</a>
-						<a href="<?php echo home_url( '/catalog/?category=snowboard boots/' ); ?>">Snowboard Boots</a>
-						<a href="<?php echo home_url( '/catalog/?category=snowboard binding/' ); ?>">Snowboard Bindings</a>
+						<a href="<?php echo home_url( '/product-category/snowboard' ); ?>">Snowboards</a>
+						<a href="<?php echo home_url( '/product-category/snowboard-equipment' ); ?>">Snowboard Equipment</a>
+						<a href="<?php echo home_url( '/product-category/snowboard-boot' ); ?>">Snowboard Boots</a>
+						<a href="<?php echo home_url( '/product-category/snowboard-binding' ); ?>">Snowboard Bindings</a>
 					</div> <!-- menu-subnav-content end -->
 				</div> <!-- subnav end -->
 				<!-- apparel -->
@@ -140,10 +140,10 @@
 						</svg></a>
 					</div>
 					<div class="menu-subnav-content3">
-						<a href="#">Mens</a>
-						<a href="#">Womens</a>
-						<a href="#">Kids</a>
-						<a href="#">Accessories</a>
+						<a href="<?php echo home_url( '/product-category/mens' ); ?>">Mens</a>
+						<a href="<?php echo home_url( '/product-category/womens' ); ?>">Womens</a>
+						<a href="<?php echo home_url( '/product-category/youth' ); ?>">Youth</a>
+						<a href="<?php echo home_url( '/product-category/accessories' ); ?>">Accessories</a>
 					</div> <!-- menu-subnav-content end -->
 				</div> <!-- subnav end -->
 				<!-- accessories -->
@@ -155,18 +155,18 @@
 						</svg></a>
 					</div>
 					<div class="menu-subnav-content4">
-						<a href="#">Bags</a>
-						<a href="#">Helmets</a>
-						<a href="#">Goggles</a>
+						<a href="<?php echo home_url( '/product-category/bag' ); ?>">Bags</a>
+						<a href="<?php echo home_url( '/product-category/helmets' ); ?>">Helmets</a>
+						<a href="<?php echo home_url( '/product-category/goggles' ); ?>">Goggles</a>
 					</div> <!-- menu-subnav-content end -->
 				</div> <!-- sub-nav end -->
 				<div class="menu-nosub">
-					<a class="link" href="events">Events</a>
-					<a class="link" href="contact">Contact Us</a>
-					<a class="link" href="about-us">About Us</a>
-					<a class="link" href="rentals">Rentals</a>
-					<a class="link" href="info">FAQ</a>
-					<a class="link" href="services">Services</a>
+					<a class="link" href="https://pacesetter-a.web.dmitcapstone.ca/wordpress/events/">Events</a>
+					<a class="link" href="https://pacesetter-a.web.dmitcapstone.ca/wordpress/contact/">Contact Us</a>
+					<a class="link" href="https://pacesetter-a.web.dmitcapstone.ca/wordpress/about-us/">About Us</a>
+					<a class="link" href="https://pacesetter-a.web.dmitcapstone.ca/wordpress/rentals/">Rentals</a>
+					<a class="link" href="https://pacesetter-a.web.dmitcapstone.ca/wordpress/info/">FAQ</a>
+					<a class="link" href="https://pacesetter-a.web.dmitcapstone.ca/wordpress/services/">Services</a>
 				</div>
 			</nav>
 		</div> <!-- menu end -->
