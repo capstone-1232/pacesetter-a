@@ -250,26 +250,11 @@ header .rotate180 {
   padding: 0 1.875rem;
   color: #fff;
 }
-.home .hero-banner p h2 {
-  padding: 3rem 1.875rem 1rem 1.875rem;
-  font-size: 2.5rem;
-  text-transform: uppercase;
-  color: #fff;
-  margin: 0;
-}
-.home .hero-banner p .hero-banner {
-  width: 100%;
-  height: 500px;
-}
-.home .hero-banner p .hero-banner p {
-  padding: 0 1.875rem;
-  color: #fff;
-}
-.home .hero-banner p .featured-products {
+.home .featured-products {
   text-align: center;
   padding: 3rem 1.875rem;
 }
-.home .hero-banner p .featured-products .featured-card {
+.home .featured-products .featured-card {
   text-align: center;
   background-color: #ffffff;
   border-radius: 5px;
@@ -279,64 +264,26 @@ header .rotate180 {
   filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
   margin: 2rem auto;
 }
-.home .hero-banner p .featured-products .featured-card img {
+.home .featured-products .featured-card img {
   object-fit: cover;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   width: 240px !important;
   height: 240px !important;
 }
-.home .hero-banner p .featured-products p {
+.home .featured-products p {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
 }
-.home .hero-banner p .featured-products .featured-title {
+.home .featured-products .featured-title {
   margin: 0;
   padding: 1rem;
 }
-.home .hero-banner p .featured-products .featured-price {
+.home .featured-products .featured-price {
   margin: 0;
   padding: 0 1rem 1rem 1rem;
 }
-.home .hero-banner p .top-images-slider img {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-}
-.home .hero-banner .featured-products {
-  text-align: center;
-  padding: 3rem 1.875rem;
-}
-.home .hero-banner .featured-products .featured-card {
-  text-align: center;
-  background-color: #ffffff;
-  border-radius: 5px;
-  padding-bottom: 1rem;
-  margin-bottom: 2rem;
-  width: 240px;
-  filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
-  margin: 2rem auto;
-}
-.home .hero-banner .featured-products .featured-card img {
-  object-fit: cover;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  width: 240px !important;
-  height: 240px !important;
-}
-.home .hero-banner .featured-products p {
-  font-family: "Josefin Sans", sans-serif;
-  font-weight: 400;
-}
-.home .hero-banner .featured-products .featured-title {
-  margin: 0;
-  padding: 1rem;
-}
-.home .hero-banner .featured-products .featured-price {
-  margin: 0;
-  padding: 0 1rem 1rem 1rem;
-}
-.home .hero-banner .top-images-slider img {
+.home .top-images-slider img {
   width: 100%;
   height: 400px;
   object-fit: cover;

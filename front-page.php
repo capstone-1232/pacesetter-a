@@ -16,6 +16,7 @@
     <!-- banner plugin location -->
     <div class="home">
         <div class="hero-banners">
+            <p>aaaaaaaaaaa</p>
         <?php
             $args = array(
                 'post_type' => 'front-banner',
@@ -31,8 +32,6 @@
                     the_title();
                 echo '</h2>';
                 echo '<p>' . the_content() . '</p>';
-                echo the_field( 'url', get_queried_object_id() );
-                echo get_field( 'url', get_queried_object_id() );
                 echo '</div>';
             endwhile; 
             echo '</div>';
@@ -66,7 +65,7 @@
 
         <!-- top brands -->
         <div class="top-brands">
-            <h2>Shop Top Brands</h2>
+            <h1>Shop Top Brands</h1>
             <ul class="slider">
                 <li class="slider-item"><img src="https://picsum.photos/200"></li>
                 <li class="slider-item"><img src="https://picsum.photos/200"></li>
