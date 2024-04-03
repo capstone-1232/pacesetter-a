@@ -276,6 +276,9 @@ header .rotate180 {
   margin: 0;
   padding: 0 1rem 1rem 1rem;
 }
+.home img {
+  width: 100%;
+}
 
 .content-area nav {
   margin: 1rem 0;

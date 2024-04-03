@@ -13,14 +13,14 @@
                 </div>
                 <div class="footer-nav">
                     <ul>
-                        <li><a href="services">Services</a></li>
-                        <li><a href="rentals">Rentals</a></li>
-                        <li><a href="events">Events</a></li>
+                        <li><a href="https://pacesetter-a.web.dmitcapstone.ca/wordpress/services/">Services</a></li>
+                        <li><a href="https://pacesetter-a.web.dmitcapstone.ca/wordpress/rentals/">Rentals</a></li>
+                        <li><a href="https://pacesetter-a.web.dmitcapstone.ca/wordpress/events/">Events</a></li>
                     </ul>
                     <ul>
-                        <li><a href="info">F.A.Q.</a></li>
-                        <li><a href="contact">Contact Us</a></li>
-                        <li><a href="about-us">About Us</a></li>
+                        <li><a href="https://pacesetter-a.web.dmitcapstone.ca/wordpress/info/">F.A.Q.</a></li>
+                        <li><a href="https://pacesetter-a.web.dmitcapstone.ca/wordpress/contact/">Contact Us</a></li>
+                        <li><a href="https://pacesetter-a.web.dmitcapstone.ca/wordpress/about-us/">About Us</a></li>
                     </ul> <!-- footer-nav end -->
                 </div>
 
@@ -76,7 +76,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script>
-    $(function(){
     $('.slider').slick({
         autoplay: true,
         autoplaySpeed: 0,
@@ -94,6 +93,12 @@
         }
         ]
     });
+    $('.top-images-slider').slick({
+        autoplay: true,
+        autoplaySpeed: 3000,
+        dots: true,
+        arrows:true,
+        infinite: true,
     });
     </script>
 </footer>
