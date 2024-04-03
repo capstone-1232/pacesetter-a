@@ -11,7 +11,7 @@
 	<link
 		href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
 		rel="stylesheet">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.min.css">
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/slick-theme.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
 	<link rel="icon" type="image/png" href="/favicon.png" />
 	<script src="<?php echo get_template_directory_uri(); ?>/js/functions.js"></script>
