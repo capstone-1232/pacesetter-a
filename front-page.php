@@ -15,7 +15,7 @@
  <main>
     <!-- banner plugin location -->
     <div class="home">
-        <div class="hero-banner">
+        <div class="hero-banners">
         <?php
             $args = array(
                 'post_type' => 'front-banner',

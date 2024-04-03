@@ -301,6 +301,70 @@ body {
         p {
             padding: 0 1.875rem;
             color: #fff;
+
+        h2 {
+            padding: 3rem 1.875rem 1rem 1.875rem;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            color: #fff;
+            margin: 0;
+        }
+
+        .hero-banner {
+            width: 100%;
+            height: 500px;
+
+            p {
+                padding: 0 1.875rem;
+                color: #fff;
+            }
+        }
+
+        .featured-products {
+            text-align: center;
+            padding: 3rem 1.875rem;
+
+            .featured-card {
+                text-align: center;
+                background-color: #ffffff;
+                border-radius: 5px;
+                padding-bottom: 1rem;
+                margin-bottom: 2rem;
+                width: 240px;
+                filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+                margin: 2rem auto;
+
+                img {
+                    object-fit: cover;
+                    border-top-left-radius: 5px;
+                    border-top-right-radius: 5px;
+                    width: 240px !important;
+                    height: 240px !important;
+                }
+            }
+
+            p {
+                font-family: "Josefin Sans", sans-serif;
+                font-weight: 400;
+            }
+
+            .featured-title {
+                margin: 0;
+                padding: 1rem;
+            }
+
+            .featured-price {
+                margin: 0;
+                padding: 0 1rem 1rem 1rem;
+            }
+        }
+
+        .top-images-slider {
+            img {
+                width: 100%;
+                height: 400px;
+                object-fit: cover;
+            }
         }
     }
 
@@ -350,7 +414,7 @@ body {
             object-fit: cover;
         }
     }
-}
+}}
 
 // -----------------------------------------------------------------  ABOUT PAGE -----------------------------------------------------------------
 
