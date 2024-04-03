@@ -1,8 +1,4 @@
 
-var modal = document.getElementsByClassName("emaillist");
-
-var span = document.getElementsByClassName("sucess")[0];
-
 document.addEventListener('DOMContentLoaded', function() {
   const navBtn = document.querySelector('.nav-btn');
   const menu = document.querySelector('.menu');
@@ -16,6 +12,22 @@ document.addEventListener('DOMContentLoaded', function() {
   const menuContent4 = document.querySelector('.menu-subnav-content4');
   const links = document.querySelectorAll('.flex-arrow a');
   const svgs = document.querySelectorAll('.menu-subnav svg');
+
+function checkSubscriptionStatus() {
+  var subscriptionMessage = document.querySelector('.es_subscription_message');
+  if (subscriptionMessage && subscriptionMessage.classList.contains('success')) {
+      showModal();
+  }
+}
+
+function showModal() {
+  console.log("Modal shown");
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  checkSubscriptionStatus();
+});
+
 
   // svg arrow turn
 links.forEach((link, index) => {
