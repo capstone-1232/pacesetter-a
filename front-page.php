@@ -15,8 +15,30 @@
  <main>
     <!-- banner plugin location -->
     <div class="home">
-        <div class="hero-banner">
+        <div class="hero-banners">
+        <?php
+            $args = array(
+                'post_type' => 'front-banner',
+                'post_per_page' => 1
+            );
 
+            $loop = new WP_Query($args); 
+
+            echo '<div class="hero-banner-slider">';
+            while ($loop->have_posts()): $loop->the_post();
+                echo '<div class="hero-banner" style="background-image: url(' . get_the_post_thumbnail_url( get_the_ID(), "large" ) . '")>';
+                echo '<h2>';
+                    the_title();
+                echo '</h2>';
+                echo '<p>' . the_content() . '</p>';
+                echo the_field( 'url', get_queried_object_id() );
+                echo get_field( 'url', get_queried_object_id() );
+                echo '</div>';
+            endwhile; 
+            echo '</div>';
+
+            wp_reset_postdata();
+        ?>
         </div>
 
         <!-- featured -->
