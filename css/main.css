@@ -236,12 +236,19 @@ header .rotate180 {
   padding: 1.3rem 1.875rem 1rem 1.875rem;
 }
 .home h2 {
-  padding: 1.3rem 1.875rem 1rem 1.875rem;
-  text-align: center;
+  padding: 3rem 1.875rem 1rem 1.875rem;
   font-size: 2.5rem;
-  background-color: #72A8D5;
   text-transform: uppercase;
+  color: #fff;
   margin: 0;
+}
+.home .hero-banner {
+  width: 100%;
+  height: 500px;
+}
+.home .hero-banner p {
+  padding: 0 1.875rem;
+  color: #fff;
 }
 .home .featured-products {
   text-align: center;
@@ -276,9 +283,10 @@ header .rotate180 {
   margin: 0;
   padding: 0 1rem 1rem 1rem;
 }
-.home img {
+.home .top-images-slider img {
   width: 100%;
-  height: 200px;
+  height: 400px;
+  object-fit: cover;
 }
 
 .about-image {
