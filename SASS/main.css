@@ -147,6 +147,7 @@ header .menu {
   transform: scaleY(0);
   transform-origin: top;
   transition: transform 300ms;
+  height: -moz-max-content;
   height: max-content;
   margin-top: 117.2px;
   width: 100vw;
@@ -236,19 +237,12 @@ header .rotate180 {
   padding: 1.3rem 1.875rem 1rem 1.875rem;
 }
 .home h2 {
-  padding: 3rem 1.875rem 1rem 1.875rem;
+  padding: 1.3rem 1.875rem 1rem 1.875rem;
+  text-align: center;
   font-size: 2.5rem;
+  background-color: #72A8D5;
   text-transform: uppercase;
-  color: #fff;
   margin: 0;
-}
-.home .hero-banner {
-  width: 100%;
-  height: 500px;
-}
-.home .hero-banner p {
-  padding: 0 1.875rem;
-  color: #fff;
 }
 .home .featured-products {
   text-align: center;
@@ -265,7 +259,8 @@ header .rotate180 {
   margin: 2rem auto;
 }
 .home .featured-products .featured-card img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   width: 240px !important;
@@ -283,14 +278,14 @@ header .rotate180 {
   margin: 0;
   padding: 0 1rem 1rem 1rem;
 }
-.home .top-images-slider img {
+.home img {
   width: 100%;
-  height: 400px;
-  object-fit: cover;
+  height: 200px;
 }
 
 .about-image {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 20rem;
   width: 100%;
 }
@@ -656,7 +651,8 @@ h3 {
   height: 100%;
 }
 .event-section .event-card-list .attachment-post-thumbnail {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
   height: 20rem;
   border-top-right-radius: 5px;
@@ -721,7 +717,8 @@ h3 {
   position: relative;
   width: 100%;
   height: 45rem;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   filter: brightness(50%);
 }
 
