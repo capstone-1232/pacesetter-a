@@ -405,9 +405,9 @@ body {
         }
     }
 
-    // .variations, .variations_button, .woocommerce-tabs a, .cart {
-    //     display: none;
-    // }
+    .variations, .variations_button, .woocommerce-tabs a, .cart, .wc-tabs a {
+        display: none;
+    }
 }
 
 // -----------------------------------------------------------------  ABOUT PAGE -----------------------------------------------------------------
@@ -1106,7 +1106,7 @@ footer {
                 padding: 0 6rem;
             }
 
-            .woocommerce-product-gallery .wp-post-image {
+            .woocommerce-product-gallery, .wp-post-image {
                 width: 528px;
             }
 
@@ -1408,6 +1408,40 @@ footer {
     }
 
 }
+
+        // ----------------------------------------------------------------- SINGLE PAGE -----------------------------------------------------------------
+
+        .content-area {
+
+            nav {
+                padding: 0 12rem;
+            }
+
+            .summary, .woocommerce-tabs {
+                padding: 0 12rem;
+            }
+
+            .summary {
+                display: grid;
+                grid-template-columns: repeat(2, auto);
+            }
+
+            .woocommerce-product-gallery {
+                grid-row: 1;
+                grid-column: 1;
+                width: 100%;
+            }
+
+            .product_title {
+                grid-row: 1;
+                grid-column: 2;
+            }
+
+            .price {
+                grid-row: 1;
+                grid-column: 2;
+            }
+        }
 
         // -----------------------------------------------------------------  ABOUT PAGE -----------------------------------------------------------------
 
@@ -1973,6 +2007,19 @@ footer {
                     font-size: 1.8rem;
                  }
                }
+            }
+        }
+
+        // ----------------------------------------------------------------- SINGLE PAGE -----------------------------------------------------------------
+
+        .content-area {
+
+            nav {
+                padding: 0 20rem;
+            }
+
+            .summary, .woocommerce-tabs {
+                padding: 0 20rem;
             }
         }
 
