@@ -81,7 +81,7 @@
         autoplaySpeed: 0,
         speed: 4000,
         cssEase: "linear",
-        slidesToShow: 3,
+        slidesToShow: 7,
         swipe: false,
         arrows: false,
         responsive: [
