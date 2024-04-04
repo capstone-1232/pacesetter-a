@@ -112,3 +112,10 @@ remove_action( 'woocommerce_before_single_product_summary', 'woocommerce_show_pr
 add_action( 'woocommerce_single_product_summary', 'woocommerce_show_product_images', 7 );
 
 add_action( 'woocommerce_after_single_product_summary', 'woocommerce_show_product_thumbnails', 20 ); 
+
+// shop page
+// breadcrumb move
+remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20 );
+add_action( 'woocommerce_archive_description', 'woocommerce_breadcrumb', 5 );
+// remove add to cart
+remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10 );
