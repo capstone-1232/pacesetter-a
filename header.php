@@ -40,7 +40,7 @@
 						<div class="subnav-content">
 							<a href="<?php echo home_url( '/product-category/skis' ); ?>">Skis</a>
 							<a href="<?php echo home_url( '/product-category/ski-equipment' ); ?>">Ski Equipment</a>
-							<a href="<?php echo home_url( '/product-category/x-country-binding' ); ?>">Ski Bindings</a>
+							<a href="<?php echo home_url( '/product-category/binding' ); ?>">Ski Bindings</a>
 							<a href="<?php echo home_url( '/product-category/poles' ); ?>">Poles</a>
 						</div> <!-- subnav-content end -->
 					</div><!-- subnav end -->
@@ -54,7 +54,7 @@
 						<div class="subnav-content">
 							<a href="<?php echo home_url( '/product-category/snowboard' ); ?>">Snowboards</a>
 							<a href="<?php echo home_url( '/product-category/snowboard-equipment' ); ?>">Snowboard Equipment</a>
-							<a href="<?php echo home_url( '/product-category/snowboard-boot' ); ?>">Snowboard Boots</a>
+							<a href="<?php echo home_url( '/product-category/snowboard-boots' ); ?>">Snowboard Boots</a>
 							<a href="<?php echo home_url( '/product-category/snowboard-binding' ); ?>">Snowboard Bindings</a>
 						</div> <!-- subnav-content end -->
 					</div> <!-- subnav end -->
@@ -127,7 +127,7 @@
 					<div class="menu-subnav-content2">
 						<a href="<?php echo home_url( '/product-category/snowboard' ); ?>">Snowboards</a>
 						<a href="<?php echo home_url( '/product-category/snowboard-equipment' ); ?>">Snowboard Equipment</a>
-						<a href="<?php echo home_url( '/product-category/snowboard-boot' ); ?>">Snowboard Boots</a>
+						<a href="<?php echo home_url( '/product-category/snowboard-boots' ); ?>">Snowboard Boots</a>
 						<a href="<?php echo home_url( '/product-category/snowboard-binding' ); ?>">Snowboard Bindings</a>
 					</div> <!-- menu-subnav-content end -->
 				</div> <!-- subnav end -->

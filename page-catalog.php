@@ -12,7 +12,7 @@ $filter_category_clean = str_replace( array( '/', '-' ), array( '', ' ' ), $filt
 ?>
 
 <div>
-    <h1><?php echo $filter_category_clean ?></h1>
+    <h1>Catalog</h1>
     <div class="filter-items">
         <div class="subnav">
             <p>Filter:</p>
