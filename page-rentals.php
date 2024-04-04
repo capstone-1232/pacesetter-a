@@ -9,6 +9,12 @@
 /**
  */
 
+//Banner
+
+$banner = get_field( "banner_image", 484);
+$banner_size = $banner['sizes']['large'];
+$banner_alt = $banner['alt'];
+
 //  skiing rental ACF
 $ski_header = get_field( "rental_header", 161 );
 $ski_rental = get_field( "rental", 161 );
@@ -87,6 +93,10 @@ $demo_info_two = get_field( "info", 306);
 ?>
 
 <!-- rentals -->
+<div class="banner">
+    <img class="about-image" src="<?php echo $banner_size ?>" alt="<?php echo $banner_alt ?>">
+</div>
+
 <h1>Rentals</h1>
 
 <!-- <section class="rentals-padding"> -->

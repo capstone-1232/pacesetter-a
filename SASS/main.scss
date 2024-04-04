@@ -282,62 +282,146 @@ body {
 // -----------------------------------------------------------------  HOME PAGE -----------------------------------------------------------------
  
 .home {
-        h1 {
-            padding: 1.3rem 1.875rem 1rem 1.875rem;
-        }
+    h1 {
+        padding: 1.3rem 1.875rem 1rem 1.875rem;
+    }
 
-        h2 {
-            padding: 1.3rem 1.875rem 1rem 1.875rem;
-            text-align: center;
-            font-size: 2.5rem;
-            background-color: #72A8D5;
-            text-transform: uppercase;
-            margin: 0;
-        }
+    h2 {
+        padding: 3rem 1.875rem 1rem 1.875rem;
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        color: #fff;
+        margin: 0;
+    }
 
-        .featured-products {
-            text-align: center;
-            padding: 3rem 1.875rem;
+    .hero-banner {
+        width: 100%;
+        height: 500px;
 
-            .featured-card {
-                text-align: center;
-                background-color: #ffffff;
-                border-radius: 5px;
-                padding-bottom: 1rem;
-                margin-bottom: 2rem;
-                width: 240px;
-                filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
-                margin: 2rem auto;
-
-                img {
-                    object-fit: cover;
-                    border-top-left-radius: 5px;
-                    border-top-right-radius: 5px;
-                    width: 240px !important;
-                    height: 240px !important;
-                }
-            }
-
-            p {
-                font-family: "Josefin Sans", sans-serif;
-                font-weight: 400;
-            }
-
-            .featured-title {
-                margin: 0;
-                padding: 1rem;
-            }
-
-            .featured-price {
-                margin: 0;
-                padding: 0 1rem 1rem 1rem;
-            }
-        }
-
-        img {
-            width: 100%;
+        p {
+            padding: 0 1.875rem;
+            color: #fff;
         }
     }
+
+    .featured-products {
+        text-align: center;
+        padding: 3rem 1.875rem;
+
+        .featured-card {
+            text-align: center;
+            background-color: #ffffff;
+            border-radius: 5px;
+            padding-bottom: 1rem;
+            margin-bottom: 2rem;
+            width: 240px;
+            filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+            margin: 2rem auto;
+
+            img {
+                object-fit: cover;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                width: 240px !important;
+                height: 240px !important;
+            }
+        }
+
+        p {
+            font-family: "Josefin Sans", sans-serif;
+            font-weight: 400;
+        }
+
+        .featured-title {
+            margin: 0;
+            padding: 1rem;
+        }
+
+        .featured-price {
+            margin: 0;
+            padding: 0 1rem 1rem 1rem;
+        }
+    }
+
+    .top-images-slider {
+        img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+    }
+}
+
+// -----------------------------------------------------------------  CATALOGUE PAGE -----------------------------------------------------------------
+
+// -----------------------------------------------------------------  SINGLE PAGE -----------------------------------------------------------------
+
+.content-area {
+
+    nav {
+        margin: 1rem 0;
+        padding: 0 1.875rem;
+    }
+
+    h2  {
+        font-size: 1.25rem;
+        margin-top: 3rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .wp-post-image {
+        width: 100%;
+        height: 100%;
+    }
+
+    .woocommerce-product-gallery {
+        opacity: 1 !important;
+    }
+
+    .summary, .woocommerce-tabs {
+        padding: 0 1.875rem;
+    }
+
+    .price {
+        font-size: 1.25rem;
+        font-family: "Josefin Sans", sans-serif;
+    }
+
+    .product_title {
+        background-color: unset;
+        font-size: 1.5rem;
+        padding-top: 0;
+        text-transform: unset;
+        text-align: left;
+    }
+
+    .woocommerce-product-attributes {
+        margin-bottom: 3rem;
+    }
+
+    .woocommerce-product-attributes-item {
+        background-color: unset;
+        display: unset;
+
+        th {
+            font-family: "Playfair Display", serif;
+            font-size: 1rem;
+        }
+
+        td {
+            font-family: "Playfair Display", serif;
+            padding-bottom: 1rem;
+            font-size: 1.25rem;
+        }
+    }
+
+    .variations, .variations_button, .woocommerce-tabs a, .cart, .wc-tabs a {
+        display: none;
+    }
+}
 
 // -----------------------------------------------------------------  ABOUT PAGE -----------------------------------------------------------------
 
@@ -1027,6 +1111,24 @@ footer {
             grid-template-columns: repeat(2, 1fr);
         }
 
+        // -----------------------------------------------------------------  SINGLE PAGE -----------------------------------------------------------------
+
+        .content-area {
+
+            nav {
+                padding: 0 6rem;
+            }
+
+            .woocommerce-product-gallery, .wp-post-image {
+                width: 528px;
+            }
+
+            .summary, .woocommerce-tabs {
+                padding: 0 6rem;
+            }
+        }
+
+
         // -----------------------------------------------------------------  ABOUT PAGE -----------------------------------------------------------------
 
         .history,
@@ -1319,6 +1421,40 @@ footer {
     }
 
 }
+
+        // ----------------------------------------------------------------- SINGLE PAGE -----------------------------------------------------------------
+
+        .content-area {
+
+            nav {
+                padding: 0 12rem;
+            }
+
+            .summary, .woocommerce-tabs {
+                padding: 0 12rem;
+            }
+
+            .summary {
+                display: grid;
+                grid-template-columns: repeat(2, auto);
+            }
+
+            .woocommerce-product-gallery {
+                grid-row: 1;
+                grid-column: 1;
+                width: 100%;
+            }
+
+            .product_title {
+                grid-row: 1;
+                grid-column: 2;
+            }
+
+            .price {
+                grid-row: 1;
+                grid-column: 2;
+            }
+        }
 
         // -----------------------------------------------------------------  ABOUT PAGE -----------------------------------------------------------------
 
@@ -1884,6 +2020,19 @@ footer {
                     font-size: 1.8rem;
                  }
                }
+            }
+        }
+
+        // ----------------------------------------------------------------- SINGLE PAGE -----------------------------------------------------------------
+
+        .content-area {
+
+            nav {
+                padding: 0 20rem;
+            }
+
+            .summary, .woocommerce-tabs {
+                padding: 0 20rem;
             }
         }
 
