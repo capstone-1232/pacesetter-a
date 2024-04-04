@@ -9,6 +9,11 @@
 /**
  */
 
+//  Banner
+$banner = get_field( "banner_image", 481);
+$banner_size = $banner['sizes']['large'];
+$banner_alt = $banner['alt'];
+
 //  full tune ACF
  $full_tune_type = get_field( "type_of_tune", 137 );
  $full_tune_description = get_field( "tune_description", 137 );
@@ -78,6 +83,11 @@ $labor_snowboard = get_field( "snowboard_tune_price", 151 );
  get_header();
 
  ?>
+
+<div class="banner">
+    <img class="about-image" src="<?php echo $banner_size ?>" alt="<?php echo $banner_alt ?>">
+</div>
+
 <h1>Services</h1>
 
 <div class="services-desc">   
