@@ -13,7 +13,7 @@
  ?>
 
  <main>
-    <!-- banner plugin location -->
+    <!-- hero banner -->
     <div class="home">
         <div class="hero-banners">
         <?php
@@ -54,7 +54,7 @@
 
                 while ( $loop->have_posts() ) : $loop->the_post();
                     global $product;
-                    echo '<div class="featured-card">' . woocommerce_get_product_thumbnail() . '<p class="featured-title">' . get_the_title() . '</p> <p class="featured-price">' . wc_get_price_to_display( $product, array( 'price' => $product->get_price() ) ) . '</p> </div>';
+                    echo '<div class="featured-card">' . woocommerce_get_product_thumbnail() . '<p class="featured-title">' . get_the_title() . '</p> <p class="featured-price">$CA ' . wc_get_price_to_display( $product, array( 'price' => $product->get_price() ) ) . '</p> </div>';
                 endwhile;
 
                 wp_reset_query();
@@ -65,12 +65,20 @@
         <!-- top brands -->
         <div class="top-brands">
             <h1>Shop Top Brands</h1>
-            <ul class="slider">
-                <li class="slider-item"><img src="https://picsum.photos/200"></li>
-                <li class="slider-item"><img src="https://picsum.photos/200"></li>
-                <li class="slider-item"><img src="https://picsum.photos/200"></li>
-                <li class="slider-item"><img src="https://picsum.photos/200"></li>
-            </ul>
+            <?php
+                $args = array(
+                    'post_type' => 'brand', 
+                    'post_per_page' => 4
+                );
+
+                $loop = new WP_Query($args); 
+
+                echo '<ul class="brands-slider">';
+                while ($loop->have_posts()): $loop->the_post();
+                    echo '<li class="slider-item">' . the_post_thumbnail() . '</li>';
+                endwhile; 
+                echo '</ul>';
+            ?>
         </div>
 
         <!-- image slider -->
