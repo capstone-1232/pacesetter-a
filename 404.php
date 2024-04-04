@@ -9,7 +9,7 @@ $error_img_size = $error_img['sizes']['large'];
 $error_img_alt = $error_img['alt'];
 ?>
 
-<div id="primary" class="content-area">
+<div id="primary" class="error-area">
 		<div id="content" class="site-content" role="main">
 				<h1 class="page-title"><?php _e( '404 - Not Found', 'pacesetter' ); ?></h1>
 
