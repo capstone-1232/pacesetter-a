@@ -68,7 +68,7 @@
             <?php
                 $args = array(
                     'post_type' => 'brand', 
-                    'post_per_page' => 4
+                    'post_per_page' => 3
                 );
 
                 $loop = new WP_Query($args); 
@@ -86,7 +86,9 @@
         <?php
             $args = array(
                 'post_type' => 'top-images', 
-                'post_per_page' => 1
+                'post_per_page' => 1,
+                'orderby' => 'date',
+                'order' => 'ASC'
             );
 
             $loop = new WP_Query($args); 
