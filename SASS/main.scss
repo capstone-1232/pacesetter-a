@@ -343,6 +343,11 @@ body {
         }
     }
 
+    .brands-slider {
+        background-color: #fff;
+        padding: 2rem 0;
+    }
+
     .top-images-slider {
         img {
             width: 100%;
@@ -353,6 +358,44 @@ body {
 }
 
 // -----------------------------------------------------------------  CATALOGUE PAGE -----------------------------------------------------------------
+
+.content-area {
+    .products, .woocommerce-ordering, .woocommerce-result-count {
+        padding: 0 1.875rem;
+    }
+
+    .products h2, .products .price {
+        padding: 0 1rem;
+        color: black;
+
+    }
+
+    .products {
+
+        .product {
+            background-color: #ffffff;
+            border-radius: 5px;
+            text-align: center;
+            padding: 0 0 1rem 0;
+            width: 240px;
+            filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+            margin: 2rem auto;
+
+            .woocommerce-LoopProduct-link {
+                h2 {
+                    margin-top: 1rem;
+                }
+            }
+        }
+
+        img {
+            width: 100%;
+            object-fit: cover;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+    }
+}
 
 // -----------------------------------------------------------------  SINGLE PAGE -----------------------------------------------------------------
 
@@ -1111,6 +1154,19 @@ footer {
             grid-template-columns: repeat(2, 1fr);
         }
 
+        // -----------------------------------------------------------------  CATALOGUE PAGE -----------------------------------------------------------------
+
+        .content-area {
+            .products, .woocommerce-ordering, .woocommerce-result-count {
+                padding: 0 6rem;
+            }
+
+            .products {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
         // -----------------------------------------------------------------  SINGLE PAGE -----------------------------------------------------------------
 
         .content-area {
@@ -1421,6 +1477,15 @@ footer {
     }
 
 }
+
+        // -----------------------------------------------------------------  CATALOGUE PAGE -----------------------------------------------------------------
+
+        .content-area {
+            .products, .woocommerce-ordering, .woocommerce-result-count {
+                padding: 0 12rem;
+            }
+        }
+
 
         // ----------------------------------------------------------------- SINGLE PAGE -----------------------------------------------------------------
 
@@ -1902,6 +1967,19 @@ footer {
             }
         }
 
+          // -----------------------------------------------------------------  CATALOGUE PAGE -----------------------------------------------------------------
+
+          .content-area {
+            .products, .woocommerce-ordering, .woocommerce-result-count {
+                padding: 0 12rem;
+            }
+
+            .products {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
         // -----------------------------------------------------------------  ABOUT PAGE -----------------------------------------------------------------
 
         .first-block {
@@ -2020,6 +2098,14 @@ footer {
                     font-size: 1.8rem;
                  }
                }
+            }
+        }
+
+        // -----------------------------------------------------------------  CATALOGUE PAGE -----------------------------------------------------------------
+
+        .content-area {
+            .products, .woocommerce-ordering, .woocommerce-result-count {
+                padding: 0 20rem;
             }
         }
 
