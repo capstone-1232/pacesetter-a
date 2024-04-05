@@ -13,7 +13,7 @@
  ?>
 
  <main>
-    <!-- banner plugin location -->
+    <!-- hero banner -->
     <div class="home">
         <div class="hero-banners">
         <?php
@@ -74,12 +74,20 @@
         <!-- top brands -->
         <div class="top-brands">
             <h1>Shop Top Brands</h1>
-            <ul class="slider">
-                <li class="slider-item"><img src="https://picsum.photos/200"></li>
-                <li class="slider-item"><img src="https://picsum.photos/200"></li>
-                <li class="slider-item"><img src="https://picsum.photos/200"></li>
-                <li class="slider-item"><img src="https://picsum.photos/200"></li>
-            </ul>
+            <?php
+                $args = array(
+                    'post_type' => 'brand', 
+                    'post_per_page' => 3
+                );
+
+                $loop = new WP_Query($args); 
+
+                echo '<ul class="brands-slider">';
+                while ($loop->have_posts()): $loop->the_post();
+                    echo '<li class="slider-item">' . the_post_thumbnail() . '</li>';
+                endwhile; 
+                echo '</ul>';
+            ?>
         </div>
 
         <!-- image slider -->
@@ -87,7 +95,9 @@
         <?php
             $args = array(
                 'post_type' => 'top-images', 
-                'post_per_page' => 1
+                'post_per_page' => 1,
+                'orderby' => 'date',
+                'order' => 'ASC'
             );
 
             $loop = new WP_Query($args); 
