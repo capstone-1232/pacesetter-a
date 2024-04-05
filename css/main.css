@@ -283,6 +283,10 @@ header .rotate180 {
   margin: 0;
   padding: 0 1rem 1rem 1rem;
 }
+.home .brands-slider {
+  background-color: #fff;
+  padding: 2rem 0;
+}
 .home .top-images-slider img {
   width: 100%;
   height: 400px;
@@ -1606,4 +1610,4 @@ footer .footer-info p {
   header .custom-logo-link img {
     width: 12rem;
   }
-}
+}/*# sourceMappingURL=main.css.map */
