@@ -341,6 +341,35 @@ body {
 
 // -----------------------------------------------------------------  CATALOGUE PAGE -----------------------------------------------------------------
 
+.content-area {
+    .products, .woocommerce-ordering, .woocommerce-result-count {
+        padding: 0 1.875rem;
+    }
+
+    .products h2, .products .price {
+        padding: 0 1rem;
+        color: black;
+
+    }
+
+    .products {
+
+        .product {
+            background-color: #ffffff;
+            margin: 2rem 0;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        img {
+            width: 100%;
+            object-fit: cover;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+    }
+}
+
 // -----------------------------------------------------------------  SINGLE PAGE -----------------------------------------------------------------
 
 .content-area {
