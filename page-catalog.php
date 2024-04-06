@@ -13,6 +13,8 @@ $filter_category_clean = str_replace( array( '/', '-' ), array( '', ' ' ), $filt
 
 <div>
     <h1>Catalog</h1>
+    <?php get_template_part( 'searchform' ); ?>
+
     <div class="filter-items">
         <div class="subnav">
             <p>Filter:</p>

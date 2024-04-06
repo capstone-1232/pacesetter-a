@@ -91,6 +91,16 @@ function remove_reviews_tab( $tabs ) {
     return $tabs;
 }
 
+add_filter('woocommerce_default_catalog_orderby', 'modify_woocommerce_default_catalog_orderby');
+
+function modify_woocommerce_default_catalog_orderby( $orderby ) {
+    if( empty( $orderby ) ) {
+        return 'price-desc';
+    }
+
+    return $orderby;
+}
+
 // remove related products
 remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
 
@@ -120,6 +130,27 @@ add_action( 'woocommerce_archive_description', 'woocommerce_breadcrumb', 5 );
 // remove add to cart
 remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10 );
 
+add_action( 'storefront_footer', 'bbloomer_add_search_to_footer' );
+  
+// Function to add search form to the shop page
+function bbloomer_add_search_to_shop_page() {
+    get_search_form(); // Display search form
+}
+add_action( 'woocommerce_before_shop_loop', 'bbloomer_add_search_to_shop_page', 10 );
+
+  
+// ------------------------------
+// 2. BONUS: ADD SEARCH ICON TO NAVIGATION MENU
+// Change #colophon to your element ID (footer in my case)
+ 
+add_filter( 'wp_nav_menu_additional-resources_items', 'bbloomer_new_nav_menu_items' );
+ 
+function bbloomer_new_nav_menu_items($items) {
+    $searchicon = '<li class="search"><a href="#colophon"><i class="fa fa-search" aria-hidden="true"></i></a></li>';
+    $items = $items . $searchicon;
+    return $items;
+}
+
 // Add custom pagination function
 function custom_woocommerce_pagination() {
     global $wp_query;
@@ -145,3 +176,10 @@ function custom_woocommerce_pagination() {
 // Hook into WooCommerce pagination
 remove_action( 'woocommerce_after_shop_loop', 'woocommerce_pagination', 10 );
 add_action( 'woocommerce_after_shop_loop', 'custom_woocommerce_pagination', 10 );
+
+if( function_exists( 'flrt_get_page_related_filters' ) ){
+    // Do something
+    flrt_get_page_related_filters();
+}
+
+

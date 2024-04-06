@@ -70,7 +70,7 @@
 							<a href="<?php echo home_url( '/product-category/pants' ); ?>">Pants</a>
 							<a href="<?php echo home_url( '/product-category/shirt' ); ?>">Shirts</a>
 							<a href="<?php echo home_url( '/product-category/socks' ); ?>">Socks</a>
-							<a href="<?php echo home_url( '/product-category/hats' ); ?>">Hats</a>
+							<a href="<?php echo home_url( '/product-category/hat' ); ?>">Hats</a>
 						</div> <!-- subnav-content end -->
 					</div> <!-- subnav end -->
 					<!-- accessories -->
@@ -142,10 +142,10 @@
 						</svg></a>
 					</div>
 					<div class="menu-subnav-content3">
-						<a href="<?php echo home_url( '/product-category/mens' ); ?>">Mens</a>
-						<a href="<?php echo home_url( '/product-category/womens' ); ?>">Womens</a>
-						<a href="<?php echo home_url( '/product-category/youth' ); ?>">Youth</a>
-						<a href="<?php echo home_url( '/product-category/accessories' ); ?>">Accessories</a>
+						<a href="<?php echo home_url( '/product-category/pants' ); ?>">Pants</a>
+						<a href="<?php echo home_url( '/product-category/shirt' ); ?>">Shirts</a>
+						<a href="<?php echo home_url( '/product-category/socks' ); ?>">Socks</a>
+						<a href="<?php echo home_url( '/product-category/hat' ); ?>">Hats</a>
 					</div> <!-- menu-subnav-content end -->
 				</div> <!-- subnav end -->
 				<!-- accessories -->
