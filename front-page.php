@@ -19,7 +19,9 @@
         <?php
             $args = array(
                 'post_type' => 'front-banner',
-                'post_per_page' => 1
+                'post_per_page' => 1,
+                'orderby' => 'date',
+                'order' => 'ASC'
             );
 
             $loop = new WP_Query($args); 
@@ -31,6 +33,9 @@
                     the_title();
                 echo '</h2>';
                 echo '<p>' . the_content() . '</p>';
+                echo '<a href="';
+                echo the_field('URL');
+                echo '">More</a>';
                 echo '</div>';
             endwhile; 
             echo '</div>';
