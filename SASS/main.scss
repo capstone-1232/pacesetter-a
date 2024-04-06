@@ -390,6 +390,7 @@ body {
 
         img {
             width: 100%;
+            height: 240px;
             object-fit: cover;
             border-top-left-radius: 5px;
             border-top-right-radius: 5px;
@@ -418,10 +419,16 @@ body {
     .wp-post-image {
         width: 100%;
         height: 100%;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
     }
 
     .woocommerce-product-gallery {
         opacity: 1 !important;
+    }
+
+    .summary {
+        margin-top: 3rem;
     }
 
     .summary, .woocommerce-tabs {
@@ -1175,10 +1182,6 @@ footer {
                 padding: 0 6rem;
             }
 
-            .woocommerce-product-gallery, .wp-post-image {
-                width: 528px;
-            }
-
             .summary, .woocommerce-tabs {
                 padding: 0 6rem;
             }
@@ -1501,7 +1504,7 @@ footer {
 
             .summary {
                 display: grid;
-                grid-template-columns: repeat(2, auto);
+                grid-template-columns: repeat(2, 1fr);
             }
 
             .woocommerce-product-gallery {
