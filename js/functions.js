@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const menuContent4 = document.querySelector('.menu-subnav-content4');
   const links = document.querySelectorAll('.flex-arrow a');
   const svgs = document.querySelectorAll('.menu-subnav svg');
+  
 
 function checkSubscriptionStatus() {
   var subscriptionMessage = document.querySelector('.es_subscription_message');

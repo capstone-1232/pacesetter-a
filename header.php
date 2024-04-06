@@ -69,9 +69,8 @@
 						<div class="subnav-content">
 							<a href="<?php echo home_url( '/product-category/pants' ); ?>">Pants</a>
 							<a href="<?php echo home_url( '/product-category/shirt' ); ?>">Shirts</a>
-							<a href="<?php echo home_url( '/product-category/socks' ); ?>">Youth</a>
-							<a href="<?php echo home_url( '/product-category/socks' ); ?>">Hat</a>
-							<a href="<?php echo home_url( '/product-category/hat' ); ?>">Accessories</a>
+							<a href="<?php echo home_url( '/product-category/socks' ); ?>">Socks</a>
+							<a href="<?php echo home_url( '/product-category/hats' ); ?>">Hats</a>
 						</div> <!-- subnav-content end -->
 					</div> <!-- subnav end -->
 					<!-- accessories -->

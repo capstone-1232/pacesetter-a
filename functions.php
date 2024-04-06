@@ -119,3 +119,29 @@ remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20 )
 add_action( 'woocommerce_archive_description', 'woocommerce_breadcrumb', 5 );
 // remove add to cart
 remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10 );
+
+// Add custom pagination function
+function custom_woocommerce_pagination() {
+    global $wp_query;
+
+    // Don't display pagination if only one page is available
+    if ( $wp_query->max_num_pages <= 1 ) {
+        return;
+    }
+
+    echo '<nav class="woocommerce-pagination">';
+    echo paginate_links( array(
+        'base'      => str_replace( 999999999, '%#%', esc_url( get_pagenum_link( 999999999 ) ) ),
+        'format'    => '?paged=%#%',
+        'current'   => max( 1, get_query_var( 'paged' ) ),
+        'total'     => $wp_query->max_num_pages,
+        'prev_text' => '&larr;',
+        'next_text' => '&rarr;',
+        'type'      => 'list',
+    ) );
+    echo '</nav>';
+}
+
+// Hook into WooCommerce pagination
+remove_action( 'woocommerce_after_shop_loop', 'woocommerce_pagination', 10 );
+add_action( 'woocommerce_after_shop_loop', 'custom_woocommerce_pagination', 10 );
