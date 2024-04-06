@@ -283,6 +283,10 @@ header .rotate180 {
   margin: 0;
   padding: 0 1rem 1rem 1rem;
 }
+.home .slick-dots {
+  display: none !important;
+  height: 0;
+}
 .home .brands-slider {
   background-color: #fff;
   padding: 2rem 0;
@@ -300,6 +304,24 @@ header .rotate180 {
   padding: 0 1rem;
   color: black;
 }
+.content-area .woocommerce-pagination {
+  display: grid;
+  align-items: center;
+  margin: 0 auto;
+}
+.content-area .woocommerce-pagination ul.page-numbers {
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+}
+.content-area .woocommerce-pagination ul.page-numbers li {
+  padding: 0 0.5rem;
+}
+.content-area .woocommerce-pagination ul.page-numbers a {
+  font-size: 1rem;
+  text-decoration: none;
+  vertical-align: baseline;
+}
 .content-area .products .product {
   background-color: #ffffff;
   border-radius: 5px;
@@ -308,6 +330,9 @@ header .rotate180 {
   width: 240px;
   filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
   margin: 2rem auto;
+}
+.content-area .products .product a {
+  text-decoration: none;
 }
 .content-area .products .product .woocommerce-LoopProduct-link h2 {
   margin-top: 1rem;
@@ -1613,4 +1638,4 @@ footer .footer-info p {
   header .custom-logo-link img {
     width: 12rem;
   }
-}/*# sourceMappingURL=main.css.map */
+}

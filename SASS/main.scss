@@ -343,6 +343,11 @@ body {
         }
     }
 
+    .slick-dots {
+        display: none !important;
+        height: 0;
+    }
+
     .brands-slider {
         background-color: #fff;
         padding: 2rem 0;
@@ -370,6 +375,28 @@ body {
 
     }
 
+    .woocommerce-pagination {
+        display: grid;
+        align-items: center;
+        margin: 0 auto;
+
+        ul.page-numbers {
+            display: flex;
+            margin: 0 auto;
+            margin-bottom: 3rem;
+
+            li {
+                padding: 0 .5rem;
+            }
+
+            a {
+                font-size: 1rem;
+                text-decoration: none;
+                vertical-align: baseline;
+            }
+        }
+    }
+
     .products {
 
         .product {
@@ -380,6 +407,10 @@ body {
             width: 240px;
             filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
             margin: 2rem auto;
+
+            a {
+                text-decoration: none;
+            }
 
             .woocommerce-LoopProduct-link {
                 h2 {
