@@ -45,27 +45,36 @@
         </div>
 
         <!-- featured -->
-        <div class="featured">
-            <h1>Featured</h1>
-            <div class="featured-products">
-            <?php  
-                $args = array(
-                    'post_type'      => 'product',
-                    'posts_per_page' => 4,
-                    'product_cat'    => 'featured-item'
-                );
+<div class="featured">
+    <h1>Featured</h1>
+    <div class="featured-products">
+    <?php  
+        $args = array(
+            'post_type'      => 'product',
+            'posts_per_page' => 4,
+            'product_cat'    => 'featured-item'
+        );
 
-                $loop = new WP_Query( $args );
+        $loop = new WP_Query( $args );
 
-                while ( $loop->have_posts() ) : $loop->the_post();
-                    global $product;
-                    echo '<div class="featured-card">' . woocommerce_get_product_thumbnail() . '<p class="featured-title">' . get_the_title() . '</p> <p class="featured-price">$CA ' . wc_get_price_to_display( $product, array( 'price' => $product->get_price() ) ) . '</p> </div>';
-                endwhile;
-
-                wp_reset_query();
-            ?>
-            </div>
+        while ( $loop->have_posts() ) : $loop->the_post();
+            global $product;
+    ?>
+        <div class="featured-card">
+            <a href="<?php the_permalink(); ?>">
+                <?php echo woocommerce_get_product_thumbnail(); ?>
+                <p class="featured-title"><?php the_title(); ?></p>
+                <p class="featured-price"><?php echo wc_get_price_to_display( $product, array( 'price' => $product->get_price() ) ); ?></p>
+            </a>
         </div>
+    <?php
+        endwhile;
+
+        wp_reset_query();
+    ?>
+    </div>
+</div>
+
 
         <!-- top brands -->
         <div class="top-brands">
