@@ -126,7 +126,7 @@ add_action( 'woocommerce_after_single_product_summary', 'woocommerce_show_produc
 // shop page
 // breadcrumb move
 remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20 );
-add_action( 'woocommerce_archive_description', 'woocommerce_breadcrumb', 5 );
+add_action( 'woocommerce_before_shop_loop', 'woocommerce_breadcrumb', 20 );
 // remove add to cart
 remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10 );
 
@@ -182,4 +182,6 @@ if( function_exists( 'flrt_get_page_related_filters' ) ){
     flrt_get_page_related_filters();
 }
 
-
+// remove result ordering and count
+remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30 );
+remove_action( 'woocommerce_before_shop_loop', 'woocommerce_result_count', 20 );
