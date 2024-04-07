@@ -95,7 +95,7 @@ body {
                 a {
                     color: $alt-font-color;;
                     float: left;
-                    font-size: 1.175rem;
+                    font-size: 1rem;
                     padding: 1rem;
                     text-align: center;
                     text-decoration: none;
@@ -296,7 +296,7 @@ body {
 
     .hero-banner {
         width: 100%;
-        height: 500px;
+        height: 28rem;
 
         p {
             padding: 0 1.875rem;
@@ -351,9 +351,19 @@ body {
         }
     }
 
+    .slick-dots {
+        display: none !important;
+        height: 0;
+    }
+
     .brands-slider {
         background-color: #fff;
         padding: 2rem 0;
+    }
+
+    .hero-banners, .top-images {
+        display: block;
+        margin-bottom: -1.875rem;
     }
 
     .top-images-slider {
@@ -368,6 +378,11 @@ body {
 // -----------------------------------------------------------------  CATALOGUE PAGE -----------------------------------------------------------------
 
 .content-area {
+
+    .wpf_form {
+        visibility: unset !important;
+    }
+
     .products, .woocommerce-ordering, .woocommerce-result-count {
         padding: 0 1.875rem;
     }
@@ -376,6 +391,28 @@ body {
         padding: 0 1rem;
         color: black;
 
+    }
+
+    .woocommerce-pagination {
+        display: grid;
+        align-items: center;
+        margin: 0 auto;
+
+        ul.page-numbers {
+            display: flex;
+            margin: 0 auto;
+            margin-bottom: 3rem;
+
+            li {
+                padding: 0 .5rem;
+            }
+
+            a {
+                font-size: 1rem;
+                text-decoration: none;
+                vertical-align: baseline;
+            }
+        }
     }
 
     .products {
@@ -389,6 +426,10 @@ body {
             filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
             margin: 2rem auto;
 
+            a {
+                text-decoration: none;
+            }
+
             .woocommerce-LoopProduct-link {
                 h2 {
                     margin-top: 1rem;
@@ -398,6 +439,7 @@ body {
 
         img {
             width: 100%;
+            height: 240px;
             object-fit: cover;
             border-top-left-radius: 5px;
             border-top-right-radius: 5px;
@@ -426,10 +468,16 @@ body {
     .wp-post-image {
         width: 100%;
         height: 100%;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
     }
 
     .woocommerce-product-gallery {
         opacity: 1 !important;
+    }
+
+    .summary {
+        margin-top: 3rem;
     }
 
     .summary, .woocommerce-tabs {
@@ -477,8 +525,9 @@ body {
 // -----------------------------------------------------------------  ABOUT PAGE -----------------------------------------------------------------
 
 .about-image {
+    display: block;
     object-fit: cover;
-    height: 20rem;
+    height: 28rem;
     width: 100%;
 }
 
@@ -1155,6 +1204,13 @@ footer {
 
 @media screen and (min-width: 720px) {
 
+        // -----------------------------------------------------------------  HEADER -----------------------------------------------------------------
+        header {
+            .navbar {
+                padding: 0 6rem;
+            }
+        }
+
         // -----------------------------------------------------------------  HOME PAGE -----------------------------------------------------------------
 
         .featured-products {
@@ -1181,10 +1237,6 @@ footer {
 
             nav {
                 padding: 0 6rem;
-            }
-
-            .woocommerce-product-gallery, .wp-post-image {
-                width: 528px;
             }
 
             .summary, .woocommerce-tabs {
@@ -1376,8 +1428,6 @@ footer {
 
         .navbar {
             background-color: $primary-color;
-            // justify-content: flex;
-            padding: 0 1.875rem;
             overflow: hidden;
 
             nav {
@@ -1399,7 +1449,6 @@ footer {
                 a {
                     color: black;
                     float: left;
-                    font-size: .75rem;
                     padding: 1rem;
                     text-align: center;
                     text-decoration: none;
@@ -1444,7 +1493,7 @@ footer {
                 position: absolute;
                 background-color: #ffffff;
                 min-width: 160px;
-                top: 5.5rem;
+                top: 5rem;
                 box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
                 z-index: 3;
 
@@ -1509,7 +1558,7 @@ footer {
 
             .summary {
                 display: grid;
-                grid-template-columns: repeat(2, auto);
+                grid-template-columns: repeat(2, 1fr);
             }
 
             .woocommerce-product-gallery {
@@ -1949,6 +1998,14 @@ footer {
 }
 
 @media screen and (min-width: 1440px) {
+
+        // -----------------------------------------------------------------  HEADER -----------------------------------------------------------------
+
+        header {
+            .navbar {
+                padding: 0 12rem;
+            }
+        }
 
         // -----------------------------------------------------------------  HOME PAGE -----------------------------------------------------------------
 

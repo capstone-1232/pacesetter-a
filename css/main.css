@@ -80,7 +80,7 @@ header .navbar nav .logo {
 header .navbar .nav-items a {
   color: #2E2E2E;
   float: left;
-  font-size: 1.175rem;
+  font-size: 1rem;
   padding: 1rem;
   text-align: center;
   text-decoration: none;
@@ -244,7 +244,7 @@ header .rotate180 {
 }
 .home .hero-banner {
   width: 100%;
-  height: 500px;
+  height: 28rem;
 }
 .home .hero-banner p {
   padding: 0 1.875rem;
@@ -290,9 +290,17 @@ header .rotate180 {
   margin: 0;
   padding: 0 1rem 1rem 1rem;
 }
+.home .slick-dots {
+  display: none !important;
+  height: 0;
+}
 .home .brands-slider {
   background-color: #fff;
   padding: 2rem 0;
+}
+.home .hero-banners, .home .top-images {
+  display: block;
+  margin-bottom: -1.875rem;
 }
 .home .top-images-slider img {
   width: 100%;
@@ -300,12 +308,33 @@ header .rotate180 {
   object-fit: cover;
 }
 
+.content-area .wpf_form {
+  visibility: unset !important;
+}
 .content-area .products, .content-area .woocommerce-ordering, .content-area .woocommerce-result-count {
   padding: 0 1.875rem;
 }
 .content-area .products h2, .content-area .products .price {
   padding: 0 1rem;
   color: black;
+}
+.content-area .woocommerce-pagination {
+  display: grid;
+  align-items: center;
+  margin: 0 auto;
+}
+.content-area .woocommerce-pagination ul.page-numbers {
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+}
+.content-area .woocommerce-pagination ul.page-numbers li {
+  padding: 0 0.5rem;
+}
+.content-area .woocommerce-pagination ul.page-numbers a {
+  font-size: 1rem;
+  text-decoration: none;
+  vertical-align: baseline;
 }
 .content-area .products .product {
   background-color: #ffffff;
@@ -316,11 +345,15 @@ header .rotate180 {
   filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
   margin: 2rem auto;
 }
+.content-area .products .product a {
+  text-decoration: none;
+}
 .content-area .products .product .woocommerce-LoopProduct-link h2 {
   margin-top: 1rem;
 }
 .content-area .products img {
   width: 100%;
+  height: 240px;
   object-fit: cover;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -340,9 +373,14 @@ header .rotate180 {
 .content-area .wp-post-image {
   width: 100%;
   height: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
 }
 .content-area .woocommerce-product-gallery {
   opacity: 1 !important;
+}
+.content-area .summary {
+  margin-top: 3rem;
 }
 .content-area .summary, .content-area .woocommerce-tabs {
   padding: 0 1.875rem;
@@ -379,8 +417,9 @@ header .rotate180 {
 }
 
 .about-image {
+  display: block;
   object-fit: cover;
-  height: 20rem;
+  height: 28rem;
   width: 100%;
 }
 
@@ -911,6 +950,9 @@ footer .footer-info p {
 }
 
 @media screen and (min-width: 720px) {
+  header .navbar {
+    padding: 0 6rem;
+  }
   .featured-products {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -924,9 +966,6 @@ footer .footer-info p {
   }
   .content-area nav {
     padding: 0 6rem;
-  }
-  .content-area .woocommerce-product-gallery, .content-area .wp-post-image {
-    width: 528px;
   }
   .content-area .summary, .content-area .woocommerce-tabs {
     padding: 0 6rem;
@@ -1050,7 +1089,6 @@ footer .footer-info p {
   }
   header .navbar {
     background-color: #87D4C4;
-    padding: 0 1.875rem;
     overflow: hidden;
   }
   header .navbar nav {
@@ -1067,7 +1105,6 @@ footer .footer-info p {
   header .navbar .nav-items a {
     color: black;
     float: left;
-    font-size: 0.75rem;
     padding: 1rem;
     text-align: center;
     text-decoration: none;
@@ -1104,7 +1141,7 @@ footer .footer-info p {
     position: absolute;
     background-color: #ffffff;
     min-width: 160px;
-    top: 5.5rem;
+    top: 5rem;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 3;
   }
@@ -1147,7 +1184,7 @@ footer .footer-info p {
   }
   .content-area .summary {
     display: grid;
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: repeat(2, 1fr);
   }
   .content-area .woocommerce-product-gallery {
     grid-row: 1;
@@ -1471,6 +1508,9 @@ footer .footer-info p {
   }
 }
 @media screen and (min-width: 1440px) {
+  header .navbar {
+    padding: 0 12rem;
+  }
   .home .featured-products {
     grid-template-columns: repeat(4, 1fr);
     padding: 3rem 12rem;
@@ -1617,4 +1657,4 @@ footer .footer-info p {
   header .custom-logo-link img {
     width: 12rem;
   }
-}/*# sourceMappingURL=main.css.map */
+}
