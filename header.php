@@ -39,8 +39,9 @@
 							</svg></a>
 						<div class="subnav-content">
 							<a href="<?php echo home_url( '/product-category/skis' ); ?>">Skis</a>
+							<a href="<?php echo home_url( '/product-category/boots' ); ?>">Ski Boots</a>
 							<a href="<?php echo home_url( '/product-category/ski-equipment' ); ?>">Ski Equipment</a>
-							<a href="<?php echo home_url( '/product-category/x-country-binding' ); ?>">Ski Bindings</a>
+							<a href="<?php echo home_url( '/product-category/binding' ); ?>">Ski Bindings</a>
 							<a href="<?php echo home_url( '/product-category/poles' ); ?>">Poles</a>
 						</div> <!-- subnav-content end -->
 					</div><!-- subnav end -->
@@ -54,22 +55,22 @@
 						<div class="subnav-content">
 							<a href="<?php echo home_url( '/product-category/snowboard' ); ?>">Snowboards</a>
 							<a href="<?php echo home_url( '/product-category/snowboard-equipment' ); ?>">Snowboard Equipment</a>
-							<a href="<?php echo home_url( '/product-category/snowboard-boot' ); ?>">Snowboard Boots</a>
+							<a href="<?php echo home_url( '/product-category/snowboard-boots' ); ?>">Snowboard Boots</a>
 							<a href="<?php echo home_url( '/product-category/snowboard-binding' ); ?>">Snowboard Bindings</a>
 						</div> <!-- subnav-content end -->
 					</div> <!-- subnav end -->
 					<!-- apparel -->
 					<div class="subnav">
-						<a href="#">Apparel
+						<a href="#">Clothing
 							<svg class="subnavbtn" fill="#000000" viewBox="0 0 24 24">
 								<path
 									d="M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569l9 13z" />
 							</svg></a>
 						<div class="subnav-content">
-							<a href="<?php echo home_url( '/product-category/mens' ); ?>">Mens</a>
-							<a href="<?php echo home_url( '/product-category/womens' ); ?>">Womens</a>
-							<a href="<?php echo home_url( '/product-category/youth' ); ?>">Youth</a>
-							<a href="<?php echo home_url( '/product-category/accessories' ); ?>">Accessories</a>
+							<a href="<?php echo home_url( '/product-category/pants' ); ?>">Pants</a>
+							<a href="<?php echo home_url( '/product-category/shirt' ); ?>">Shirts</a>
+							<a href="<?php echo home_url( '/product-category/socks' ); ?>">Socks</a>
+							<a href="<?php echo home_url( '/product-category/hat' ); ?>">Hats</a>
 						</div> <!-- subnav-content end -->
 					</div> <!-- subnav end -->
 					<!-- accessories -->
@@ -111,8 +112,9 @@
 					</div>
 					<div class="menu-subnav-content">
 						<a href="<?php echo home_url( '/product-category/skis' ); ?>">Skis</a>
+						<a href="<?php echo home_url( '/product-category/boots' ); ?>">Ski Boots</a>
 						<a href="<?php echo home_url( '/product-category/ski-equipment' ); ?>">Ski Equipment</a>
-						<a href="<?php echo home_url( '/product-category/x-country-binding' ); ?>">Ski Bindings</a>
+						<a href="<?php echo home_url( '/product-category/binding' ); ?>">Ski Bindings</a>
 						<a href="<?php echo home_url( '/product-category/poles' ); ?>">Poles</a>
 					</div> <!-- menu-subnav-content end -->
 				</div><!-- subnav end -->
@@ -127,7 +129,7 @@
 					<div class="menu-subnav-content2">
 						<a href="<?php echo home_url( '/product-category/snowboard' ); ?>">Snowboards</a>
 						<a href="<?php echo home_url( '/product-category/snowboard-equipment' ); ?>">Snowboard Equipment</a>
-						<a href="<?php echo home_url( '/product-category/snowboard-boot' ); ?>">Snowboard Boots</a>
+						<a href="<?php echo home_url( '/product-category/snowboard-boots' ); ?>">Snowboard Boots</a>
 						<a href="<?php echo home_url( '/product-category/snowboard-binding' ); ?>">Snowboard Bindings</a>
 					</div> <!-- menu-subnav-content end -->
 				</div> <!-- subnav end -->
@@ -140,10 +142,10 @@
 						</svg></a>
 					</div>
 					<div class="menu-subnav-content3">
-						<a href="<?php echo home_url( '/product-category/mens' ); ?>">Mens</a>
-						<a href="<?php echo home_url( '/product-category/womens' ); ?>">Womens</a>
-						<a href="<?php echo home_url( '/product-category/youth' ); ?>">Youth</a>
-						<a href="<?php echo home_url( '/product-category/accessories' ); ?>">Accessories</a>
+						<a href="<?php echo home_url( '/product-category/pants' ); ?>">Pants</a>
+						<a href="<?php echo home_url( '/product-category/shirt' ); ?>">Shirts</a>
+						<a href="<?php echo home_url( '/product-category/socks' ); ?>">Socks</a>
+						<a href="<?php echo home_url( '/product-category/hat' ); ?>">Hats</a>
 					</div> <!-- menu-subnav-content end -->
 				</div> <!-- subnav end -->
 				<!-- accessories -->
