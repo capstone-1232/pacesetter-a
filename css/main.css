@@ -80,7 +80,7 @@ header .navbar nav .logo {
 header .navbar .nav-items a {
   color: #2E2E2E;
   float: left;
-  font-size: 1.175rem;
+  font-size: 1rem;
   padding: 1rem;
   text-align: center;
   text-decoration: none;
@@ -244,7 +244,7 @@ header .rotate180 {
 }
 .home .hero-banner {
   width: 100%;
-  height: 500px;
+  height: 28rem;
 }
 .home .hero-banner p {
   padding: 0 1.875rem;
@@ -291,12 +291,19 @@ header .rotate180 {
   background-color: #fff;
   padding: 2rem 0;
 }
+.home .hero-banners, .home .top-images {
+  display: block;
+  margin-bottom: -1.875rem;
+}
 .home .top-images-slider img {
   width: 100%;
   height: 400px;
   object-fit: cover;
 }
 
+.content-area .wpf_form {
+  visibility: unset !important;
+}
 .content-area .products, .content-area .woocommerce-ordering, .content-area .woocommerce-result-count {
   padding: 0 1.875rem;
 }
@@ -403,8 +410,9 @@ header .rotate180 {
 }
 
 .about-image {
+  display: block;
   object-fit: cover;
-  height: 20rem;
+  height: 28rem;
   width: 100%;
 }
 
@@ -935,6 +943,9 @@ footer .footer-info p {
 }
 
 @media screen and (min-width: 720px) {
+  header .navbar {
+    padding: 0 6rem;
+  }
   .featured-products {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -1071,7 +1082,6 @@ footer .footer-info p {
   }
   header .navbar {
     background-color: #87D4C4;
-    padding: 0 1.875rem;
     overflow: hidden;
   }
   header .navbar nav {
@@ -1088,7 +1098,6 @@ footer .footer-info p {
   header .navbar .nav-items a {
     color: black;
     float: left;
-    font-size: 0.75rem;
     padding: 1rem;
     text-align: center;
     text-decoration: none;
@@ -1125,7 +1134,7 @@ footer .footer-info p {
     position: absolute;
     background-color: #ffffff;
     min-width: 160px;
-    top: 5.5rem;
+    top: 5rem;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 3;
   }
@@ -1492,6 +1501,9 @@ footer .footer-info p {
   }
 }
 @media screen and (min-width: 1440px) {
+  header .navbar {
+    padding: 0 12rem;
+  }
   .home .featured-products {
     grid-template-columns: repeat(4, 1fr);
     padding: 3rem 12rem;

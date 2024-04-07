@@ -64,7 +64,7 @@
 
         <!-- top brands -->
         <div class="top-brands">
-            <h1>Browse Top Brands</h1>
+            <h1>Our Top Brands</h1>
             <?php
                 $args = array(
                     'post_type' => 'brand', 
