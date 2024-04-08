@@ -85,6 +85,9 @@ header .navbar .nav-items a {
   text-align: center;
   text-decoration: none;
 }
+header .navbar .nav-items a:hover {
+  text-decoration: underline 2px;
+}
 header .nav-items {
   align-self: end;
   grid-column: 4/span 8;
@@ -125,7 +128,7 @@ header .subnav .subnav-content {
 }
 header .subnav .subnav-content a {
   float: none;
-  color: black;
+  color: #000;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -133,6 +136,8 @@ header .subnav .subnav-content a {
 }
 header .subnav .subnav-content a:hover {
   background-color: #ddd;
+  color: #000;
+  text-decoration: none;
 }
 header .subnav:hover .subnav-content {
   display: block;
@@ -148,13 +153,17 @@ header .menu {
   transform-origin: top;
   transition: transform 300ms;
   height: max-content;
-  margin-top: 117.2px;
+  margin-top: 96.7px;
   width: 100vw;
   z-index: 2;
 }
 header .menu a {
   color: #2E2E2E;
   text-decoration: none;
+}
+header .menu a:hover {
+  color: #000;
+  text-decoration: underline 2px;
 }
 header .menu .menu-subnav {
   display: flex;
@@ -308,6 +317,42 @@ header .rotate180 {
   object-fit: cover;
 }
 
+.content-area .banner .catalog-image {
+  position: relative;
+  filter: brightness(50%);
+}
+.content-area .banner div {
+  display: grid;
+  color: #ffffff;
+  padding: 1rem 1.875rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.content-area .banner div h2 {
+  font-size: 2rem;
+}
+.content-area .banner div p {
+  text-transform: initial;
+}
+.content-area .banner div .more-button {
+  text-align: center;
+  text-transform: initial;
+  text-decoration: none;
+  border-radius: 5px;
+  width: 4rem;
+  margin-left: auto;
+  margin-right: 0;
+  display: block;
+  background-color: #F7EE23;
+  color: #000;
+  padding: 0.6rem 0.5rem 0.5rem 0.5rem;
+  margin-top: 9rem;
+}
+.content-area .banner div .more-button:hover {
+  background-color: #87D4C4;
+}
 .content-area .wpf_form {
   visibility: unset !important;
 }
@@ -376,6 +421,8 @@ header .rotate180 {
   border-bottom-left-radius: 5px;
   border: none;
   width: 100%;
+  height: 2.5rem;
+  margin-bottom: 0.5rem;
 }
 .content-area .woocommerce-product-search button {
   background-color: #ffffff;
@@ -386,6 +433,7 @@ header .rotate180 {
   border: none;
   filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
   transition: 0.3s;
+  margin-bottom: 0.5rem;
 }
 .content-area header .wpf_form {
   background-color: #72A8D5;
@@ -399,6 +447,9 @@ header .rotate180 {
   width: 100%;
   padding: 0.5rem;
   height: 2.5rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #ffffff;
 }
 .content-area header .wpf_form .wpf_item {
   margin-bottom: 0.5rem;
@@ -408,6 +459,10 @@ header .rotate180 {
   font-family: "Josefin Sans", sans-serif;
   padding: 0.5rem;
   height: 2.5rem;
+  border-radius: 5px;
+  border: none;
+  margin-top: 1.2rem;
+  background-color: #ffffff;
 }
 .content-area header .wpf_form .wpf_reset_btn input {
   margin-bottom: 2rem;
@@ -1014,6 +1069,9 @@ footer .footer-info p {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
+  .content-area .banner div {
+    padding: 1rem 6rem;
+  }
   .content-area .products, .content-area .woocommerce-ordering, .content-area .woocommerce-result-count {
     padding: 0 6rem;
   }
@@ -1235,6 +1293,17 @@ footer .footer-info p {
   }
   header .menu-expanded {
     transform: scaleX(100%);
+  }
+  .content-area .banner div h2 {
+    font-size: 2.5rem;
+  }
+  .content-area .banner div p {
+    font-size: 1.25rem;
+  }
+  .content-area .banner div .more-button {
+    font-size: 1.25rem;
+    width: 6rem;
+    padding: 0.8rem 0.7rem 0.7rem 0.7rem;
   }
   .content-area .products, .content-area .woocommerce-ordering, .content-area .woocommerce-result-count {
     padding: 0 12rem;
@@ -1616,6 +1685,9 @@ footer .footer-info p {
   .home .featured-products .featured-card:last-child {
     grid-column: unset;
   }
+  .content-area .banner div {
+    padding: 1rem 12rem;
+  }
   .content-area .products, .content-area .woocommerce-ordering, .content-area .woocommerce-result-count {
     padding: 0 12rem;
   }
@@ -1628,11 +1700,11 @@ footer .footer-info p {
   }
   .content-area header .wpf_form {
     display: grid;
-    grid-template-columns: 80% 20%;
+    grid-template-columns: 82% 18%;
     padding: 0 12rem;
   }
   .content-area header .wpf_form .wpf_reset_btn {
-    margin-top: 1.3rem;
+    margin-top: 0.1rem;
     margin-left: 0.5rem;
   }
   .content-area header .wpf_form .wpf_items_wrapper {
@@ -1658,7 +1730,7 @@ footer .footer-info p {
   .content-area header .wpf_form .wpf_items_wrapper .wpf_item_submit {
     grid-column: 9/span 2;
     grid-row: 1;
-    margin: 1.3rem 0.35rem 0 0.35rem;
+    margin: 0.1rem 0.35rem 0 0.35rem;
   }
   .first-block .about-text {
     padding: 0 2rem 0 12rem;
@@ -1725,6 +1797,9 @@ footer .footer-info p {
   }
   header .menu .nav-items a {
     font-size: 1.8rem;
+  }
+  .content-area .banner div {
+    padding: 1rem 20rem;
   }
   .content-area .products, .content-area .woocommerce-ordering, .content-area .woocommerce-result-count {
     padding: 0 20rem;

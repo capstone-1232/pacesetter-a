@@ -136,7 +136,7 @@ add_action( 'storefront_footer', 'bbloomer_add_search_to_footer' );
 function bbloomer_add_search_to_shop_page() {
     get_search_form(); // Display search form
 }
-add_action( 'woocommerce_before_shop_loop', 'bbloomer_add_search_to_shop_page', 10 );
+add_action( 'woocommerce_archive_description', 'bbloomer_add_search_to_shop_page', 10 );
 
   
 // ------------------------------
