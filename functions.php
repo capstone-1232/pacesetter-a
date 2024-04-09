@@ -182,6 +182,28 @@ if( function_exists( 'flrt_get_page_related_filters' ) ){
     flrt_get_page_related_filters();
 }
 
+
 // remove result ordering and count
 remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30 );
 remove_action( 'woocommerce_before_shop_loop', 'woocommerce_result_count', 20 );
+
+// Define a custom hook for the header widget area
+function my_theme_header_widget_area() {
+    // You can place any widgets or content you want to display in the header widget area here
+    // For example:
+    dynamic_sidebar('header_widget_area');
+}
+add_action('my_theme_header_widget_area', 'my_theme_header_widget_area');
+
+add_action('woocommerce_before_account_orders', 'add_resort_form');
+function add_resort_form($has_orders)
+{   
+    if ($has_orders) {
+        echo '<form method="post">
+        <input type="submit" name="button1"
+                value="ASC" />          
+        <input type="submit" name="button2"
+                value="DESC" />
+        </form>';
+    }
+}
