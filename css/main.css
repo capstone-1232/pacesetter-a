@@ -338,6 +338,10 @@ header .rotate180 {
   object-fit: cover;
 }
 
+.wpf_form {
+  visibility: visible;
+}
+
 .content-area .banner .catalog-image {
   position: relative;
   filter: brightness(50%);
@@ -376,11 +380,37 @@ header .rotate180 {
   background-color: #87D4C4;
 }
 .content-area .wpf_form {
+  display: unset;
+  height: max-content;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 300ms;
+  top: 0;
+  width: 100vw;
   visibility: unset !important;
 }
-
-.wpf_form {
-  visibility: visible;
+.content-area svg {
+  width: 2rem;
+}
+.content-area .wpf_form_expand {
+  display: unset !important;
+  position: relative;
+  flex-direction: column;
+  transform: scaleY(100%);
+  transform-origin: top;
+  transition: transform 300ms;
+  top: 0;
+  visibility: unset !important;
+}
+.content-area .wpf_form_expand .wpf_form_filters {
+  display: unset !important;
+  position: relative;
+  flex-direction: column;
+  transform: scaleY(100%);
+  transform-origin: top;
+  transition: transform 300ms;
+  top: 0;
+  visibility: unset !important;
 }
 .content-area .products, .content-area .woocommerce-ordering, .content-area .woocommerce-result-count {
   padding: 0 1.875rem;
@@ -1974,4 +2004,4 @@ footer .footer-info p {
   header .custom-logo-link img {
     width: 12rem;
   }
-}
+}/*# sourceMappingURL=main.css.map */

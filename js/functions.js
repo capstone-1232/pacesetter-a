@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
   const navBtn = document.querySelector('.nav-btn');
+  const filterBtn = document.querySelector('.filter-btn');
   const menu = document.querySelector('.menu');
+  const filterMenu = document.querySelector('.filters-menu');
   const subnav = document.querySelector('.link1');
   const subnav2 = document.querySelector('.link2');
   const subnav3 = document.querySelector('.link3');
@@ -28,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
                   <p id="successMessage">Thank you for joining our newsletter we will send out updates on events and in-store offers.</p>
               </div>
           `;
-          emailListContainer.appendChild(modal);
+          emailListContainer1.appendChild(modal);
   
           modal.style.display = "block";
   
@@ -58,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <p id="successMessage">Thank you for joining our newsletter we will send out updates on events and in-store offers.</p>
             </div>
         `;
-        emailListContainer.appendChild(modal);
+        emailListContainer2.appendChild(modal);
 
         modal.style.display = "block";
 
@@ -132,6 +134,16 @@ document.addEventListener('DOMContentLoaded', function() {
   } else {
       console.error('Subnav 4 or menu content 4 not found.');
   }
+
+   // filter menu
+   if (filterBtn && filterMenu) {
+    filterBtn.addEventListener('click', function() {
+        filterMenu.classList.toggle('wpf_form_expand');
+    });
+} else {
+    console.error('not found.');
+}
+
 });
 
 // lazy load
