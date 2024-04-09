@@ -390,6 +390,7 @@ header .rotate180 {
   visibility: unset !important;
 }
 .content-area svg {
+  transition: 300ms;
   width: 2rem;
 }
 .content-area .wpf_form_expand {
