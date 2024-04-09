@@ -47,8 +47,19 @@ $binding_adjustments_snowboard = get_field( "snowboard_tune_price", 144 );
 // binding install ACF
 $binding_install_type = get_field( "type_of_tune", 145 );
 $binding_install_description = get_field( "tune_description", 145 );
+$binding_install_list1 = get_field( "tune_description", 591 );
+$binding_install_list2 = get_field( "tune_description", 592 );
+$binding_install_list3 = get_field( "tune_description", 594 );
+$binding_install_list4 = get_field( "tune_description", 600 );
 $binding_install_ski = get_field( "ski_tune_price", 145 );
-$binding_install_snowboard = get_field( "snowboard_tune_price", 145 ); 
+$binding_install_ski_list1 = get_field( "ski_tune_price", 601 );
+$binding_install_ski_list2 = get_field( "ski_tune_price", 603 );
+$binding_install_ski_list3 = get_field( "ski_tune_price", 607 );
+$binding_install_snowboard = get_field( "snowboard_tune_price", 145 );
+$binding_install_snowboard_list1 = get_field( "snowboard_tune_price", 608 ); 
+$binding_install_snowboard_list2 = get_field( "snowboard_tune_price", 610 ); 
+$binding_install_snowboard_list3 = get_field( "snowboard_tune_price", 611 );  
+
 
 // heli coils ACF
 $heli_coils_type = get_field( "type_of_tune", 146 );
@@ -71,7 +82,10 @@ $boot_stretching_snowboard = get_field( "snowboard_tune_price", 148 );
 // heating of heat moldable liners ACF
 $heat_type = get_field( "type_of_tune", 149 );
 $heat_description = get_field( "tune_description", 149 );
-$heat_ski = get_field( "ski_tune_price", 149 );
+$heat_list1 = get_field( "tune_description", 612 );
+$heat_list2 = get_field( "tune_description", 613 );
+$heat_ski1 = get_field( "ski_tune_price", 615 );
+$heat_ski2 = get_field( "ski_tune_price", 616 );
 $heat_snowboard = get_field( "snowboard_tune_price", 149 ); 
 
 // general labor ACF
@@ -159,11 +173,30 @@ $labor_snowboard = get_field( "snowboard_tune_price", 151 );
     <!-- binding install -->
     <tr>
         <th class="type hidden">Type of tune</th>
-        <td class="desc"><?php if( $binding_install_type ) {echo wp_kses_post( $binding_install_type );} else {echo 'empty';} ?> <div><?php if( $binding_install_description ) {echo wp_kses_post( $binding_install_description );} else {echo 'empty';} ?> </div></td>
+        <td class="desc"><?php if( $binding_install_type ) {echo wp_kses_post( $binding_install_type );} else {echo 'empty';} ?> <div><?php if( $binding_install_description ) {echo wp_kses_post( $binding_install_description );} else {echo 'empty';} ?> 
+        <ul>
+            <li><?php if( $binding_install_list1 ) {echo wp_kses_post( $binding_install_list1 );} else {echo 'empty';} ?></li>
+            <li><?php if( $binding_install_list2 ) {echo wp_kses_post( $binding_install_list2 );} else {echo 'empty';} ?></li>
+            <li><?php if( $binding_install_list3 ) {echo wp_kses_post( $binding_install_list3 );} else {echo 'empty';} ?></li>
+            <li><?php if( $binding_install_list4 ) {echo wp_kses_post( $binding_install_list4 );} else {echo 'empty';} ?></li>
+        </ul>
+        </div></td>
         <th class="ski hidden">Skis</th>
         <th class="board hidden">Snowboard</th>
-        <td class="ski-desc"><p><?php echo 'Price:' ?></p><?php if( $binding_install_ski ) {echo wp_kses_post( $binding_install_ski );} else {echo 'empty';} ?> </td>
-        <td class="board-desc"><p><?php echo 'Price:' ?></p><?php if( $binding_install_snowboard ) {echo wp_kses_post( $binding_install_snowboard );} else {echo 'empty';} ?> </td>  
+        <td class="ski-desc"><?php if( $binding_install_ski ) {echo wp_kses_post( $binding_install_ski );} else {echo 'empty';} ?> 
+        <ul>
+            <li><?php if( $binding_install_ski_list1 ) {echo wp_kses_post( $binding_install_ski_list1 );} else {echo 'empty';} ?></li>
+            <li><?php if( $binding_install_ski_list2 ) {echo wp_kses_post( $binding_install_ski_list2 );} else {echo 'empty';} ?></li>
+            <li><?php if( $binding_install_ski_list3 ) {echo wp_kses_post( $binding_install_ski_list3 );} else {echo 'empty';} ?></li>
+        </ul>
+        </td>
+        <td class="board-desc"><?php if( $binding_install_snowboard ) {echo wp_kses_post( $binding_install_snowboard );} else {echo 'empty';} ?> 
+        <ul>
+            <li><?php if( $binding_install_snowboard_list1 ) {echo wp_kses_post( $binding_install_snowboard_list1 );} else {echo 'empty';} ?></li>
+            <li><?php if( $binding_install_snowboard_list2 ) {echo wp_kses_post( $binding_install_snowboard_list2 );} else {echo 'empty';} ?></li>
+            <li><?php if( $binding_install_snowboard_list3 ) {echo wp_kses_post( $binding_install_snowboard_list3 );} else {echo 'empty';} ?></li>
+        </ul>
+        </td>  
     </tr> <!-- binding install end -->
     
     <!-- heli coils --> 
@@ -199,10 +232,20 @@ $labor_snowboard = get_field( "snowboard_tune_price", 151 );
     <!-- heating of heat moldable liners -->
     <tr>
         <th class="type hidden">Type of tune</th>
-        <td class="desc"><?php if( $heat_type ) {echo wp_kses_post( $heat_type );} else {echo 'empty';} ?> <div><?php if( $heat_description ) {echo wp_kses_post( $heat_description );} else {echo 'empty';} ?> </div></td>
+        <td class="desc"><?php if( $heat_type ) {echo wp_kses_post( $heat_type );} else {echo 'empty';} ?> <div><?php if( $heat_description ) {echo wp_kses_post( $heat_description );} else {echo 'empty';} ?>
+        <ul>
+            <li><?php if( $heat_list1 ) {echo wp_kses_post( $heat_list1 );} else {echo 'empty';} ?></li>
+            <li><?php if( $heat_list2 ) {echo wp_kses_post( $heat_list2 );} else {echo 'empty';} ?></li>
+        </ul>    
+        </div></td>
         <th class="ski hidden">Skis</th>
         <th class="board hidden">Snowboard</th>
-        <td class="ski-desc"><p><?php echo 'Price:' ?></p><?php if( $heat_ski ) {echo wp_kses_post( $heat_ski );} else {echo 'empty';} ?> </td>
+        <td class="ski-desc"><p><?php echo 'Price:' ?></p>
+        <ul>
+            <li><?php if( $heat_ski1 ) {echo wp_kses_post( $heat_ski1 );} else {echo 'empty';} ?></li>
+            <li><?php if( $heat_ski2 ) {echo wp_kses_post( $heat_ski2 );} else {echo 'empty';} ?></li>
+        </ul>    
+        </td>
         <td class="board-desc"><p><?php echo 'Price:' ?></p><?php if( $heat_snowboard ) {echo wp_kses_post( $heat_snowboard );} else {echo 'empty';} ?> </td>  
     </tr> <!-- heating of heat moldable liners end -->
     
