@@ -11,10 +11,12 @@ document.addEventListener('DOMContentLoaded', function() {
   const menuContent4 = document.querySelector('.menu-subnav-content4');
   const links = document.querySelectorAll('.flex-arrow a');
   const svgs = document.querySelectorAll('.menu-subnav svg');
-  const emailListContainer = document.querySelector('.emaillist');
+  const emailListContainer1 = document.getElementById('es_form_f2-n1');
+  const emailListContainer2 = document.getElementById('es_form_f2-n3');
 
-  if (emailListContainer) {
-      const successMessage = emailListContainer.querySelector('.es_subscription_message.success');
+  // modal popups
+  if (emailListContainer1) {
+      const successMessage = emailListContainer1.querySelector('.es_subscription_message.success');
   
       if (successMessage) {
           const modal = document.createElement('div');
@@ -42,6 +44,36 @@ document.addEventListener('DOMContentLoaded', function() {
           });
       }
   }
+
+  if (emailListContainer2) {
+    const successMessage = emailListContainer2.querySelector('.es_subscription_message.success');
+
+    if (successMessage) {
+        const modal = document.createElement('div');
+        modal.classList.add('modal');
+        modal.innerHTML = `
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Thank You For Joining Our Newsletter</h2>
+                <p id="successMessage">Thank you for joining our newsletter we will send out updates on events and in-store offers.</p>
+            </div>
+        `;
+        emailListContainer.appendChild(modal);
+
+        modal.style.display = "block";
+
+        const closeBtn = modal.querySelector(".close");
+        closeBtn.addEventListener('click', function() {
+            modal.style.display = "none";
+        });
+
+        window.addEventListener('click', function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        });
+    }
+}
   
 
   document.addEventListener("DOMContentLoaded", function() {
