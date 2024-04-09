@@ -192,9 +192,9 @@ $labor_snowboard = get_field( "snowboard_tune_price", 151 );
         </td>
         <td class="board-desc"><?php if( $binding_install_snowboard ) {echo wp_kses_post( $binding_install_snowboard );} else {echo 'empty';} ?> 
         <ul>
-            <li><?php if( $binding_install_snowboard_list1 ) {echo wp_kses_post( $binding_install_list1 );} else {echo 'empty';} ?></li>
-            <li><?php if( $binding_install_snowboard_list2 ) {echo wp_kses_post( $binding_install_list2 );} else {echo 'empty';} ?></li>
-            <li><?php if( $binding_install_snowboard_list3 ) {echo wp_kses_post( $binding_install_list3 );} else {echo 'empty';} ?></li>
+            <li><?php if( $binding_install_snowboard_list1 ) {echo wp_kses_post( $binding_install_snowboard_list1 );} else {echo 'empty';} ?></li>
+            <li><?php if( $binding_install_snowboard_list2 ) {echo wp_kses_post( $binding_install_snowboard_list2 );} else {echo 'empty';} ?></li>
+            <li><?php if( $binding_install_snowboard_list3 ) {echo wp_kses_post( $binding_install_snowboard_list3 );} else {echo 'empty';} ?></li>
         </ul>
         </td>  
     </tr> <!-- binding install end -->
@@ -240,13 +240,13 @@ $labor_snowboard = get_field( "snowboard_tune_price", 151 );
         </div></td>
         <th class="ski hidden">Skis</th>
         <th class="board hidden">Snowboard</th>
-        <td class="ski-desc"><?php if( $heat_ski ) {echo wp_kses_post( $heat_ski );} else {echo 'empty';} ?> 
+        <td class="ski-desc"><p><?php echo 'Price:' ?></p>
         <ul>
-            <li><?php if( $heat_ski1 ) {echo wp_kses_post( $heat_list1 );} else {echo 'empty';} ?></li>
-            <li><?php if( $heat_ski2 ) {echo wp_kses_post( $heat_list2 );} else {echo 'empty';} ?></li>
+            <li><?php if( $heat_ski1 ) {echo wp_kses_post( $heat_ski1 );} else {echo 'empty';} ?></li>
+            <li><?php if( $heat_ski2 ) {echo wp_kses_post( $heat_ski2 );} else {echo 'empty';} ?></li>
         </ul>    
         </td>
-        <td class="board-desc"><?php if( $heat_snowboard ) {echo wp_kses_post( $heat_snowboard );} else {echo 'empty';} ?> </td>  
+        <td class="board-desc"><p><?php echo 'Price:' ?></p><?php if( $heat_snowboard ) {echo wp_kses_post( $heat_snowboard );} else {echo 'empty';} ?> </td>  
     </tr> <!-- heating of heat moldable liners end -->
     
     <!-- general labor rate -->
