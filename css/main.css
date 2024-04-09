@@ -68,7 +68,7 @@ header .navbar {
 }
 header .navbar nav {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(14, 1fr);
 }
 header .navbar nav .nav-items {
   display: none;
@@ -90,7 +90,7 @@ header .navbar .nav-items a:hover {
 }
 header .nav-items {
   align-self: end;
-  grid-column: 4/span 8;
+  grid-column: 4/span 10;
   margin-left: auto;
   margin-right: 0;
   padding-bottom: 1rem;
@@ -98,7 +98,7 @@ header .nav-items {
 header .nav-btn {
   align-self: end;
   cursor: pointer;
-  grid-column: 12;
+  grid-column: 14;
   grid-row: 1;
   padding: 1rem 0 1.75rem 0;
   margin-left: auto;
@@ -254,17 +254,34 @@ header .rotate180 {
 .home .hero-banner {
   width: 100%;
   height: 28rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 3rem 1.875rem 1rem 1.875rem;
+  position: relative;
+}
+.home .hero-banner h2 {
+  padding: 0;
 }
 .home .hero-banner p {
-  padding: 0 1.875rem;
+  z-index: 10;
   color: #fff;
 }
 .home .hero-banner a {
-  color: #000;
-  padding: 0.5rem 1rem;
-  background-color: #F7EE23;
+  position: absolute;
+  bottom: 2rem;
+  right: 1.875rem;
+  text-align: center;
   text-decoration: none;
-  border-radius: 6px;
+  border-radius: 5px;
+  width: 4rem;
+  background-color: #F7EE23;
+  color: #000;
+  padding: 0.6rem 0.5rem 0.5rem 0.5rem;
+  transition: 0.3s;
+}
+.home .hero-banner a:hover {
+  background-color: #87D4C4;
+  cursor: pointer;
 }
 .home .featured-products {
   text-align: center;
@@ -279,6 +296,10 @@ header .rotate180 {
   width: 240px;
   filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
   margin: 2rem auto;
+}
+.home .featured-products .featured-card a {
+  text-decoration: none;
+  color: #000;
 }
 .home .featured-products .featured-card img {
   object-fit: cover;
@@ -349,6 +370,7 @@ header .rotate180 {
   color: #000;
   padding: 0.6rem 0.5rem 0.5rem 0.5rem;
   margin-top: 9rem;
+  transition: 0.3s;
 }
 .content-area .banner div .more-button:hover {
   background-color: #87D4C4;
@@ -439,6 +461,10 @@ header .rotate180 {
   transition: 0.3s;
   margin-bottom: 0.5rem;
 }
+.content-area .woocommerce-product-search button:hover {
+  background-color: #87D4C4;
+  cursor: pointer;
+}
 .content-area header .wpf_form {
   background-color: #72A8D5;
   padding: 0 1.875rem;
@@ -455,6 +481,9 @@ header .rotate180 {
   border: none;
   background-color: #ffffff;
 }
+.content-area header .wpf_form .wpf_dropdown:hover {
+  cursor: pointer;
+}
 .content-area header .wpf_form .wpf_item {
   margin-bottom: 0.5rem;
 }
@@ -467,6 +496,11 @@ header .rotate180 {
   border: none;
   margin-top: 1.2rem;
   background-color: #ffffff;
+  transition: 0.3s;
+}
+.content-area header .wpf_form .wpf_search_button:hover, .content-area header .wpf_form .wpf_reset_btn input:hover {
+  background-color: #87D4C4;
+  cursor: pointer;
 }
 .content-area header .wpf_form .wpf_reset_btn input {
   margin-bottom: 2rem;
@@ -1107,7 +1141,13 @@ footer .close:focus {
   header .navbar {
     padding: 0 6rem;
   }
-  .featured-products {
+  .home .hero-banner {
+    padding: 3rem 6rem 1rem 6rem;
+  }
+  .home .hero-banner a {
+    right: 6rem;
+  }
+  .home .featured-products {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1229,6 +1269,17 @@ footer .close:focus {
   li {
     margin-top: 1.25rem;
   }
+  .home .hero-banner h2 {
+    font-size: 2.5rem;
+  }
+  .home .hero-banner p {
+    font-size: 1.25rem;
+  }
+  .home .hero-banner a {
+    font-size: 1.25rem;
+    width: 6rem;
+    padding: 0.8rem 0.7rem 0.7rem 0.7rem;
+  }
   .home h2 {
     font-size: 3rem;
   }
@@ -1246,95 +1297,6 @@ footer .close:focus {
   }
   .home .featured-products .featured-card:last-child {
     grid-column: 3;
-  }
-  header {
-    position: relative;
-  }
-  header .navbar {
-    background-color: #87D4C4;
-    overflow: hidden;
-  }
-  header .navbar nav {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-  }
-  header .navbar nav .nav-items {
-    display: unset;
-  }
-  header .navbar nav .logo {
-    grid-column: 1/span 3;
-    padding: 14px 16px;
-  }
-  header .navbar .nav-items a {
-    color: black;
-    float: left;
-    padding: 1rem;
-    text-align: center;
-    text-decoration: none;
-  }
-  header .nav-items {
-    align-self: end;
-    grid-column: 4/span 8;
-    margin-left: auto;
-    margin-right: 0;
-    padding-bottom: 1rem;
-  }
-  header .nav-btn {
-    align-self: end;
-    grid-column: 12;
-    grid-row: 1;
-    padding: 1rem 0 1.75rem 0;
-    margin-left: auto;
-    margin-right: 0;
-  }
-  header .subnav {
-    float: left;
-    overflow: hidden;
-  }
-  header .subnav .subnavbtn {
-    width: 0.5rem;
-    border: none;
-    outline: none;
-    color: white;
-    font-family: inherit;
-    margin: 0;
-  }
-  header .subnav .subnav-content {
-    display: none;
-    position: absolute;
-    background-color: #ffffff;
-    min-width: 160px;
-    top: 5rem;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 3;
-  }
-  header .subnav .subnav-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-  header .subnav .subnav-content a:hover {
-    background-color: #ddd;
-  }
-  header .subnav:hover .subnav-content {
-    display: block;
-  }
-  header .menu {
-    background-color: #ffffff;
-    right: 0;
-    position: absolute;
-    top: 0;
-    transform: scaleX(0);
-    transform-origin: right;
-    transition: transform 300ms;
-    width: 30vw;
-    height: 100vh;
-  }
-  header .menu-expanded {
-    transform: scaleX(100%);
   }
   .content-area .banner div h2 {
     font-size: 2.5rem;
@@ -1707,9 +1669,106 @@ footer .close:focus {
     margin: 0 auto;
   }
 }
+@media screen and (min-width: 1248px) {
+  header {
+    position: relative;
+  }
+  header .navbar {
+    background-color: #87D4C4;
+    overflow: hidden;
+  }
+  header .navbar nav {
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+  }
+  header .navbar nav .nav-items {
+    display: unset;
+  }
+  header .navbar nav .logo {
+    grid-column: 1/span 3;
+    padding: 14px 16px;
+  }
+  header .navbar .nav-items a {
+    color: black;
+    float: left;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+  }
+  header .nav-items {
+    align-self: end;
+    grid-column: 4/span 10;
+    margin-left: auto;
+    margin-right: 0;
+    padding-bottom: 1rem;
+  }
+  header .nav-btn {
+    align-self: end;
+    grid-column: 14;
+    grid-row: 1;
+    padding: 1rem 0 1.75rem 0;
+    margin-left: auto;
+    margin-right: 0;
+  }
+  header .subnav {
+    float: left;
+    overflow: hidden;
+  }
+  header .subnav .subnavbtn {
+    width: 0.5rem;
+    border: none;
+    outline: none;
+    color: white;
+    font-family: inherit;
+    margin: 0;
+  }
+  header .subnav .subnav-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 160px;
+    top: 5rem;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 3;
+  }
+  header .subnav .subnav-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  header .subnav .subnav-content a:hover {
+    background-color: #ddd;
+  }
+  header .subnav:hover .subnav-content {
+    display: block;
+  }
+  header .menu {
+    background-color: #ffffff;
+    right: 0;
+    position: absolute;
+    top: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 300ms;
+    width: 30vw;
+    height: 100vh;
+  }
+  header .menu-expanded {
+    transform: scaleX(100%);
+  }
+}
 @media screen and (min-width: 1440px) {
   header .navbar {
     padding: 0 12rem;
+  }
+  .home .hero-banner {
+    padding: 3rem 12rem 1rem 12rem;
+  }
+  .home .hero-banner a {
+    right: 12rem;
   }
   .home .featured-products {
     grid-template-columns: repeat(4, 1fr);
@@ -1857,6 +1916,12 @@ footer .close:focus {
   }
   .content-area .summary, .content-area .woocommerce-tabs {
     padding: 0 20rem;
+  }
+  .home .hero-banner {
+    padding: 3rem 20rem 1rem 20rem;
+  }
+  .home .hero-banner a {
+    right: 20rem;
   }
   .home .featured-products {
     padding: 3rem 20rem;
