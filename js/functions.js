@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', function() {
   const navBtn = document.querySelector('.nav-btn');
   const menu = document.querySelector('.menu');
@@ -12,67 +11,96 @@ document.addEventListener('DOMContentLoaded', function() {
   const menuContent4 = document.querySelector('.menu-subnav-content4');
   const links = document.querySelectorAll('.flex-arrow a');
   const svgs = document.querySelectorAll('.menu-subnav svg');
+  const emailListContainer = document.querySelector('.emaillist');
 
-function checkSubscriptionStatus() {
-  var subscriptionMessage = document.querySelector('.es_subscription_message');
-  if (subscriptionMessage && subscriptionMessage.classList.contains('success')) {
-      showModal();
+  if (emailListContainer) {
+      const successMessage = emailListContainer.querySelector('.es_subscription_message.success');
+  
+      if (successMessage) {
+          const modal = document.createElement('div');
+          modal.classList.add('modal');
+          modal.innerHTML = `
+              <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <h2>Thank You For Joining Our Newsletter</h2>
+                  <p id="successMessage">Thank you for joining our newsletter we will send out updates on events and in-store offers.</p>
+              </div>
+          `;
+          emailListContainer.appendChild(modal);
+  
+          modal.style.display = "block";
+  
+          const closeBtn = modal.querySelector(".close");
+          closeBtn.addEventListener('click', function() {
+              modal.style.display = "none";
+          });
+  
+          window.addEventListener('click', function(event) {
+              if (event.target == modal) {
+                  modal.style.display = "none";
+              }
+          });
+      }
   }
-}
+  
 
-function showModal() {
-  console.log("Modal shown");
-}
-
-document.addEventListener("DOMContentLoaded", function() {
-  checkSubscriptionStatus();
-});
-
+  document.addEventListener("DOMContentLoaded", function() {
+      checkSubscriptionStatus();
+  });
 
   // svg arrow turn
-links.forEach((link, index) => {
-    link.addEventListener('click', function(event) {
-        event.preventDefault();
-        svgs[index].classList.toggle('rotate180');
-    });
+  if (links.length > 0 && svgs.length > 0 && links.length === svgs.length) {
+      links.forEach((link, index) => {
+          link.addEventListener('click', function(event) {
+              event.preventDefault();
+              svgs[index].classList.toggle('rotate180');
+          });
+      });
+  } else {
+      console.error('Links or SVGs not found or mismatched.');
+  }
+
+  // hamburger menu
+  if (navBtn && menu) {
+      navBtn.addEventListener('click', function() {
+          menu.classList.toggle('menu-expanded');
+      });
+  } else {
+      console.error('Nav button or menu not found.');
+  }
+
+  if (subnav && menuContent) {
+      subnav.addEventListener('click', function() {
+          menuContent.classList.toggle('menu-expanded-small');
+      });
+  } else {
+      console.error('Subnav or menu content not found.');
+  }
+
+  if (subnav2 && menuContent2) {
+      subnav2.addEventListener('click', function() {
+          menuContent2.classList.toggle('menu-expanded-small');
+      });
+  } else {
+      console.error('Subnav 2 or menu content 2 not found.');
+  }
+
+  if (subnav3 && menuContent3) {
+      subnav3.addEventListener('click', function() {
+          menuContent3.classList.toggle('menu-expanded-small');
+      });
+  } else {
+      console.error('Subnav 3 or menu content 3 not found.');
+  }
+
+  if (subnav4 && menuContent4) {
+      subnav4.addEventListener('click', function() {
+          menuContent4.classList.toggle('menu-expanded-small');
+      });
+  } else {
+      console.error('Subnav 4 or menu content 4 not found.');
+  }
 });
-
-// hamburger nenu
-  navBtn.addEventListener('click', function() {
-      menu.classList.toggle('menu-expanded');
-    });
-    
-    subnav.addEventListener('click', function() {
-      menuContent.classList.toggle('menu-expanded-small'); 
-});
-
-subnav2.addEventListener('click', function() {
-  menuContent2.classList.toggle('menu-expanded-small');
-});
-
-subnav3.addEventListener('click', function() {
-  menuContent3.classList.toggle('menu-expanded-small');
-});
-
-subnav4.addEventListener('click', function() {
-  menuContent4.classList.toggle('menu-expanded-small');
-});
-});
-
-// debounce scroll handlers
-function onScroll (evt) {
-
-  lastScrollY = window.scrollY;
-
-  // Prevent multiple rAF callbacks.
-  if (scheduledAnimationFrame)
-  return;
-
-  scheduledAnimationFrame = true;
-  requestAnimationFrame(readAndUpdatePage);
-}
-
-window.addEventListener('scroll', onScroll);
 
 // lazy load
 // document.addEventListener("DOMContentLoaded", function() {
@@ -96,4 +124,3 @@ window.addEventListener('scroll', onScroll);
 //     });
 //   }
 // });
-
