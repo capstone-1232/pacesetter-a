@@ -913,7 +913,8 @@ footer .footer-info p {
   font-family: "Josefin Sans", sans-serif;
   margin-top: 0.5rem;
 }
-footer .modal {
+
+.modal {
   display: none;
   position: fixed;
   z-index: 9999 !important;
@@ -927,7 +928,8 @@ footer .modal {
   justify-content: center;
   align-items: center;
 }
-footer .modal-content {
+
+.modal-content {
   position: relative;
   background-color: #FFFFFF;
   border-radius: 25px;
@@ -936,19 +938,20 @@ footer .modal-content {
   max-width: 80%;
   height: 20rem;
   text-align: center;
-  /* Center the modal content within the viewport */
-  margin-top: calc(50vh - 10rem); /* Half of the modal height */
-  margin-left: calc(50vw - 40%); /* Adjust as needed for horizontal centering */
+  margin-top: calc(50vh - 10rem);
+  margin-left: calc(50vw - 40%);
 }
-footer .close {
+
+.close {
   color: #aaa;
   float: right;
   font-size: 28px;
   font-weight: bold;
   cursor: pointer;
 }
-footer .close:hover,
-footer .close:focus {
+
+.close:hover,
+.close:focus {
   color: black;
 }
 
