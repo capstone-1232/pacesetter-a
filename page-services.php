@@ -107,6 +107,7 @@ $labor_snowboard = get_field( "snowboard_tune_price", 151 );
 <div class="services-desc">   
     <p>TYPICAL 48-hour turnaround on most services outside of peak periods,
     quicker turnaround may be available pending workload and technician approval.</p>
+    <p>*Prices do not include GST</p>
 
     <h2>Tunes:</h2>
 </div>
@@ -125,8 +126,8 @@ $labor_snowboard = get_field( "snowboard_tune_price", 151 );
         <td class="desc"><?php if( $full_tune_type ) {echo wp_kses_post( $full_tune_type );} else {echo 'empty';} ?> <div><?php if( $full_tune_description ) {echo wp_kses_post( $full_tune_description );} else {echo 'empty';} ?> </div></td>
         <th class="ski hidden">Skis</th>
         <th class="board hidden">Snowboard</th>
-        <td class="ski-desc"><?php if( $full_tune_ski ) {echo wp_kses_post( $full_tune_ski );} else {echo 'empty';} ?> </td>
-        <td class="board-desc"><?php if( $full_tune_snowboard ) {echo wp_kses_post( $full_tune_snowboard );} else {echo 'empty';} ?> </td>  
+        <td class="ski-desc"><p><?php echo 'Price:' ?></p><?php if( $full_tune_ski ) {echo wp_kses_post( $full_tune_ski );} else {echo 'empty';} ?> </td>
+        <td class="board-desc"><p><?php echo 'Price:' ?></p><?php if( $full_tune_snowboard ) {echo wp_kses_post( $full_tune_snowboard );} else {echo 'empty';} ?> </td>  
     </tr> <!-- full tune end -->
     
     <!-- base grind -->
@@ -135,8 +136,8 @@ $labor_snowboard = get_field( "snowboard_tune_price", 151 );
         <td class="desc"><?php if( $base_grind_type ) {echo wp_kses_post( $base_grind_type );} else {echo 'empty';} ?> <div><?php if( $base_grind_description ) {echo wp_kses_post( $base_grind_description );} else {echo 'empty';} ?> </div></td>
         <th class="ski hidden">Skis</th>
         <th class="board hidden">Snowboard</th>
-        <td class="ski-desc"><?php if( $base_grind_ski ) {echo wp_kses_post( $base_grind_ski );} else {echo 'empty';} ?> </td>
-        <td class="board-desc"><?php if( $base_grind_snowboard ) {echo wp_kses_post( $base_grind_snowboard );} else {echo 'empty';} ?> </td>  
+        <td class="ski-desc"><p><?php echo 'Price:' ?></p><?php if( $base_grind_ski ) {echo wp_kses_post( $base_grind_ski );} else {echo 'empty';} ?> </td>
+        <td class="board-desc"><p><?php echo 'Price:' ?></p><?php if( $base_grind_snowboard ) {echo wp_kses_post( $base_grind_snowboard );} else {echo 'empty';} ?> </td>  
     </tr> <!-- base grind end -->
 
     <!-- major tune -->
@@ -145,8 +146,8 @@ $labor_snowboard = get_field( "snowboard_tune_price", 151 );
         <td class="desc"><?php if( $major_tune_type ) {echo wp_kses_post( $major_tune_type );} else {echo 'empty';} ?> <div><?php if( $major_tune_description ) {echo wp_kses_post( $major_tune_description );} else {echo 'empty';} ?> </div></td>
         <th class="ski hidden">Skis</th>
         <th class="board hidden">Snowboard</th>
-        <td class="ski-desc"><?php if( $major_tune_ski ) {echo wp_kses_post( $major_tune_ski );} else {echo 'empty';} ?> </td>
-        <td class="board-desc"><?php if( $major_tune_snowboard ) {echo wp_kses_post( $major_tune_snowboard );} else {echo 'empty';} ?> </td>  
+        <td class="ski-desc"><p><?php echo 'Price:' ?></p><?php if( $major_tune_ski ) {echo wp_kses_post( $major_tune_ski );} else {echo 'empty';} ?> </td>
+        <td class="board-desc"><p><?php echo 'Price:' ?></p><?php if( $major_tune_snowboard ) {echo wp_kses_post( $major_tune_snowboard );} else {echo 'empty';} ?> </td>  
     </tr> <!-- major tune end -->
 
     <!-- hot wax -->
@@ -155,8 +156,8 @@ $labor_snowboard = get_field( "snowboard_tune_price", 151 );
         <td class="desc"><?php if( $hot_wax_type ) {echo wp_kses_post( $hot_wax_type );} else {echo 'empty';} ?> <div><?php if( $hot_wax_description ) {echo wp_kses_post( $hot_wax_description );} else {echo 'empty';} ?> </div></td>
         <th class="ski hidden">Skis</th>
         <th class="board hidden">Snowboard</th>
-        <td class="ski-desc"><?php if( $hot_wax_ski ) {echo wp_kses_post( $hot_wax_ski );} else {echo 'empty';} ?> </td>
-        <td class="board-desc"><?php if( $hot_wax_snowboard ) {echo wp_kses_post( $hot_wax_snowboard );} else {echo 'empty';} ?> </td>  
+        <td class="ski-desc"><p><?php echo 'Price:' ?></p><?php if( $hot_wax_ski ) {echo wp_kses_post( $hot_wax_ski );} else {echo 'empty';} ?> </td>
+        <td class="board-desc"><p><?php echo 'Price:' ?></p><?php if( $hot_wax_snowboard ) {echo wp_kses_post( $hot_wax_snowboard );} else {echo 'empty';} ?> </td>  
     </tr> <!-- hot wax end -->
     
     <!-- binding adjustments -->
@@ -165,8 +166,8 @@ $labor_snowboard = get_field( "snowboard_tune_price", 151 );
         <td class="desc"><?php if( $binding_adjustments_type ) {echo wp_kses_post( $binding_adjustments_type );} else {echo 'empty';} ?> <div><?php if( $binding_adjustments_description ) {echo wp_kses_post( $binding_adjustments_description );} else {echo 'empty';} ?> </div></td>
         <th class="ski hidden">Skis</th>
         <th class="board hidden">Snowboard</th>
-        <td class="ski-desc"><?php if( $binding_adjustments_ski ) {echo wp_kses_post( $binding_adjustments_ski );} else {echo 'empty';} ?> </td>
-        <td class="board-desc"><?php if( $binding_adjustments_snowboard ) {echo wp_kses_post( $binding_adjustments_snowboard );} else {echo 'empty';} ?> </td>  
+        <td class="ski-desc"><p><?php echo 'Price:' ?></p><?php if( $binding_adjustments_ski ) {echo wp_kses_post( $binding_adjustments_ski );} else {echo 'empty';} ?> </td>
+        <td class="board-desc"><p><?php echo 'Price:' ?></p><?php if( $binding_adjustments_snowboard ) {echo wp_kses_post( $binding_adjustments_snowboard );} else {echo 'empty';} ?> </td>  
     </tr> <!-- binding adjustments end -->
     
     <!-- binding install -->
@@ -204,8 +205,8 @@ $labor_snowboard = get_field( "snowboard_tune_price", 151 );
         <td class="desc"><?php if( $heli_coils_type ) {echo wp_kses_post( $heli_coils_type );} else {echo 'empty';} ?> <div><?php if( $heli_coils_description ) {echo wp_kses_post( $heli_coils_description );} else {echo 'empty';} ?> </div></td>
         <th class="ski hidden">Skis</th>
         <th class="board hidden">Snowboard</th>
-        <td class="ski-desc"><?php if( $heli_coils_ski ) {echo wp_kses_post( $heli_coils_ski );} else {echo 'empty';} ?> </td>
-        <td class="board-desc"><?php if( $heli_coils_snowboard ) {echo wp_kses_post( $heli_coils_snowboard );} else {echo 'empty';} ?> </td>  
+        <td class="ski-desc"><p><?php echo 'Price:' ?></p><?php if( $heli_coils_ski ) {echo wp_kses_post( $heli_coils_ski );} else {echo 'empty';} ?> </td>
+        <td class="board-desc"><p><?php echo 'Price:' ?></p><?php if( $heli_coils_snowboard ) {echo wp_kses_post( $heli_coils_snowboard );} else {echo 'empty';} ?> </td>  
     </tr> <!-- heli coils end -->
     
     <!-- boot punching -->
@@ -214,8 +215,8 @@ $labor_snowboard = get_field( "snowboard_tune_price", 151 );
         <td class="desc"><?php if( $boot_punching_type ) {echo wp_kses_post( $boot_punching_type );} else {echo 'empty';} ?> <div><?php if( $boot_punching_description ) {echo wp_kses_post( $boot_punching_description );} else {echo 'empty';} ?> </div></td>
         <th class="ski hidden">Skis</th>
         <th class="board hidden">Snowboard</th>
-        <td class="ski-desc"><?php if( $boot_punching_ski ) {echo wp_kses_post( $boot_punching_ski );} else {echo 'empty';} ?> </td>
-        <td class="board-desc"><?php if( $boot_punching_snowboard ) {echo wp_kses_post( $boot_punching_snowboard );} else {echo 'empty';} ?> </td>  
+        <td class="ski-desc"><p><?php echo 'Price:' ?></p><?php if( $boot_punching_ski ) {echo wp_kses_post( $boot_punching_ski );} else {echo 'empty';} ?> </td>
+        <td class="board-desc"><p><?php echo 'Price:' ?></p><?php if( $boot_punching_snowboard ) {echo wp_kses_post( $boot_punching_snowboard );} else {echo 'empty';} ?> </td>  
     </tr> <!-- boot punching end -->
     
     <!-- boot stretching -->
@@ -224,8 +225,8 @@ $labor_snowboard = get_field( "snowboard_tune_price", 151 );
         <td class="desc"><?php if( $boot_stretching_type ) {echo wp_kses_post( $boot_stretching_type );} else {echo 'empty';} ?> <div><?php if( $boot_stretching_description ) {echo wp_kses_post( $boot_stretching_description );} else {echo 'empty';} ?> </div></td>
         <th class="ski hidden">Skis</th>
         <th class="board hidden">Snowboard</th>
-        <td class="ski-desc"><?php if( $boot_stretching_ski ) {echo wp_kses_post( $boot_stretching_ski );} else {echo 'empty';} ?> </td>
-        <td class="board-desc"><?php if( $boot_stretching_snowboard ) {echo wp_kses_post( $boot_stretching_snowboard );} else {echo 'empty';} ?> </td>  
+        <td class="ski-desc"><p><?php echo 'Price:' ?></p><?php if( $boot_stretching_ski ) {echo wp_kses_post( $boot_stretching_ski );} else {echo 'empty';} ?> </td>
+        <td class="board-desc"><p><?php echo 'Price:' ?></p><?php if( $boot_stretching_snowboard ) {echo wp_kses_post( $boot_stretching_snowboard );} else {echo 'empty';} ?> </td>  
     </tr> <!-- boot stretching end -->
     
     <!-- heating of heat moldable liners -->
@@ -254,8 +255,8 @@ $labor_snowboard = get_field( "snowboard_tune_price", 151 );
         <td class="desc"><?php if( $labor_type ) {echo wp_kses_post( $labor_type );} else {echo 'empty';} ?> <div><?php if( $labor_description ) {echo wp_kses_post( $labor_description );} else {echo 'empty';} ?> </div></td>
         <th class="ski hidden">Skis</th>
         <th class="board hidden">Snowboard</th>
-        <td class="ski-desc"><?php if( $labor_ski ) {echo wp_kses_post( $labor_ski );} else {echo 'empty';} ?> </td>
-        <td class="board-desc"><?php if( $labor_snowboard ) {echo wp_kses_post( $labor_snowboard );} else {echo 'empty';} ?> </td>  
+        <td class="ski-desc"><p><?php echo 'Price:' ?></p><?php if( $labor_ski ) {echo wp_kses_post( $labor_ski );} else {echo 'empty';} ?> </td>
+        <td class="board-desc"><p><?php echo 'Price:' ?></p><?php if( $labor_snowboard ) {echo wp_kses_post( $labor_snowboard );} else {echo 'empty';} ?> </td>  
     </tr> <!-- general labor rate end -->
 </table>
     
