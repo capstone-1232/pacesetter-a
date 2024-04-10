@@ -1758,6 +1758,12 @@ footer {
             .products, .woocommerce-ordering, .woocommerce-result-count {
                 padding: 0 12rem;
             }
+
+            .wpf_form {
+                max-height: 0;
+                transform: unset;
+                transition: none;
+            }
         }
 
          // -----------------------------------------------------------------  Filters Menu -----------------------------------------------------------------

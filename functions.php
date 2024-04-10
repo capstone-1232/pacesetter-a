@@ -207,3 +207,18 @@ function add_resort_form($has_orders)
         </form>';
     }
 }
+
+add_action( 'woocommerce_after_shop_loop_item', 'bbloomer_show_stock_shop', 10 );
+  
+function bbloomer_show_stock_shop() {
+   global $product;
+   echo wc_get_stock_html( $product );
+}
+
+// Display stock on the product page
+add_action( 'woocommerce_single_product_summary', 'bbloomer_show_stock_product', 10 );
+
+function bbloomer_show_stock_product() {
+    global $product;
+    echo wc_get_stock_html( $product );
+}

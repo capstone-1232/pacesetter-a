@@ -148,6 +148,14 @@ document.addEventListener('DOMContentLoaded', function() {
         filterMenu.classList.toggle('wpf_form_expand');
     });
 }
+
+
+var resetBtns = document.getElementsByClassName('wpf_reset_btn');
+for (var i = 0; i < resetBtns.length; i++) {
+    var resetBtn = resetBtns[i];
+    resetBtn.setAttribute('href', 'https://pacesetter-a.web.dmitcapstone.ca/wordpress/shop/');
+}
+
 });
 
 // lazy load
