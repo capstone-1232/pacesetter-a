@@ -338,6 +338,50 @@ header .rotate180 {
   object-fit: cover;
 }
 
+main header {
+  display: grid;
+  grid-template-columns: 66.5% 33.5%;
+}
+main header .banner {
+  grid-column: 1/span 2;
+}
+main header h1 {
+  grid-column: 1/span 2;
+}
+main header .page-description {
+  grid-column: 1/span 2;
+}
+main header .filters-menu {
+  grid-column: 1/span 2;
+}
+main header .filter-btn-container {
+  grid-column: 2;
+  background-color: #72A8D5;
+  margin: 0;
+  padding: 0 1.875rem 1rem 0.35rem;
+}
+main header .filter-btn {
+  text-align: center;
+  background-color: #ffffff;
+  height: 2.5rem;
+  border-radius: 5px;
+  padding: 0.7rem 0 0.4rem 0;
+  margin: 0;
+  filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: initial;
+}
+main header .filter-btn svg {
+  margin-left: 0.5rem;
+  width: 1rem;
+}
+main header .filter-btn:hover {
+  cursor: pointer;
+}
+main header .woocommerce-product-search {
+  grid-column: 1;
+}
+
 .wpf_form {
   visibility: visible;
 }
@@ -378,39 +422,6 @@ header .rotate180 {
 }
 .content-area .banner div .more-button:hover {
   background-color: #87D4C4;
-}
-.content-area .wpf_form {
-  display: unset;
-  height: max-content;
-  transform: scaleY(0);
-  transform-origin: top;
-  transition: transform 300ms;
-  top: 0;
-  width: 100vw;
-  visibility: unset !important;
-}
-.content-area svg {
-  width: 2rem;
-}
-.content-area .wpf_form_expand {
-  display: unset !important;
-  position: relative;
-  flex-direction: column;
-  transform: scaleY(100%);
-  transform-origin: top;
-  transition: transform 300ms;
-  top: 0;
-  visibility: unset !important;
-}
-.content-area .wpf_form_expand .wpf_form_filters {
-  display: unset !important;
-  position: relative;
-  flex-direction: column;
-  transform: scaleY(100%);
-  transform-origin: top;
-  transition: transform 300ms;
-  top: 0;
-  visibility: unset !important;
 }
 .content-area .products, .content-area .woocommerce-ordering, .content-area .woocommerce-result-count {
   padding: 0 1.875rem;
@@ -462,7 +473,7 @@ header .rotate180 {
 .content-area .woocommerce-product-search {
   background-color: #72A8D5;
   display: flex;
-  padding: 0 1.875rem;
+  padding: 0 0.35rem 1rem 1.875rem;
 }
 .content-area .woocommerce-product-search label {
   display: none;
@@ -490,14 +501,48 @@ header .rotate180 {
   filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
   transition: 0.3s;
   margin-bottom: 0.5rem;
+  height: 2.5rem;
 }
 .content-area .woocommerce-product-search button:hover {
   background-color: #87D4C4;
   cursor: pointer;
 }
+.content-area header .filters-menu {
+  padding: 0 1.875rem;
+  background-color: #72A8D5;
+}
+.content-area header svg {
+  width: 2rem;
+}
+.content-area header .wpf_form_expand {
+  display: block !important;
+  position: relative;
+  flex-direction: column;
+  transform: scaleY(100%);
+  transform-origin: top;
+  transition: transform 300ms;
+  top: 0;
+  visibility: unset !important;
+}
+.content-area header .wpf_form_expand .wpf_form_filters {
+  display: unset !important;
+  position: relative;
+  flex-direction: column;
+  transform: scaleY(100%);
+  transform-origin: top;
+  transition: transform 300ms;
+  top: 0;
+  visibility: unset !important;
+}
 .content-area header .wpf_form {
   background-color: #72A8D5;
-  padding: 0 1.875rem;
+  display: unset;
+  height: max-content;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 300ms;
+  top: 0;
+  visibility: unset !important;
 }
 .content-area header .wpf_form label {
   font-family: "Josefin Sans", sans-serif;
@@ -987,6 +1032,7 @@ h3 {
   display: none;
 }
 .event-section .es-form-field-container {
+  margin-top: 1rem;
   padding: 0 !important;
   width: 100%;
   display: flex;
@@ -1195,9 +1241,12 @@ footer .footer-info p {
     grid-template-columns: repeat(2, 1fr);
   }
   .content-area .woocommerce-product-search {
-    padding: 0 6rem;
+    padding: 0 0.35rem 1rem 6rem;
   }
-  .content-area header .wpf_form {
+  .content-area .filter-btn-container {
+    padding: 0 6rem 1rem 0.35rem;
+  }
+  .content-area header .filters-menu {
     padding: 0 6rem;
   }
   .content-area nav {
@@ -1345,28 +1394,44 @@ footer .footer-info p {
   .content-area .products, .content-area .woocommerce-ordering, .content-area .woocommerce-result-count {
     padding: 0 12rem;
   }
-  header .wpf_form .wpf_items_wrapper {
+  .content-area .woocommerce-product-search {
+    padding: 0 6rem;
+    grid-column: 1/span 2;
+  }
+  .content-area .filter-btn-container {
+    display: none;
+  }
+  main header .wpf_form:first-child {
+    display: none !important;
+  }
+  main header .filter-btn {
+    display: none;
+  }
+  main header .filters-menu .wpf_form {
+    display: unset !important;
+  }
+  main header .filters-menu .wpf_form .wpf_items_wrapper {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 1fr 1fr;
   }
-  header .wpf_form .wpf_items_wrapper .wpf_item:first-child {
+  main header .filters-menu .wpf_form .wpf_items_wrapper .wpf_item:first-child {
     grid-column: 1/span 3;
     margin-right: 0.5rem;
   }
-  header .wpf_form .wpf_items_wrapper .wpf_item:nth-child(2) {
+  main header .filters-menu .wpf_form .wpf_items_wrapper .wpf_item:nth-child(2) {
     grid-column: 4/span 3;
     margin: 0 0.35rem 0 0.25rem;
   }
-  header .wpf_form .wpf_items_wrapper .wpf_item:nth-child(3) {
+  main header .filters-menu .wpf_form .wpf_items_wrapper .wpf_item:nth-child(3) {
     grid-column: 7/span 3;
     margin: 0 0.25rem 0 0.35rem;
   }
-  header .wpf_form .wpf_items_wrapper .wpf_item:nth-child(4) {
+  main header .filters-menu .wpf_form .wpf_items_wrapper .wpf_item:nth-child(4) {
     grid-column: 10/span 3;
     margin-left: 0.5rem;
   }
-  header .wpf_form .wpf_items_wrapper .wpf_item_submit {
+  main header .filters-menu .wpf_form .wpf_items_wrapper .wpf_item_submit {
     margin-top: 1rem;
     grid-column: 1/span 12;
     grid-row: 2;
@@ -1702,7 +1767,7 @@ footer .footer-info p {
     margin: 0 auto;
   }
 }
-@media screen and (min-width: 1248px) {
+@media screen and (min-width: 1256px) {
   header {
     position: relative;
   }
@@ -1832,36 +1897,39 @@ footer .footer-info p {
   .content-area .woocommerce-product-search {
     padding: 0 12rem;
   }
-  .content-area header .wpf_form {
-    display: grid;
-    grid-template-columns: 82% 18%;
+  .content-area header .filters-menu {
     padding: 0 12rem;
   }
-  .content-area header .wpf_form .wpf_reset_btn {
+  .content-area header .filters-menu .wpf_form {
+    transform: scaleY(100%);
+    display: grid !important;
+    grid-template-columns: 82% 18%;
+  }
+  .content-area header .filters-menu .wpf_form .wpf_reset_btn {
     margin-top: 0.1rem;
     margin-left: 0.5rem;
   }
-  .content-area header .wpf_form .wpf_items_wrapper {
+  .content-area header .filters-menu .wpf_form .wpf_items_wrapper {
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: unset;
   }
-  .content-area header .wpf_form .wpf_items_wrapper .wpf_item:first-child {
+  .content-area header .filters-menu .wpf_form .wpf_items_wrapper .wpf_item:first-child {
     grid-column: 1/span 2;
     margin-right: 0.5rem;
   }
-  .content-area header .wpf_form .wpf_items_wrapper .wpf_item:nth-child(2) {
+  .content-area header .filters-menu .wpf_form .wpf_items_wrapper .wpf_item:nth-child(2) {
     grid-column: 3/span 2;
     margin: 0 0.35rem 0 0.25rem;
   }
-  .content-area header .wpf_form .wpf_items_wrapper .wpf_item:nth-child(3) {
+  .content-area header .filters-menu .wpf_form .wpf_items_wrapper .wpf_item:nth-child(3) {
     grid-column: 5/span 2;
     margin: 0 0.25rem 0 0.35rem;
   }
-  .content-area header .wpf_form .wpf_items_wrapper .wpf_item:nth-child(4) {
+  .content-area header .filters-menu .wpf_form .wpf_items_wrapper .wpf_item:nth-child(4) {
     grid-column: 7/span 2;
     margin: 0 0.35rem 0 0.35rem;
   }
-  .content-area header .wpf_form .wpf_items_wrapper .wpf_item_submit {
+  .content-area header .filters-menu .wpf_form .wpf_items_wrapper .wpf_item_submit {
     grid-column: 9/span 2;
     grid-row: 1;
     margin: 0.1rem 0.35rem 0 0.35rem;
@@ -1941,7 +2009,7 @@ footer .footer-info p {
   .content-area .woocommerce-product-search {
     padding: 0 20rem;
   }
-  .content-area header .wpf_form {
+  .content-area header .filters-menu {
     padding: 0 20rem;
   }
   .content-area nav {
@@ -2004,4 +2072,4 @@ footer .footer-info p {
   header .custom-logo-link img {
     width: 12rem;
   }
-}/*# sourceMappingURL=main.css.map */
+}

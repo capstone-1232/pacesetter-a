@@ -16,6 +16,7 @@
                         <li><a href="https://pacesetter-a.web.dmitcapstone.ca/wordpress/services/">Services</a></li>
                         <li><a href="https://pacesetter-a.web.dmitcapstone.ca/wordpress/rentals/">Rentals</a></li>
                         <li><a href="https://pacesetter-a.web.dmitcapstone.ca/wordpress/events/">Events</a></li>
+                        <li><a href="https://pacesetter-a.web.dmitcapstone.ca/wordpress/shop/">Catalog</a></li>
                     </ul>
                     <ul>
                         <li><a href="https://pacesetter-a.web.dmitcapstone.ca/wordpress/info/">F.A.Q.</a></li>
