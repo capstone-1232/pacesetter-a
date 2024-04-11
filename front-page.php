@@ -98,7 +98,6 @@
     </div>
 </div>
 
-
         <!-- top brands -->
         <div class="top-brands">
             <h1>Our Top Brands</h1>
