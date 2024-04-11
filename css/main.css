@@ -325,8 +325,14 @@ header .rotate180 {
   height: 0;
 }
 .home .brands-slider {
-  background-color: #fff;
-  padding: 2rem 0;
+  display: none;
+}
+.home .top-brands-mobile {
+  padding: 0 1.875rem 1.875rem 1.875rem;
+}
+.home .top-brands-mobile img {
+  width: 100%;
+  margin-top: 1.875rem;
 }
 .home .hero-banners, .home .top-images {
   display: block;
@@ -1248,6 +1254,17 @@ footer .footer-info p {
   .home .featured-products {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+  .home .top-brands-desktop {
+    background-color: #fff;
+  }
+  .home .top-brands-desktop .brands-slider {
+    display: unset;
+    background-color: #fff;
+    padding: 2rem 0;
+  }
+  .home .top-brands-mobile {
+    display: none;
   }
   .content-area .banner div {
     padding: 1rem 6rem;

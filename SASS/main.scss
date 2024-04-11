@@ -393,8 +393,16 @@ body {
     }
 
     .brands-slider {
-        background-color: #fff;
-        padding: 2rem 0;
+        display: none;
+    }
+
+    .top-brands-mobile {
+        padding: 0 1.875rem 1.875rem 1.875rem;
+
+        img {
+            width: 100%;
+            margin-top: 1.875rem;
+        }
     }
 
     .hero-banners, .top-images {
@@ -1565,6 +1573,20 @@ footer {
             .featured-products {
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
+            }
+
+            .top-brands-desktop {
+                background-color: #fff;
+
+                .brands-slider {
+                    display: unset;
+                    background-color: #fff;
+                    padding: 2rem 0;
+                }
+            }
+
+            .top-brands-mobile {
+                display: none;
             }
         }
 
