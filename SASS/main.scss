@@ -393,8 +393,16 @@ body {
     }
 
     .brands-slider {
-        background-color: #fff;
-        padding: 2rem 0;
+        display: none;
+    }
+
+    .top-brands-mobile {
+        padding: 0 1.875rem 1.875rem 1.875rem;
+
+        img {
+            width: 100%;
+            margin-top: 1.875rem;
+        }
     }
 
     .hero-banners, .top-images {
@@ -519,6 +527,44 @@ main {
         }
     }
 
+    .wpf_form {
+        display: unset;
+        height: max-content;
+        transform: scaleY(0);
+        transform-origin: top;
+        transition: transform 300ms;
+        top: 0;
+        width: 100vw;
+        visibility: unset !important;
+    }
+
+    svg {
+        transition: 300ms;
+        width: 2rem;
+    }
+
+    .wpf_form_expand {
+        display: unset !important;
+        position: relative;
+        flex-direction: column;
+        transform: scaleY(100%);
+        transform-origin: top;
+        transition: transform 300ms;  
+        top: 0;
+        visibility: unset !important;
+        .wpf_form_filters {
+            display: unset !important;
+            position: relative;
+            flex-direction: column;
+            transform: scaleY(100%);
+            transform-origin: top;
+            transition: transform 300ms;  
+            top: 0;
+            visibility: unset !important;
+        }
+    }
+
+
     .products, .woocommerce-ordering, .woocommerce-result-count {
         padding: 0 1.875rem;
     }
@@ -534,7 +580,7 @@ main {
         align-items: center;
         margin: 0 auto;
 
-        .next, .previous {
+        .next, .prev {
             display: none;
         }
 
@@ -1566,6 +1612,20 @@ footer {
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
             }
+
+            .top-brands-desktop {
+                background-color: #fff;
+
+                .brands-slider {
+                    display: unset;
+                    background-color: #fff;
+                    padding: 2rem 0;
+                }
+            }
+
+            .top-brands-mobile {
+                display: none;
+            }
         }
 
         // -----------------------------------------------------------------  CATALOGUE PAGE -----------------------------------------------------------------
@@ -1844,6 +1904,12 @@ footer {
 
             .products, .woocommerce-ordering, .woocommerce-result-count {
                 padding: 0 12rem;
+            }
+
+            .wpf_form {
+                max-height: 0;
+                transform: unset;
+                transition: none;
             }
         }
 

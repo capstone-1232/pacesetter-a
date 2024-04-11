@@ -163,6 +163,7 @@
 					</div> <!-- menu-subnav-content end -->
 				</div> <!-- sub-nav end -->
 				<div class="menu-nosub">
+					<a class="link" href="https://pacesetter-a.web.dmitcapstone.ca/wordpress/shop/">Catalog</a>
 					<a class="link" href="https://pacesetter-a.web.dmitcapstone.ca/wordpress/events/">Events</a>
 					<a class="link" href="https://pacesetter-a.web.dmitcapstone.ca/wordpress/contact/">Contact Us</a>
 					<a class="link" href="https://pacesetter-a.web.dmitcapstone.ca/wordpress/about-us/">About Us</a>

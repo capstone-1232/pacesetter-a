@@ -136,6 +136,7 @@ add_action( 'storefront_footer', 'bbloomer_add_search_to_footer' );
 function bbloomer_add_search_to_shop_page() {
     get_search_form(); // Display search form
 }
+
 add_action( 'woocommerce_archive_description', 'bbloomer_add_search_to_shop_page', 10 );
 
   
@@ -206,4 +207,19 @@ function add_resort_form($has_orders)
                 value="DESC" />
         </form>';
     }
+}
+
+add_action( 'woocommerce_after_shop_loop_item', 'bbloomer_show_stock_shop', 10 );
+  
+function bbloomer_show_stock_shop() {
+   global $product;
+   echo wc_get_stock_html( $product );
+}
+
+// Display stock on the product page
+add_action( 'woocommerce_single_product_summary', 'bbloomer_show_stock_product', 10 );
+
+function bbloomer_show_stock_product() {
+    global $product;
+    echo wc_get_stock_html( $product );
 }

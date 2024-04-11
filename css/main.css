@@ -325,8 +325,14 @@ header .rotate180 {
   height: 0;
 }
 .home .brands-slider {
-  background-color: #fff;
-  padding: 2rem 0;
+  display: none;
+}
+.home .top-brands-mobile {
+  padding: 0 1.875rem 1.875rem 1.875rem;
+}
+.home .top-brands-mobile img {
+  width: 100%;
+  margin-top: 1.875rem;
 }
 .home .hero-banners, .home .top-images {
   display: block;
@@ -423,6 +429,42 @@ main header .woocommerce-product-search {
 .content-area .banner div .more-button:hover {
   background-color: #87D4C4;
 }
+
+.content-area .wpf_form {
+  display: unset;
+  height: max-content;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 300ms;
+  top: 0;
+  width: 100vw;
+  visibility: unset !important;
+}
+.content-area svg {
+  transition: 300ms;
+  width: 2rem;
+}
+.content-area .wpf_form_expand {
+  display: unset !important;
+  position: relative;
+  flex-direction: column;
+  transform: scaleY(100%);
+  transform-origin: top;
+  transition: transform 300ms;
+  top: 0;
+  visibility: unset !important;
+}
+.content-area .wpf_form_expand .wpf_form_filters {
+  display: unset !important;
+  position: relative;
+  flex-direction: column;
+  transform: scaleY(100%);
+  transform-origin: top;
+  transition: transform 300ms;
+  top: 0;
+  visibility: unset !important;
+}
+
 .content-area .products, .content-area .woocommerce-ordering, .content-area .woocommerce-result-count {
   padding: 0 1.875rem;
 }
@@ -435,7 +477,7 @@ main header .woocommerce-product-search {
   align-items: center;
   margin: 0 auto;
 }
-.content-area .woocommerce-pagination .next, .content-area .woocommerce-pagination .previous {
+.content-area .woocommerce-pagination .next, .content-area .woocommerce-pagination .prev {
   display: none;
 }
 .content-area .woocommerce-pagination ul.page-numbers {
@@ -1249,6 +1291,17 @@ footer .footer-info p {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
+  .home .top-brands-desktop {
+    background-color: #fff;
+  }
+  .home .top-brands-desktop .brands-slider {
+    display: unset;
+    background-color: #fff;
+    padding: 2rem 0;
+  }
+  .home .top-brands-mobile {
+    display: none;
+  }
   .content-area .banner div {
     padding: 1rem 6rem;
   }
@@ -1413,6 +1466,7 @@ footer .footer-info p {
   .content-area .products, .content-area .woocommerce-ordering, .content-area .woocommerce-result-count {
     padding: 0 12rem;
   }
+
   .content-area .woocommerce-product-search {
     padding: 0 6rem;
     grid-column: 1/span 2;
@@ -1430,6 +1484,13 @@ footer .footer-info p {
     display: unset !important;
   }
   main header .filters-menu .wpf_form .wpf_items_wrapper {
+
+  .content-area .wpf_form {
+    max-height: 0;
+    transform: unset;
+    transition: none;
+  }
+  header .wpf_form .wpf_items_wrapper {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 1fr 1fr;

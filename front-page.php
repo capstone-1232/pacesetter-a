@@ -12,15 +12,27 @@
  get_header();
 
 //  images
-    $first_block = get_field( "about_us_image", 183);
-    $first_block_size = $first_block['sizes']['large'];
-    $first_block_alt = $first_block['alt'];
-    $second_block = get_field( "about_us_image", 185);
-    $second_block_size = $second_block['sizes']['large'];
-    $second_block_alt = $second_block['alt'];
-    $third_block = get_field( "about_us_image", 188);
-    $third_block_size = $third_block['sizes']['large'];
-    $third_block_alt = $third_block['alt'];
+    $brand_one = get_field( "brand_image", 509);
+    $brand_one_size = $brand_one['sizes']['large'];
+    $brand_one_alt = $brand_one['alt'];
+    $brand_two = get_field( "brand_image", 512);
+    $brand_two_size = $brand_two['sizes']['large'];
+    $brand_two_alt = $brand_two['alt'];
+    $brand_three = get_field( "brand_image", 520);
+    $brand_three_size = $brand_three['sizes']['large'];
+    $brand_three_alt = $brand_three['alt'];
+    $brand_four = get_field( "brand_image", 521);
+    $brand_four_size = $brand_four['sizes']['large'];
+    $brand_four_alt = $brand_four['alt'];
+    $brand_five = get_field( "brand_image", 522);
+    $brand_five_size = $brand_five['sizes']['large'];
+    $brand_five_alt = $brand_five['alt'];
+    $brand_six = get_field( "brand_image", 524);
+    $brand_six_size = $brand_six['sizes']['large'];
+    $brand_six_alt = $brand_six['alt'];
+    $brand_seven = get_field( "brand_image", 523);
+    $brand_seven_size = $brand_seven['sizes']['large'];
+    $brand_seven_alt = $brand_seven['alt'];
  ?>
 
  <main>
@@ -107,13 +119,13 @@
                 ?>
             </div>
             <div class="top-brands-mobile">
-                <img class="about-image" src="<?php echo $first_block_size ?>" alt="<?php echo $first_block_alt ?>">
-                <img class="about-image" src="<?php echo $first_block_size ?>" alt="<?php echo $first_block_alt ?>">
-                <img class="about-image" src="<?php echo $first_block_size ?>" alt="<?php echo $first_block_alt ?>">
-                <img class="about-image" src="<?php echo $first_block_size ?>" alt="<?php echo $first_block_alt ?>">
-                <img class="about-image" src="<?php echo $first_block_size ?>" alt="<?php echo $first_block_alt ?>">
-                <img class="about-image" src="<?php echo $first_block_size ?>" alt="<?php echo $first_block_alt ?>">
-                <img class="about-image" src="<?php echo $first_block_size ?>" alt="<?php echo $first_block_alt ?>">
+                <img class="brand-image" src="<?php echo $brand_one_size ?>" alt="<?php echo $brand_one_alt ?>">
+                <img class="brand-image" src="<?php echo $brand_two_size ?>" alt="<?php echo $brand_two_alt ?>">
+                <img class="brand-image" src="<?php echo $brand_three_size ?>" alt="<?php echo $brand_three_alt ?>">
+                <img class="brand-image" src="<?php echo $brand_four_size ?>" alt="<?php echo $brand_four_alt ?>">
+                <img class="brand-image" src="<?php echo $brand_five_size ?>" alt="<?php echo $brand_five_alt ?>">
+                <img class="brand-image" src="<?php echo $brand_six_size ?>" alt="<?php echo $brand_six_alt ?>">
+                <img class="brand-image" src="<?php echo $brand_seven_size ?>" alt="<?php echo $brand_seven_alt ?>">
             </div>
         </div>
 
