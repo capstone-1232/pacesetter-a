@@ -57,7 +57,7 @@
                 echo '</h2>';
                 echo '<p>' . the_content() . '</p>';
                 echo '<a href="';
-                echo the_field('URL');
+                        the_field('URL');
                 echo '">Discover</a>';
                 echo '</div>';
             endwhile; 
