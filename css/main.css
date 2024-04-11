@@ -441,7 +441,7 @@ main header .woocommerce-product-search {
   align-items: center;
   margin: 0 auto;
 }
-.content-area .woocommerce-pagination .next, .content-area .woocommerce-pagination .previous {
+.content-area .woocommerce-pagination .next, .content-area .woocommerce-pagination .prev {
   display: none;
 }
 .content-area .woocommerce-pagination ul.page-numbers {
