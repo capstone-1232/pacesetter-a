@@ -325,8 +325,14 @@ header .rotate180 {
   height: 0;
 }
 .home .brands-slider {
-  background-color: #fff;
-  padding: 2rem 0;
+  display: none;
+}
+.home .top-brands-mobile {
+  padding: 0 1.875rem 1.875rem 1.875rem;
+}
+.home .top-brands-mobile img {
+  width: 100%;
+  margin-top: 1.875rem;
 }
 .home .hero-banners, .home .top-images {
   display: block;
@@ -334,7 +340,7 @@ header .rotate180 {
 }
 .home .top-images-slider img {
   width: 100%;
-  height: 400px;
+  height: 28rem;
   object-fit: cover;
 }
 
@@ -471,6 +477,9 @@ main header .woocommerce-product-search {
   align-items: center;
   margin: 0 auto;
 }
+.content-area .woocommerce-pagination .next, .content-area .woocommerce-pagination .previous {
+  display: none;
+}
 .content-area .woocommerce-pagination ul.page-numbers {
   display: flex;
   margin: 0 auto;
@@ -495,6 +504,9 @@ main header .woocommerce-product-search {
 }
 .content-area .products .product a {
   text-decoration: none;
+}
+.content-area .products .product .stock {
+  padding: 0.5rem 0;
 }
 .content-area .products .product .woocommerce-LoopProduct-link h2 {
   margin-top: 1rem;
@@ -660,6 +672,10 @@ main header .woocommerce-product-search {
 .content-area .woocommerce-product-attributes {
   margin-bottom: 3rem;
 }
+.content-area .woocommerce-product-attributes tbody {
+  display: grid;
+  grid-template-columns: 1;
+}
 .content-area .woocommerce-product-attributes-item {
   background-color: unset;
   display: unset;
@@ -672,6 +688,9 @@ main header .woocommerce-product-search {
   font-family: "Playfair Display", serif;
   padding-bottom: 1rem;
   font-size: 1.25rem;
+}
+.content-area .woocommerce-product-attributes-item td p {
+  margin: 0;
 }
 .content-area .variations, .content-area .variations_button, .content-area .woocommerce-tabs a, .content-area .cart, .content-area .wc-tabs a {
   display: none;
@@ -1032,6 +1051,11 @@ h3 {
   filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
   border: none;
   border-radius: 5px;
+  transition: 0.3s;
+}
+.event-section .event-header form input:hover {
+  background-color: #87D4C4;
+  cursor: pointer;
 }
 .event-section .simcal-align-right {
   display: none;
@@ -1089,6 +1113,7 @@ h3 {
 }
 .event-section .es-form-field-container div:nth-child(3) input:hover {
   background-color: #72A8D5;
+  cursor: pointer;
 }
 .event-section .es-form-field-container .gjs-row:nth-child(2) {
   width: 100%;
@@ -1265,6 +1290,17 @@ footer .footer-info p {
   .home .featured-products {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+  .home .top-brands-desktop {
+    background-color: #fff;
+  }
+  .home .top-brands-desktop .brands-slider {
+    display: unset;
+    background-color: #fff;
+    padding: 2rem 0;
+  }
+  .home .top-brands-mobile {
+    display: none;
   }
   .content-area .banner div {
     padding: 1rem 6rem;
@@ -1489,19 +1525,29 @@ footer .footer-info p {
   .content-area .summary {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(12, 1fr);
   }
   .content-area .woocommerce-product-gallery {
-    grid-row: 1;
+    grid-row: 1/span 12;
     grid-column: 1;
     width: 100%;
   }
   .content-area .product_title {
-    grid-row: 1;
+    grid-row: 1/span 2;
     grid-column: 2;
+    padding: 0 0 0 1rem;
   }
   .content-area .price {
-    grid-row: 1;
+    grid-row: 3;
     grid-column: 2;
+    margin: 0;
+    padding-left: 1rem;
+  }
+  .content-area .stock {
+    grid-row: 4;
+    grid-column: 2;
+    margin: 0;
+    padding-left: 1rem;
   }
   .history,
   .expertise,
