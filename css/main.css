@@ -429,7 +429,6 @@ main header .woocommerce-product-search {
 .content-area .banner div .more-button:hover {
   background-color: #87D4C4;
 }
-
 .content-area .wpf_form {
   display: unset;
   height: max-content;
@@ -464,7 +463,6 @@ main header .woocommerce-product-search {
   top: 0;
   visibility: unset !important;
 }
-
 .content-area .products, .content-area .woocommerce-ordering, .content-area .woocommerce-result-count {
   padding: 0 1.875rem;
 }
@@ -1026,6 +1024,21 @@ h3 {
 .event-section .simcal-calendar .simcal-week td {
   justify-self: center;
 }
+.event-section .simcal-calendar .simcal-week td:hover {
+  position: relative;
+}
+.event-section .simcal-calendar .simcal-week td:hover ul {
+  background-color: #fff;
+  position: absolute;
+  display: block;
+  filter: drop-shadow(0 0 0.05rem);
+  left: 0;
+  border-radius: 5px;
+}
+.event-section .simcal-calendar .simcal-week td:hover ul li {
+  margin: 0;
+  padding: 0.5rem;
+}
 .event-section .simcal-calendar table {
   margin: 0 1.875rem;
 }
@@ -1035,6 +1048,9 @@ h3 {
 }
 .event-section .simcal-calendar table tr:nth-child(odd) {
   background-color: unset;
+}
+.event-section .simcal-calendar ul {
+  display: none;
 }
 .event-section .event-header {
   background-color: #72A8D5;
@@ -1466,7 +1482,11 @@ footer .footer-info p {
   .content-area .products, .content-area .woocommerce-ordering, .content-area .woocommerce-result-count {
     padding: 0 12rem;
   }
-
+  .content-area .wpf_form {
+    max-height: 0;
+    transform: unset;
+    transition: none;
+  }
   .content-area .woocommerce-product-search {
     padding: 0 6rem;
     grid-column: 1/span 2;
@@ -1484,13 +1504,6 @@ footer .footer-info p {
     display: unset !important;
   }
   main header .filters-menu .wpf_form .wpf_items_wrapper {
-
-  .content-area .wpf_form {
-    max-height: 0;
-    transform: unset;
-    transition: none;
-  }
-  header .wpf_form .wpf_items_wrapper {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 1fr 1fr;
@@ -2162,4 +2175,4 @@ footer .footer-info p {
   header .custom-logo-link img {
     width: 12rem;
   }
-}
+}/*# sourceMappingURL=main.css.map */
