@@ -10,6 +10,17 @@
  */
 
  get_header();
+
+//  images
+    $first_block = get_field( "about_us_image", 183);
+    $first_block_size = $first_block['sizes']['large'];
+    $first_block_alt = $first_block['alt'];
+    $second_block = get_field( "about_us_image", 185);
+    $second_block_size = $second_block['sizes']['large'];
+    $second_block_alt = $second_block['alt'];
+    $third_block = get_field( "about_us_image", 188);
+    $third_block_size = $third_block['sizes']['large'];
+    $third_block_alt = $third_block['alt'];
  ?>
 
  <main>
@@ -79,20 +90,31 @@
         <!-- top brands -->
         <div class="top-brands">
             <h1>Our Top Brands</h1>
-            <?php
-                $args = array(
-                    'post_type' => 'brand', 
-                    'post_per_page' => 3
-                );
+            <div class="top-brands-desktop">
+                <?php
+                    $args = array(
+                        'post_type' => 'brand', 
+                        'post_per_page' => 3
+                    );
 
-                $loop = new WP_Query($args); 
+                    $loop = new WP_Query($args); 
 
-                echo '<ul class="brands-slider">';
-                while ($loop->have_posts()): $loop->the_post();
-                    echo '<li class="slider-item">' . the_post_thumbnail() . '</li>';
-                endwhile; 
-                echo '</ul>';
-            ?>
+                    echo '<ul class="brands-slider">';
+                    while ($loop->have_posts()): $loop->the_post();
+                        echo '<li class="slider-item">' . the_post_thumbnail() . '</li>';
+                    endwhile; 
+                    echo '</ul>';
+                ?>
+            </div>
+            <div class="top-brands-mobile">
+                <img class="about-image" src="<?php echo $first_block_size ?>" alt="<?php echo $first_block_alt ?>">
+                <img class="about-image" src="<?php echo $first_block_size ?>" alt="<?php echo $first_block_alt ?>">
+                <img class="about-image" src="<?php echo $first_block_size ?>" alt="<?php echo $first_block_alt ?>">
+                <img class="about-image" src="<?php echo $first_block_size ?>" alt="<?php echo $first_block_alt ?>">
+                <img class="about-image" src="<?php echo $first_block_size ?>" alt="<?php echo $first_block_alt ?>">
+                <img class="about-image" src="<?php echo $first_block_size ?>" alt="<?php echo $first_block_alt ?>">
+                <img class="about-image" src="<?php echo $first_block_size ?>" alt="<?php echo $first_block_alt ?>">
+            </div>
         </div>
 
         <!-- image slider -->
