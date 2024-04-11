@@ -85,8 +85,8 @@ body {
                 }
 
                 .logo {
-                    grid-column: 1/span 3;
-                    padding: 14px 16px;
+                    grid-column: 1/span 12;
+                    padding: 1rem 0;
                 }
             }
             
@@ -396,6 +396,13 @@ body {
         display: none;
     }
 
+    .top-brands h2 {
+        text-align: center;
+        background-color: $secondary-color;
+        color: #000;
+        padding: 1.3rem 1.875rem 1rem 1.875rem;
+    }
+
     .top-brands-mobile {
         padding: 0 1.875rem 1.875rem 1.875rem;
 
@@ -580,7 +587,7 @@ main {
         align-items: center;
         margin: 0 auto;
 
-        .next, .previous {
+        .next, .prev {
             display: none;
         }
 
@@ -2463,7 +2470,7 @@ footer {
 
                 .logo {
                     grid-column: 1/span 3;
-                    padding: 14px 16px;
+                    padding: 1rem 0;
                 }
             }
             
@@ -2639,6 +2646,8 @@ footer {
                         transform: scaleY(100%);
                         display: grid !important;
                         grid-template-columns: 82% 18%;
+                        width: 100%;
+                        max-height: 100%;
 
                         .wpf_reset_btn {
                             margin-top: 0.1rem;
