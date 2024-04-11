@@ -150,12 +150,64 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 
 
-var resetBtns = document.getElementsByClassName('wpf_reset_btn');
-for (var i = 0; i < resetBtns.length; i++) {
-    var resetBtn = resetBtns[i];
-    resetBtn.setAttribute('href', 'https://pacesetter-a.web.dmitcapstone.ca/wordpress/shop/');
-}
+$(document).ready(function() {
+    // Check if the current URL contains the filter query parameter
+    if (window.location.href.includes('wpf=filters')) {
+        // Attach click event handler to the pagination links
+        $('.woocommerce-pagination').on('click', 'a', function(e) {
+            // Prevent the default behavior of the link
+            e.preventDefault();
+            
+            // Get the clicked page number from the link
+            var clickedPage = $(this).text().trim();
+            
+            // Get the current URL
+            var currentUrl = window.location.href;
+            
+            // Parse the URL to extract query parameters
+            var url = new URL(currentUrl);
+            
+            // Check if the clicked link is "Next" or "Previous"
+            if (clickedPage.toLowerCase() === 'next') {
+                // Get the current page parameter value
+                var currentPage = parseInt(url.searchParams.get('wpf_page')) || 1;
+                
+                // Increment the page parameter value
+                var nextPage = currentPage + 1;
+                
+                // Update the page parameter in the URL
+                url.searchParams.set('wpf_page', nextPage);
+            } else if (clickedPage.toLowerCase() === 'prev') {
+                // Get the current page parameter value
+                var currentPage = parseInt(url.searchParams.get('wpf_page')) || 1;
+                
+                // Decrement the page parameter value, making sure it's not less than 1
+                var prevPage = Math.max(currentPage - 1, 1);
+                
+                // Update the page parameter in the URL
+                url.searchParams.set('wpf_page', prevPage);
+            } else {
+                // If the clickedPage is a number, update the page parameter in the URL
+                url.searchParams.set('wpf_page', clickedPage);
+            }
+            
+            // Redirect to the updated URL
+            window.location.href = url.toString();
+        });
+    }
+});
+});
 
+// clear button
+document.addEventListener('DOMContentLoaded', function() {
+    // Use event delegation to listen for click events on the document
+    document.addEventListener('click', function(event) {
+        // Check if the clicked element is the reset button
+        if (event.target.matches('.wpf_reset_btn input[type="reset"]')) {
+            // Redirect the user to the specified URL
+            window.location.href = 'https://pacesetter-a.web.dmitcapstone.ca/wordpress/shop/';
+        }
+    });
 });
 
 // lazy load

@@ -64,7 +64,7 @@
             <a href="<?php the_permalink(); ?>">
                 <?php echo woocommerce_get_product_thumbnail(); ?>
                 <p class="featured-title"><?php the_title(); ?></p>
-                <p class="featured-price"><?php echo wc_get_price_to_display( $product, array( 'price' => $product->get_price() ) ); ?></p>
+                <p class="featured-price"><?php echo '$'.wc_get_price_to_display( $product, array( 'price' => $product->get_price() ) ); ?></p>
             </a>
         </div>
     <?php
