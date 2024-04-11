@@ -100,7 +100,7 @@
 
         <!-- top brands -->
         <div class="top-brands">
-            <h1>Our Top Brands</h1>
+            <h2>Our Top Brands</h2>
             <div class="top-brands-desktop">
                 <?php
                     $args = array(
