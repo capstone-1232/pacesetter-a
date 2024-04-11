@@ -74,8 +74,8 @@ header .navbar nav .nav-items {
   display: none;
 }
 header .navbar nav .logo {
-  grid-column: 1/span 3;
-  padding: 14px 16px;
+  grid-column: 1/span 12;
+  padding: 1rem 0;
 }
 header .navbar .nav-items a {
   color: #2E2E2E;
@@ -429,7 +429,6 @@ main header .woocommerce-product-search {
 .content-area .banner div .more-button:hover {
   background-color: #87D4C4;
 }
-
 .content-area .wpf_form {
   display: unset;
   height: max-content;
@@ -464,7 +463,6 @@ main header .woocommerce-product-search {
   top: 0;
   visibility: unset !important;
 }
-
 .content-area .products, .content-area .woocommerce-ordering, .content-area .woocommerce-result-count {
   padding: 0 1.875rem;
 }
@@ -1466,7 +1464,11 @@ footer .footer-info p {
   .content-area .products, .content-area .woocommerce-ordering, .content-area .woocommerce-result-count {
     padding: 0 12rem;
   }
-
+  .content-area .wpf_form {
+    max-height: 0;
+    transform: unset;
+    transition: none;
+  }
   .content-area .woocommerce-product-search {
     padding: 0 6rem;
     grid-column: 1/span 2;
@@ -1484,13 +1486,6 @@ footer .footer-info p {
     display: unset !important;
   }
   main header .filters-menu .wpf_form .wpf_items_wrapper {
-
-  .content-area .wpf_form {
-    max-height: 0;
-    transform: unset;
-    transition: none;
-  }
-  header .wpf_form .wpf_items_wrapper {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 1fr 1fr;
@@ -1874,7 +1869,7 @@ footer .footer-info p {
   }
   header .navbar nav .logo {
     grid-column: 1/span 3;
-    padding: 14px 16px;
+    padding: 1rem 0;
   }
   header .navbar .nav-items a {
     color: black;
