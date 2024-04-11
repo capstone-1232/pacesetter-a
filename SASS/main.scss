@@ -527,6 +527,44 @@ main {
         }
     }
 
+    .wpf_form {
+        display: unset;
+        height: max-content;
+        transform: scaleY(0);
+        transform-origin: top;
+        transition: transform 300ms;
+        top: 0;
+        width: 100vw;
+        visibility: unset !important;
+    }
+
+    svg {
+        transition: 300ms;
+        width: 2rem;
+    }
+
+    .wpf_form_expand {
+        display: unset !important;
+        position: relative;
+        flex-direction: column;
+        transform: scaleY(100%);
+        transform-origin: top;
+        transition: transform 300ms;  
+        top: 0;
+        visibility: unset !important;
+        .wpf_form_filters {
+            display: unset !important;
+            position: relative;
+            flex-direction: column;
+            transform: scaleY(100%);
+            transform-origin: top;
+            transition: transform 300ms;  
+            top: 0;
+            visibility: unset !important;
+        }
+    }
+
+
     .products, .woocommerce-ordering, .woocommerce-result-count {
         padding: 0 1.875rem;
     }
@@ -1866,6 +1904,12 @@ footer {
 
             .products, .woocommerce-ordering, .woocommerce-result-count {
                 padding: 0 12rem;
+            }
+
+            .wpf_form {
+                max-height: 0;
+                transform: unset;
+                transition: none;
             }
         }
 

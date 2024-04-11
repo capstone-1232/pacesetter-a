@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const menuContent4 = document.querySelector('.menu-subnav-content4');
   const links = document.querySelectorAll('.flex-arrow a');
   const svgs = document.querySelectorAll('.menu-subnav svg');
+  const svgFilter = document.querySelector('.filter-btn svg');
   const emailListContainer1 = document.getElementById('es_form_f2-n1');
   const emailListContainer2 = document.getElementById('es_form_f2-n3');
 
@@ -94,10 +95,16 @@ document.addEventListener('DOMContentLoaded', function() {
       console.error('Links or SVGs not found or mismatched.');
   }
 
+  if(svgFilter) {
+  filterBtn.addEventListener('click', function() {
+    svgFilter.classList.toggle('rotate180')
+  })
+  }
+
   // hamburger menu
   if (navBtn && menu) {
       navBtn.addEventListener('click', function() {
-          menu.classList.toggle('menu-expanded');
+        menu.classList.toggle('menu-expanded');
       });
   } else {
       console.error('Nav button or menu not found.');
@@ -140,8 +147,13 @@ document.addEventListener('DOMContentLoaded', function() {
     filterBtn.addEventListener('click', function() {
         filterMenu.classList.toggle('wpf_form_expand');
     });
-} else {
-    console.error('not found.');
+}
+
+
+var resetBtns = document.getElementsByClassName('wpf_reset_btn');
+for (var i = 0; i < resetBtns.length; i++) {
+    var resetBtn = resetBtns[i];
+    resetBtn.setAttribute('href', 'https://pacesetter-a.web.dmitcapstone.ca/wordpress/shop/');
 }
 
 });
