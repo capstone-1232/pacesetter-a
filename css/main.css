@@ -629,7 +629,10 @@ main header .woocommerce-product-search {
 }
 .content-area .woocommerce-product-attributes {
   margin-bottom: 3rem;
-  display: flex;
+}
+.content-area .woocommerce-product-attributes tbody {
+  display: grid;
+  grid-template-columns: 1;
 }
 .content-area .woocommerce-product-attributes-item {
   background-color: unset;
@@ -643,6 +646,9 @@ main header .woocommerce-product-search {
   font-family: "Playfair Display", serif;
   padding-bottom: 1rem;
   font-size: 1.25rem;
+}
+.content-area .woocommerce-product-attributes-item td p {
+  margin: 0;
 }
 .content-area .variations, .content-area .variations_button, .content-area .woocommerce-tabs a, .content-area .cart, .content-area .wc-tabs a {
   display: none;
@@ -1003,6 +1009,11 @@ h3 {
   filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
   border: none;
   border-radius: 5px;
+  transition: 0.3s;
+}
+.event-section .event-header form input:hover {
+  background-color: #87D4C4;
+  cursor: pointer;
 }
 .event-section .simcal-align-right {
   display: none;
@@ -1060,6 +1071,7 @@ h3 {
 }
 .event-section .es-form-field-container div:nth-child(3) input:hover {
   background-color: #72A8D5;
+  cursor: pointer;
 }
 .event-section .es-form-field-container .gjs-row:nth-child(2) {
   width: 100%;
@@ -2089,4 +2101,4 @@ footer .footer-info p {
   header .custom-logo-link img {
     width: 12rem;
   }
-}/*# sourceMappingURL=main.css.map */
+}

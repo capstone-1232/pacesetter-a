@@ -780,7 +780,11 @@ main {
 
     .woocommerce-product-attributes {
         margin-bottom: 3rem;
-        display: flex;
+
+        tbody {
+            display: grid;
+            grid-template-columns: 1;
+        }
     }
 
     .woocommerce-product-attributes-item {
@@ -796,6 +800,10 @@ main {
             font-family: "Playfair Display", serif;
             padding-bottom: 1rem;
             font-size: 1.25rem;
+
+            p{
+                margin: 0;
+            }
         }
     }
 
@@ -1261,6 +1269,12 @@ h3 {
                 filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
                 border: none;
                 border-radius: 5px;
+                transition: 0.3s;
+            }
+
+            input:hover {
+                background-color: $primary-color;
+                cursor: pointer;
             }
         }
     }
@@ -1333,6 +1347,7 @@ h3 {
 
         div:nth-child(3) input:hover {
             background-color: $secondary-color;
+            cursor: pointer;
         }
 
         .gjs-row:nth-child(2) {
