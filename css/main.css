@@ -259,8 +259,13 @@ header .rotate180 {
   height: 28rem;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 3rem 1.875rem 1rem 1.875rem;
   position: relative;
+}
+.home .hero-banner .hero-grad {
+  width: 100%;
+  height: 100%;
+  padding: 3rem 1.875rem 1rem 1.875rem;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8));
 }
 .home .hero-banner h2 {
   padding: 0;
@@ -1033,6 +1038,21 @@ h3 {
 .event-section .simcal-calendar .simcal-week td {
   justify-self: center;
 }
+.event-section .simcal-calendar .simcal-week td:hover {
+  position: relative;
+}
+.event-section .simcal-calendar .simcal-week td:hover ul {
+  background-color: #fff;
+  position: absolute;
+  display: block;
+  filter: drop-shadow(0 0 0.05rem);
+  left: 0;
+  border-radius: 5px;
+}
+.event-section .simcal-calendar .simcal-week td:hover ul li {
+  margin: 0;
+  padding: 0.5rem;
+}
 .event-section .simcal-calendar table {
   margin: 0 1.875rem;
 }
@@ -1042,6 +1062,9 @@ h3 {
 }
 .event-section .simcal-calendar table tr:nth-child(odd) {
   background-color: unset;
+}
+.event-section .simcal-calendar ul {
+  display: none;
 }
 .event-section .event-header {
   background-color: #72A8D5;
@@ -1288,10 +1311,14 @@ footer .footer-info p {
   header .navbar {
     padding: 0 6rem;
   }
+
   header .menu .menu-subnav, header .menu .menu-nosub {
     padding: 1rem 6rem;
   }
   .home .hero-banner {
+
+  .home .hero-banner .hero-grad {
+
     padding: 3rem 6rem 1rem 6rem;
   }
   .home .hero-banner a {
@@ -1962,7 +1989,7 @@ footer .footer-info p {
   header .navbar {
     padding: 0 12rem;
   }
-  .home .hero-banner {
+  .home .hero-banner .hero-grad {
     padding: 3rem 12rem 1rem 12rem;
   }
   .home .hero-banner a {
@@ -2120,7 +2147,7 @@ footer .footer-info p {
   .content-area .summary, .content-area .woocommerce-tabs {
     padding: 0 20rem;
   }
-  .home .hero-banner {
+  .home .hero-banner .hero-grad {
     padding: 3rem 20rem 1rem 20rem;
   }
   .home .hero-banner a {
