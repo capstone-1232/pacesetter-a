@@ -51,7 +51,8 @@
 
             echo '<div class="hero-banner-slider">';
             while ($loop->have_posts()): $loop->the_post();
-                echo '<div class="hero-banner" style="background-image: url(' . get_the_post_thumbnail_url( get_the_ID(), "large" ) . '")>';
+                echo '<div class="hero-banner" style="background-image: url(' . get_the_post_thumbnail_url( get_the_ID(), "full" ) . ');">';
+                echo '<div class="hero-grad">';
                 echo '<h2>';
                     the_title();
                 echo '</h2>';
@@ -59,6 +60,7 @@
                 echo '<a href="';
                 echo  the_field('url');
                 echo '">Discover</a>';
+                echo '</div>';
                 echo '</div>';
             endwhile; 
             echo '</div>';
