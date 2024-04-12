@@ -115,9 +115,9 @@ $labor_snowboard = get_field( "snowboard_tune_price", 151 );
 <!-- ski and snowboard rentals table -->
 <table class="services-table">
     <tr class="desktop-only">
-        <th>Type of tune</th>
-        <th>Skis</th>
-        <th>Snowboard</th>
+        <th colspan="2">Type of tune</th>
+        <th colspan="2">Skis</th>
+        <th colspan="2">Snowboard</th>
     </tr>
 
     <!-- full tune -->

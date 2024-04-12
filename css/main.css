@@ -153,7 +153,7 @@ header .menu {
   transform-origin: top;
   transition: transform 300ms;
   height: max-content;
-  margin-top: 96.7px;
+  margin-top: 100.7px;
   width: 100vw;
   z-index: 2;
 }
@@ -169,7 +169,7 @@ header .menu .menu-subnav {
   display: flex;
   flex-direction: column;
   font-size: 1.8rem;
-  padding: 1rem;
+  padding: 1rem 1.875rem;
 }
 header .menu .flex-arrow a {
   display: grid;
@@ -218,10 +218,13 @@ header .menu .menu-subnav-content4 a {
 header .menu .menu-nosub {
   display: flex;
   flex-direction: column;
-  padding: 1rem;
+  padding: 0 1.875rem;
 }
 header .menu .menu-nosub a {
-  padding-bottom: 1rem;
+  padding: 0.5rem 0;
+}
+header .menu .menu-nosub a:last-child {
+  margin-bottom: 3rem;
 }
 header .menu .menu-expanded-small {
   display: flex;
@@ -278,7 +281,7 @@ header .rotate180 {
   text-align: center;
   text-decoration: none;
   border-radius: 5px;
-  width: 4rem;
+  width: 5rem;
   background-color: #F7EE23;
   color: #000;
   padding: 0.6rem 0.5rem 0.5rem 0.5rem;
@@ -1308,7 +1311,14 @@ footer .footer-info p {
   header .navbar {
     padding: 0 6rem;
   }
+
+  header .menu .menu-subnav, header .menu .menu-nosub {
+    padding: 1rem 6rem;
+  }
+  .home .hero-banner {
+
   .home .hero-banner .hero-grad {
+
     padding: 3rem 6rem 1rem 6rem;
   }
   .home .hero-banner a {
@@ -1449,6 +1459,9 @@ footer .footer-info p {
   }
   li {
     margin-top: 1.25rem;
+  }
+  header .menu .menu-subnav, header .menu .menu-nosub {
+    padding: 1rem 1.875rem;
   }
   .home .hero-banner h2 {
     font-size: 2.5rem;
@@ -2188,4 +2201,4 @@ footer .footer-info p {
   header .custom-logo-link img {
     width: 12rem;
   }
-}/*# sourceMappingURL=main.css.map */
+}

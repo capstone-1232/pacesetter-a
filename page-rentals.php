@@ -109,10 +109,10 @@ $demo_info_two = get_field( "info", 306);
     <!-- rentals table -->
     <table class="rentals-table">
         <tr class="desktop-only">
-            <th>Rental</th>
-            <th>Type</th>
-            <th>Package</th>
-            <th>Demo</th>
+            <th colspan="2">Rental</th>
+            <th colspan="2">Type</th>
+            <th colspan="2">Package</th>
+            <th colspan="2">Demo</th>
         </tr>
     
         <tr>
@@ -123,7 +123,7 @@ $demo_info_two = get_field( "info", 306);
                     <div>
                         <?php if( $ski_rental ) {echo wp_kses_post( $ski_rental );} else {echo 'empty';} ?>
                     </div>
-                <div>
+                </div>
             </td>
             <th class="rental-type hidden">Type</th>
             <th class="package hidden">Package</th>
@@ -152,14 +152,14 @@ $demo_info_two = get_field( "info", 306);
         </tr>
     
         <tr>
-            <th class="rental hidden">Rental</th>
-            <td class="rental-desc">
+            <th colspan="2" class="rental hidden">Rental</th>
+            <td colspan="2" class="rental-desc">
                 <div>
                     <p>Snowboarding:</p>
                     <div>
                         <?php if( $snowboard_rental ) {echo wp_kses_post( $snowboard_rental );} else {echo 'empty';} ?>
                     </div>
-                <div>
+                </div>
             </td>
             <th class="rental-type hidden">Type</th>
             <th class="package hidden">Package</th>
@@ -180,11 +180,8 @@ $demo_info_two = get_field( "info", 306);
                 </ul>
             </td>
         </tr>
-    </table>
-    </div> <!-- end rentals table -->
-</div> 
+    </table> <!-- end rentals table -->
 
-<div>
 
 <!-- rentals info -->
 <div class="rentals-info">

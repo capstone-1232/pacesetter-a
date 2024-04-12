@@ -16,7 +16,7 @@
 <div class="event-section">
     <div class="event-header">
         <?php echo "<h1>" . date("M") . " - Events</h1>"; ?>
-        <form action="" method="GET">
+        <form action="#" method="GET">
             <input id="calender-select" name="calendar-select" type="submit" value="View Calendar">
             <?php
                 if (isset($_GET['calendar-select'])) {
