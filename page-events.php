@@ -48,6 +48,11 @@
                         echo        '<h3>';
                             the_title();
                         echo        '</h3>';
+                        echo "<p>";
+                            the_field('start_date');
+                        echo " ~ ";
+                            the_field('end_date');
+                        echo "</p>";
                             the_content();
                         echo do_shortcode('[email-subscribers-form id="3"]'); 
                         echo        '</div>';

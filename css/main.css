@@ -1030,6 +1030,21 @@ h3 {
 .event-section .simcal-calendar .simcal-week td {
   justify-self: center;
 }
+.event-section .simcal-calendar .simcal-week td:hover {
+  position: relative;
+}
+.event-section .simcal-calendar .simcal-week td:hover ul {
+  background-color: #fff;
+  position: absolute;
+  display: block;
+  filter: drop-shadow(0 0 0.05rem);
+  left: 0;
+  border-radius: 5px;
+}
+.event-section .simcal-calendar .simcal-week td:hover ul li {
+  margin: 0;
+  padding: 0.5rem;
+}
 .event-section .simcal-calendar table {
   margin: 0 1.875rem;
 }
@@ -1039,6 +1054,9 @@ h3 {
 }
 .event-section .simcal-calendar table tr:nth-child(odd) {
   background-color: unset;
+}
+.event-section .simcal-calendar ul {
+  display: none;
 }
 .event-section .event-header {
   background-color: #72A8D5;

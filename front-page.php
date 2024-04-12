@@ -57,7 +57,7 @@
                 echo '</h2>';
                 echo '<p>' . the_content() . '</p>';
                 echo '<a href="';
-                echo the_field('URL');
+                echo  the_field('url');
                 echo '">Discover</a>';
                 echo '</div>';
             endwhile; 
@@ -97,7 +97,6 @@
     ?>
     </div>
 </div>
-
 
         <!-- top brands -->
         <div class="top-brands">
