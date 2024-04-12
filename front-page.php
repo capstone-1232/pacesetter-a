@@ -51,7 +51,7 @@
 
             echo '<div class="hero-banner-slider">';
             while ($loop->have_posts()): $loop->the_post();
-                echo '<div class="hero-banner" style="background-image: url(' . get_the_post_thumbnail_url( get_the_ID(), "large" ) . '")>';
+                echo '<div class="hero-banner" style="background-image: url(\'' . get_the_post_thumbnail_url( get_the_ID(), "large" ) . '\');">';
                 echo '<h2>';
                     the_title();
                 echo '</h2>';
@@ -111,11 +111,11 @@
 
                     $loop = new WP_Query($args); 
 
-                    echo '<ul class="brands-slider">';
+                    echo '<div class="brands-slider">';
                     while ($loop->have_posts()): $loop->the_post();
-                        echo '<li class="slider-item">' . the_post_thumbnail() . '</li>';
+                        echo '<div class="slider-item">' . the_post_thumbnail() . '</div>';
                     endwhile; 
-                    echo '</ul>';
+                    echo '</div>';
                 ?>
             </div>
             <div class="top-brands-mobile">
@@ -141,11 +141,11 @@
 
             $loop = new WP_Query($args); 
 
-            echo '<ul class="top-images-slider">';
+            echo '<div class="top-images-slider">';
             while ($loop->have_posts()): $loop->the_post();
                 the_post_thumbnail();
             endwhile; 
-            echo '</ul>';
+            echo '</div>';
         ?>
         </div>
     </div>
