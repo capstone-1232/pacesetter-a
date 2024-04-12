@@ -85,8 +85,8 @@ body {
                 }
 
                 .logo {
-                    grid-column: 1/span 3;
-                    padding: 14px 16px;
+                    grid-column: 1/span 12;
+                    padding: 1rem 0;
                 }
             }
             
@@ -181,7 +181,7 @@ body {
         transform-origin: top;
         transition: transform 300ms;
         height: max-content;
-        margin-top: 96.7px;
+        margin-top: 100.7px;
         width: 100vw;
         z-index: 2;
 
@@ -199,7 +199,7 @@ body {
             display: flex;
             flex-direction: column;
             font-size: 1.8rem;
-            padding: 1rem;
+            padding: 1rem 1.875rem;
         }
 
         .flex-arrow {
@@ -259,9 +259,14 @@ body {
         .menu-nosub {
            display: flex; 
            flex-direction: column;
-           padding: 1rem;
+           padding: 0 1.875rem;
+
            a {
-            padding-bottom: 1rem;
+            padding: .5rem 0;
+           }
+
+           a:last-child {
+                margin-bottom: 3rem;
            }
         }
     }
@@ -311,8 +316,14 @@ body {
         height: 28rem;
         background-repeat: no-repeat;
         background-size: cover;
-        padding: 3rem 1.875rem 1rem 1.875rem;
         position: relative;
+
+        .hero-grad {
+            width: 100%;
+            height: 100%;
+            padding: 3rem 1.875rem 1rem 1.875rem;
+            background-image: linear-gradient(to top, rgba(0,0,0,0.2), rgba(0,0,0,0.8));
+        }
 
         h2 {
             padding: 0;
@@ -330,7 +341,7 @@ body {
             text-align: center;
             text-decoration: none;
             border-radius: 5px;
-            width: 4rem;
+            width: 5rem;
             background-color: $accent-color;
             color: #000;
             padding: .6rem .5rem .5rem .5rem;
@@ -394,6 +405,13 @@ body {
 
     .brands-slider {
         display: none;
+    }
+
+    .top-brands h2 {
+        text-align: center;
+        background-color: $secondary-color;
+        color: #000;
+        padding: 1.3rem 1.875rem 1rem 1.875rem;
     }
 
     .top-brands-mobile {
@@ -580,7 +598,7 @@ main {
         align-items: center;
         margin: 0 auto;
 
-        .next, .previous {
+        .next, .prev {
             display: none;
         }
 
@@ -1284,6 +1302,23 @@ h3 {
             td {
                 justify-self: center;
             }
+
+            td:hover {
+                position: relative;
+                ul {
+                    background-color: #fff;
+                    position: absolute;
+                    display: block;
+                    filter: drop-shadow(0 0 0.05rem);
+                    left: 0;
+                    border-radius: 5px;
+
+                    li {
+                        margin: 0;
+                        padding: 0.5rem;
+                    }
+                }
+            }
         }
 
         table {
@@ -1297,6 +1332,10 @@ h3 {
             tr:nth-child(odd) {
                 background-color: unset;
             }
+        }
+
+        ul {
+            display: none;
         }
     }
 
@@ -1596,12 +1635,20 @@ footer {
             .navbar {
                 padding: 0 6rem;
             }
+
+            .menu {
+                .menu-subnav, .menu-nosub {
+                    padding: 1rem 6rem;
+                } 
+            }
         }
 
         // -----------------------------------------------------------------  HOME PAGE -----------------------------------------------------------------
         .home {
             .hero-banner {
-                padding: 3rem 6rem 1rem 6rem;
+                .hero-grad {
+                    padding: 3rem 6rem 1rem 6rem;
+                }
 
                 a {
                     right: 6rem;
@@ -1829,6 +1876,15 @@ footer {
 
         li {
             margin-top: 1.25rem;
+        }
+
+        header {
+
+            .menu {
+                .menu-subnav, .menu-nosub {
+                    padding: 1rem 1.875rem;
+                } 
+            }
         }
 
         // -----------------------------------------------------------------  HOME PAGE -----------------------------------------------------------------
@@ -2463,7 +2519,7 @@ footer {
 
                 .logo {
                     grid-column: 1/span 3;
-                    padding: 14px 16px;
+                    padding: 1rem 0;
                 }
             }
             
@@ -2574,7 +2630,9 @@ footer {
         .home {
 
             .hero-banner {
-                padding: 3rem 12rem 1rem 12rem;
+                .hero-grad {
+                    padding: 3rem 12rem 1rem 12rem;
+                }
 
                 a {
                     right: 12rem;
@@ -2639,6 +2697,8 @@ footer {
                         transform: scaleY(100%);
                         display: grid !important;
                         grid-template-columns: 82% 18%;
+                        width: 100%;
+                        max-height: 100%;
 
                         .wpf_reset_btn {
                             margin-top: 0.1rem;
@@ -2849,7 +2909,9 @@ footer {
         .home {
 
             .hero-banner {
-                padding: 3rem 20rem 1rem 20rem;
+                .hero-grad {
+                    padding: 3rem 20rem 1rem 20rem;
+                }
 
                 a {
                     right: 20rem;

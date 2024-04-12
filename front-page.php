@@ -51,14 +51,18 @@
 
             echo '<div class="hero-banner-slider">';
             while ($loop->have_posts()): $loop->the_post();
-                echo '<div class="hero-banner" style="background-image: url(' . get_the_post_thumbnail_url( get_the_ID(), "large" ) . '")>';
+
+                echo '<div class="hero-banner" style="background-image: url(' . get_the_post_thumbnail_url( get_the_ID(), "full" ) . ');">';
+                echo '<div class="hero-grad">';
+
                 echo '<h2>';
                     the_title();
                 echo '</h2>';
                 echo '<p>' . the_content() . '</p>';
                 echo '<a href="';
-                echo the_field('URL');
+                echo  the_field('url');
                 echo '">Discover</a>';
+                echo '</div>';
                 echo '</div>';
             endwhile; 
             echo '</div>';
@@ -98,10 +102,9 @@
     </div>
 </div>
 
-
         <!-- top brands -->
         <div class="top-brands">
-            <h1>Our Top Brands</h1>
+            <h2>Our Top Brands</h2>
             <div class="top-brands-desktop">
                 <?php
                     $args = array(
@@ -111,11 +114,11 @@
 
                     $loop = new WP_Query($args); 
 
-                    echo '<ul class="brands-slider">';
+                    echo '<div class="brands-slider">';
                     while ($loop->have_posts()): $loop->the_post();
-                        echo '<li class="slider-item">' . the_post_thumbnail() . '</li>';
+                        echo '<div class="slider-item">' . the_post_thumbnail() . '</div>';
                     endwhile; 
-                    echo '</ul>';
+                    echo '</div>';
                 ?>
             </div>
             <div class="top-brands-mobile">
@@ -141,11 +144,11 @@
 
             $loop = new WP_Query($args); 
 
-            echo '<ul class="top-images-slider">';
+            echo '<div class="top-images-slider">';
             while ($loop->have_posts()): $loop->the_post();
                 the_post_thumbnail();
             endwhile; 
-            echo '</ul>';
+            echo '</div>';
         ?>
         </div>
     </div>
