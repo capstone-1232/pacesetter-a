@@ -71,7 +71,7 @@
                 <div>
                     <a href="https://www.termsfeed.com/live/f6551d0e-569b-42f2-a4f3-1e3dfd1ae98c">Privacy Policy /</a>
                     <a href="https://www.termsfeed.com/live/dd64fc61-9f59-4420-909e-669649611cb1"> Terms of Service</a>
-                <div>
+                </div>
                 <p>2024 Pacesetter</p>
             </div>
 

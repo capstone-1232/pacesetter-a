@@ -231,13 +231,13 @@ header .menu .menu-expanded-small {
   padding: 1.5rem;
   position: relative;
   flex-direction: column;
-  transform: scaleY(100%);
+  transform: scaleY(1);
   transform-origin: top;
   transition: transform 300ms;
   top: 0;
 }
 header .menu-expanded {
-  transform: scaleY(100%);
+  transform: scaleY(1);
 }
 header .rotate180 {
   transform: rotate(180deg);
@@ -461,7 +461,7 @@ main header .woocommerce-product-search {
   display: unset !important;
   position: relative;
   flex-direction: column;
-  transform: scaleY(100%);
+  transform: scaleY(1);
   transform-origin: top;
   transition: transform 300ms;
   top: 0;
@@ -471,7 +471,7 @@ main header .woocommerce-product-search {
   display: unset !important;
   position: relative;
   flex-direction: column;
-  transform: scaleY(100%);
+  transform: scaleY(1);
   transform-origin: top;
   transition: transform 300ms;
   top: 0;
@@ -578,7 +578,7 @@ main header .woocommerce-product-search {
   display: block !important;
   position: relative;
   flex-direction: column;
-  transform: scaleY(100%);
+  transform: scaleY(1);
   transform-origin: top;
   transition: transform 300ms;
   top: 0;
@@ -588,7 +588,7 @@ main header .woocommerce-product-search {
   display: unset !important;
   position: relative;
   flex-direction: column;
-  transform: scaleY(100%);
+  transform: scaleY(1);
   transform-origin: top;
   transition: transform 300ms;
   top: 0;
@@ -686,7 +686,7 @@ main header .woocommerce-product-search {
 }
 .content-area .woocommerce-product-attributes tbody {
   display: grid;
-  grid-template-columns: 1;
+  grid-template-columns: 1fr;
 }
 .content-area .woocommerce-product-attributes-item {
   background-color: unset;
@@ -1311,14 +1311,10 @@ footer .footer-info p {
   header .navbar {
     padding: 0 6rem;
   }
-
   header .menu .menu-subnav, header .menu .menu-nosub {
     padding: 1rem 6rem;
   }
-  .home .hero-banner {
-
   .home .hero-banner .hero-grad {
-
     padding: 3rem 6rem 1rem 6rem;
   }
   .home .hero-banner a {
@@ -1597,7 +1593,7 @@ footer .footer-info p {
   .first-block {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 2, 1fr;
+    grid-template-rows: repeat(2, 1fr);
   }
   .first-block h1 {
     grid-column: 1/span 12;
@@ -1782,7 +1778,7 @@ footer .footer-info p {
   }
   .additional-info-flex {
     display: grid;
-    grid-template-columns: 2, 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
   .additional-info-flex ul:first-child {
     grid-column: 1;
@@ -1794,7 +1790,7 @@ footer .footer-info p {
   }
   .coverages-flex {
     display: grid;
-    grid-template-columns: 2, 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
   .coverages-flex div:first-child {
     grid-column: 1;
@@ -1806,7 +1802,7 @@ footer .footer-info p {
   }
   .demo-policy-flex {
     display: grid;
-    grid-template-columns: 2, 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
   .demo-policy-flex div:first-child {
     grid-column: 1;
@@ -1982,7 +1978,7 @@ footer .footer-info p {
     height: 100vh;
   }
   header .menu-expanded {
-    transform: scaleX(100%);
+    transform: scaleX(1);
   }
 }
 @media screen and (min-width: 1440px) {
@@ -2028,7 +2024,7 @@ footer .footer-info p {
     padding: 0 12rem;
   }
   .content-area header .filters-menu .wpf_form {
-    transform: scaleY(100%);
+    transform: scaleY(1);
     display: grid !important;
     grid-template-columns: 82% 18%;
     width: 100%;
