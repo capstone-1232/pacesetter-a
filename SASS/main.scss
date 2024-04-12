@@ -85,8 +85,8 @@ body {
                 }
 
                 .logo {
-                    grid-column: 1/span 3;
-                    padding: 14px 16px;
+                    grid-column: 1/span 12;
+                    padding: 1rem 0;
                 }
             }
             
@@ -181,7 +181,7 @@ body {
         transform-origin: top;
         transition: transform 300ms;
         height: max-content;
-        margin-top: 96.7px;
+        margin-top: 100.7px;
         width: 100vw;
         z-index: 2;
 
@@ -199,7 +199,7 @@ body {
             display: flex;
             flex-direction: column;
             font-size: 1.8rem;
-            padding: 1rem;
+            padding: 1rem 1.875rem;
         }
 
         .flex-arrow {
@@ -259,9 +259,14 @@ body {
         .menu-nosub {
            display: flex; 
            flex-direction: column;
-           padding: 1rem;
+           padding: 0 1.875rem;
+
            a {
-            padding-bottom: 1rem;
+            padding: .5rem 0;
+           }
+
+           a:last-child {
+                margin-bottom: 3rem;
            }
         }
     }
@@ -311,8 +316,14 @@ body {
         height: 28rem;
         background-repeat: no-repeat;
         background-size: cover;
-        padding: 3rem 1.875rem 1rem 1.875rem;
         position: relative;
+
+        .hero-grad {
+            width: 100%;
+            height: 100%;
+            padding: 3rem 1.875rem 1rem 1.875rem;
+            background-image: linear-gradient(to top, rgba(0,0,0,0.2), rgba(0,0,0,0.8));
+        }
 
         h2 {
             padding: 0;
@@ -330,7 +341,7 @@ body {
             text-align: center;
             text-decoration: none;
             border-radius: 5px;
-            width: 4rem;
+            width: 5rem;
             background-color: $accent-color;
             color: #000;
             padding: .6rem .5rem .5rem .5rem;
@@ -393,8 +404,23 @@ body {
     }
 
     .brands-slider {
-        background-color: #fff;
-        padding: 2rem 0;
+        display: none;
+    }
+
+    .top-brands h2 {
+        text-align: center;
+        background-color: $secondary-color;
+        color: #000;
+        padding: 1.3rem 1.875rem 1rem 1.875rem;
+    }
+
+    .top-brands-mobile {
+        padding: 0 1.875rem 1.875rem 1.875rem;
+
+        img {
+            width: 100%;
+            margin-top: 1.875rem;
+        }
     }
 
     .hero-banners, .top-images {
@@ -405,7 +431,7 @@ body {
     .top-images-slider {
         img {
             width: 100%;
-            height: 400px;
+            height: 28rem;
             object-fit: cover;
         }
     }
@@ -572,6 +598,10 @@ main {
         align-items: center;
         margin: 0 auto;
 
+        .next, .prev {
+            display: none;
+        }
+
         ul.page-numbers {
             display: flex;
             margin: 0 auto;
@@ -602,6 +632,10 @@ main {
 
             a {
                 text-decoration: none;
+            }
+
+            .stock {
+                padding: .5rem 0;
             }
 
             .woocommerce-LoopProduct-link {
@@ -810,6 +844,11 @@ main {
 
     .woocommerce-product-attributes {
         margin-bottom: 3rem;
+
+        tbody {
+            display: grid;
+            grid-template-columns: 1;
+        }
     }
 
     .woocommerce-product-attributes-item {
@@ -825,6 +864,10 @@ main {
             font-family: "Playfair Display", serif;
             padding-bottom: 1rem;
             font-size: 1.25rem;
+
+            p{
+                margin: 0;
+            }
         }
     }
 
@@ -1259,6 +1302,23 @@ h3 {
             td {
                 justify-self: center;
             }
+
+            td:hover {
+                position: relative;
+                ul {
+                    background-color: #fff;
+                    position: absolute;
+                    display: block;
+                    filter: drop-shadow(0 0 0.05rem);
+                    left: 0;
+                    border-radius: 5px;
+
+                    li {
+                        margin: 0;
+                        padding: 0.5rem;
+                    }
+                }
+            }
         }
 
         table {
@@ -1272,6 +1332,10 @@ h3 {
             tr:nth-child(odd) {
                 background-color: unset;
             }
+        }
+
+        ul {
+            display: none;
         }
     }
 
@@ -1290,6 +1354,12 @@ h3 {
                 filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
                 border: none;
                 border-radius: 5px;
+                transition: 0.3s;
+            }
+
+            input:hover {
+                background-color: $primary-color;
+                cursor: pointer;
             }
         }
     }
@@ -1362,6 +1432,7 @@ h3 {
 
         div:nth-child(3) input:hover {
             background-color: $secondary-color;
+            cursor: pointer;
         }
 
         .gjs-row:nth-child(2) {
@@ -1564,12 +1635,20 @@ footer {
             .navbar {
                 padding: 0 6rem;
             }
+
+            .menu {
+                .menu-subnav, .menu-nosub {
+                    padding: 1rem 6rem;
+                } 
+            }
         }
 
         // -----------------------------------------------------------------  HOME PAGE -----------------------------------------------------------------
         .home {
             .hero-banner {
-                padding: 3rem 6rem 1rem 6rem;
+                .hero-grad {
+                    padding: 3rem 6rem 1rem 6rem;
+                }
 
                 a {
                     right: 6rem;
@@ -1579,6 +1658,20 @@ footer {
             .featured-products {
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
+            }
+
+            .top-brands-desktop {
+                background-color: #fff;
+
+                .brands-slider {
+                    display: unset;
+                    background-color: #fff;
+                    padding: 2rem 0;
+                }
+            }
+
+            .top-brands-mobile {
+                display: none;
             }
         }
 
@@ -1785,6 +1878,15 @@ footer {
             margin-top: 1.25rem;
         }
 
+        header {
+
+            .menu {
+                .menu-subnav, .menu-nosub {
+                    padding: 1rem 1.875rem;
+                } 
+            }
+        }
+
         // -----------------------------------------------------------------  HOME PAGE -----------------------------------------------------------------
 
         .home {
@@ -1948,22 +2050,33 @@ footer {
             .summary {
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(12, 1fr);
             }
 
             .woocommerce-product-gallery {
-                grid-row: 1;
+                grid-row: 1 / span 12;
                 grid-column: 1;
                 width: 100%;
             }
 
             .product_title {
-                grid-row: 1;
+                grid-row: 1 / span 2;
                 grid-column: 2;
+                padding: 0 0 0 1rem;
             }
 
             .price {
-                grid-row: 1;
+                grid-row: 3;
                 grid-column: 2;
+                margin: 0;
+                padding-left: 1rem;
+            }
+
+            .stock {
+                grid-row: 4;
+                grid-column: 2;
+                margin: 0;
+                padding-left: 1rem;
             }
         }
 
@@ -2406,7 +2519,7 @@ footer {
 
                 .logo {
                     grid-column: 1/span 3;
-                    padding: 14px 16px;
+                    padding: 1rem 0;
                 }
             }
             
@@ -2517,7 +2630,9 @@ footer {
         .home {
 
             .hero-banner {
-                padding: 3rem 12rem 1rem 12rem;
+                .hero-grad {
+                    padding: 3rem 12rem 1rem 12rem;
+                }
 
                 a {
                     right: 12rem;
@@ -2582,6 +2697,8 @@ footer {
                         transform: scaleY(100%);
                         display: grid !important;
                         grid-template-columns: 82% 18%;
+                        width: 100%;
+                        max-height: 100%;
 
                         .wpf_reset_btn {
                             margin-top: 0.1rem;
@@ -2792,7 +2909,9 @@ footer {
         .home {
 
             .hero-banner {
-                padding: 3rem 20rem 1rem 20rem;
+                .hero-grad {
+                    padding: 3rem 20rem 1rem 20rem;
+                }
 
                 a {
                     right: 20rem;

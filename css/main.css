@@ -74,8 +74,8 @@ header .navbar nav .nav-items {
   display: none;
 }
 header .navbar nav .logo {
-  grid-column: 1/span 3;
-  padding: 14px 16px;
+  grid-column: 1/span 12;
+  padding: 1rem 0;
 }
 header .navbar .nav-items a {
   color: #2E2E2E;
@@ -153,7 +153,7 @@ header .menu {
   transform-origin: top;
   transition: transform 300ms;
   height: max-content;
-  margin-top: 96.7px;
+  margin-top: 100.7px;
   width: 100vw;
   z-index: 2;
 }
@@ -169,7 +169,7 @@ header .menu .menu-subnav {
   display: flex;
   flex-direction: column;
   font-size: 1.8rem;
-  padding: 1rem;
+  padding: 1rem 1.875rem;
 }
 header .menu .flex-arrow a {
   display: grid;
@@ -218,10 +218,13 @@ header .menu .menu-subnav-content4 a {
 header .menu .menu-nosub {
   display: flex;
   flex-direction: column;
-  padding: 1rem;
+  padding: 0 1.875rem;
 }
 header .menu .menu-nosub a {
-  padding-bottom: 1rem;
+  padding: 0.5rem 0;
+}
+header .menu .menu-nosub a:last-child {
+  margin-bottom: 3rem;
 }
 header .menu .menu-expanded-small {
   display: flex;
@@ -256,8 +259,13 @@ header .rotate180 {
   height: 28rem;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 3rem 1.875rem 1rem 1.875rem;
   position: relative;
+}
+.home .hero-banner .hero-grad {
+  width: 100%;
+  height: 100%;
+  padding: 3rem 1.875rem 1rem 1.875rem;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8));
 }
 .home .hero-banner h2 {
   padding: 0;
@@ -273,7 +281,7 @@ header .rotate180 {
   text-align: center;
   text-decoration: none;
   border-radius: 5px;
-  width: 4rem;
+  width: 5rem;
   background-color: #F7EE23;
   color: #000;
   padding: 0.6rem 0.5rem 0.5rem 0.5rem;
@@ -325,8 +333,20 @@ header .rotate180 {
   height: 0;
 }
 .home .brands-slider {
-  background-color: #fff;
-  padding: 2rem 0;
+  display: none;
+}
+.home .top-brands h2 {
+  text-align: center;
+  background-color: #72A8D5;
+  color: #000;
+  padding: 1.3rem 1.875rem 1rem 1.875rem;
+}
+.home .top-brands-mobile {
+  padding: 0 1.875rem 1.875rem 1.875rem;
+}
+.home .top-brands-mobile img {
+  width: 100%;
+  margin-top: 1.875rem;
 }
 .home .hero-banners, .home .top-images {
   display: block;
@@ -334,7 +354,7 @@ header .rotate180 {
 }
 .home .top-images-slider img {
   width: 100%;
-  height: 400px;
+  height: 28rem;
   object-fit: cover;
 }
 
@@ -423,7 +443,6 @@ main header .woocommerce-product-search {
 .content-area .banner div .more-button:hover {
   background-color: #87D4C4;
 }
-
 .content-area .wpf_form {
   display: unset;
   height: max-content;
@@ -458,7 +477,6 @@ main header .woocommerce-product-search {
   top: 0;
   visibility: unset !important;
 }
-
 .content-area .products, .content-area .woocommerce-ordering, .content-area .woocommerce-result-count {
   padding: 0 1.875rem;
 }
@@ -470,6 +488,9 @@ main header .woocommerce-product-search {
   display: grid;
   align-items: center;
   margin: 0 auto;
+}
+.content-area .woocommerce-pagination .next, .content-area .woocommerce-pagination .prev {
+  display: none;
 }
 .content-area .woocommerce-pagination ul.page-numbers {
   display: flex;
@@ -495,6 +516,9 @@ main header .woocommerce-product-search {
 }
 .content-area .products .product a {
   text-decoration: none;
+}
+.content-area .products .product .stock {
+  padding: 0.5rem 0;
 }
 .content-area .products .product .woocommerce-LoopProduct-link h2 {
   margin-top: 1rem;
@@ -660,6 +684,10 @@ main header .woocommerce-product-search {
 .content-area .woocommerce-product-attributes {
   margin-bottom: 3rem;
 }
+.content-area .woocommerce-product-attributes tbody {
+  display: grid;
+  grid-template-columns: 1;
+}
 .content-area .woocommerce-product-attributes-item {
   background-color: unset;
   display: unset;
@@ -672,6 +700,9 @@ main header .woocommerce-product-search {
   font-family: "Playfair Display", serif;
   padding-bottom: 1rem;
   font-size: 1.25rem;
+}
+.content-area .woocommerce-product-attributes-item td p {
+  margin: 0;
 }
 .content-area .variations, .content-area .variations_button, .content-area .woocommerce-tabs a, .content-area .cart, .content-area .wc-tabs a {
   display: none;
@@ -1007,6 +1038,21 @@ h3 {
 .event-section .simcal-calendar .simcal-week td {
   justify-self: center;
 }
+.event-section .simcal-calendar .simcal-week td:hover {
+  position: relative;
+}
+.event-section .simcal-calendar .simcal-week td:hover ul {
+  background-color: #fff;
+  position: absolute;
+  display: block;
+  filter: drop-shadow(0 0 0.05rem);
+  left: 0;
+  border-radius: 5px;
+}
+.event-section .simcal-calendar .simcal-week td:hover ul li {
+  margin: 0;
+  padding: 0.5rem;
+}
 .event-section .simcal-calendar table {
   margin: 0 1.875rem;
 }
@@ -1016,6 +1062,9 @@ h3 {
 }
 .event-section .simcal-calendar table tr:nth-child(odd) {
   background-color: unset;
+}
+.event-section .simcal-calendar ul {
+  display: none;
 }
 .event-section .event-header {
   background-color: #72A8D5;
@@ -1032,6 +1081,11 @@ h3 {
   filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
   border: none;
   border-radius: 5px;
+  transition: 0.3s;
+}
+.event-section .event-header form input:hover {
+  background-color: #87D4C4;
+  cursor: pointer;
 }
 .event-section .simcal-align-right {
   display: none;
@@ -1089,6 +1143,7 @@ h3 {
 }
 .event-section .es-form-field-container div:nth-child(3) input:hover {
   background-color: #72A8D5;
+  cursor: pointer;
 }
 .event-section .es-form-field-container .gjs-row:nth-child(2) {
   width: 100%;
@@ -1256,7 +1311,14 @@ footer .footer-info p {
   header .navbar {
     padding: 0 6rem;
   }
+
+  header .menu .menu-subnav, header .menu .menu-nosub {
+    padding: 1rem 6rem;
+  }
   .home .hero-banner {
+
+  .home .hero-banner .hero-grad {
+
     padding: 3rem 6rem 1rem 6rem;
   }
   .home .hero-banner a {
@@ -1265,6 +1327,17 @@ footer .footer-info p {
   .home .featured-products {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+  .home .top-brands-desktop {
+    background-color: #fff;
+  }
+  .home .top-brands-desktop .brands-slider {
+    display: unset;
+    background-color: #fff;
+    padding: 2rem 0;
+  }
+  .home .top-brands-mobile {
+    display: none;
   }
   .content-area .banner div {
     padding: 1rem 6rem;
@@ -1387,6 +1460,9 @@ footer .footer-info p {
   li {
     margin-top: 1.25rem;
   }
+  header .menu .menu-subnav, header .menu .menu-nosub {
+    padding: 1rem 1.875rem;
+  }
   .home .hero-banner h2 {
     font-size: 2.5rem;
   }
@@ -1430,7 +1506,11 @@ footer .footer-info p {
   .content-area .products, .content-area .woocommerce-ordering, .content-area .woocommerce-result-count {
     padding: 0 12rem;
   }
-
+  .content-area .wpf_form {
+    max-height: 0;
+    transform: unset;
+    transition: none;
+  }
   .content-area .woocommerce-product-search {
     padding: 0 6rem;
     grid-column: 1/span 2;
@@ -1448,13 +1528,6 @@ footer .footer-info p {
     display: unset !important;
   }
   main header .filters-menu .wpf_form .wpf_items_wrapper {
-
-  .content-area .wpf_form {
-    max-height: 0;
-    transform: unset;
-    transition: none;
-  }
-  header .wpf_form .wpf_items_wrapper {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 1fr 1fr;
@@ -1489,19 +1562,29 @@ footer .footer-info p {
   .content-area .summary {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(12, 1fr);
   }
   .content-area .woocommerce-product-gallery {
-    grid-row: 1;
+    grid-row: 1/span 12;
     grid-column: 1;
     width: 100%;
   }
   .content-area .product_title {
-    grid-row: 1;
+    grid-row: 1/span 2;
     grid-column: 2;
+    padding: 0 0 0 1rem;
   }
   .content-area .price {
-    grid-row: 1;
+    grid-row: 3;
     grid-column: 2;
+    margin: 0;
+    padding-left: 1rem;
+  }
+  .content-area .stock {
+    grid-row: 4;
+    grid-column: 2;
+    margin: 0;
+    padding-left: 1rem;
   }
   .history,
   .expertise,
@@ -1828,7 +1911,7 @@ footer .footer-info p {
   }
   header .navbar nav .logo {
     grid-column: 1/span 3;
-    padding: 14px 16px;
+    padding: 1rem 0;
   }
   header .navbar .nav-items a {
     color: black;
@@ -1906,7 +1989,7 @@ footer .footer-info p {
   header .navbar {
     padding: 0 12rem;
   }
-  .home .hero-banner {
+  .home .hero-banner .hero-grad {
     padding: 3rem 12rem 1rem 12rem;
   }
   .home .hero-banner a {
@@ -1948,6 +2031,8 @@ footer .footer-info p {
     transform: scaleY(100%);
     display: grid !important;
     grid-template-columns: 82% 18%;
+    width: 100%;
+    max-height: 100%;
   }
   .content-area header .filters-menu .wpf_form .wpf_reset_btn {
     margin-top: 0.1rem;
@@ -2062,7 +2147,7 @@ footer .footer-info p {
   .content-area .summary, .content-area .woocommerce-tabs {
     padding: 0 20rem;
   }
-  .home .hero-banner {
+  .home .hero-banner .hero-grad {
     padding: 3rem 20rem 1rem 20rem;
   }
   .home .hero-banner a {

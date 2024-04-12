@@ -10,6 +10,29 @@
  */
 
  get_header();
+
+//  images
+    $brand_one = get_field( "brand_image", 509);
+    $brand_one_size = $brand_one['sizes']['large'];
+    $brand_one_alt = $brand_one['alt'];
+    $brand_two = get_field( "brand_image", 512);
+    $brand_two_size = $brand_two['sizes']['large'];
+    $brand_two_alt = $brand_two['alt'];
+    $brand_three = get_field( "brand_image", 520);
+    $brand_three_size = $brand_three['sizes']['large'];
+    $brand_three_alt = $brand_three['alt'];
+    $brand_four = get_field( "brand_image", 521);
+    $brand_four_size = $brand_four['sizes']['large'];
+    $brand_four_alt = $brand_four['alt'];
+    $brand_five = get_field( "brand_image", 522);
+    $brand_five_size = $brand_five['sizes']['large'];
+    $brand_five_alt = $brand_five['alt'];
+    $brand_six = get_field( "brand_image", 524);
+    $brand_six_size = $brand_six['sizes']['large'];
+    $brand_six_alt = $brand_six['alt'];
+    $brand_seven = get_field( "brand_image", 523);
+    $brand_seven_size = $brand_seven['sizes']['large'];
+    $brand_seven_alt = $brand_seven['alt'];
  ?>
 
  <main>
@@ -28,14 +51,18 @@
 
             echo '<div class="hero-banner-slider">';
             while ($loop->have_posts()): $loop->the_post();
-                echo '<div class="hero-banner" style="background-image: url(' . get_the_post_thumbnail_url( get_the_ID(), "large" ) . '")>';
+
+                echo '<div class="hero-banner" style="background-image: url(' . get_the_post_thumbnail_url( get_the_ID(), "full" ) . ');">';
+                echo '<div class="hero-grad">';
+
                 echo '<h2>';
                     the_title();
                 echo '</h2>';
                 echo '<p>' . the_content() . '</p>';
                 echo '<a href="';
-                echo the_field('URL');
+                echo  the_field('url');
                 echo '">Discover</a>';
+                echo '</div>';
                 echo '</div>';
             endwhile; 
             echo '</div>';
@@ -75,24 +102,34 @@
     </div>
 </div>
 
-
         <!-- top brands -->
         <div class="top-brands">
-            <h1>Our Top Brands</h1>
-            <?php
-                $args = array(
-                    'post_type' => 'brand', 
-                    'post_per_page' => 3
-                );
+            <h2>Our Top Brands</h2>
+            <div class="top-brands-desktop">
+                <?php
+                    $args = array(
+                        'post_type' => 'brand', 
+                        'post_per_page' => 3
+                    );
 
-                $loop = new WP_Query($args); 
+                    $loop = new WP_Query($args); 
 
-                echo '<ul class="brands-slider">';
-                while ($loop->have_posts()): $loop->the_post();
-                    echo '<li class="slider-item">' . the_post_thumbnail() . '</li>';
-                endwhile; 
-                echo '</ul>';
-            ?>
+                    echo '<div class="brands-slider">';
+                    while ($loop->have_posts()): $loop->the_post();
+                        echo '<div class="slider-item">' . the_post_thumbnail() . '</div>';
+                    endwhile; 
+                    echo '</div>';
+                ?>
+            </div>
+            <div class="top-brands-mobile">
+                <img class="brand-image" src="<?php echo $brand_one_size ?>" alt="<?php echo $brand_one_alt ?>">
+                <img class="brand-image" src="<?php echo $brand_two_size ?>" alt="<?php echo $brand_two_alt ?>">
+                <img class="brand-image" src="<?php echo $brand_three_size ?>" alt="<?php echo $brand_three_alt ?>">
+                <img class="brand-image" src="<?php echo $brand_four_size ?>" alt="<?php echo $brand_four_alt ?>">
+                <img class="brand-image" src="<?php echo $brand_five_size ?>" alt="<?php echo $brand_five_alt ?>">
+                <img class="brand-image" src="<?php echo $brand_six_size ?>" alt="<?php echo $brand_six_alt ?>">
+                <img class="brand-image" src="<?php echo $brand_seven_size ?>" alt="<?php echo $brand_seven_alt ?>">
+            </div>
         </div>
 
         <!-- image slider -->
@@ -107,11 +144,11 @@
 
             $loop = new WP_Query($args); 
 
-            echo '<ul class="top-images-slider">';
+            echo '<div class="top-images-slider">';
             while ($loop->have_posts()): $loop->the_post();
                 the_post_thumbnail();
             endwhile; 
-            echo '</ul>';
+            echo '</div>';
         ?>
         </div>
     </div>
